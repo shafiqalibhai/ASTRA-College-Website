@@ -1,0 +1,167 @@
+
+<h1>{HEADING}</h1>
+
+
+<!-- BEGIN ParentPostBlock -->
+<div class="fullPost" >
+	<div class="postHeader">
+		<strong>{POSTED_BY_STRING}: </strong><a href="{PATH}/modules/forum/byname.php?space_key={SPACE_KEY}&amp;module_key={MODULE_KEY}&amp;user_key={USER_KEY}" class="{POST_CLASS}">{FULL_NAME}</a> {ON_STRING} <em>{DATE_ADDED}</em> {AT_STRING} {TIME_ADDED} {CONTEXT} <br />
+		<strong>{SUBJECT_STRING}:</strong> {SUBJECT}{TYPE}
+	</div>
+	<div class="postBody">
+      	{PARENT_BODY}<a name="reply"></a>
+	   	<div class="postAttachmentLink">
+	   	{VIEW_ATTACHMENT}
+		</div>
+	</div>
+</div>
+  <h2 align="left">{YOUR_REPLY_STRING}:</h2>
+   <!-- END ParentPostBlock -->
+  <div align="center">
+ 
+  <form name="inputform" method="post" enctype="multipart/form-data" action="postinput.php">
+
+    <input type="hidden" name="thread_key" value="{THREAD_KEY}" />
+    <input type="hidden" name="space_key" value="{SPACE_KEY}" />
+    <input type="hidden" name="module_key" value="{MODULE_KEY}" />
+    <input type="hidden" name="parent_key" value="{PARENT_KEY}" />
+    <input type="hidden" name="post_key" value="{POST_KEY}" />
+    <input type="hidden" name="action" value="{ACTION}" />
+ 
+  <table class="input_form_table_wide">
+
+    <tr> 
+
+                <td class="InputFormLeft">{SUBJECT_STRING}:</td>
+
+      <td class="InputFormRight"> 
+
+        <input type="text" name="subject" value="{SUBJECT}" size="40" />
+
+        {SUBJECT_ERROR} </td>
+
+    </tr>
+                        <!-- BEGIN PostTypeBlock -->
+    <tr>
+
+                <td valign="top" class="InputFormLeft">{NATURE_STRING}:</td>
+
+                <td class="InputFormRight"> <table width="100%"  border="0" cellpadding="0">
+                        <tr> 
+                            <td>{TYPE_MENU} {TYPE_ERROR}</td>
+                            <td class="small"><input name="show_photo" type="checkbox" id="show_photo" value="1" {SHOW_PHOTO}>
+{PHOTO_STRING}<br>
+                                <a href="{PATH}/users/userinput.php?action=modify#photo">{ADD_PHOTO_STRING}</a></td>
+                        </tr>
+                    </table></td>
+
+    </tr>
+                        <!-- END PostTypeBlock -->
+    <tr> 
+
+                <td valign="top" class="InputFormLeft">{MESSAGE_STRING}:
+                {EDITOR_BUTTONS_body}</td>
+
+      <td class="InputFormRight"> 
+                   <textarea accept-charset="{CHARACTER_SET}" name="body" wrap="VIRTUAL" cols="60" rows="20" id="body">{BODY}</textarea>
+
+        <div class="error">{BODY_ERROR}</div>
+
+<div align="left" class="small">
+ 
+<input name="monitor_post" type="checkbox" id="monitor_post" value="1" {MONITOR_POST_CHECKED}>{MONITOR_POST_STRING}
+ <!-- BEGIN EmailAllBlock -->
+ <input name="email_all" type="checkbox" id="email_all" value="1">
+{EMAIL_ALL_STRING}<br />
+ <!-- END EmailAllBlock --> 	
+
+ <!-- BEGIN AutoPromptBlock -->
+                        <input name="user_autoprompt" type="checkbox" id="user_autoprompt" value="1">
+{ACTIVATE_PROMPTING_SRING}<a href="javascript:openHelpWin('{DOCS_URL}/Forum#Activate_autoprompting')" class='helplink'>?</a><br />	
+                        <!-- END AutoPromptBlock -->
+            
+ 
+                                  
+        </div>      
+
+</td>
+
+    </tr>
+<!-- BEGIN AttachmentBlock -->
+<tr>
+                <td class="InputFormLeft">{ATTACHMENT_STRING}:</td>
+                <td class="InputFormRight"><input type="hidden" name="MAX_FILE_SIZE" value="{MAX_FILE_UPLOAD_SIZE}">
+				
+        <input name="file" type="file" id="file" size="35" /> </td>
+            
+	  </tr>
+<!-- END AttachmentBlock -->			
+<tr><td></td><td>
+
+<input type="hidden" name="entry_key" value="{ENTRY_KEY}">
+<input type="hidden" name="referer" value="{REFERER}">
+<input type="submit" name="submit" value="{BUTTON}" />
+                        <input type="button" name="submit2" value="{CANCEL_STRING}" onClick="history.go(-1)" />
+	<!-- BEGIN DeleteBlock -->
+<input type="submit" name="submit" value="{DELETE_STRING}" onClick="return confirmDelete('{CONFIRM_STRING}')" />
+ <!-- END DeleteBlock -->
+				
+</td>
+</tr>
+
+                       
+  </table>
+
+ </form>
+
+
+  <form action="editpost.php" method="post">
+
+
+<!-- BEGIN PostEditBlock -->
+{THREAD_MANAGEMENT}
+    <table class="input_form_table">
+      <tr class="small"> 
+                <td class="InputFormLeft">{POST_NO_STRING}:</td>
+        <td  class="InputFormRight"><b>{POST_KEY}</b> </td>
+        <td  class="InputFormRight"> 
+          <input type="submit" name="action" value="{DELETE_STRING}" onClick="return confirmDelete('{CONFIRM_STRING}')" />
+        </td>
+      </tr>
+      <tr class="small"> 
+                <td class="InputFormLeft">{PARENT_NO_STRING}:</td>
+                <td  class="InputFormRight"> 
+          <input type="text" name="parent_key" size="4" value="{PARENT_KEY}" />
+        </td>
+        <td  class="InputFormRight"> 
+          <input type="submit" name="action" value="{CHANGE_PARENT_STRING}" onClick="return confirmDelete('{CONFIRM_STRING}')" />
+        </td>
+      </tr>
+      <tr class="small" >
+                <td  class="InputFormLeft">{THREAD_NO_STRING}:</td>
+                <td  class="InputFormRight">
+<input type="text" name="thread_key2" size="4" value="{THREAD_KEY}" />          
+        </td>
+        <td  class="InputFormRight">
+          <input type="submit" name="action" value="{CHANGE_THREAD_STRING}" onClick="return confirmDelete('{CONFIRM_STRING}')" />
+        </td>
+      </tr>
+      <tr class="small" > 
+                <td  class="InputFormLeft">{FORUMS_STRING}:</td>
+        <td  class="InputFormRight">{FORUMS_MENU} </td>
+        <td  class="InputFormRight">
+          <input type="submit" name="action" value="{CHANGE_FORUM_STRING}" onClick="return confirmDelete('{CONFIRM_STRING}')" />
+        </td>
+      </tr>
+    </table>
+  
+    <input type="hidden" name="post_key" value="{POST_KEY}" />
+    <input type="hidden" name="space_key" value="{SPACE_KEY}" />
+    <input type="hidden" name="module_key" value="{MODULE_KEY}" />
+<span class="small">{NEW_THREAD_STRING}</span>
+<!-- END PostEditBlock -->
+</form>
+
+</div>
+
+

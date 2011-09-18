@@ -1,0 +1,26 @@
+#outerBox {
+	background-color:{COLOR1*180};
+	margin-left:10%;
+	margin-right:10%;
+}
+#contentBox {
+	background-color:#FFF;
+	margin-right:7px;
+	padding:5px;
+	margin-left:16.8em;
+}
+#header {
+	border-left: 5px solid #000;
+	border-right: 5px solid #000;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+#personalBox,#pageTags,#pageStats {
+	margin-right:11%;
+}
+
+#footer {
+margin-top:7px;
+background-color:#FFF;
+}

@@ -1,0 +1,22 @@
+<div class="briefMemberProfile"> 
+  {NO_ACCOUNT}
+  	<div style="float:left;margin-right:5px;">
+    <!-- BEGIN CheckBoxBlock -->	
+  	<input type="checkbox" name="user_keys[]" value="{USER_KEY}">
+  	<!-- END CheckBoxBlock -->
+    	{USER_PHOTO}
+    </div>
+    	<div style="float:right;" class="small">
+	<strong>{USER_GROUP_STRING}</strong>{USER_GROUPS}
+	</div> 
+	<div style="margin-left:60px;">
+  		<a href="../users/userdetails.php?user_key={USER_KEY}&amp;space_key={SPACE_KEY}">{NAME}</a><span {ADMIN_TOOL_CLASS}>{MEMBER_USERNAME}</span>
+  		<span class="small"> <a href="emailuser.php?space_key={SPACE_KEY}&email_user_key={USER_KEY}&email_user_name={EMAIL_USER_NAME}">{EMAIL}</a>
+  		</span><br />
+ 		<span class="small">{DETAILS}</span><br />
+ 		<span class="small"><em>{MEMBER_SINCE_STRING}:</em>{MEMBER_SINCE_DATE} <em>{LAST_LOGIN_STRING}:</em> {LAST_LOGIN_DATE}</span>
+	</div>
+
+</div>
+
+

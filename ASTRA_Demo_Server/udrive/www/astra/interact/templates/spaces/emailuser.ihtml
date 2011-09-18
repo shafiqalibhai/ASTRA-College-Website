@@ -1,0 +1,68 @@
+ 
+<h2 align="center">{EMAIL_USER_STRING} <span class="small">{TO_NAME}</span></h2>
+
+<!-- BEGIN EmailFormBlock -->
+<form name="form1" method="post" action="emailuser.php" enctype="multipart/form-data">
+  <div align="center">
+        <table class="input_form_table">
+            <tr> 
+                <td class="InputFormLeft">{SUBJECT_STRING}:</td>
+                <td class="InputFormRight"> 
+          <input type="text" name="subject" size="35" value="{SUBJECT}" />
+          <br />
+          {SUBJECT_ERROR} </td>
+            </tr>
+
+<!-- BEGIN FromEmailBlock -->
+            <tr> 
+                <td class="InputFormLeft">Your email:</td>
+                <td class="InputFormRight"> 
+          <input type="text" name="from_email" size="35" value="{FROM_EMAIL}" />
+          <br />
+          {FROM_EMAIL_ERROR} </td>
+            </tr>
+<!-- END FromEmailBlock -->
+
+            <tr> 
+                <td valign="top" class="InputFormLeft">{MESSAGE_STRING}:</td>
+                <td class="InputFormRight"> 
+          <textarea accept-charset="{CHARACTER_SET}" name="body" rows="10" wrap="VIRTUAL" cols="45">{BODY}</textarea>
+          <br />
+          {BODY_ERROR} </td>
+            </tr>
+
+<!-- BEGIN CCBlock -->
+            <tr> 
+                <td valign="top" class="InputFormLeft">{CC_STRING}:<br />
+                     <span class="small">{CC_INSTRUCTIONS}</span> </td>
+                <td class="InputFormRight" valign="top"> 
+                <input type="text" name="carbon_copy" size="35"> <br />
+                <input type="checkbox" name="copyself" value="true" /><span class="small">{COPY_SELF_STRING}</span>
+                </td>
+            </tr>
+<!-- END CCBlock -->
+
+            <tr> 
+                <td valign="top" class="InputFormLeft">{ATTACHMENT_STRING}:</td>
+                <td class="InputFormRight" valign="top"><input type="file" name="file" size="35" />
+                    {FILE_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">&nbsp;</td>
+                <td class="InputFormRight"> 
+          <div align="center"> 
+                        <input type="submit" name="Submit" value="{SEND_STRING}" />
+                        <input type="hidden" name="space_key" value="{SPACE_KEY}" />
+                        <input type="hidden" name="action" value="email" />
+                        <input type="hidden" name="module_key" value="{MODULE_KEY}" />
+                        <input type="hidden" name="unauth_post_key" value="{UNAUTH_POST_KEY}" />
+                        <input type="hidden" name="email_user_key" value="{EMAIL_USER_KEY}" />
+<!-- 
+                        <input type="hidden" name="email_user_name" value="{EMAIL_USER_NAME}" />
+ -->
+          </div></td>
+            </tr>
+        </table>
+    </div>  
+  </form>
+<!-- END EmailFormBlock -->

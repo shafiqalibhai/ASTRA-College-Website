@@ -1,0 +1,89 @@
+<h1>{MANAGE_FILES_HEADING}     '{SHARED_ITEM_NAME}' {SUB_FOLDER_TEXT}</h1>
+
+<div align="center">
+ 
+{BACK_TO_TOP}
+       
+<table  border="0" cellspacing="1" cellpadding="5">
+                        <tr>
+                            
+            <td valign="top" class="InputFormLeft">{UPLOAD_FILE_STRING}:</td>
+                            <td class="InputFormRight"><form action="managefiles.php" method="post" enctype="multipart/form-data" name="form2">
+                                    
+                    <p align="left">
+                                        
+                        <input name="new_file" type="file" id="new_file" size="30">
+                                        <br>
+                                        
+                        <input type="submit" name="Submit" value="{UPLOAD_STRING}">
+                                        
+                        <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+            
+                                        
+                        <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+                                        
+                        <input name="sub_dir" type="hidden" id="sub_dir" value="{SUB_DIR}">
+                                        
+                        <input name="action" type="hidden" id="action" value="upload">
+                        <input name="shareditem_key" type="hidden" id="shareditem_key" value="{SHAREDITEM_KEY}">
+        </p>
+                                </form></td>
+                        </tr>
+                        <tr>
+                            
+            <td valign="top" class="InputFormLeft">{ADD_SUBFOLDER_STRING}:</td>
+                            <td class="InputFormRight"><form action="managefiles.php" method="post" enctype="multipart/form-data" name="form2">
+                                    
+                    <p align="left">{NAME_STRING}: 
+                                        
+                        <input name="new_sub_dir" type="text" id="new_sub_dir" size="20">
+                                        
+                        <input type="submit" name="Submit" value="{ADD_STRING}">
+                                                   </p>
+                                    <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+            
+                                    <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+                                    <input name="sub_dir" type="hidden" id="sub_dir" value="{SUB_DIR}">
+                                    <input name="action" type="hidden" id="action" value="add_sub_dir">
+                    <input name="shareditem_key" type="hidden" id="shareditem_key" value="{SHAREDITEM_KEY}">
+                                                     
+                                </form>
+		</td>
+                        </tr>
+                    </table>
+              
+               
+
+<form name="form1" method="post" action="managefiles.php">
+           {SUBFOLDERS_STRING}:
+                        <select name="sub_dir">
+                            <option value="" >- - -</option>
+                            <!-- BEGIN SubDirectoryBlock -->
+                            <option value="{SUB_DIR}" {selected}>{SUB_DIR}</option>
+                            <!-- END SubDirectoryBlock -->
+                        </select>
+                        
+        <input type="submit" name="Submit" value="{VIEW_STRING}">
+                        <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+                        <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+						<input name="parent_sub_dir" type="hidden" id="parent_sub_dir" value="{PARENT_SUB_DIR}">
+        <input name="shareditem_key" type="hidden" id="shareditem_key" value="{SHAREDITEM_KEY}">
+                                                    
+                    </form>
+                   
+                    
+    <p><strong>{CURRENT_FILES_STRING}  {MODULE_TEXT} {SUB_FOLDER_TEXT}</strong>
+    </p>
+                    <table  border="1" cellspacing="1" cellpadding="5">
+                        <!-- BEGIN FileListBlock -->
+                        <tr>
+                            <td>{FILE_NAME}</td>
+                            
+            <td><a href="managefiles.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&shareditem_key={SHAREDITEM_KEY}&file_name={FILE_NAME}&sub_dir={SUB_DIR}&action=delete">{DELETE_STRING}</a></td>
+                        </tr>
+                        <!-- END FileListBlock -->
+						</table>
+
+
+        </div>
+

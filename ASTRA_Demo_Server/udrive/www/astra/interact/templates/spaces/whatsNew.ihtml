@@ -1,0 +1,64 @@
+<!-- BEGIN UpdatesBlock -->	
+
+<div class="container" 	style="border: 0px;">
+			<div class="controlBox">
+				<div id="whatsNewContent" class="disPaneContent" {WHATSNEW_CONTENT_DEFAULTS}>
+<!-- BEGIN EventTableBlock -->
+					<div id="eventsTable">
+						<span>
+							{IMPORTANT_DATES_STRING}&nbsp;&nbsp;&nbsp;</span>
+					</div>
+					<div class="disPaneContent" id="eventsTableContent" {EVENTSTABLE_CONTENT_DEFAULTS}>
+						<ul>
+							{EVENTS}
+					</ul>
+					</div>
+<!-- END EventTableBlock -->
+<!-- BEGIN NewPostsBlock -->
+					<div class="disPaneHeading{LATESTPOSTINGS_DEFAULT_STYLE}" id="latestPostings" onclick="show_it('latestPostingsContent',this,'disPaneHeading')">
+						<span>
+							{LATEST_POSTINGS}</span>
+					</div>
+					<div class="disPaneContent" id="latestPostingsContent" {LATESTPOSTINGS_CONTENT_DEFAULTS}>
+						<ul class="newPostsList">
+<!-- BEGIN NewPostBlock -->
+							<li class="newPostsListItem">
+								
+									{SUBJECT}
+							</li>
+<!-- END NewPostBlock -->
+						</ul>
+						{MORE_POSTS_LINK} 
+					</div>
+<!-- END NewPostsBlock -->
+<!-- BEGIN NewItemsBlock -->
+					<div id="latestItems" class="disPaneHeading{LATESTITEMS_DEFAULT_STYLE}" onclick="show_it('latestItemsContent',this,'disPaneHeading')">
+						<span>
+							{NEW_ITEMS}</span>
+					</div>
+					<div class="disPaneContent" id="latestItemsContent" {LATESTITEMS_CONTENT_DEFAULTS}>
+						<ul class="newPostsList">
+<!-- BEGIN NewItemBlock -->
+							<li class="newPostsListItem">
+							
+									{NAME}
+							</li>
+<!-- END NewItemBlock -->
+						</ul><br>
+						{MORE_ITEMS_LINK} 
+					</div>
+<!-- END NewItemsBlock -->
+
+<!-- BEGIN UpdatedItemsBlock -->
+					<div id="updatedItems">
+						<span>
+							{UPDATED_ITEMS}</span>
+					</div>
+					<div class="disPaneContent" id="updatedItemsContent" {UPDATEDITEMS_CONTENT_DEFAULTS}>
+						{UPDATED_ITEMS_LIST} 
+					</div>
+<!-- END UpdatedItemsBlock -->
+				</div>
+			</div>
+
+<!-- END UpdatesBlock -->

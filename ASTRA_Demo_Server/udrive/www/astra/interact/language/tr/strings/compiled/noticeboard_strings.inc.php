@@ -1,0 +1,3 @@
+<?php   //Do NOT modify this file - it is auto-generated
+
+$noticeboard_strings=array('sort_order'=>'Varsayýlan Sýralama','add_noticeboard'=>'Ýlan Tahtasýna Ekle','add_notice'=>'Ýlan Tahtasý Ekle','edit_notice'=>'Ýlaný Düzenle','delete_after'=>'Silinecek Tarih','notice_added'=>'Ýlanýnýz Eklendi.','notice_modifed'=>'Ýlanýnýz deðiþtirildi','notice_deleted'=>'Ýlanýnýz Silindi.','no_heading'=>'Baþlýk girmediniz.','no_body'=>'Ýlan bilgini girmediniz.','body'=>'Ýlan','heading'=>'Baþlýk','edit_link'=>'Düzenle/Sil','days_to_keep'=>'Ýlanlarýn saklamasýnda varsayýlan gün numaralarý','days_to_keep2'=>'Belirsiz Saklamak için 0 girin.','days_to_keep3'=>'%s günden sonra mesajlar otomatik olarak silinecektir.','days_to_keep_error'=>'Bu ayar 1 ve 99 arasýnda numara olmalý.');?>

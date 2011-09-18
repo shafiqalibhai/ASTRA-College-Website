@@ -1,0 +1,33 @@
+ 
+<h2>{COPY_MODULE_STRING}</h2>
+<div class="message">{MESSAGE}</div>
+<form name="modulelink" method="post" action="modulecopy.php" >
+  <div class="input_form_div" align="center">
+    <table class="input_form_table">
+      <tr>
+        <td valign="top" class="InputFormLeft">{SELECT_COMPONENT_STRING}</td>
+        <td valign="top" class="InputFormRight">{MODULE_MENU}</td>
+      </tr>
+      <tr> 
+                <td valign="top" class="InputFormLeft">{OR_STRING}<br>
+                {MODULE_NO_STRING}:</td>
+        <td valign="top" class="InputFormRight"> 
+          <input name="module_to_copy_key" type="text" id="module_to_copy_key" value="{MODULE_TO_COPY_KEY}" size="35" />
+          <br />
+        </td>
+      </tr>
+      <tr> 
+        <td class="InputFormLeft">&nbsp;</td>
+        <td class="InputFormRight"> 
+          <input type="submit" name="submit" value="{COPY_STRING}" />
+          <input type="button" name="submit2" value="{CANCEL_STRING}" onClick="history.go(-1)" />
+          <input type="hidden" name="action" value="copy" />
+          <input type="hidden" name="space_key" value="{SPACE_KEY}" />
+          <input type="hidden" name="parent_key" value="{PARENT_KEY}" />
+          <input type="hidden" name="link_key" value="{LINK_KEY}" />		  
+          <input type="hidden" name="group_key" value="{GROUP_KEY}" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</form>

@@ -1,0 +1,18 @@
+
+<div class="forumPostBody" id="forumPostBody{POST_KEY_VALUE}" style="padding:5px 5px 5px 16px">
+<div id="userPhoto" style="float:left;">{PHOTO_TAG}</div>
+{BODY_VALUE}
+<div class="forumReplyLinks" style="clear:left">
+<span onClick="getQuickReply('{POST_KEY_VALUE}','quickReplyLink{POST_KEY_VALUE}')" id="quickReplyLink{POST_KEY_VALUE}" class="disclosureClosed">Reply
+	</span>	
+		
+
+	
+	
+	<div id="quickReply{POST_KEY_VALUE}" style="display:none;"></div>
+
+	
+	</div>
+</div>
+
+

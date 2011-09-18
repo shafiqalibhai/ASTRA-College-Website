@@ -1,0 +1,10 @@
+<h2>{MEMBERS_SUBSCRIBED}</h2>
+<p style="margin-top:10px;margin-bottom:10px">{SUBSCRIBE_MEMBERS_INST}</p>
+<form id="form1" name="form1" method="post" action="subscribemembers.php">
+  {SUBSCRIBED_MEMBERS_MENU}
+ <input type="hidden" name="module_key" value="{MODULE_KEY}" />
+ <input type="hidden" name="space_key" value="{SPACE_KEY}" />
+ <br />
+ <input type="submit" name="Submit" value="Modify" />
+ 
+</form>

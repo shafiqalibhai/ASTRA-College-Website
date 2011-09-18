@@ -1,0 +1,58 @@
+<form method="get" action="members.php">
+<!-- BEGIN MemberSearch -->
+<span style="float:right">
+	<input name="search_terms" type="text" id="search_tems" size="20">
+	<input type="hidden" name="space_key" value="{SPACE_KEY}" />
+	<input name="rule" type="hidden" value="all" />
+	<input type="submit" name="submit" value="{SEARCH_STRING}" /> 
+</span>
+<!-- END MemberSearch -->
+<h2>{MEMBERS_STRING} {NEW_MEMBERS_LINK}&nbsp;&nbsp;<span class="small">{ADD_ME}</span></h2>
+</form>
+
+
+
+<span style="float:right">
+<span {ADMIN_TOOL_CLASS}>{ONLINE_MEMBERS} - {ADD_MEMBERS} - {SAVE_MEMBERS}</span>
+</span>
+{NUMBER_OF_MEMBERS}<br />
+
+<span {ADMIN_TOOL_CLASS}>{INVISIBLE_NOTE}</span>
+<br />
+
+<form name="form1" method="post" action="memberedit.php">
+
+<b>{SPACE_ADMIN_TEXT}</b>
+{ADMINS}<br />
+
+
+<b>{MEMBERS_STRING}</b><br />
+{PAGE_NAV}
+
+{MEMBERS}
+
+{PAGE_NAV}
+<!-- BEGIN MemberAdminBlock --><span {ADMIN_TOOL_CLASS}>
+{ACTION_MEMBERS_STRING} {ACTION_MEMBERS_MENU} 
+<input type="hidden" name="action" value="action_members"  >
+<input type="submit" name="submit" value="{SUBMIT_STRING}" onClick="return confirmDelete('{CHECK_ACTION_STRING}')"></span>
+<!-- END MemberAdminBlock -->
+<!-- BEGIN MessageInputBlock -->
+<h2>{MESSAGE_INPUT_HEADING}</h2>
+
+  {MESSAGE_STRING} <span class="small">({MAXIMUM_CHAR_STRING})</span><br>
+  <textarea accept-charset="{CHARACTER_SET}" name="user_message" cols="60" rows="3" 
+onBlur="document.form1.count_display.value=document.form1.user_message.value.length;"  onKeyUp="document.form1.count_display.value=document.form1.user_message.value.length;">{USER_MESSAGE}</textarea>
+  <br>
+  <input type="text" name="count_display" value="0" size="3" readonly>
+  {CHARACTERS_STRING}<br>
+
+<input type="hidden" name="referer" value="{REFERER}"  >
+<input type="hidden" name="online_only" value="{ONLINE_ONLY}"  >
+<input type="submit" name="submit" value="{SEND_STRING}">
+<!-- END MessageInputBlock -->
+<input type="hidden" name="space_key" value="{SPACE_KEY}"  >
+</form>
+
+
+

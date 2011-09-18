@@ -1,0 +1,46 @@
+{SPACE_FORUM_DETAILS}{NEW_THREAD} 
+<table border="0" width="100%" cellpadding="5">
+
+<tr>
+
+
+
+{SPACE}
+
+    <td class="{POST_BACKGROUND}">
+
+     
+
+
+
+
+
+  
+
+      <table width="100%" border="0" cellpadding="0">
+
+        <tr valign="top">
+
+                    <td><span class="small"><strong>{SUBJECT_STRING}:</strong> {SUBJECT}<br />
+            <strong>{POSTED_BY_STRING}:</strong> {FULL_NAME} - {EMAIL} {ON_STRING} <i>{DATE_ADDED}</i> {AT_STRING} {TIME_ADDED} 
+            <br>
+
+      </span> </td>
+
+          <td>{TYPE}</td>
+
+        </tr>
+
+      </table>
+
+      
+
+      <p>{BODY}</p> 
+
+      <hr />
+
+ </td>
+
+ </tr>
+
+</table> 

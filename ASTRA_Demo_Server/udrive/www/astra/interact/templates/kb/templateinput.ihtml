@@ -1,0 +1,100 @@
+<style type="text/css">
+
+    #leftContent {
+		float:left;
+		width:50%;
+		margin-right:15px;
+		padding-bottom:20px;
+		clear:left;
+		}
+
+	#rightContent {
+		clear:right;
+
+		}
+</style>
+
+<h2>{INPUT_HEADING}</h2>
+
+<div align="center">
+	<a href="{PATH}{BACK_LINK}?space_key={SPACE_KEY}&module_key={MODULE_KEY}">{BACK_STRING}</a>
+</div>	
+<!-- BEGIN KBTemplatesBlock -->
+<fieldset class="masterFieldset">
+	<legend class="topLegend">{KNOWLEDGEBASE_TEMPLATES_STRING}</legend>
+	<div id="leftContent">
+		<fieldset class="fieldset">
+			<legend>{CURRENT_TEMPLATES_STRING}</legend>
+			<form method="post" action="templateinput.php">
+
+			<!-- BEGIN CurrentTemplatesBlock -->
+		    <input type="checkbox" name="template_keys[]" value="{TEMPLATE_KEY}">{TEMPLATE_NAME}<br />
+			<!-- END CurrentTemplatesBlock -->
+		    <input name="submit" type="submit" id="submit" value="{REMOVE_STRING}" class="{REMOVE_BUTTON_CLASS}">
+			<br />
+			<span class="{REMOVE_BUTTON_CLASS}"><input name="remove_entries" type="checkbox" tabindex="2" value="1"><span class="small">{REMOVE_ENTRIES_STRING}</span></span>
+			<input name="action" type="hidden" value="remove_from_kb">
+			<input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+			<input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">			
+			</form>
+		</fieldset>
+	</div>
+	<div id="rightContent">	
+		<fieldset class="fieldset">
+			<legend >{AVAILABLE_TEMPLATES_STRING}</legend>
+			<form method="post" action="templateinput.php">
+			{ADD_TEMPLATE_MENU}<br />
+			<input name="submit" type="submit" id="submit" value="{ADD_STRING}">
+			<input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+			<input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">			
+			<input name="action" type="hidden" value="add_to_kb">
+		
+			</form>
+		</fieldset>
+	</div>
+</fieldset>
+<!-- END KBTemplatesBlock -->
+<br />
+<fieldset class="masterFieldset">
+	<legend class="topLegend">{ADD_TEMPLATES_STRING}</legend>
+	<div id="leftContent">
+		<fieldset class="fieldset">
+			<legend>{ADD_NEW_STRING}</legend>
+			<form method="post" action="templateinput.php">
+			{NAME_STRING}:
+			<br /><input name="name" type="text" id="name" value="{NAME}" size="30">
+			{NAME_ERROR} 
+			<br />
+			{DESCRIPTION_STRING}:<br /><textarea accept-charset="{CHARACTER_SET}" name="description" cols="30" rows="3" id="description"></textarea>
+    <br>
+    {SUMMARY_FIELDS_STRING}:<br>
+    <input name="summary_fields" type="text" id="summary_fields" value="{SUMMARY_FIELDS}" size="2" maxlength="2">
+    <br />         
+			<input type="submit" name="submit" value="{BUTTON}">
+			<input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+			<input name="template_key" type="hidden" id="template_key" value="{TEMPLATE_KEY}">
+			<input type="hidden" name="action" value="add">
+			<input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+			<input name="referer" type="hidden" id="referer" value="{REFERER}">
+			</form> 
+		</fieldset> 
+	</div>
+	<div id="rightContent">	
+		<fieldset class="fieldset">
+			<legend>{MODIFY_TEMPLATE_STRING}</legend>
+			<form name="form1" method="post" action="templatemodify.php">
+			{SELECT_STRING}:<br />
+    		{MODIFY_TEMPLATE_MENU} 
+			<br />
+  			<input type="submit" name="submit" value="{MODIFY_STRING}">
+			<input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+    		<input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+			<input name="referer" type="hidden" id="referer" value="{REFERER}">
+    		</form>
+		</fieldset>
+	</div>
+</fieldset>
+
+
+
+

@@ -1,0 +1,2 @@
+<div class="container" align="center"><img src="images/folder_announce.png" alt="&lt;&lt;notice&gt;&gt;" align="absmiddle" />&nbsp; Best viewed using Firefox or Opera at 1024x768 resolution</div>
+<div class="footer">&copy; 2007 ASTRA&nbsp;&middot;&nbsp;&nbsp; Keshavagiri Post, Bandlaguda, Near Chandrayana Gutta, Hyderabad, Andhra Pradesh - 500 005&nbsp;&nbsp; Tel&nbsp; (040) 2444 0840</div>

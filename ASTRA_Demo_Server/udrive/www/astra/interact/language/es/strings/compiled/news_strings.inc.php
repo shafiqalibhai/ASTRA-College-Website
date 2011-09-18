@@ -1,0 +1,3 @@
+<?php   //Do NOT modify this file - it is auto-generated
+
+$news_strings=array('not_allowed'=>'No tienes permitido agregar noticias en este sitio','add_success'=>'Tu nuevo ítem ha sido agregado','delete_success'=>'Tu nuevo ítem ha sido borrado','modify_success'=>'Tu nuevo ítem ha sido modificado','news_heading'=>'Agregar/Modificar un ítem de noticias','heading'=>'Encabezado','body'=>'Cuerpo','no_body'=>'No has ingresado contenido de noticias','no_heading'=>'No has ingresado encabezado');?>

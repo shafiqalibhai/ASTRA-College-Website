@@ -1,0 +1,83 @@
+ 
+
+<h1>{HEADING}</h1>
+<div align="center"><a href="gradebook.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&link_key={LINK_KEY}&group_key={GROUP_KEY}">{RETURN_TO_STRING} {MODULE_NAME}</a></div>
+<!-- BEGIN EntryInputBlock -->
+
+<form name="inputform" method="post" action="iteminput.php">
+
+<div align="center">
+        <table  border="0" cellspacing="1" cellpadding="5">
+            <tr>
+                <td valign="top" class="InputFormLeft">{NAME_STRING}:</td>
+                <td valign="top" class="InputFormRight">
+<input name="name" type="text" id="name" value="{NAME}" size="35">
+                    {NAME_ERROR}</td>
+            </tr>
+            <tr>
+                <td valign="top" class="InputFormLeft">{DESCRIPTION_STRING}:
+                {EDITOR_BUTTONS_body}</td>
+                <td valign="top" class="InputFormRight">
+                                    
+                                    <textarea accept-charset="{CHARACTER_SET}" name="body" id="body" wrap="VIRTUAL" cols="60" rows="12">{BODY}</textarea>
+                         <div class="error">{BODY_ERROR}</div></td>
+            </tr>
+            <tr>
+                <td valign="top" class="InputFormLeft">{URL_STRING}:</td>
+                <td valign="top" class="InputFormRight">
+<input name="url" type="text" id="url" value="{URL}" size="35">
+                     <a href="javascript:openHelpWin('{DOCS_URL}/Gradebook_Admin#URL')" class='helplink'>?</a></td>
+            </tr>
+            <tr>
+              <td valign="top" class="InputFormLeft">{STATUS_STRING}:</td>
+              <td valign="top" class="InputFormRight">{ITEM_STATUS_MENU}</td>
+            </tr>
+            <tr>
+                <td valign="top" class="InputFormLeft">{DUE_DATE_STRING}:</td>
+                    
+                <td valign="top" class="InputFormRight">{DUE_DATE_MENU} <a href="javascript:openHelpWin('{DOCS_URL}/Gradebook_Admin#Due_date')" class='helplink'>?</a></td>
+            </tr>
+            <tr>
+                <td valign="top" class="InputFormLeft">{SCALE_STRING}:</td>
+                <td valign="top" class="InputFormRight">{SCALE_MENU}<a href="javascript:openHelpWin('{DOCS_URL}/Gradebook_Admin#Scale')" class='helplink'>?</a></td>
+            </tr>
+            <tr>
+                <td valign="top" class="InputFormLeft">{SORT_ORDER_STRING}:</td>
+                <td valign="top" class="InputFormRight">
+<input name="sort_order" type="text" id="sort_order" value="{SORT_ORDER}" size="3">
+                    <a href="javascript:openHelpWin('{DOCS_URL}/Gradebook_Admin#Sort_order')" class='helplink'>?</a></td>
+            </tr>
+            <tr>
+                <td valign="top" class="InputFormLeft">{MAX_SCORE_STRING}: <br>
+({NUMERIC_ONLY_STRING})    </td>
+                <td valign="top" class="InputFormRight">
+<input name="maximum_score" type="text" id="maximum_score" value="{MAXIMUM_SCORE}" size="3">
+                    <a href="javascript:openHelpWin('{DOCS_URL}/Gradebook_Admin#Maximum_score')" class='helplink'>?</a>
+                    </td>
+            </tr>
+            <tr>
+                <td valign="top" class="InputFormLeft">{WEIGHTING_STRING}:<br>
+({NUMERIC_ONLY_STRING})                </td>
+                <td valign="top" class="InputFormRight">
+<input name="weighting" type="text" id="weighting" value="{WEIGHTING}" size="3">
+                    <a href="javascript:openHelpWin('{DOCS_URL}/Gradebook_Admin#Weighting')" class='helplink'>?</a>{WEIGHTING_ERROR}</td>
+            </tr>
+        </table>
+ 
+        <p>
+            <input type="submit" name="submit" value="{BUTTON}" />
+                    {DELETE_BUTTON} 
+                    
+                
+            <input type="button" name="submit2" value="{CANCEL_STRING}" onClick="history.go(-1)" />
+            <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+            <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+            <input name="group_key" type="hidden" id="group_key" value="{GROUP_KEY}">
+            <input name="link_key" type="hidden" id="link_key" value="{LINK_KEY}">
+            <input name="item_key" type="hidden" id="item_key" value="{ITEM_KEY}">
+            <input name="action" type="hidden" id="action" value="{ACTION}">
+        </p>
+        <p align="left">{ADDED_BY_STRING}{ADDED_BY} {DATE_ADDED}<br>
+{MODIFIED_BY_STRING}{MODIFIED_BY} {DATE_MODIFIED}</p>
+  </div>
+</form>

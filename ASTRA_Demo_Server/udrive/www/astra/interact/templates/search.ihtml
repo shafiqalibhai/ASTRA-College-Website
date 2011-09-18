@@ -1,0 +1,43 @@
+<h2>{SEARCH_HEADING}</h2>
+<form name="form1" method="get" action="search.php">
+    <div align="center">
+        <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}" />
+     <!--  
+        <select name="rule" id="rule">
+            <option value="all" selected>{ALL_WORDS_STRING}</option>
+            <option value="any">{ANY_WORDS_STRING}</option>
+            <option value="exact">{EXACT_PHRASE_STRING}</option>
+        </select>
+		-->
+    
+    </div>
+</form>
+
+<!-- BEGIN ResultsBlock -->
+            <table width="100%"  border="1" cellpadding="5">
+                <tr> 
+                    <td width="50%" valign="top" >
+					<h3>{SPACE_STRING}</h3>
+                        <!-- BEGIN SpaceBlock -->
+                        <p class="small"><strong>{NUMBER}.</strong> <a href="{DIRECT_PATH}/space/{SPACE_KEY}" class="small">{SPACE_NAME}</a> 
+                            {DESCRIPTION}</p>
+                        <!-- END SpaceBlock -->
+                        					
+					<h3><strong>{SITE_CONTENT_STRING}</strong></h3>
+                        <!-- BEGIN ContentBlock -->
+                        <p class="small"><strong>{NUMBER}.</strong> <a href="{PATH}/modules/{CODE}/{CODE}.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&link_key={LINK_KEY}&group_key={GROUP_KEY}" class="small">{MODULE_NAME}</a> 
+                            {DESCRIPTION}</p>
+                        <!-- END ContentBlock -->
+                    </td>
+                    <td valign="top"> 
+					<h3><strong>{FORUM_POSTINGS_STRING}</strong></h3>
+                        <!-- BEGIN ForumBlock -->
+                        <p class="small"><strong>{NUMBER}.</strong> <a href="{DIRECT_PATH}/post/{SPACE_KEY}/{POST_KEY}">{SUBJECT}</a><br />
+                            {ADDED_BY} {DATE_ADDED} 
+                            <!-- END ForumBlock -->
+                    </td>
+                </tr>
+            </table>
+
+<!-- END ResultsBlock -->
+         

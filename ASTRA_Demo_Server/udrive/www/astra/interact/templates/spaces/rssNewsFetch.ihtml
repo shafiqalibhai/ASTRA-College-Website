@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0">
+<channel>
+<title>ASTRA NEWS</title>
+<description>Aurora's Scientific, Technological and Research Academy</description>
+<link>http://www.astra.co.nr</link>
+<generator>Shafiq Issani</generator>
+
+        <image>
+            <url>http://localhost/astra/images/favicon.ico</url>
+            <title>Aurora's Scientific, Technological and Research Academy website</title>
+            <link>http://www.astra.co.nr</link>
+            <description>Aurora's Scientific, Technological and Research Academy</description>
+        </image>
+
+        <item>
+            <title>{SPACE_HEADING} {HEADING} {NEWS_HEADING} :: posted by {ADDED_BY}</title>
+            <link>http://www.astra.co.nr</link>
+			<pubDate> {DATE_ADDED}  </pubDate>
+			<description> {BODY} {PREVIOUS_LINK} {NEXT_LINK} </description>
+            <author>{ADDED_BY}</author>
+        </item>
+
+
+</channel>
+</rss>

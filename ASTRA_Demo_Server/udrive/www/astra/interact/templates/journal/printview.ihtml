@@ -1,0 +1,44 @@
+<h1>{HEADING_STRING} : {DATE}</h1>
+
+
+<!-- BEGIN DisplayBlock -->
+<div class=""> 
+    <div class="small"><strong>{ADDED_BY_STRING}:</strong> {ADDED_BY} {ON_STRING}<strong> </strong> {DATE_ADDED} {AT_STRING} {TIME_ADDED}</div>
+<p>{BODY}</p>
+
+    
+	
+<!-- BEGIN CommentLinkBlock -->	
+	
+<!-- END CommentLinkBlock -->
+	 </div>
+
+</div>
+
+<!-- BEGIN CommentBlock -->
+<table width="100%" border="0" cellspacing="1" cellpadding="5">
+    <tr>
+
+        {INDENT}
+<div class="">
+                <div class="small"><strong>{ADDED_BY_STRING}:</strong> {COMMENT_ADDED_BY} {ON_STRING}<strong> </strong> {COMMENT_DATE_ADDED} {AT_STRING} {COMMENT_TIME_ADDED}</div>
+                <p>{COMMENT_BODY}</p>
+
+
+
+            </div>
+			
+			</td>
+    </tr>
+</table>
+
+
+<!-- END CommentBlock -->
+<br />
+<hr>
+<!-- END DisplayBlock -->
+
+<!-- BEGIN SelectedEntriesBlock --> 
+<!-- END SelectedEntriesBlock --> 
+<!-- BEGIN SelectBlock --> 
+<!-- END SelectBlock --> 

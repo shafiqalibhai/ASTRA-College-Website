@@ -1,0 +1,55 @@
+ 
+<h2>{NEWS_INPUT_HEADING}</h2>
+
+
+<form name="inputform" method="post" action="newsinput.php">
+
+  <table class="input_form_table_wide">
+    <tr> 
+                <td class="InputFormLeft" valign="top">{HEADING_STRING}:</td>
+      <td class="InputFormRight"> 
+        <input type="text" name="heading" value="{HEADING}" size="35" />
+        {HEADING_ERROR} </td>
+    </tr>
+    <tr> 
+                <td class="InputFormLeft" valign="top">{BODY_STRING}:
+                {EDITOR_BUTTONS_body}</td>
+      <td class="InputFormRight"> 
+
+                <textarea accept-charset="{CHARACTER_SET}" name="body" wrap="VIRTUAL" cols="60" rows="20" id="body">{BODY}</textarea>
+        <div class="error">{BODY_ERROR}</div> </td>
+    </tr>
+    <tr> 
+      <td valign="top" class="InputFormLeft">&nbsp;</td>
+      <td valign="top" class="InputFormRight"> 
+        <input type="submit" name="submit" value="{BUTTON}" />
+        {DELETE_BUTTON} 
+                    <input type="button" name="submit2" value="{CANCEL_STRING}" onClick="history.go(-1)" />      </td>
+    </tr>
+    <tr> 
+      <td valign="top"  colspan="2"> 
+        <div align="center"> {OPTIONAL_STRING}</div>      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="InputFormLeft">{SHOW_PHOTO} </td>
+      <td valign="top" class="InputFormRight"><input type="checkbox" name="options" value="1" {SHOW_PHOTO_CHECKED} /></td>
+    </tr>
+    <tr> 
+                <td valign="top" class="InputFormLeft">{REMOVE_STRING}:</td>
+      <td valign="top" class="InputFormRight"> 
+        <div align="left">{DATE_SELECT}  
+          <br />
+        </div>      </td>
+    </tr>
+    <tr> 
+      <td class="InputFormLeft">&nbsp;</td>
+      <td class="InputFormRight"> 
+        <input type="submit" name="submit" value="{BUTTON}" />
+        {DELETE_BUTTON}
+                    <input type="button" name="submit3" value="{CANCEL_STRING}" onClick="history.go(-1)" />
+        <input type="hidden" name="action" value="{ACTION}" />
+        <input type="hidden" name="space_key" value="{SPACE_KEY}" />
+        <input type="hidden" name="news_key" value="{NEWS_KEY}" />      </td>
+    </tr>
+  </table>
+</form>

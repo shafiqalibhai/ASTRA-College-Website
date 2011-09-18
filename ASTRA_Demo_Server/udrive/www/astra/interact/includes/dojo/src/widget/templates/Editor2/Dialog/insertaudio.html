@@ -1,0 +1,55 @@
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+		<td width="*" rowspan="2" align=center valign="top">
+			<fieldset style="height:76px; background-color: #F6F6F6; padding: 0px;">
+				<legend>
+					Preview 
+				</legend>
+				<iframe dojoAttachPoint="audio_ipreview" id="audio_ipreview" height="78" frameborder="0" style="border : 2px; width: 100%; height: 78px;" src="about:blank" scrolling="no"> </iframe>
+			</fieldset>
+			<span style="float:right"><button dojoType='Button' dojoAttachEvent="onClick:updateClick">Update</button>
+			</span>
+			<span style="float:right;padding-right:4px;" dojoAttachPoint="premess"> </span>
+			
+			<form action="" method="get" style="clear:both">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td><INPUT type="checkbox" dojoAttachEvent="onClick:updateClick" class="CheckBox" checked dojoAttachPoint="audio_showvolume" title="Show Volume control."> <span style="font-size:x-small">Volume</span></td>
+						<td><INPUT type="checkbox" dojoAttachEvent="onClick:updateClick" class="CheckBox" checked dojoAttachPoint="audio_showprogress" title="Show Progress / scrubbing control."> <span style="font-size:x-small">Progress</span></td>
+						<td><INPUT type="checkbox" class="CheckBox" checked dojoAttachPoint="audio_autoplay" title="Auto-play when page loads."> <span style="font-size:x-small">Autoplay</span></td>
+					</tr>
+					<tr>
+						<td valign="top" colspan="3">
+										URL: <input type="text" dojoAttachPoint="audio_src" dojoAttachEvent="onKeyUp:checkok" style="width: 85%" /> <br /><br />
+
+						</td>
+					</tr>
+					<tr>
+						<td valign="top" colspan="3">
+							Download: <input type="text" dojoAttachEvent="onChange:updateClick" dojoAttachPoint="audio_DL" style="width: 70%" /> <br /><br />
+
+						</td>
+					</tr>				</table>
+			</form><br />
+			<fieldset style="width:320px;background-color: #ECECF0;">
+				<legend>
+					Note: 
+				</legend><span class="small">Your audio file needs to have a sample rate of 8, 11, 22 or 44kHz. <br /> <br />It then needs to be saved in <strong>mp3</strong> format.<br /><br />A <strong>mono 32kb/s</strong> compression bit-rate is recommended for dial-up use.</span></fieldset>
+	<br /><table><tr><td style="padding-right:20px">
+				<button dojoType='Button' dojoAttachPoint="audio_ok" dojoAttachEvent='onClick:ok'>OK</button>
+				</td><td>
+				<button dojoType='Button' dojoAttachEvent='onClick:cancel'>Cancel</button>
+			</td></tr></table>
+		</td>
+		<td width="276" valign="top">
+
+			<fieldset style="background-color: #D2D2D8; padding: 0px; margin-bottom:4px;">
+
+				<legend>
+					Choose File 
+				</legend>
+				<iframe dojoAttachPoint="idir" name="idir" frameborder="0" style="border : 0px; width: 100%; height: 400px;" src="about:blank" scrolling="no"> </iframe>
+			</fieldset>
+		</td>
+	</tr>
+</table>

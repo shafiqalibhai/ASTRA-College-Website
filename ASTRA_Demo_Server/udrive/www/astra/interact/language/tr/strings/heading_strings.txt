@@ -1,0 +1,2 @@
+add_heading=Baþlýk ekle
+spacer_instructions=Boþluk oluþturmak için isim kýsmýný boþ býrakýn.

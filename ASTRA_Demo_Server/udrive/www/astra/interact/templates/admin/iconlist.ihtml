@@ -1,0 +1,27 @@
+<h1>Modify System Icons</h1>
+<div align="center" class="message">{MESSAGE}</div>
+<!-- BEGIN ListTableBlock --> 
+<table  border="1" cellspacing="0" cellpadding="5">
+    <tr>
+        <th>Name</th>
+        <th>Small icon</th>
+        <th>Large icon</th>
+        <th>&nbsp;</th>
+        <th>&nbsp;</th>
+    </tr>
+<!-- BEGIN IconBlock --> 
+<form action="iconinput.php" method="post">
+  <tr>
+        <td><input name="icon_key" type="hidden" id="icon_key" value="{ICON_KEY}">
+		<input name="action" type="hidden" id="action" value="modify1">
+                {NAME}</td>
+        <td><img src="{SMALL_ICON}"></td>
+        <td><img src="{LARGE_ICON}"></td>
+        <td><input name="submit" type="submit" id="submit" value="Modify"></td>
+        <td><input name="submit" type="submit" id="submit" value="Delete" onClick="return confirmDelete('Are you sure?!')"></td>
+    </tr>
+</form> 	
+<!-- END IconBlock -->	
+</table>
+<!-- END ListTableBlock --> 
+

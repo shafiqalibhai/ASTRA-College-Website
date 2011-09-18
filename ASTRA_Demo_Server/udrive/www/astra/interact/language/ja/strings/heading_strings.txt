@@ -1,0 +1,2 @@
+add_heading=見出しを追加する
+spacer_instructions=スペースをつくるには名前フィールドを空白にしておいてください。

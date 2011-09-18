@@ -1,0 +1,4 @@
+<h1>{SPACEMAP}</h1>
+<div id="siteMap">
+{MODULE_LINKS}
+</div>

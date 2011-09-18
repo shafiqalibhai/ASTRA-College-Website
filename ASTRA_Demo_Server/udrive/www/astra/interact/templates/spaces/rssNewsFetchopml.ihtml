@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<opml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>    
+<title>ASTRA NEWS</title>
+</head>
+    <body>
+    <outline type="rss"  title="{SPACE_HEADING} {HEADING} {NEWS_HEADING}" text="{BODY}" url="http://www.astra.co.nr" />
+    </body>
+</opml>

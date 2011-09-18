@@ -1,0 +1,41 @@
+<h2>{DELETE_HEADING_STRING}</h2>
+
+<p>{CHOOSE_OPTION_STRING}</p>
+<form name="form1" method="post" action="moduledelete.php">
+<table cellpadding="5" border="0">
+<tr><td width="65%">
+    <table  border="0" cellpadding="8">
+        <tr> 
+                    <td>{DELETE_LINK_ONLY_STRING}<strong><br>
+                </strong><span class="small">{SYBLING_LINKS_WARNING}</span></td>
+            <td><input name="delete_action" type="radio" value="link_only" checked></td>
+        </tr>
+<!-- BEGIN DeleteAllBlock -->
+        <tr> 
+                    <td>{DELETE_ALL_STRING}</td>
+            <td><input type="radio" name="delete_action" value="all"></td>
+        </tr>
+        <tr>
+<!-- END DeleteAllBlock -->		
+            <td><div align="center">
+                            <input name="delete" type="submit" id="delete" onClick="return confirmDelete('Are you sure?!!')" value="{DELETE_STRING}">
+                    <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+                    <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+                    <input name="parent_key" type="hidden" id="parent_key" value="{PARENT_KEY}">
+                    <input name="group_key" type="hidden" id="group_key" value="{GROUP_KEY}">
+                    <input name="link_key" type="hidden" id="link_key" value="{LINK_KEY}">
+                </div></td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+</form>
+</td>
+<td valign="top">
+<div class="boxBorder">
+
+<strong>{SPACE_LIST_HEADING}</strong><br>
+        <br><span class="small">{MODULE_LINKS}</span>
+</div>
+</td>
+</tr>
+</table>

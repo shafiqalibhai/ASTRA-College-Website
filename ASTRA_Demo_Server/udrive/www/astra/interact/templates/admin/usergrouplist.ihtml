@@ -1,0 +1,76 @@
+
+
+
+
+<div align="center" class="message">{MESSAGE} </div>
+
+
+
+<form method="post" action="{ACTION}">
+
+
+
+  <div align="center"> 
+
+
+
+        <h3>Select a User Group</h3>
+
+
+
+    <table border="0" cellspacing="0" cellpadding="5">
+
+
+
+      <tr> 
+
+
+
+                <td>{USER_GROUP_MENU}{USER_GROUP_ERROR}</td>
+
+
+
+      </tr>
+
+
+
+      <tr> 
+
+
+
+        <td > 
+
+
+
+          <div align="center">
+
+
+
+            <input type="submit" name="submit" value="{BUTTON}">
+
+
+
+          </div>
+
+
+
+        </td>
+
+
+
+      </tr>
+
+
+
+    </table>
+
+
+
+  </div>
+
+
+
+</form>
+
+
+

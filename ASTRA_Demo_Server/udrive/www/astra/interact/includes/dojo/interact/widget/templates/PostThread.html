@@ -1,0 +1,5 @@
+<div id="threadHead${thread_key}" class="forumThreadHead">
+	<span dojoAttachEvent="onClick: showBody" id="forumPostLink${post_key}" class="disclosureClosed">${subject}</span> ${added_by} - <a id="authordetails${post_key}" href="byname.php?user_key=${added_by_key}">${added_by_value}</a> - ${replies}: <span id="repliesLink${post_key}" dojoAttachEvent="Onclick: showReplies">${replies_value}</span>
+	<a dojoType="tooltip" connectId="authordetails${post_key}" href="../../users/userdetails.php?user_key=1&pop_up=1" toggle="explode"></a>
+	</div>
+	

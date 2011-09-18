@@ -1,0 +1,115 @@
+<div align="center"><strong>{MODULE_KEY_DETAILS}</strong> <a href="{PATH}/modules/general/moduleurl.php?module_key={MODULE_KEY}" class="small">url</a>
+</div>
+<div align="center">
+<table class="input_form_table">
+    <tr> 
+        <td valign="top"  colspan="2"> <h2 style="text-align:center"> {OPTIONAL_SETTINGS_STRING} </h2></td>
+    </tr>
+    <tr> 
+        <td valign="top" class="InputFormLeft">{SORT_ORDER_STRING}:</td>
+        <td valign="top" class="InputFormRight"> <input type="text" name="sort_order" size="2" value="{SORT_ORDER}">
+            <a href="javascript:openHelpWin('{DOCS_URL}/Components#Sort_Order')" class='helplink'>?</a>					
+					 
+                     
+        </td>
+    </tr>
+ <!-- BEGIN AccessLevelBlock -->
+    <tr> 
+                <td valign="top" class="InputFormLeft">{ACCESS_STRING}:</td>
+                <td class="InputFormRight">
+                <input name="access_level_key" type="radio" value="0" {ACCESS_LEVEL_0_CHECKED}>
+                    <span class="small">{SAME_AS_PARENT_STRING}</span> 
+                    
+               
+                    <br>    
+                <input name="access_level_key" type="radio" value="1" {ACCESS_LEVEL_1_CHECKED}>
+                    <span class="small">{OPEN_STRING}</span> 
+                    
+               
+                    <br>
+                    <input name="access_level_key" type="radio" value="3" {ACCESS_LEVEL_3_CHECKED}>
+                    <span class="small">{OPEN_PUBLIC_STRING}</span> 
+                   
+                    <br>
+                    <input name="access_level_key" type="radio" value="2" {ACCESS_LEVEL_2_CHECKED}>
+                   <span class="small">{RESTRICTED_STRING}</span>
+            </td>
+            </tr>
+<!-- END AccessLevelBlock -->
+    <tr> 
+        <td valign="top" class="InputFormLeft">{NEW_WINDOW_STRING}:</td>
+        <td valign="top" class="InputFormRight"> {NEW_WINDOW_MENU}
+            <a href="javascript:openHelpWin('{DOCS_URL}/Components#Open_Component_in_a_New_Window')" class='helplink'>?</a> </td>
+    </tr>
+    <tr>
+        <td valign="top" class="InputFormLeft">{ICON_STRING}:</td>
+        <td valign="top" class="InputFormRight">{ICON_MENU}<a href="javascript:openHelpWin('{DOCS_URL}/Components#Icon')" class='helplink'>?</a></td>
+    </tr>
+    <tr> 
+        <td valign="top" class="InputFormLeft">{STATUS_STRING}:</td>
+        <td valign="top" class="InputFormRight">{STATUS_MENU}<a href="javascript:openHelpWin('{DOCS_URL}/Components#Component_Status')" class='helplink'>?</a> </td>
+    </tr>
+    <tr> 
+        <td valign="top" class="InputFormLeft">{CHANGE_STATUS_DATE_STRING}:</td>
+        <td valign="top" class="InputFormRight">{ON_STRING}<br>
+            {DATE_SELECT} <br>
+            {CHANGE_STATUS_TO_STRING}<br>
+            {CHANGE_STATUS_MENU} <a href="javascript:openHelpWin('{DOCS_URL}/Components#Change_Component_Status')" class='helplink'>?</a> </td>
+    </tr>
+    <!-- BEGIN ModuleEditRightsBlock -->
+    <tr> 
+        <td valign="top" class="InputFormLeft">{MODULE_EDIT_RIGHTS_STRING}:<br>
+        </td>
+        <td valign="top" class="InputFormRight">{MODULE_EDIT_RIGHTS_MENU} <a href="javascript:openHelpWin('{DOCS_URL}/Components#Component_Edit_Rights')" class='helplink'>?</a> </td>
+    </tr>
+    <!-- END ModuleEditRightsBlock -->
+    <!-- BEGIN LinkEditRightsBlock -->
+    <tr> 
+        <td valign="top" class="InputFormLeft">{LINK_EDIT_RIGHTS_STRING}:</td>
+        <td valign="top" class="InputFormRight">{LINK_EDIT_RIGHTS_MENU} <br>
+{EDIT_RIGHTS_LINK} <a href="javascript:openHelpWin('{DOCS_URL}/Components#Component_Link_Rights')" class='helplink'>?</a>        </td>
+    </tr>
+    <!-- END LinkEditRightsBlock -->
+    <tr> 
+        <td class="InputFormLeft">&nbsp;</td>
+      <td class="InputFormRight"> <input type="submit" name="submit" value="{BUTTON}">
+            {DELETE_BUTTON} 
+            <input type="button" name="submit3" value="{CANCEL_STRING}" onClick="history.go(-1)"> 
+            <input type="hidden" name="action" value="{ACTION}"> <input type="hidden" name="module_key" value="{MODULE_KEY}"> 
+            <input type="hidden" name="space_key" value="{SPACE_KEY}"> <input type="hidden" name="parent_key" value="{PARENT_KEY}"> 
+            <input type="hidden" name="group_key" value="{GROUP_KEY}"> <input name="link_key" type="hidden" id="link_key" value="{LINK_KEY}"> 
+            <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+            <input name="block_key" type="hidden" id="block_key" value="{BLOCK_KEY}"></td>
+    </tr>
+</table>
+</div>
+</form>
+
+    <!-- BEGIN MoveBlock -->
+
+<form method="post" action="{PATH}/modules/general/modulemove.php">
+<div align="center">
+	<table class="input_form_table">
+	 <tr> 
+        <td valign="top"  colspan="2">    <h2 style="text-align:center">{MOVE_STRING}</h2></td></tr>
+        <tr> 
+            <td class="InputFormLeft">            <span class="small">{EXPLAIN_MOVE_STRING}</span> 
+                <input name="link_key" type="hidden" id="link_key" value="{LINK_KEY}"> 
+		<input type="hidden" name="space_key" value="{SPACE_KEY}"> 
+		<input type="hidden" name="module_key" value="{MODULE_KEY}">
+            </td>
+            <td class="InputFormRight"> {MOVE_TO_MENU} 
+                <a href="javascript:openHelpWin('{DOCS_URL}/Components#Move_a_Component')" class='helplink'>?</a>  </td>
+        </tr>
+        <tr>
+          <td class="InputFormLeft">{MOVE_SPACE_STRING}</td>
+          <td class="InputFormRight"><input name="space_code" type="text" id="space_code"></td>
+        </tr>
+        <tr>
+          <td class="InputFormLeft">&nbsp;</td>
+          <td class="InputFormRight"><input type="submit" name="submit" value="{MOVE_STRING}"></td>
+        </tr>
+    </table>
+</div>
+</form>
+<!-- END MoveBlock -->

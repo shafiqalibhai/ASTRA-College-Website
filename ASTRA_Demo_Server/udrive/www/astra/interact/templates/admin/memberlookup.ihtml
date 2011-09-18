@@ -1,0 +1,48 @@
+<h1>{SPACE_TEXT} Membership</h1> 
+<div align="center">
+    <table width="75%" border="0" cellpadding="5">
+        <tr> 
+            <td> <form name="form1" method="post" action="memberlookup.php">
+                    <div align="center"><strong>Username:</strong> 
+                        <input type="text" name="users_name">
+                        <br>
+                        <input type="submit" name="submit" value="Submit">
+                    </div></form>
+                </td>
+        </tr>
+    </table>
+<span class="message">{MESSAGE}</span>
+</div>
+<!-- BEGIN ResultBlock -->
+<div align="left">
+  <p><strong>Site Membership Details for {NAME}</strong></p>
+  <form name="form1" method="post" action="memberlookup.php">
+    <table width="100%" border="1" cellpadding="5">
+        <tr> 
+            <td></td>
+            <td><strong>Site Name</strong></td>
+            <td><strong>Access Level</strong></td>
+        </tr>
+        {RESULTS} 
+    </table>
+	<input type="hidden" name="user_key" value="{USER_KEY}">
+	<input type="hidden" name="users_name" value="{USER_NAME}">
+        <br />
+        <table width="100%"  border="0" cellpadding="4">
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="submit" name="submit" value="Remove Membership" class="small"></td>
+            </tr>
+            <tr> 
+                <td class="small">Change Membership to: </td>
+                <td> <input type="submit" name="submit" value="Ordinary Member" class="small"> 
+                    <input type="submit" name="submit" value="Lecturer/Admin" class="small"> 
+                    <input type="submit" name="submit" value="Invisible Admin" class="small"> 
+                    <input type="submit" name="submit" value="Invisible Guest" class="small"></td>
+            </tr>
+        </table>
+  </form>
+  <p><strong>This user is also a member of the following usergroups </strong></p>
+  <p>{USER_GROUPS}</p>
+</div>
+<!-- END ResultBlock -->

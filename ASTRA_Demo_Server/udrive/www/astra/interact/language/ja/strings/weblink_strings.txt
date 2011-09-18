@@ -1,0 +1,2 @@
+add_weblink=Webリンクの追加／削除
+no_url=WebリンクのURLが入力されていません

@@ -1,0 +1,330 @@
+
+<h2>{INPUT_HEADING} </h2>
+<div align="center"><a href="javascript:openHelpWin('{DOCS_URL}/Quiz_Admin#Setting_up_questions')" class='helplink'>?</a> - <a href="additems.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&category_key={CATEGORY_KEY}">{BACK_STRING}</a></div>
+<form name="form1" method="post" action="multichoiceinput.php" >
+    <div align="center">
+  
+        <table class="input_form_table_wide">
+            <tr> 
+                <td  valign="top" class="InputFormLeft">{NAME_STRING}:</td>
+                <td  valign="top" class="InputFormRight"> 
+          <input type="text" name="name" value="{NAME}" size="35" />
+         <br />
+                    {NAME_ERROR}</td>
+            </tr>
+            <tr>
+                <td valign="top" class="InputFormLeft">{CATEGORY_STRING}:</td>
+                <td valign="top" class="InputFormRight">{CATEGORY_MENU}{CATEGORY_ERROR}</td>
+            </tr>
+             <!-- BEGIN SettingsBlock -->
+            <tr>
+                <td valign="top" class="InputFormLeft">{SETTINGS_STRING}:</td>
+                <td valign="top" class="InputFormRight"><input name="multiple_response" type="checkbox" id="multiple_response" value="1" {MULTI_CHECKED}>
+                    {MULTIPLE_RESPONSE_STRING}{NO_RESPONSE_ERROR}</td>
+            </tr>
+             <!-- END SettingsBlock -->
+            <tr>
+                <td colspan="2" valign="top" >&nbsp;</td>
+            </tr>
+            <tr> 
+                
+                <td valign="top" class="InputFormLeft">{QUESTION_STRING}:
+                {EDITOR_BUTTONS_question}</td>
+                <td valign="top" class="InputFormRight">
+                        <textarea accept-charset="{CHARACTER_SET}" name="question" cols="60" rows="1" wrap="VIRTUAL" id="question">{QUESTION}</textarea><div id="questionStretch" class="stretchDown" onClick="stretchTextArea('question','questionStretch',10,1,'stretch')" style="float:right">&nbsp;</div>
+                     
+                    
+                    <div class="error">{QUESTION_ERROR}</div> </td>
+            </tr>
+            <tr>
+                <td colspan="2" valign="top" >&nbsp;</td>
+            </tr>
+            <tr> 
+                
+                <td valign="top" class="InputFormLeft">{RESPONSE_STRING_1}:
+                {EDITOR_BUTTONS_response_1}
+                </td>
+                <td valign="top" class="InputFormRight">  
+                    <!-- BEGIN MultichoiceR1 -->
+                    <div align="center">
+                               
+                        <textarea accept-charset="{CHARACTER_SET}" name="response_1" cols="60" rows="1" wrap="VIRTUAL" id="response_1">{RESPONSE_1}</textarea><div id="response1Stretch" class="stretchDown" onClick="stretchTextArea('response_1','response1Stretch',10,1,'stretch')" style="float:right">&nbsp;</div>
+                    </div>
+                    
+                     <!-- END MultichoiceR1 -->
+					<div class="small">
+                    
+                    <input name="response_1_correct" type="checkbox" id="response_1_correct" value="1" {1_CORRECT_CHECKED}>
+                            {CORRECT_STRING}
+                            
+                                <input name="response_score_1" type="text" id="response_score_1" value="{RESPONSE_SCORE_1}" size="3">
+                            {SCORE_STRING} <span onClick="show_it('response1Feedback','response1FeedbackLink','disclosureDark')" id="response1FeedbackLink" class="disclosureDarkClosed">{FEEDBACK_OPTIONS_STRING}</span>
+                        
+                    {CORRECT_ANSWER_ERROR}</div></td>
+            </tr>
+            <tr style="display:none" id="response1Feedback">
+                <td valign="top" class="InputFormLeft">{FEEDBACK_STRING}:
+                 {EDITOR_BUTTONS_feedback_1}
+                </td>
+                <td valign="top" class="InputFormRight">
+                    <div align="center">
+                       
+                        <textarea accept-charset="{CHARACTER_SET}" name="feedback_1" cols="60" rows="1" wrap="VIRTUAL" id="feedback_1">{FEEDBACK_1}</textarea><div id="feedback1Stretch" class="stretchDown" onClick="stretchTextArea('feedback_1','feedback1Stretch',10,1,'stretch')" style="float:right">&nbsp;</div>
+                    </div>
+                    <div align="center">
+                        
+                    </div>                    
+                    <table  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td><input type="radio" name="correct_feedback_all" id="correct_feedback_all" value="1" {1_ALL_CORRECT_CHECKED} onClick="unCheckRadio1();"></td>
+                            <td class="small">{ALL_CORRECT_STRING} <span class="vlink" onClick="SetChecked(0,'correct_feedback_all'); SetChecked(0,'wrong_feedback_all');">{CLEAR_STRING}</span> </td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="wrong_feedback_all" id="wrong_feedback_all" value="1" {1_ALL_WRONG_CHECKED}></td>
+                            <td class="small">{ALL_WRONG_STRING}  </td>
+                        </tr>
+                    </table></td>
+            </tr>
+            <tr>
+                <td colspan="2" valign="top" >&nbsp;</td>
+            </tr>
+            <tr> 
+                
+                <td valign="top" class="InputFormLeft"> {RESPONSE_STRING_2}:
+                {EDITOR_BUTTONS_response_2}
+                </td>
+                <td valign="top" class="InputFormRight">  
+                  
+                     <!-- BEGIN MultichoiceR2 -->
+                    <div align="center">
+                        
+                        <textarea accept-charset="{CHARACTER_SET}" name="response_2" cols="60" rows="1" wrap="VIRTUAL" id="response_2">{RESPONSE_2}</textarea><div id="response2Stretch" class="stretchDown" onClick="stretchTextArea('response_2','response2Stretch',10,1,'stretch')" style="float:right">&nbsp;</div>
+                    </div>
+                     <!-- END MultichoiceR2 -->
+                      <div class="small">               
+                    <input name="response_2_correct" type="checkbox" id="response_2_correct" value="1" {2_CORRECT_CHECKED}>
+                            {CORRECT_STRING}
+                            
+                                <input name="response_score_2" type="text" id="response_score_2" value="{RESPONSE_SCORE_2}" size="3">
+                            {SCORE_STRING} <span onClick="show_it('response2Feedback','response2FeedbackLink','disclosureDark')" id="response2FeedbackLink" class="disclosureDarkClosed">{FEEDBACK_OPTIONS_STRING}</span>
+                        </div>
+                            </td>
+            </tr>
+            <tr id="response2Feedback" style="display:none">
+                <td valign="top" class="InputFormLeft">{FEEDBACK_STRING}:
+                {EDITOR_BUTTONS_feedback_2}
+                </td>
+                <td valign="top" class="InputFormRight"><div align="center">
+                        
+                        <textarea accept-charset="{CHARACTER_SET}" name="feedback_2" cols="60" rows="1" wrap="VIRTUAL" id="feedback_2">{FEEDBACK_2}</textarea><div id="feedback12Stretch" class="stretchDown" onClick="stretchTextArea('feedback_2','feedback2Stretch',10,1,'stretch')" style="float:right">&nbsp;</div>
+                    </div>
+                    <div align="center">
+                        </div>                    
+                    <table  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td><input type="radio" name="correct_feedback_all" id="correct_feedback_all" value="2" {2_ALL_CORRECT_CHECKED}></td>
+                            <td class="small">{ALL_CORRECT_STRING} <span class="vlink" onClick="SetChecked(0,'correct_feedback_all'); SetChecked(0,'wrong_feedback_all');">{CLEAR_STRING}</span></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="wrong_feedback_all" id="wrong_feedback_all" value="2" {2_ALL_WRONG_CHECKED}></td>
+                            <td class="small">{ALL_WRONG_STRING}</td>
+                        </tr>
+                    </table></td>
+            </tr>
+ 
+<!-- BEGIN MultichoiceBlock --> 
+           <tr>
+                <td colspan="2" valign="top" >&nbsp;</td>
+            </tr>            
+<tr> 
+                
+                <td valign="top" class="InputFormLeft">{RESPONSE_STRING} 3:
+                 {EDITOR_BUTTONS_response_3}
+                </td>
+                <td valign="top" class="InputFormRight">  
+                    
+                   
+                    <div align="center">
+                              
+                        <textarea accept-charset="{CHARACTER_SET}" name="response_3" cols="60" rows="1" wrap="VIRTUAL" id="response_3">{RESPONSE_3}</textarea><div id="reponse3Stretch" class="stretchDown" onClick="stretchTextArea('response_3','reponse3Stretch',10,1,'stretch')" style="float:right">&nbsp;</div>
+                    </div>
+                    <div class="small">
+                    <input name="response_3_correct" type="checkbox" id="response_3_correct" value="1" {3_CORRECT_CHECKED}>
+                           {CORRECT_STRING}
+                            
+                                <input name="response_score_3" type="text" id="response_score_3" value="{RESPONSE_SCORE_3}" size="3">
+                            {SCORE_STRING}  <span onClick="show_it('response3Feedback','response3FeedbackLink','disclosureDark')" id="response3FeedbackLink" class="disclosureDarkClosed">{FEEDBACK_OPTIONS_STRING}</span>
+                      </div>
+                   </td>
+            </tr>
+            <tr id="response3Feedback" style="display:none">
+                <td valign="top" class="InputFormLeft">{FEEDBACK_STRING}:
+                 {EDITOR_BUTTONS_feedback_3}
+                </td>
+                <td valign="top" class="InputFormRight"><div align="center">
+                       
+                        <textarea accept-charset="{CHARACTER_SET}" name="feedback_3" cols="60" rows="1" wrap="VIRTUAL" id="feedback_3">{FEEDBACK_3}</textarea><div id="feedback3Stretch" class="stretchDown" onClick="stretchTextArea('feedback_3','feedback3Stretch',10,1,'stretch')" style="float:right">&nbsp;</div>
+                    </div>
+                    <div align="center">
+                        </div>				
+<table  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td><input type="radio" name="correct_feedback_all"  id="correct_feedback_all" value="3" {3_ALL_CORRECT_CHECKED}></td>
+                            <td class="small">{ALL_CORRECT_STRING} <span class="vlink" onClick="SetChecked(0,'correct_feedback_all'); SetChecked(0,'wrong_feedback_all');">{CLEAR_STRING}</span></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="wrong_feedback_all" id="wrong_feedback_all" value="3" {3_ALL_WRONG_CHECKED}></td>
+                            <td class="small">{ALL_WRONG_STRING}</td>
+                        </tr>
+                    </table></td>
+            </tr>
+            <tr>
+                <td colspan="2" valign="top" >&nbsp;</td>
+            </tr>
+            <tr> 
+                
+                <td valign="top" class="InputFormLeft">{RESPONSE_STRING} 4:
+                  {EDITOR_BUTTONS_response_4}
+                </td>
+                <td valign="top" class="InputFormRight">  
+                    
+                    <div align="center">
+                      
+                        <textarea accept-charset="{CHARACTER_SET}" name="response_4" cols="60" rows="1" wrap="VIRTUAL" id="response_4">{RESPONSE_4}</textarea><div id="reponse4Stretch" class="stretchDown" onClick="stretchTextArea('response_4','reponse4Stretch',10,1,'stretch')" style="float:right">&nbsp;</div>
+                    </div>
+                    <div class="small">
+                    <input name="response_4_correct" type="checkbox" id="response_4_correct" value="1" {4_CORRECT_CHECKED}>{CORRECT_STRING}
+                            
+                                <input name="response_score_4" type="text" id="response_score_4" value="{RESPONSE_SCORE_4}" size="3">
+                            {SCORE_STRING}  <span onClick="show_it('response4Feedback','response4FeedbackLink','disclosureDark')" id="response4FeedbackLink" class="disclosureDarkClosed">{FEEDBACK_OPTIONS_STRING}</span></div>
+                        </td>
+            </tr>
+            <tr style="display:none" id="response4Feedback">
+                <td valign="top" class="InputFormLeft">{FEEDBACK_STRING}:
+                {EDITOR_BUTTONS_feedback_4}
+                </td>
+                <td valign="top" class="InputFormRight"><div align="center">
+                        
+                        <textarea accept-charset="{CHARACTER_SET}" name="feedback_4" cols="60" rows="1" wrap="VIRTUAL" id="feedback_4">{FEEDBACK_4}</textarea><div id="feedback4Stretch" class="stretchDown" onClick="stretchTextArea('feedback_4','feedback4Stretch',10,1,'stretch')" style="float:right">&nbsp;</div>
+                    </div>
+                    <div align="center">
+                        </div>				
+<table  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td><input type="radio" name="correct_feedback_all" id="correct_feedback_all" value="4" {4_ALL_CORRECT_CHECKED}></td>
+                            <td class="small">{ALL_CORRECT_STRING} <span class="vlink" onClick="SetChecked(0,'correct_feedback_all'); SetChecked(0,'wrong_feedback_all');">{CLEAR_STRING}</span></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="wrong_feedback_all" id="wrong_feedback_all" value="4" {4_ALL_WRONG_CHECKED}></td>
+                            <td class="small">{ALL_WRONG_STRING}</td>
+                        </tr>
+                    </table></td>
+            </tr>
+            <tr>
+                <td colspan="2" valign="top" >&nbsp;</td>
+            </tr>
+            <tr> 
+                
+                <td valign="top" class="InputFormLeft">{RESPONSE_STRING} 5:
+                {EDITOR_BUTTONS_response_5}
+                </td>
+                <td valign="top" class="InputFormRight">  
+                    
+                    <div align="center">
+                        
+                        <textarea accept-charset="{CHARACTER_SET}" name="response_5" cols="60" rows="1" wrap="VIRTUAL" id="response_5">{RESPONSE_5}</textarea><div id="reponse5Stretch" class="stretchDown" onClick="stretchTextArea('response_5','reponse5Stretch',10,1,'stretch')" style="float:right">&nbsp;</div>
+                    </div>
+                    <div class="small">
+                    <input name="response_5_correct" type="checkbox" id="response_5_correct" value="1" {5_CORRECT_CHECKED}>
+                            {CORRECT_STRING}
+                            
+                                <input name="response_score_5" type="text" id="response_score_5" value="{RESPONSE_SCORE_5}" size="3">
+                            {SCORE_STRING}  <span onClick="show_it('response5Feedback','response5FeedbackLink','disclosureDark')" id="response2FeedbackLink" class="disclosureDarkClosed">{FEEDBACK_OPTIONS_STRING}</span></div>
+                       </td>
+            </tr>
+            <tr style="display:none" id="response5Feedback">
+                <td valign="top" class="InputFormLeft">{FEEDBACK_STRING}:
+                {EDITOR_BUTTONS_feedback_5}
+                </td>
+                <td valign="top" class="InputFormRight"><div align="center">
+                        
+                        <textarea accept-charset="{CHARACTER_SET}" name="feedback_5" cols="60" rows="1" wrap="VIRTUAL" id="feedback_5">{FEEDBACK_5}</textarea><div id="feedback5Stretch" class="stretchDown" onClick="stretchTextArea('feedback_5','feedback5Stretch',10,1,'stretch')" style="float:right">&nbsp;</div>
+                    </div>
+                    <div align="center">
+                        
+                    </div>				
+<table  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td><input type="radio" name="correct_feedback_all" id="correct_feedback_all" value="5" {5_ALL_CORRECT_CHECKED}></td>
+                            <td class="small">{ALL_CORRECT_STRING} <span class="vlink" onClick="SetChecked(0,'correct_feedback_all'); SetChecked(0,'wrong_feedback_all');">{CLEAR_STRING}</span></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="wrong_feedback_all" id="wrong_feedback_all" value="5" {5_ALL_WRONG_CHECKED}></td>
+                            <td class="small">{ALL_WRONG_STRING}</td>
+                        </tr>
+                    </table></td>
+            </tr>
+            <tr>
+                <td colspan="2" valign="top" >&nbsp;</td>
+            </tr>
+            <tr> 
+                
+                <td valign="top" class="InputFormLeft">{RESPONSE_STRING} 6:
+                 {EDITOR_BUTTONS_response_6}
+                </td>
+                <td valign="top" class="InputFormRight">  
+                    
+                    <div align="center">
+                       
+                        <textarea accept-charset="{CHARACTER_SET}" name="response_6" cols="60" rows="1" wrap="VIRTUAL" id="response_6">{RESPONSE_6}</textarea><div id="reponse6Stretch" class="stretchDown" onClick="stretchTextArea('response_6','reponse6Stretch',10,1,'stretch')" style="float:right">&nbsp;</div>
+                    </div>
+                    <div class="small">
+                    <input name="response_6_correct" type="checkbox" id="response_6_correct" value="1" {6_CORRECT_CHECKED}>
+                            {CORRECT_STRING}
+                           
+                                <input name="response_score_6" type="text" id="response_score_6" value="{RESPONSE_SCORE_6}" size="3">{SCORE_STRING} <span onClick="show_it('response6Feedback','response6FeedbackLink','disclosureDark')" id="response6FeedbackLink" class="disclosureDarkClosed">{FEEDBACK_OPTIONS_STRING}</span>
+                         </div>       
+                                </td>
+            </tr>
+            <tr style="display:none" id="response6Feedback">
+                <td valign="top" class="InputFormLeft">{FEEDBACK_STRING}:
+                {EDITOR_BUTTONS_feedback_6}
+                </td>
+                <td valign="top" class="InputFormRight"><div align="center">
+                        
+                        <textarea accept-charset="{CHARACTER_SET}" name="feedback_6" cols="60" rows="1" wrap="VIRTUAL" id="feedback_6">{FEEDBACK_6}</textarea><div id="feedback6Stretch" class="stretchDown" onClick="stretchTextArea('feedback_6','feedback6Stretch',10,1,'stretch')" style="float:right">&nbsp;</div>
+                    </div>
+                    <div align="center">
+                        
+                    </div>				
+<table  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td><input type="radio" name="correct_feedback_all" id="correct_feedback_all" value="6" {6_ALL_CORRECT_CHECKED}></td>
+                            <td class="small">{ALL_CORRECT_STRING} <span class="vlink" onClick="SetChecked(0,'correct_feedback_all'); SetChecked(0,'wrong_feedback_all');">{CLEAR_STRING}</span></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="wrong_feedback_all" id="wrong_feedback_all" value="6" {6_ALL_WRONG_CHECKED}></td>
+                            <td class="small">{ALL_WRONG_STRING}</td>
+                        </tr>
+                    </table></td>
+            </tr>
+            <!-- END MultichoiceBlock -->
+            <tr> 
+                <td valign="top" >&nbsp;</td>
+                <td valign="top" >
+                <span class="small"><input name="add_to_current" type="checkbox" id="add_to_current" value="1" align="middle">{ADD_TO_CURRENT_STRING}</span><br /> 
+                    <input name="action" type="hidden" id="action" value="{ACTION}">
+                    <input name="type" type="hidden" id="type" value="{TYPE}">
+                    <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+                    <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+                    <input name="item_key" type="hidden" id="item_key" value="{ITEM_KEY}">
+                    <input name="category_key" type="hidden" id="category_key" value="{CATEGORY_KEY}">
+                    <input type="submit" name="submit" value="{BUTTON}" />
+          {DELETE_BUTTON} 
+                    <input type="button" name="submit3" value="Cancel" onClick="history.go(-1)" />
+        </td>
+            </tr>
+ 
+        </table> 	
+ </div>
+</form>

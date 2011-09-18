@@ -1,0 +1,46 @@
+ 
+<h2>{INPUT_HEADING}</h2>
+<div class="input_form_div" align="center">
+  <form name="folder" method="post" action="folder_input.php" >
+<!-- BEGIN ModuleInputBlock -->
+        <table class="input_form_table_wide">
+
+            <tr> 
+                <td valign="top" class="InputFormLeft">{NAME_STRING}:</td>
+                <td valign="top" class="InputFormRight"> <input type="text" name="name" value="{NAME}" size="35"> 
+                    <br>
+                    {NAME_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">{DESCRIPTION_STRING}:
+                {EDITOR_BUTTONS_description}</td>
+                <td valign="top" class="InputFormRight">
+                         
+                        <textarea accept-charset="{CHARACTER_SET}" name="description" id="description" cols="60" rows="10" wrap="VIRTUAL">{DESCRIPTION}</textarea>
+                         
+                    
+                    <div class="error">{DESCRIPTION_ERROR} </div></td>
+            </tr>
+            <tr>
+                <td valign="top" class="InputFormLeft">{SORT_ORDER_STRING}:</td>
+                <td valign="top" class="InputFormRight">{SORT_ORDER_MENU}</td>
+            </tr>
+            <tr>
+            	<td valign="top" class="InputFormLeft">Navigation mode: </td>
+            	<td valign="top" class="InputFormRight"><input name="navigation_mode" type="checkbox" id="navigation_mode" value="1" {NAVIGATION_MODE_CHECKED}></td>
+           	</tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">&nbsp;</td>
+                <td valign="top" class="InputFormRight"> <input type="submit" name="submit" value="{BUTTON}">
+                    {DELETE_BUTTON} 
+                    <input type="button" name="submit2" value="{CANCEL_STRING}" onClick="history.go(-1)"> 
+                </td>
+            </tr>
+
+        </table>
+<!-- END ModuleInputBlock -->		
+{GENERAL_SETTINGS}
+</form>
+    
+  {MOVE}
+</div>

@@ -1,0 +1,195 @@
+<div align="left" class="message">{MESSAGE}</div>
+<h1>Server Settings</h1>
+<div style="float:left; width:98%">
+<form name="form1" method="post" action="settings.php" class="wide">
+
+	<fieldset style="width:80%">
+		<legend>General</legend>
+		<label for="server_name">Server Name:</label>
+		<span class="formInput"><input name="server_name" type="text" value="{SERVER_NAME}" size="20" /></span><br />
+	</fieldset>
+	<fieldset style="width:80%">
+		<legend>Language</legend>
+		<label for="default_language">Default language:</label>
+		<span class="formInput">{LANGUAGE_MENU}</span>{EDIT_LANG}<br />
+	</fieldset>
+	<fieldset style="width:80%">
+		<legend>Email</legend>
+		<label for="email_type">Email send method:</label>
+		<span class="formInput">{EMAIL_TYPE_MENU}</span><br class="clearBoth" />
+		
+		<fieldset >
+			<legend>Sendmail settings</legend>
+			<label for="sendmail_path">Path:</label>
+			<span class="formInput"><input name="sendmail_path" type="text" value="{SENDMAIL_PATH}" size="20">
+			</span><br class="clearboth" />	
+			<label for="sendmail_arguments">Arguments:</label>
+			<span class="formInput"><input name="sendmail_args" type="text" id="sendmail_args" value="{SENDMAIL_ARGS}" size="20">
+			</span><br class="clearBoth" />				
+		</fieldset>	
+		<fieldset >
+			<legend>Smtp settings</legend>
+			<label for="email_host">Server address:</label>
+			<span class="formInput"><input name="email_host" type="text" value="{EMAIL_HOST}" size="20">
+			</span><br />	
+			<label for="email_port">Server port:</label>
+			<span class="formInput"><input name="email_port" type="text" value="{EMAIL_PORT}" size="20">
+			</span><br />	
+			<label for="email_auth">Authentication required:</label>
+			<span class="formInput">{SMTP_AUTH_MENU}
+			</span><br />	
+			<label for="email_username">Smtp username:</label>
+			<span class="formInput"><input name="email_username" type="text" value="{EMAIL_USERNAME}" size="20">
+			</span><br />	
+			<label for="email_password">Smtp password:</label>
+			<span class="formInput"><input name="email_password" type="text" value="{EMAIL_PASSWORD}" size="20">
+			</span><br />													
+		</fieldset>			
+
+		<fieldset >
+			<legend>Default addresses</legend>
+			<label for="no_reply_email">No reply:</label>
+			<span class="formInput"><input name="no_reply_email" type="text" value="{NO_REPLY_EMAIL}" size="20">
+			</span><br />	
+			<label for="error_email">Errors:</label>
+			<span class="formInput"><input name="error_email" type="text" value="{ERROR_EMAIL}" size="20">
+			</span><br />	
+		</fieldset>			
+	</fieldset>	
+	<fieldset style="width:80%">
+		<legend>Security</legend>
+		<label for="secure_server">Require login:</label>
+		<span class="formInput">{SECURE_SERVER_MENU}
+		</span><br />
+		<label for="secure_server">Authentication method:</label>
+		<span class="formInput">{AUTH_MENU}
+		</span><br />	
+		<label for="secure_account_creation">Secure account creation:</label>
+		<span class="formInput">{SECURE_ACCOUNTS_MENU}
+		</span><br />
+		<label for="account_creation_password">Account Creation Password:</label>
+		<span class="formInput"><input name="account_creation_password" type="text" value="{ACCOUNT_CREATION_PASSWORD}" size="20">
+		</span><br />
+		<label for="secret_hash">Secret String:</label>
+		<span class="formInput"><input name="secret_hash" type="text" value="{SECRET_HASH}" size="20">
+		</span><br />			
+	</fieldset>			
+	<fieldset style="width:80%">
+		<legend>Dates</legend>
+		<label for="long_date_format">Long date format:</label>
+		<span class="formInput">{LONG_DATE_MENU}
+		</span><br />	
+		<label for="short_date_format">Short date format:</label>
+		<span class="formInput">{SHORT_DATE_MENU}
+		</span><br />
+	</fieldset>	<a name="skin"></a>
+	<fieldset style="width:80%">
+		<legend>Skins</legend>
+		
+		<label for="default_skin">Default skin:</label>
+		<span class="formInput">{SKINS_MENU}{ADD_LINK}
+		</span><br />	
+		<label for="admin_set_skin">Allow {SPACE_TEXT} admins to set:</label>
+		<span class="formInput">{ADMIN_SET_SKIN_MENU}
+		</span><br />
+		<label for="user_set_skin">Allow users to set:</label>
+		<span class="formInput">{USER_SET_SKIN_MENU}
+		</span><br />					
+	</fieldset>	
+	<fieldset style="width:80%">
+		<legend>Users </legend>
+		<label for="keep_stale_accounts">Days to keep stale accounts:</label>
+		<span class="formInput"><input name="keep_stale_accounts" type="text" value="{KEEP_STALE_ACCOUNTS}" size="20">
+		</span><br />	
+		<label for="show_emails">Show email addresses:</label>
+		<span class="formInput">{SHOW_EMAILS_MENU}
+		</span><br />
+		<label for="devolve_account_creation">Allow admins to create accounts:</label>
+		<span class="formInput">{DEVOLVE_ACCOUNTS_MENU}
+		</span><br />	
+		<label for="self_delete">Allow users to delete own account:</label>
+		<span class="formInput">{SELF_DELETE_MENU}
+		</span><br />				
+		<label for="single_accounts">Only one account per email address:</label>
+		<span class="formInput">{SINGLE_ACCOUNT_MENU}
+		</span><br />
+		<label for="usergroup_self_select">Allow users to select own usergroups:</label>
+		<span class="formInput">{USERGROUP_SELECT_MENU}
+		</span>
+		<br />
+		<label for="edit_name">Disable name editing:</label>
+		<span class="formInput">{EDIT_NAME_MENU}
+		</span>
+		<br />		
+				<label for="create_user_spaces">Create space for each user:</label>
+		<span class="formInput">{USER_SPACES_MENU}
+		</span>
+		<input name="myspace_existing_users" type="checkbox" id="myspace_existing_users" value="1">
+		Add spaces for any existing users <br />										
+	</fieldset>			
+	<fieldset style="width:80%">
+		<legend>Misc</legend>
+		<label for="keep_trash">Number of days to keep trash:</label>
+		<span class="formInput"><input name="keep_trash" type="text" value="{KEEP_TRASH}" size="20">
+		</span><br />	
+		<label for="max_file_upload_size">Maximum file upload size(MB):</label>
+		<span class="formInput"><input name="max_file_upload_size" type="text" value="{MAX_FILE_UPLOAD_SIZE}" size="20">
+		</span><br />
+		<label for="allow_tags">Allow user tags:</label>
+		<span class="formInput">{ALLOW_TAGS_MENU}
+		</span><br />		
+		<label for="global_gradebook">Allow global gradebook:</label>
+		<span class="formInput">{GLOBAL_GRADEBOOK_MENU}
+		</span><br />				
+		<label for="display_latest">Always display latest items:</label>
+		<span class="formInput">{DISPLAY_LATEST_MENU}
+		</span><br />
+		<label for="admins_add_spaces">Allow admins to add new spaces:</label>
+		<span class="formInput">{ADMINS_ADD_SPACES_MENU}
+		</span><br />	
+		<label for="enable_portfolios">Enable portfolios:</label>
+		<span class="formInput">{ENABLE_PORTFOLIOS_MENU}
+		</span><br />
+		<label for="default_space">Default space:</label>
+		<span class="formInput">{DEFAULT_SPACE_MENU}
+		</span>
+		<br class="clearBoth" />
+		<label for="options_1">{SERVER_ADMIN} version-check</label>
+			<input id="options_1" name="options[]" type="checkbox" value="1" {OPTIONS_1}>
+		<br class="clearBoth" />
+		<fieldset>
+			<legend>Short urls</legend>
+			<label for="short_url_4">404 redirect to direct.php</label>
+			<input id="short_url_4" name="short_urls[]" type="checkbox" value="4" {SHORT_URL_4}>
+			<br class="clearBoth" />
+			<label for="short_url_2">AcceptPathInfo (i.e. direct.php/...)</label>
+			<input id="short_url_2" name="short_urls[]" type="checkbox" value="2" {SHORT_URL_2}>
+			<br class="clearBoth" />
+			<label for="short_url_1">ForceType (i.e. direct?m=...)</label>
+			<input id="short_url_1" name="short_urls[]" type="checkbox" value="1" {SHORT_URL_1}>
+			<br class="clearBoth" />
+			{SHORT_URL_AUTO_DETECT}
+		</fieldset> 
+	</fieldset> 
+	<fieldset style="width:80%">
+		<legend>Proxy settings</legend>
+		Only needed if your server does not have direct internet access for retrieving rss feeds, etc.<br />
+		<label for="email_host">Server address:</label>
+		<span class="formInput"><input name="proxy_server" type="text" value="{PROXY_SERVER}" size="20">
+		</span><br />	
+		<label for="proxy_port">Server port:</label>
+		<span class="formInput"><input name="proxy_port" type="text" value="{PROXY_PORT}" size="20">
+		</span><br />	
+		<label for="proxy_username">Proxy username:</label>
+		<span class="formInput"><input name="proxy_username" type="text" value="{PROXY_USERNAME}" size="20">
+		</span><br />	
+		<label for="proxy_password">Proxy password:</label>
+		<span class="formInput"><input name="proxy_password" type="text" value="{PROXY_PASSWORD}" size="20">
+		</span><br />													
+	</fieldset>			
+
+    <p>
+      <input name="submit" type="submit" id="submit" value="Modify">
+    </p>
+</form>
+</div>

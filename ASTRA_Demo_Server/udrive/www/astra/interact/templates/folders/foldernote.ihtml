@@ -1,0 +1,19 @@
+ <table cellspacing="0" cellpadding="5">
+
+  <tr valign="top">
+
+    <td>{ADMIN_INFO}</td>
+{IMAGE}
+  <td>  
+  <!-- BEGIN NoteHeadingBlock -->
+  <b>{NAME}</b><br>
+  <!-- END NoteHeadingBlock -->
+  
+  {NOTE}</td>
+
+     
+
+ </tr>
+
+</table>
+

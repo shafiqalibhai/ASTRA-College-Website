@@ -1,0 +1,5 @@
+
+<h2 >{HEADING}</h2><div align="left" class="message">{MESSAGE}</div>
+<table cellpadding=2 cellspacing=0 style="border:1px solid #CCC">
+{LANG_LIST}
+</table>

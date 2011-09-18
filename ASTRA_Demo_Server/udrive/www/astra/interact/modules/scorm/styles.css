@@ -1,0 +1,67 @@
+.top {
+  vertical-align: top;
+}
+.center {
+  text-align: center;
+}
+.fullscreen {
+  width: 100%;
+}
+.structlist  {
+  list-style-type: none;
+
+  font-size: x-small;
+}
+.orgtitle {
+  font-weight: bold;
+  font-size: small;
+}
+
+.popupbutton {
+  float: right;
+}
+
+#SPECIAL_navList {margin:0px;padding-top: 0.4em;padding-left:7px;
+border:1px solid;
+border-color: #BA9 #765 #654 #A98;
+background-color:#F1EFED;
+margin-bottom:12px;
+padding-bottom:1px;
+}
+
+#SPECIAL_navList a {border:0px;text-decoration: none;
+}
+#SPECIAL_navList a:hover {text-decoration: underline;
+}
+
+#SPECIAL_navList img {border:0px;
+}
+
+.expcoll {cursor:crosshair;}
+
+#SPECIAL_navList ul {margin:0px;margin-left:6px;
+  	list-style-type: none;
+  		padding:0px;
+  text-indent:0px;
+
+}
+#SPECIAL_navList li {margin:0px;text-indent:-12px;font-size:x-small;}
+
+
+#navigation #SPECIAL_navList {
+}
+
+td #SPECIAL_navList li {font-size:small;}
+
+.smallbutton {
+	margin-top:0px;
+	margin-bottom:1px;
+	font-size: x-small;
+	background-color:#E7E5E0;
+	border: 1px solid #003296;
+}
+
+
+iframe {border:0px none ;margin:1px;}
+.scormiframe {border:none;margin:1px;}
+

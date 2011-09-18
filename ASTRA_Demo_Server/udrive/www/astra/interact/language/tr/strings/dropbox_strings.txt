@@ -1,0 +1,21 @@
+upload_success=Dosyanýz yüklendi.
+upload_fail=Problem var.Detaylar için aþaðýya bakýnýz..
+mark_file=Ýþaretle
+no_comments=Yorum Yok.
+closed=Atýþ Kutusu kapalý. Dersi veren kiþi ile görüþünüz.
+no_files_selected=Silmek için herhangi bir dosya seçmediniz.
+files_heading=Dosyalar þu an %s içinde
+delete_button=Seçili dosyalarý sil.
+add_dropbox=Atýþ Kutusu Ekle/Deðiþtir 
+uploaded_by=Yükleyen
+mark_heading=Dosya Ýþaretle
+new_file=Yeni dosya onayla
+annotated_tag=açýklayýcý
+ammended=açýklayýcý dosya yükle
+brief_description=Tanýmlama
+description_example= 
+file_type_text=Eðer dosya tipi olarak 'Diðer' seçtiyseniz , lütfen bu dosya formatýnýn açýlýp açýlmayacaðýný dersi veren kiþi ile görüþün.
+declaration_text=<p class="small">Bu deðerlendirme için tüm materyallerin benim tarafýmdan onaylandýðýný bildiriyorum, Baþka kaynak göstermediysem bu benim orjinal çalýþmamdýr. </p>
+summary_link=Atýþ Kutusu elemanlarý ile ilgili özetleri Excel tablosunda göster.
+email_subject=Atýþ Kutusu dosyasý yüklendi.
+email_body=Atýþ Kutusu elemaný yüklendi. Bu E-postayý kayýt olarak saklayýn.\n\n Dosyanýn yüklendiði yer 

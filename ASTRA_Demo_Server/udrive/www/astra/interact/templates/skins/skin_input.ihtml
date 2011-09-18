@@ -1,0 +1,170 @@
+<h1>{INPUT_HEADING}</h1>
+
+<div style="width:80%" class="inputFormDiv">
+<form name="form1" method="post" action="skin_input.php">
+	<fieldset >
+		<div class="formRow">
+		<label for="name" class="formLabel">{NAME}:</label>
+		<span class="formData"><input name="name" type="text" value="{NAME_VALUE}" size="20" maxlength="20" id="name">{NAME_ERROR}
+		</span>
+		</div>
+		<div class="formRow">
+		<label for="template" class="formLabel">{TEMPLATE}:</label>
+		<span class="formData">{TEMPLATES_MENU}<br />
+		<!-- BEGIN ScopeBlock -->
+		<input name="scope_key" type="checkbox" value="1"{MAKE_AVAILABLE_CHECKED}> {MAKE_AVAILABLE}
+		<!-- END ScopeBlock -->
+		</span>
+		<br style="clear:both" />
+		</div>
+	</fieldset>
+		<fieldset >
+		<legend>{GENERAL}</legend>
+		
+		<div class="formRow">
+		<label for="colour1" class="formLabel">{COLOUR}1:</label>
+		<span class="formData"><input name="colour1" type="text" id="colour1" value="{COLOUR1_VALUE}" size="11" maxlength="11" onChange=refreshStyleSheet() onDblClick=openColorPickerAdv('colour1')> <a href="javascript:openColorPickerAdv('colour1');" name="openLink"><img src="{PATH}/includes/editor/images/ed_color_bg.png" width="18" height="18" border="0"></a></span></div>
+
+		<div class="formRow">
+		<label for="colour2" class="formLabel">{COLOUR}2:</label>
+		<span class="formData"><input name="colour2" type="text" id="colour2" value="{COLOUR2_VALUE}" size="11" maxlength="11" onChange=refreshStyleSheet() onDblClick=openColorPickerAdv('colour2')> <a href="javascript:openColorPickerAdv('colour2');" name="openLink"><img src="{PATH}/includes/editor/images/ed_color_bg.png" width="18" height="18" border="0"></a></span></div>
+
+		<div class="formRow">
+		<label for="text_colour" class="formLabel">{TEXT_COLOUR}:</label>
+		<span class="formData"><input name="text_colour" type="text" id="text_colour" value="{TEXT_COLOUR_VALUE}" size="11" maxlength="11" onChange=skinChangeStyle('pageBody','text_colour','color') onDblClick=openColorPickerAdv('text_colour')> <a href="javascript:openColorPickerAdv('text_colour');" name="openLink"><img src="{PATH}/includes/editor/images/ed_color_fg.png" width="18" height="18" border="0"></a></span></div>
+
+		<div class="formRow">
+		<label for="body_background" class="formLabel">{BACKGROUND}:</label>
+		<span class="formData"><input name="body_background" type="text" id="body_background" value="{BODY_BACKGROUND_VALUE}" size="11" maxlength="11" onFocus=skinChangeStyle('pageBody','body_background','backgroundColor') onChange=skinChangeStyle('pageBody','body_background','backgroundColor') onDblClick=openColorPickerAdv('body_background')> <a href="javascript:openColorPickerAdv('body_background');" name="openLink"><img src="{PATH}/includes/editor/images/ed_color_bg.png" width="18" height="18" border="0"></a></span></div>
+
+		<div class="formRow">
+		<label for="body_border" class="formLabel">{BORDER}:</label>
+		<span class="formData"><input name="body_border" type="text" id="body_border" value="{BODY_BORDER_COLOUR_VALUE}" size="11" maxlength="11" onFocus=skinChangeStyle('pageBody','body_border','borderColor') onChange=skinChangeStyle('pageBody','body_border','borderColor')>
+		<a href="javascript:openColorPickerAdv('body_border');" name="openLink"><img src="{PATH}/includes/editor/images/ed_color_bo.png" width="18" height="18" border="0"></a></span></div>
+		<div class="formRow">
+		<label for="body_font" class="formLabel">{FONT}:</label>
+		<span class="formData">{FONT_MENU}</span></div>
+		
+		<br style="clear:both" />
+	</fieldset>
+	
+	<fieldset >
+		<legend>{OUTER_BOX}</legend>
+		<div class="formRow">
+		<label for="outer_box_background" class="formLabel">{BACKGROUND}:</label>
+		<span class="formData"><input name="outer_box_background" type="text" id="outer_box_background" value="{OUTER_BOX_BACKGROUND_VALUE}" size="11" maxlength="11" onFocus=skinChangeStyle('outerBox','outer_box_background','backgroundColor') onChange=skinChangeStyle('outerBox','outer_box_background','backgroundColor')>
+		<a href="javascript:openColorPickerAdv('outer_box_background');" name="openLink"><img src="{PATH}/includes/editor/images/ed_color_bg.png" width="18" height="18" border="0"></a></span></div>
+		<div class="formRow">
+		<label for="outer_box_border" class="formLabel">{BORDER}:</label>
+		<span class="formData"><input name="outer_box_border" type="text" id="outer_box_border" value="{OUTER_BOX_BORDER_COLOUR_VALUE}" size="11" maxlength="11" onFocus=skinChangeStyle('outerBox','outer_box_border','borderColor') onChange=skinChangeStyle('outerBox','outer_box_border','borderColor')>
+		<a href="javascript:openColorPickerAdv('outer_box_border');" name="openLink"><img src="{PATH}/includes/editor/images/ed_color_bo.png" width="18" height="18" border="0"></a></span></div>
+		<br style="clear:both" />
+		
+	</fieldset>	
+	
+	<fieldset >
+		<legend>{HEADER}</legend>
+		<div class="formRow">
+		<label for="header_background" class="formLabel">{BACKGROUND}:</label>
+		<span class="formData"><input name="header_background" type="text" id="header_background" value="{HEADER_BACKGROUND_VALUE}" size="11" maxlength="11" onFocus=skinChangeStyle('header','header_background','backgroundColor') onChange=skinChangeStyle('header','header_background','backgroundColor')>
+		<a href="javascript:openColorPickerAdv('header_background');" name="openLink"><img src="{PATH}/includes/editor/images/ed_color_bg.png" width="18" height="18" border="0"></a></span></div>
+		
+		<div class="formRow">
+		<label for="header_border" class="formLabel">{BORDER}:</label>
+		<span class="formData"><input name="header_border" type="text" id="header_border" value="{HEADER_BORDER_COLOUR_VALUE}" size="11" maxlength="11" onFocus=skinChangeStyle('header','header_border','borderColor') onChange=skinChangeStyle('header','header_border','borderColor')>
+		<a href="javascript:openColorPickerAdv('header_border');" name="openLink"><img src="{PATH}/includes/editor/images/ed_color_bo.png" width="18" height="18" border="0"></a></span></div>
+		
+		<div class="formRow">
+		<label for="server_name_colour" class="formLabel">{SERVER_NAME_COLOUR}:</label>
+		<span class="formData"><input name="server_name_colour" type="text" id="server_name_colour" value="{SERVER_NAME_COLOUR_VALUE}" size="11" maxlength="11" onFocus=skinChangeStyle('serverNameLink','server_name_colour','color') onChange=skinChangeStyle('serverNameLink','server_name_colour','color')>
+		<a href="javascript:openColorPickerAdv('server_name_colour');" name="openLink"><img src="{PATH}/includes/editor/images/ed_color_fg.png" width="18" height="18" border="0"></a> <input type="button" value="None" onclick="document.getElementById('server_name_colour').value='none';skinChangeStyle('serverNameLink','server_name_colour','color');"></span></div>	
+		
+		<div class="formRow">
+		<label for="header_logo" class="formLabel">{LOGO}:</label>
+		<span class="formData"><input name="header_logo" type="text" value="{HEADER_LOGO_VALUE}" size="16" id="header_logo" onFocus=skinChangeStyle('logo','header_logo','backgroundImage') onChange=skinChangeStyle('logo','header_logo','backgroundImage')><input type="button" value="Browse&hellip;" onclick="insert_image();"> <input type="button" value="None" onclick="document.getElementById('header_logo').value='none';skinChangeStyle('logo','header_logo','backgroundImage');">
+		</span></div>
+				
+		<div class="formRow">
+		<label for="header_logo_width" class="formLabel">&nbsp;</label>
+		<span class="formData" style="font-size:90%;margin-bottom:.5em"> &nbsp; &nbsp;
+		<input name="header_logo_width" type="text" size="5" value="{HEADER_LOGO_WIDTH_VALUE}" id="header_logo_width" /> x 
+		<input name="header_logo_height" type="text" size="5"  value="{HEADER_LOGO_HEIGHT_VALUE}" id="header_logo_height" />
+		</span></div>
+
+		<div class="formRow">
+		<label for="header_height" class="formLabel">{HEIGHT}:</label>
+		<span class="formData"><input name="header_height" type="text" value="{HEADER_HEIGHT_VALUE}" id="header_height" size="6" onChange=skinChangeStyle('header','header_height','height') /></span></div>
+
+
+		
+		<br style="clear:both" />
+
+	</fieldset>
+	
+	<fieldset >
+		<legend>{INNER_BOX}</legend>
+		<div class="formRow">
+		<label for="inner_box_background" class="formLabel">{BACKGROUND}:</label>
+		<span class="formData"><input name="inner_box_background" type="text" id="inner_box_background" value="{INNER_BOX_BACKGROUND_VALUE}" size="11" maxlength="11" onFocus=skinChangeStyle('innerBox','inner_box_background','backgroundColor') onChange=skinChangeStyle('innerBox','inner_box_background','backgroundColor')>
+		<a href="javascript:openColorPickerAdv('inner_box_background');" name="openLink"><img src="{PATH}/includes/editor/images/ed_color_bg.png" width="18" height="18" border="0"></a></span></div>
+		<div class="formRow">
+		<label for="inner_box_border" class="formLabel">{BORDER}:</label>
+		<span class="formData"><input name="inner_box_border" type="text" id="inner_box_border" value="{INNER_BOX_BORDER_COLOUR_VALUE}" size="11" maxlength="11" onFocus=skinChangeStyle('innerBox','inner_box_border','borderColor') onChange=skinChangeStyle('innerBox','inner_box_border','borderColor')>
+		<a href="javascript:openColorPickerAdv('inner_box_border');" name="openLink"><img src="{PATH}/includes/editor/images/ed_color_bo.png" width="18" height="18" border="0"></a></span></div>
+		<br style="clear:both" />
+		
+	</fieldset>		
+		<fieldset >
+		<legend>{NAVIGATION}</legend>
+		<div class="formRow">
+		<label for="navigation_background" class="formLabel">{BACKGROUND}:</label>
+		<span class="formData"><input name="nav_background" type="text" id="nav_background" value="{NAV_BACKGROUND_VALUE}" size="11" maxlength="11" onFocus=skinChangeStyle('navigationBox','nav_background','backgroundColor') onChange=skinChangeStyle('navigationBox','nav_background','backgroundColor')>
+		<a href="javascript:openColorPickerAdv('nav_background');" name="openLink"><img src="{PATH}/includes/editor/images/ed_color_bg.png" width="18" height="18" border="0"></a></span></div>
+		<div class="formRow">
+		<label for="navigation_border" class="formLabel">{BORDER}:</label>
+		<span class="formData"><input name="nav_border" type="text" id="nav_border" value="{NAV_BORDER_COLOUR_VALUE}" size="11" maxlength="11" onChange=skinChangeStyle('navigationBox','nav_border','borderColor') onFocus=skinChangeStyle('navigationBox','nav_border','borderColor')>
+		<a href="javascript:openColorPickerAdv('nav_border');" name="openLink"><img src="{PATH}/includes/editor/images/ed_color_bo.png" width="18" height="18" border="0"></a></span></div>
+		<br style="clear:both" />
+		
+	</fieldset>	
+	<fieldset >
+		<legend>{MAIN_CONTENT}</legend>
+		<div class="formRow">
+		<label for="content_background" class="formLabel">{BACKGROUND}:</label>
+		<span class="formData"><input name="content_background" type="text" id="content_background" value="{CONTENT_BACKGROUND_VALUE}" size="11" maxlength="11" onFocus=skinChangeStyle('contentBox','content_background','backgroundColor') onChange=skinChangeStyle('contentBox','content_background','backgroundColor')>
+		<a href="javascript:openColorPickerAdv('content_background');" name="openLink"><img src="{PATH}/includes/editor/images/ed_color_bg.png" width="18" height="18" border="0"></a></span></div>
+		<div class="formRow">
+		<label for="main_border" class="formLabel">{BORDER}:</label>
+		<span class="formData"><input name="content_border" type="text" id="content_border" value="{CONTENT_BORDER_COLOUR_VALUE}" size="11" maxlength="11" onFocus=skinChangeStyle('contentBox','content_border','borderColor') onChange=skinChangeStyle('contentBox','content_border','borderColor')>
+		<a href="javascript:openColorPickerAdv('content_border');" name="openLink"><img src="{PATH}/includes/editor/images/ed_color_bo.png" width="18" height="18" border="0"></a></span></div>
+		<br style="clear:both" />
+		
+	</fieldset>	
+	<fieldset >
+		<legend>{CSS_STRING}</legend>
+	<div class="formRow">
+		<label class="formLabel"><br />{CSS_WARNING}:</label>
+	  <span class="formData">
+	  <input type="button" value="{INLINE_PERSONAL_BOX}" onclick="dumpCSS('inline_personal_box')">
+	  <input type="button" value="{NAV_BUTTONS}" onclick="dumpCSS('nav_buttons')">
+
+	  	<br />
+		<textarea wrap="off" accept-charset="{CHARACTER_SET}" name="raw_css" cols="50" rows="12" id="raw_css">{RAW_CSS_VALUE}</textarea>
+	  </span></div>
+		<div class="formRow">
+		<label for="main_border" class="formLabel"></label>
+		</div>
+		<br style="clear:both" />
+		
+	</fieldset>	
+	<input type="submit" name="submit" value="{SUBMIT_BUTTON}">
+	<!-- BEGIN DeleteBlock -->
+	<input type="submit" name="submit" value="{DELETE}">
+	<!-- END DeleteBlock -->
+    <input name="action" type="hidden" id="action" value="{ACTION}">
+	<input name="skin_key" type="hidden" id="skin_key" value="{SKIN_KEY_VALUE}">
+	<input name="referer" type="hidden" id="referer" value="{REFERER}">
+	<input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+</form>
+
+</div>

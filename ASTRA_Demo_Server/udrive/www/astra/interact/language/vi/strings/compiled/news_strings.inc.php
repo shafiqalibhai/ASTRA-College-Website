@@ -1,0 +1,3 @@
+<?php   //Do NOT modify this file - it is auto-generated
+
+$news_strings=array('not_allowed'=>'You are not allowed to add news to this space','add_success'=>'Your news item has been added','delete_success'=>'Your news item has been deleted','modify_success'=>'Your news item has been modified','news_heading'=>'Add/Modify a News item','heading'=>'Heading','body'=>'Body','no_body'=>'You did not enter any news','no_heading'=>'You did not enter a heading');?>

@@ -1,0 +1,4 @@
+add_page=Agregar/Modificar una Página en
+upload=Cargar una página
+html_instruction=Debe ser código HTML
+enter_page=O ingresa a página

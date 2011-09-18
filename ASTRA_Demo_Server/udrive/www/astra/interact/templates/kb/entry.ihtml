@@ -1,0 +1,24 @@
+<div style="margin-top:10px;margin-bottom:10px;">
+	{KB_TRAIL}
+</div>
+
+
+<div class="kbEntry">
+	<!-- BEGIN FieldBlock -->
+	<strong>{LABEL}</strong>
+	<p>{DATA}</p>
+
+	<!-- END FieldBlock -->
+	<div class="small">
+	{ADDED_BY_STRING}: {ADDED_BY} {DATE_ADDED}
+	{MODIFIED_BY_STRING}: {MODIFIED_BY} {DATE_MODIFIED}
+	</div>
+	<!-- BEGIN EditLinkBlock -->
+	
+  <div align="right"><a href="entryinput.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&entry_key={ENTRY_KEY}&template_key={TEMPLATE_KEY}&action=modify">{EDIT_STRING}</a></div>
+	<!-- END EditLinkBlock -->
+</div>
+<!-- BEGIN AddCommentBlock -->
+<a href="../forum/postinput.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&entry_key={ENTRY_KEY}&referer=kb/entry.php">{ADD_COMMENT_STRING}</a>
+<!-- END AddCommentBlock -->
+<a name="comments"></a><h3>{COMMENTS_STRING}</h3>

@@ -1,0 +1,38 @@
+ 
+<tr valign="top">
+	<td width="16">
+		{ADMIN_IMAGE}
+	</td>
+	<td colspan="2">
+		<table border="0" width="100%">
+			<tr>
+				<td width="66" rowspan="2">
+					<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="66" height="33" id="av" align="middle">
+						<param name="allowScriptAccess" value="sameDomain" />
+						<param name="movie" value="{PATH}/includes/players/AVPLAYER.swf" />
+						<param name="FlashVars" value="sndname={URL}" />
+						<param name="quality" value="high" />
+						<embed src="{PATH}/includes/players/AVPLAYER.swf" flashvars="sndname={URL}" quality="high" width="66" height="33" name="av" align="middle" allowscriptaccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+					</object>
+				</td>
+				<td colspan="2">
+					{NAME} - {DESCRIPTION}
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class="small">
+						{ADDED_BY_STRING} {USER_NAME} {DATE_ADDED} 
+						<span style="text-decoration:none">
+							{SHOW_URL}</span>
+					</span>
+				</td>
+				<td align="right">
+					<span class="small">
+						{COMMENTS}<a href="commentinput.php?space_key={SPACE_KEY}&amp;module_key={MODULE_KEY}&amp;shareditem_key={SHAREDITEM_KEY}" class="small">{ADD_COMMENT_STRING}</a>
+					</span>
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>

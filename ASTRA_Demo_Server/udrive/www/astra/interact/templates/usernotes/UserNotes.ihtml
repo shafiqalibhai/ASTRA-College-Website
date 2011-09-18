@@ -1,0 +1,37 @@
+<table border="0"  width="{WIDTH}" cellpadding="8">
+    <tr valign="top"> 
+        <td width="120"  valign="top" class="navigationbar" > 
+      	<form action="{PATH}/search.php" method="post">
+                <div align="center" class="small">
+                    <table cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td>
+<a href="Javascript:document.forms[0].submit();">
+<img src="{PATH}/images/search.gif" alt="Search" height="16" width="16" border="0"></a></td>
+                            <td><input name="search_terms" type="text" value="{SEARCH_STRING}" size="{SEARCH_WIDTH}" class="small">
+</td>
+                        </tr>
+                    </table>
+                    <input name="rule" type="hidden" value="all">
+      <span class="small">{LOGIN_DETAILS}</span></div>
+            </form>
+            <b>{YOUR_LINKS_STRING}</b><span class="smallred">{EDIT_SWITCH}</span><br />
+      {SPACES} 
+          
+      </td>
+        <td>{NETSCAPE_SPACER}
+            <h1>{USERNOTES_HEADING}</h1>
+            <div align="center">
+            <table width="90%" border="0" cellspacing="0" cellpadding="5">
+                <tr>
+                    <td><strong>{ADDED_BY_YOU_STRING}</strong></td>
+                    <td><strong>{ADDED_FOR_YOU_STRING}</strong></td>
+                </tr>
+                <tr>
+                    <td valign="top">{BY_YOU_NOTES}</td>
+                    <td valign="top">{FOR_YOU_NOTES}</td>
+                </tr>
+            </table>
+          </div>
+</table>
+

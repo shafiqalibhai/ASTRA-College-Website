@@ -1,0 +1,12 @@
+ 
+<table cellspacing="0" cellpadding="5">
+  <tr valign="top">
+    <td>{ADMIN_INFO}</td>
+{IMAGE}
+{LINK} {DESCRIPTION}{NOTE}<br>
+<span class="smallgrey">{ADDRESS}</span>
+
+</td>
+     
+ </tr>
+</table>

@@ -1,0 +1,9 @@
+add_page=Add/Modify a Page in
+upload=Upload a Page
+html_instruction=Must be HTML
+enter_page=Or enter Page
+page_history=Page history
+old_version_warning=You are viewing an old version of this page. If you save any changes to this page you will overwrite the %s
+current_version=current version
+diff_heading=Compare page versions
+compare_versions=Compare selected versions

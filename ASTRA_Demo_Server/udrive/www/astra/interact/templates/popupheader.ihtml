@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>{SERVER_NAME} - {PAGE_TITLE}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset={CHARACTER_SET}" />
+		<link rel="stylesheet" href="{PATH}/skins/skin.php?skin_key={SKIN_KEY}" type="text/css" title="Standard"/>
+			<link rel="stylesheet" type="text/css" media="print" href="{PATH}/skins/print.php?skin_key={SKIN_KEY}" title="print" />
+		
+		<script type="text/javascript" language="javascript"  src="{PATH}/includes/mainjavascript.js">
+		</script> 
+		{EDITOR_JAVASCRIPT}
+		{META_TAGS}
+		{MODULE_STYLES}
+	</head>
+	<body bgcolor="#FFFFFF" text="#000000"  {SCRIPT} id="pageBody" style="padding:10px">
+    <div align="center"><a href="javascript:close()">Close Window</a></div>

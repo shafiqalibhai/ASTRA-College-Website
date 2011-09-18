@@ -1,0 +1,29 @@
+<html><head><title>Color Picker Test</title>
+<script language="javascript">
+<!--
+
+function colorPicker_callBack(strColor) {
+	document.bgColor = strColor;
+}
+
+function openColorPickerAdv() {
+	document.getElementById('colorPickerAdvDiv').style.visibility = 'visible';
+}
+
+function closeColorPickerAdv() {
+	document.getElementById('colorPickerAdvDiv').style.visibility = 'hidden';
+}
+
+
+//-->
+</script>
+</head>
+<body>
+<a href="javascript:openColorPickerAdv();" name="openLink" id="openLink"><b>Open Advanced Color Picker</b></a>
+<br>
+<DIV ID="colorPickerAdvDiv" STYLE="visibility:hidden;padding:0;position:absolute;z-index:1">
+	<IFRAME ID="colorPickerAdv"  WIDTH="350" SRC="./colorPickerAdv.html" HEIGHT="142" STYLE="border-style:outset;border-width:2px;"
+		marginwidth=0 marginheight=0 noresize frameborder=0 border=0></IFRAME>
+</DIV>
+
+</body></html>

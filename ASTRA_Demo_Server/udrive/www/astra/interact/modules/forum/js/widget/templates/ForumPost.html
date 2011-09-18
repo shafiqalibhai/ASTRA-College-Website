@@ -1,0 +1,14 @@
+<div class="forumPostBody" id="postBody${post_key}" style="padding:5px 5px 5px 16px">
+<div  style="float:left;" id="authordetails2${post_key}">${photo_tag}</div>
+${post_body}
+<div class="forumReplylinks" id="replylinks${post_key}" style="clear:left"></div>
+<a dojoType="tooltip" connectId="authordetails2${post_key}" href="../../users/userdetails.php?user_key=1&pop_up=1" toggle="explode"></a>
+
+
+
+<span onClick="getQuickReply('${post_key}','quickReplylink${post_key}')" id="quickReplylink{$post_key}" class="disclosureClosed">Reply</span>	
+	<div id="quickReply{$post_key}" style="display:none;"></div>
+	
+	</div>
+
+

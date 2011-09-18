@@ -1,0 +1,33 @@
+
+<h2>{HEADING_STRING}</h2>
+<p>{INSTRUCTION_STRING}</p>
+<p>{INSTRUCTION_STRING2}</p>
+<ul>
+    {SITE_ADMINS}
+</ul>
+<!-- BEGIN AccessCodeBlock -->
+<form name="access" method="post" action="access.php">
+  <div align="center">
+  <table class="input_form_table">
+    <tr> 
+                <td class="InputFormLeft">{ACCESS_CODE_STRING}:</td>
+        <td class="InputFormRight"> 
+          <div align="center">
+            <input type="text" name="access_code" size="10" value="{ACCESS_CODE}" />
+          </div>
+        </td>
+    </tr>
+    <tr> 
+      <td class="InputFormLeft">&nbsp;</td>
+        <td class="InputFormRight"> 
+          <input type="hidden" name="space_key" value="{SPACE_KEY}" />
+          <input name="group_key" type="hidden" id="group_key" value="{GROUP_KEY}" />
+          <input type="hidden" name="action" value="add" />
+          <input type="submit" name="Submit" value="{SUBMIT_STRING}" />
+          <input type="button" name="submit" value="{CANCEL_STRING}" onClick="history.go(-1)" />
+        </td>
+    </tr>
+  </table></div>
+</form>
+<!-- END AccessCodeBlock -->
+

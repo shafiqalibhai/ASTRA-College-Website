@@ -1,0 +1,91 @@
+
+<h2>{INPUT_HEADING}</h2> 
+
+<div class="input_form_div" align="center">
+<form name="link" method="post" enctype="multipart/form-data" action="file_input.php">
+ <!-- BEGIN ModuleInputBlock -->
+        <table class="input_form_table">
+            <tr> 
+                <td class="InputFormLeft" valign="top">{NAME_STRING}:</td>
+                <td class="InputFormRight"> 
+        <input type="text" name="name" value="{NAME}" size="35" />
+        <br />
+        {NAME_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">{DESCRIPTION_STRING}:</td>
+                <td valign="top" class="InputFormRight"> 
+        <textarea accept-charset="{CHARACTER_SET}" name="description" cols="30" rows="4" wrap="VIRTUAL">{DESCRIPTION}</textarea>
+        <br />
+        {DESCRIPTION_ERROR} </td>
+            </tr>
+            <tr> 
+                <td class="InputFormLeft" valign="top">{FILE_STRING}:</td>
+                <td class="InputFormRight"> 
+	    <input type="hidden" name="MAX_FILE_SIZE" value="{MAX_FILE_UPLOAD_SIZE}">
+        <input name="user_file" type="file" id="user_file" size="35" />
+        <br>
+                    <input name="embedded" type="checkbox" id="embedded" value="1" {EMBEDDED_CHECKED}>
+{EMBED_FILE_STRING}                    <br />
+        {FILE_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">{FILE_TYPE_STRING}:</td>
+                <td valign="top" class="InputFormRight">
+<select name="file_extension" size="4">
+                                    
+                        <option value="doc">Word</option>
+                                    
+                        <option value="pdf">PDF</option>
+                                    
+                        <option value="html">HTML</option>
+                                    
+                        <option value="zip">Zip</option>
+                                    
+                        <option value="ppt">PowerPoint</option>
+                                    
+                        <option value="rtf">RTF</option>
+                                    
+                        <option value="xls">Excel</option>
+                                    
+                        <option value="cwk">Apple/Claris Works</option>
+                                    
+                        <option value="wps">MS Works</option>
+                                    
+                        <option value="gif">Gif Image</option>
+                                    
+                        <option value="jpg">Jpg Image</option>
+                                    
+                        <option value="other">Other</option>
+                    </select>
+		
+        <br />
+        {FILE_TYPE_ERROR}   </td>
+            </tr>
+   
+            <tr>
+                <td valign="top" class="InputFormLeft">{ZIP_STRING}:</td>
+                <td valign="top" class="InputFormRight">
+
+                        <input name="unzip" type="checkbox" id="unzip" value="true">
+                                {UNZIP_STRING}<br>
+{START_FILE_STRING}                    <br>
+                    <input name="zip_start_file" type="text" id="zip_start_file" size="15">                           </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">&nbsp;</td>
+                <td valign="top" class="InputFormRight"> 
+        <input type="submit" name="submit" value="{BUTTON}" />
+          {DELETE_BUTTON} 
+                    <input type="button" name="submit2" value="{CANCEL_STRING}" onClick="history.go(-1)" />
+        </td>
+            </tr>
+ 
+        </table>
+        <a href="managefiles.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}">{ASSOCIATED_STRING}</a>, {ASSOCIATED_EXAMPLE}<br>
+        <br>
+        <!-- END ModuleInputBlock -->
+  {GENERAL_SETTINGS}
+</form>
+
+</div>

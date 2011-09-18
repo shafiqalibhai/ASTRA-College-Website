@@ -1,0 +1,35 @@
+
+
+
+      <h2>{NEW_POSTS_HEADING}</h2>
+      <
+    <fieldset style="width:50%;">
+	<legend> Options</legend>
+      <table cellspacing="0" cellpadding="5">
+      	<tr>
+      		<td> <b class="small">{VIEW_POSTINGS_STRING}</b><br />
+                    	<a href="newposts.php?days=last_login&space_key={THIS_SPACE_KEY}" class="small">{LAST_LOGIN_STRING}</a><br />
+                    	<a href="newposts.php?days=1&space_key={THIS_SPACE_KEY}" class="small">{TODAY_STRING}</a> <br />
+                    	<a href="newposts.php?days=3&space_key={THIS_SPACE_KEY}" class="small">{LAST_3_DAYS_STRING}</a><br />
+                    	<a href="newposts.php?days=14&space_key={THIS_SPACE_KEY}" class="small">{LAST_14_DAYS_STRING}</a><br />
+                    	<a href="newposts.php?days=31&space_key={THIS_SPACE_KEY}" class="small">{LAST_MONTH_STRING}</a> </td>
+      		<td valign="top"><br />  <a href="newposts.php?space_key={THIS_SPACE_KEY}&show_read_posts={SHOW_READ_POSTS}&days={DAYS}" class="small">{SHOW_READ_POSTS_STRING}</a><br />
+			<a href="newposts.php?space_key={THIS_SPACE_KEY}&show_flagged_posts={SHOW_FLAGGED_POSTS}" class="small">{SHOW_FLAGGED_POSTS_STRING}</a>
+			</td>
+   		  </tr>
+      	</table></fieldset>
+      <br> 
+      <form method="post" name="form1" id="form1" action="{PATH}/modules/forum/forumadmin.php">
+        <div >{FULL_POSTS} 
+          <!-- BEGIN ButtonBlock -->
+          <div  align="left" style="margin-left:40px">
+            <input name="submit" type="submit" class="smallbutton" id="submit"  value="{SUBMIT_CHANGES_STRING}" />
+          </div>
+          <!-- END ButtonBlock -->
+          <input type="hidden" name="new_posts" value="y">
+          <input type="hidden" name="space_key" value="{SPACE_KEY}">
+          <br />
+          <input type="hidden" name="marked_action"  id="marked_action" value="set_flags">
+          <br>
+        </div>
+      </form>

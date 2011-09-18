@@ -1,0 +1,42 @@
+
+<h1>{HEADING_STRING}
+ 
+</h1>
+
+
+<p align="center"><a href="globalgradebook.php?sort_by={SORT_BY}">{VIEW_BY_STRING}</a></p>
+
+<div align="center">
+<!-- BEGIN ItemsBlock -->
+    <table  border="1" cellspacing="0" cellpadding="8">
+        <tr>
+            <th valign="top">&nbsp;
+            <th valign="top">{NAME_STRING}</td>
+            <th valign="top">{DUE_DATE_STRING}</td>
+            <th valign="top"><div align="right">{GRADE_STRING}</td>
+        </div></tr>
+
+<!-- BEGIN ItemListBlock -->
+<!-- BEGIN BreakBlock -->
+		<tr>
+             <td colspan="5">&nbsp;</td>
+         </tr>
+
+<!-- END BreakBlock -->
+
+        <tr>
+            <td valign="top">{SPACE_NAME}<br>
+{MODULE_LINK}</td>
+            <td valign="top"><a href="globalitemview.php?item_key={ITEM_KEY}">{ITEM_NAME}</a>
+     
+                
+  </td>
+            <td valign="top">{DUE_DATE} <span class="small">{DATE_DIFF}</span></td>
+            <td valign="top"><div align="right">{GRADE}<br>
+{COMMENTS_LINK}            </div></td>
+        </tr>
+
+<!-- END ItemListBlock -->
+    </table>
+<!-- END ItemsBlock -->
+</div>

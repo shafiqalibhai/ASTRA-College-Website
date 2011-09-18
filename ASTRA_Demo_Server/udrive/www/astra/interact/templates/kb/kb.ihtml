@@ -1,0 +1,70 @@
+<table width="98%" padding="10px">
+<tr><td valign="top">
+<div id="contentPanel">
+<h2 style="margin-bottom: 5px;">{KB_HEADING}</h2>
+
+<div align="left">
+<form name="form1" method="get" action="search.php">
+  
+    <input type="text" name="search_terms" class="formTxtInput">
+    <input type="submit" name="submit" value="{SEARCH}" class="formButton">
+     <input type="hidden" name="space_key" value="{SPACE_KEY}">
+        <input type="hidden" name="module_key" value="{MODULE_KEY}">
+  
+</form>
+<br />
+<!-- BEGIN SubCategoryBlock -->
+<div class="subCategories" >
+    <h3>{CATEGORIES_STRING}</h3>
+	<ul>
+	<!-- BEGIN CategoryLinkBlock -->
+	<li><a href="viewentries.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&category_key={CATEGORY_KEY}">{CATEGORY_NAME}</a> <span class="small">({ENTRY_COUNT})</span></li>
+    <!-- END CategoryLinkBlock -->
+	</ul>
+</div>
+<!-- END SubCategoryBlock -->
+<br />
+<!-- BEGIN EntriesBlock -->
+<div class="subCategories">
+<!-- BEGIN TemplateTypeBlock -->
+
+<h3>{ENTRIES}</h3>
+{TEMPLATE_NAME}
+<ul>
+<!-- BEGIN EntryLinksBlock -->
+<li style="margin-top:10px">
+	{SUMMARY_FIELDS}
+</li>
+<!-- END EntryLinksBlock -->
+</ul>
+<!-- END TemplateTypeBlock -->
+</div>
+<!-- END EntriesBlock -->
+</div>
+
+</td>
+<!-- BEGIN UpdatesBlock -->
+<td id="sidePanel" valign="top">
+
+<div class="controlBox">
+<div   id="whatsNew" label="{WHATS_NEW}" class="disPaneHeading{WHATSNEW_DEFAULT_STYLE}" onclick="show_it('whatsNewContent',this,'disPaneHeading')"><span class="controlBoxTitle">{WHATS_NEW}</span></div>
+
+<div class="disPaneContent" id="whatsNewContent">
+<div align="right"><form name="form1" method="post" action="kb.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&link_key={LINK_KEY}">{SHOW_NEW_MENU}
+<input type="hidden" name="space_key" value="{SPACE_KEY}" />
+<input type="hidden" name="module_key" value="{MODULE_KEY}" />
+<input type="hidden" name="link_key" value="{LINK_KEY}" />
+</form>
+</div>
+<ul class="newPostsList">
+<!-- BEGIN NewEntryBlock -->
+<li class="newPostsListItem"><a href="entry.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&entry_key={ENTRY_KEY}">{ENTRY_TITLE}</a></li>
+<!-- END NewEntryBlock -->
+</ul>
+</div>
+
+</td>
+	
+
+</tr>
+</table>

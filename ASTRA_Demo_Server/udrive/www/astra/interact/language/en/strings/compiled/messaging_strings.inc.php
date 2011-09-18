@@ -1,0 +1,3 @@
+<?php   //Do NOT modify this file - it is auto-generated
+
+$messaging_strings=array('new_messages'=>'You have the following messages','input_heading'=>'Send a short message to %s','send'=>'Send','maximum_characters'=>'Maximum characters=%d','characters'=>'Characters','no_message'=>'You did not enter a message','message_added'=>'Your message has been sent','selected_users'=>'Send a short message to selected members');?>

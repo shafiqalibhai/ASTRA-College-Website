@@ -1,0 +1,7 @@
+
+<h2>{DIFF_HEADING}</h2>
+<div  class="small"><a href="page_history.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}">{PAGE_HISTORY}</a></div>
+<div style="padding:10px">{VERSION_DETAILS}</div>
+<div id="pageContent">
+{BODY}
+</div>

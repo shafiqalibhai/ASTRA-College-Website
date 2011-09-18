@@ -1,0 +1,103 @@
+ 
+<h2>{INPUT_HEADING}</h2>
+
+<form name="folder" method="post" action="quiz_input.php" >
+  <div class="input_form_div" align="center">
+ <!-- BEGIN ModuleInputBlock --> 
+        <table class="input_form_table">
+            <tr> 
+                <td valign="top" class="InputFormLeft">{NAME_STRING}:</td>
+                <td valign="top" class="InputFormRight"> 
+          <input type="text" name="name" value="{NAME}" size="35" />
+          <br />
+          {SPACER_INSTRUCTIONS}</td>
+            </tr>
+            <tr> 
+                
+                <td valign="top" class="InputFormLeft">{DESCRIPTION_STRING}:</td>
+                <td valign="top" class="InputFormRight"> <textarea accept-charset="{CHARACTER_SET}" name="description" cols="30" rows="4" wrap="VIRTUAL">{DESCRIPTION}</textarea> 
+                    <br>
+                    {DESCRIPTION_ERROR} </td>
+            </tr>
+            <tr> 
+                
+                <td valign="top" class="InputFormLeft">{OPEN_DATE_STRING}:</td>
+                <td valign="top" class="InputFormRight">  
+                    
+                    {OPEN_DATE_MENU} </td>
+            </tr>
+            <tr> 
+                
+                <td valign="top" class="InputFormLeft">{CLOSE_DATE_STRING}:</td>
+                <td valign="top" class="InputFormRight">  
+                    
+                    {CLOSE_DATE_MENU} </td>
+            </tr>
+            <tr> 
+                
+                <td valign="top" class="InputFormLeft">{ATTEMPTS_STRING}:<br>
+{UNLIMITED_STRING}                </td>
+                <td valign="top" class="InputFormRight">  
+                    
+                    <input name="attempts" type="text" id="attempts" value="{ATTEMPTS}" size="2" maxlength="2"></td>
+            </tr>
+            <tr> 
+                
+                <td valign="top" class="InputFormLeft">{SHUFFLE_QUESTIONS_STRING}:</td>
+                <td valign="top" class="InputFormRight">  
+                    
+                    {SHUFFLE_QUESTIONS_MENU}</td>
+            </tr>
+            <tr> 
+                
+                <td valign="top" class="InputFormLeft">{SHUFFLE_ANSWERS_STRING}:</td>
+                <td valign="top" class="InputFormRight">  
+                    
+                    {SHUFFLE_ANSWERS_MENU}</td>
+            </tr>
+            <tr>
+                <td valign="top" class="InputFormLeft">{SHOW_CORRECT_STRING}:</td>
+                <td valign="top" class="InputFormRight">{SHOW_CORRECT_MENU}
+                <div id="answerAttempts" style="display:{ANSWER_ATTEMPTS_DISPLAY}">
+                {NUMBER_OF_ATTEMPTS_STRING}: <input type="text" name="answer_attempts" value="{ANSWER_ATTEMPTS}" size="2" />
+                </div>
+                
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" class="InputFormLeft">{SHOW_FEEDBACK_STRING}:</td>
+                <td valign="top" class="InputFormRight">{SHOW_FEEDBACK_MENU}
+                <div id="feedbackAttempts" style="display:{FEEDBACK_ATTEMPTS_DISPLAY}">
+                {NUMBER_OF_ATTEMPTS_STRING}: <input type="text" name="feedback_attempts" value="{FEEDBACK_ATTEMPTS}" size="2" />
+                </div>
+                </td>
+            </tr>
+            <tr> 
+                
+                <td valign="top" class="InputFormLeft">{GRADING_STRING}:</td>
+                <td valign="top" class="InputFormRight">  
+                    
+                    {GRADING_MENU}</td>
+            </tr>
+            <tr> 
+                
+                <td valign="top" class="InputFormLeft">{MINUTES_ALLOWED_STRING}:<br>
+<span class="small">{NO_TIME_LIMIT_STRING}</span></td>
+                <td valign="top" class="InputFormRight">  
+                    
+                    <input name="minutes_allowed" type="text" id="minutes_allowed" value="{MINUTES_ALLOWED}" size="3"></td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">&nbsp;</td>
+                <td valign="top" class="InputFormRight"> 
+          <input type="submit" name="submit" value="{BUTTON}" />
+          {DELETE_BUTTON} 
+                    <input type="button" name="submit3" value="Cancel" onClick="history.go(-1)" />
+        </td>
+            </tr>
+ 
+        </table>
+ <!-- END ModuleInputBlock --> 	
+ {GENERAL_SETTINGS}
+  </div>
+</form>

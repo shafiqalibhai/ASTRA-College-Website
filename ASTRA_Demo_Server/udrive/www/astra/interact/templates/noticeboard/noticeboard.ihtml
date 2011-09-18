@@ -1,0 +1,33 @@
+
+
+
+<!-- BEGIN AddNoticeBlock -->
+<div align="center"><a href="noticeinput.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}">{ADD_NOTICE_STRING}</a></div>
+<!-- END AddNoticeBlock --> 
+
+<div id="noticeList">
+<div class="small" >
+{SORT_ORDER_STRING}: <a href="noticeboard.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&sort_order=DateAdded">{DATE_ADDED_STRING}</a> - <a href="noticeboard.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&sort_order=Heading">{HEADING_STRING}</a> - <a href="noticeboard.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&sort_order=UserKey">{ADDED_BY_STRING}</a>
+</div>
+{NOTICE_LIST}</div>
+<!-- BEGIN NoticeBlock -->
+<div align="center">
+<table width="80%" border="0" cellpadding="10">
+<tr><td class="notice">
+<a name="{NOTICE_KEY}"></a>
+<img src="{PATH}/images/pin.gif" ><br />
+<strong>{HEADING}</strong><br />
+<span class="small">{ADDED_BY_STRING} {USER_NAME} {ON_STRING} {DATE_ADDED}</span>
+<p>{BODY}</p>
+<!-- BEGIN EditBlock -->
+        <div align="right">{EDIT_LINK}</div>
+<!-- END EditBlock -->
+
+<br>
+
+</td></tr>
+</table>
+</div>
+<br>
+
+<!-- END NoticeBlock -->

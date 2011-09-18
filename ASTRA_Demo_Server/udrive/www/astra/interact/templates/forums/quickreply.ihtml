@@ -1,0 +1,11 @@
+
+<form action="quickinput.php" id="quickReplyForm{POST_KEY_VALUE}" method="POST">
+<input type="text" name="subject" size="50" id="qRSub{POST_KEY_VALUE}"><br />
+<textarea accept-charset="{CHARACTER_SET}" rows="5" cols="60" id="qRBody{POST_KEY_VALUE}" name="qRBody{POST_KEY_VALUE}"></textarea><span id="qRBodyError{POST_KEY_VALUE}" class="message"></span>
+<input type="hidden" name="module_key" value="{MODULE_KEY_VALUE}">
+<input type="hidden" name="space_key" value="{SPACE_KEY_VALUE}">
+<input type="hidden" name="parent_key" value="{POST_KEY_VALUE}">
+<input type="hidden" name="thread_key" value="{THREAD_KEY_VALUE}"><br />
+<input type="button" id="submitReply{POST_KEY_VALUE}" value="{REPLY}" onclick="submitReply({POST_KEY_VALUE},{REPLY_ID});">
+</form>
+<div id="quickReplyBody{REPLY_ID}"></div>

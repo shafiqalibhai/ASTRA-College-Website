@@ -1,0 +1,48 @@
+
+
+ 
+<h2>{VIEW_ITEM_HEADING}
+</h2>
+
+<div  align="center"><p><a href="{FILE}?space_key={SPACE_KEY}&module_key={MODULE_KEY}&link_key={LINK_KEY}&group_key={GROUP_KEY}"><br>
+    {RETURN_TO_STRING} {MODULE_NAME}</a></p>
+    
+<table  border="0" width="80%" cellspacing="0" cellpadding="0">
+    <tr>
+        <td>
+		
+		<h3 align="left">{EDIT_LINK}{ITEM_NAME}
+</h3>
+<p align="left"><strong>{DUE_DATE_STRING}:</strong> {DUE_DATE} <span class="small">{DATE_DIFF}</span></p>
+<p><strong>{DESCRIPTION_STRING}: </strong>{DESCRIPTION}</p>
+<p>{ITEM_URL}</p>
+<table  border="0" cellspacing="0" cellpadding="5">
+                    
+        
+    <tr valign="top">
+                        
+            
+        <td class="small"><strong>{MAX_SCORE_STRING}</strong></td>
+        <td class="small">{MAX_SCORE_VALUE}</td>
+        <td class="small"><strong>{WEIGHTING_STRING}</strong></td>
+        <td class="small">{WEIGHTING_VALUE}</td>
+    </tr>
+                
+    
+</table>
+		
+		
+		
+		</td>
+    </tr>
+</table>
+</div>
+<!-- BEGIN GradeBlock -->
+
+    
+<p ><strong>{GRADE_STRING}: </strong>{GRADE}</p>
+    
+<p ><strong><a name="comments"></a>{COMMENTS_STRING}: </strong>{COMMENTS}</p>
+	
+<!-- END GradeBlock -->
+

@@ -1,0 +1,157 @@
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="font-size:x-small">
+<div style="position:absolute; visibility: hidden;">
+	<img src="" dojoAttachPoint="pre_image" dojoAttachEvent="onLoad:updatePreview">
+</div>
+	<tr>
+		<td width="54%" rowspan="2" align="center" valign="top">
+			<fieldset style="height:247px; background-color: #F6F6F6; padding: 0px;">
+				<legend>
+					Preview 
+				</legend>
+				<table height="234" border="0" style="padding: 0px; margin: 0px">
+					<tr>
+						<td valign="middle" align="center">
+<span dojoAttachPoint="ipreview_mess"></span>
+							<img align="middle" dojoAttachPoint="ipreview" alt="no image" style="visibility: hidden;"> 
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+			
+			<span style="float:right"><button dojoType='Button' dojoAttachEvent="onClick:updateClick">Update</button>
+			</span>
+			<span style="float:right;padding-right:4px;font-size:x-small" dojoAttachPoint="premess"> </span>
+
+			<form action="" method="get" style="clear:both">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:3px;">
+					<tr>
+						<td valign="top">
+							<table border="0" width="100%" style="padding: 0px; margin: 0px">
+								<tr>
+									<td style="width: 20%; text-align: right">
+										URL:
+									</td>
+									<td valign="top">
+										<input type="text" dojoAttachPoint="image_src" title="Enter the image URL here" size="42"> 
+									</td>
+								</tr>
+								<tr>
+									<td style="text-align: right">
+										<span style="color:red; width: 20%; font-size:x-small">Alt text:</span>
+									</td>
+									<td valign="top">
+										<input type="text" dojoAttachPoint="image_alt" title="For browsers that don\'t support images" size="42"> 
+									</td> 
+								</tr>
+								
+							</table>
+							
+							<table align="center">
+								<tr>
+									<td>
+										<fieldset style="margin-left:25px;padding-top:1px; padding-right:2px; padding-bottom:1px;">
+											<legend>
+												Alignment 
+											</legend>
+											<select size="1" dojoAttachPoint="image_align" title="Positioning of this image"> 
+												<option value="" selected="selected">Not set</option>
+												
+												<option value="left"> Left </option>
+												<option value="right"> Right </option>
+												<option value="middle"> Middle </option>
+												<option value="texttop"> Texttop </option>
+												<option value="absmiddle"> Absmiddle </option>
+												<option value="baseline"> Baseline </option>
+												<option value="absbottom"> Absbottom </option>
+												<option value="bottom"> Bottom </option>
+												<option value="top"> Top </option>
+											</select> 
+											<br />
+											<table>
+												<tr>
+													<td nowrap align="right">
+														<span style="font-size:x-small">Border thickness:</span>
+													</td>
+													<td>
+														<input type="text" dojoAttachPoint="image_border" size="3" title="Leave empty for no border" value="1"/> 
+													</td>
+												</tr>
+												<tr>
+													<td nowrap align="right">
+														<span style="font-size:x-small">Horizontal Space:</span>
+													</td>
+													<td>
+														<input type="text" dojoAttachPoint="image_hspace" size="3" title="Horizontal padding - gap on left and right of image" /> 
+													</td>
+												</tr>
+												<tr>
+													<td nowrap align="right">
+														<span style="font-size:x-small">Vertical Space:</span>
+													</td>
+													<td>
+														<input type="text" dojoAttachPoint="image_vspace" size="3" title="Vertical padding - gap on top and bottom of image"/> 
+													</td>
+												</tr>
+											</table>
+										</fieldset>
+									</td>
+									<td valign="top" align="center">
+										<fieldset style="margin-left: 12px; padding-bottom:2px;padding-top:0px;padding-right:2px;">
+											<legend>
+												Size 
+											</legend>
+											<table>
+												<tr>
+													<td nowrap align="right" id="wtit">
+														<span style="font-size:x-small">Width:</span>
+													</td>
+													<td width="10">
+														<input type="text" size="4" dojoAttachPoint="image_width" title="Display Width (does not affect actual image file)" dojoAttachEvent="onkeyup:widthChanged"> 
+													</td>
+												</tr>
+												<tr>
+													<td nowrap align="right" id="htit">
+														<span style="font-size:x-small">Height:</span>
+													</td>
+													<td>
+														<input type="text" size="4" dojoAttachPoint="image_height" title="Display Height (does not affect actual image file)" dojoAttachEvent="onkeyup:heightChanged""> 
+													</td>
+												</tr>
+												<tr>
+													<td nowrap colspan="2" valign="top">
+														<INPUT type="checkbox" class="CheckBox" checked id="chkLockRatio" title="When changing size, maintain aspect ratio (don't squish it).  Does not work for % values."> <span style="font-size:x-small">Lock Ratio</span>
+													</td>
+												</tr>
+											</table>
+											<INPUT type="button" value="Reset Size" title="Reset width and height to that of the image file" dojoAttachEvent="onClick:resetSize"> 
+										</fieldset>
+									</td>
+								</tr>
+							</table>
+							
+						</td>
+					</tr>
+				</table>
+			</form>
+		</td>
+		<td width="46%" valign="top">
+
+			<fieldset style="background-color: #D2D2D8; padding: 0px; margin-bottom:4px;">
+
+				<legend>
+					Choose File 
+				</legend>
+				<iframe dojoAttachPoint="idir" name="idir" frameborder="0" style="border : 0px; width: 100%; height: 400px;" src="about:blank" scrolling="no"> </iframe>
+			</fieldset>
+		</td>
+	</tr>
+	<tr><td>
+		<table><tr><td style="padding-right:20px">
+			<button dojoType='Button' dojoAttachEvent='onClick:ok'>OK</button>
+			</td><td>
+			<button dojoType='Button' dojoAttachEvent='onClick:cancel'>Cancel</button>
+		</td></tr></table>
+	</td></tr>
+</table>
+
+

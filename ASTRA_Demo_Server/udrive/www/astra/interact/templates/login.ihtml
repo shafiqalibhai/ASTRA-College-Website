@@ -1,0 +1,79 @@
+
+      
+
+	<div align="center" class="message">{MESSAGE}</div>
+
+
+
+<form id="InputForm" method="post" action="login.php" name="login_form">
+<div align="center">
+
+{PERMANENT_COOKIE_ERROR}<br />
+
+                        <table class="input_form_table">
+
+
+                            <tr valign="top"> 
+
+                                <td class="InputFormLeft">{USER_NAME_STRING}:</td>
+
+                                <td class="InputFormRight"> 
+
+                  <input type="text" name="username" size="20" value="{USER_NAME}" />
+
+                  <br />
+
+                  {USER_NAME_ERROR} </td>
+
+                            </tr>
+
+                            <tr> 
+
+                                <td valign="top" class="InputFormLeft">{PASSWORD_STRING}:</td>
+
+                              <td class="InputFormRight"><input type="password" name="password" size="20" value="{PASSWORD}" />{PASSWORD_ERROR}<br /><span class="small"><input type="checkbox" name="permanent_cookie" value="yes" /> {KEEP_LOGIN_STRING}</span>                                   
+
+                
+
+                </td>
+
+                            </tr>
+
+       <tr valign="top"> 
+<td></td>
+<td align="left">
+<input type="submit" name="Submit" value="{SUBMIT_STRING}" />
+{LOGIN_USER_TEXT}
+</td>
+</tr>
+                     </table>
+
+
+<!-- BEGIN RESET_PASSWORD_BLOCK --><br />&nbsp; 
+<a href="users/emaildetails.php">{FORGOT_PASSWORD_STRING}</a>{PASSWORD_NOTE}<br />
+<!-- END RESET_PASSWORD_BLOCK -->
+
+   <input type="hidden" name="request_uri" value="{REQUEST_URI}" />
+
+                  <input type="hidden" name="space_key" value="{SPACE_KEY}" />
+
+
+
+
+<br />
+          
+  </div>
+
+
+</form>
+
+
+
+
+
+
+
+   
+
+
+

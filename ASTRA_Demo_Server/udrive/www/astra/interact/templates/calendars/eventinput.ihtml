@@ -1,0 +1,98 @@
+<h2 align="left">{ADD_EVENT}</h2>
+
+<form name="event_input_form" id="event_input_form" method="post" action="eventinput.php">
+	<div align="center">
+		<table class="input_form_table">
+			<tr>
+				<td valign="top" class="InputFormLeft">
+					{DATE_STRING}:
+					</td>
+				<td valign="top" class="InputFormRight">
+					
+<!-- <input name="fuzzy" type="checkbox" value="1">approximate  -->
+
+					{EVENT_DATE}
+					
+					<span style="white-space:nowrap;"><input name="all_day" type="checkbox" value="1" {ALL_CHECK} onclick="thisc=this.checked? 'none':'';getElementById('event_date_finish_time').style.display=thisc;getElementById('event_date_time').style.display=thisc;">{ALLDAY_STRING}</span>
+<!-- <div align="right">{TIME_OPTIONAL_STRING}</div> -->
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" class="InputFormLeft">
+					{FINISH_TIME_STRING}:
+				</td>
+				<td valign="top" class="InputFormRight">
+				{EVENT_DATE_FINISH}<input name="finish_unspec" type="checkbox" value="0" {FIN_CHECK} onclick="getElementById('event_date_finish_span').style.display=this.checked? 'none':'';" />{UNSPECIFIED_STRING}
+					
+<!-- <div align="right">{TIME_OPTIONAL_STRING}</div> -->
+					{EVENT_DATE_ERROR}
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" class="InputFormLeft">
+					{REMOVE_STRING}:
+					<br />
+					({OPTIONAL_STRING}) 
+				</td>
+				<td valign="top" class="InputFormRight">
+					{REMOVE_DATE} 
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" class="InputFormLeft">
+					{EVENT_STRING}:
+				</td>
+				<td valign="top" class="InputFormRight">
+					<input type="text" name="name" maxlength="60" value="{NAME}" size="25" /> 
+					{NAME_ERROR}
+				</td>
+			</tr>
+			<tr> 
+           	<td valign="top" class="InputFormLeft">{EVENT_TYPE_STRING}:</td><td valign="top" class="InputFormRight">
+<table cellspacing=0 width="99%" style="border:1px solid;background-color:#DDD">
+<tr><td id="PICK_TYPE_0" width="47%" colspan="2"><span style="white-space:nowrap;color:#000">{GENERAL_TYPE}</span></td><td rowspan={PICK_TYPE_COUNT} width="53%" valign="bottom"> 
+				<div id="pick_a_colour" class="small" style="display:none; padding-left:6px">
+				{PICK_A_COLOUR}:<br />
+				<table id="ctable" border="0" frame="box" cellspacing="0px" cellpadding="0px">
+{COLOUR_PICK}
+</table></div></td></tr>
+				{EVENT_TYPES}
+				<tr>
+				<td colspan="3" id="PICK_TYPE_{PICK_TYPE_COUNT}" style="display:none"><span style="white-space:nowrap">{EVENT_TYPE_NEW}</span>{TYPE_ERROR}<input type="hidden" name="newnameC" id="newnameC" maxlength="6" size="6" value="{NEWNAMEC}" /><input type="hidden" name="type_command" id="type_command" size="6" value="" /></td></tr>
+				</table>
+
+           	</td>
+            </tr> 
+			<tr>
+				<td class="InputFormLeft">
+					&nbsp;
+				</td>
+				<td class="InputFormRight">
+					<input type="submit" name="submitbut" value="{BUTTON}" /> {DELETE_BUTTON} <input type="button" name="submit2" value="{CANCEL_STRING}" onClick="history.go(-1)" /> <input type="hidden" name="action" value="{ACTION}" /> <input type="hidden" name="module_key" value="{MODULE_KEY}" /> <input type="hidden" name="space_key" value="{SPACE_KEY}" /> <input type="hidden" name="event_key" value="{EVENT_KEY}" /> 
+				</td>
+			</tr>
+
+			<tr>
+				<td valign="top" class="InputFormLeft">
+					{DESCRIPTION_STRING}:<br />
+					({OPTIONAL_STRING}) 
+					{EDITOR_BUTTONS_description}
+				</td>
+				<td valign="top" class="InputFormRight">
+ 
+                <textarea accept-charset="{CHARACTER_SET}" name="description" id="description" wrap="VIRTUAL" cols="54" rows="7" id="body">{BODY}</textarea>
+              <div class="error">{DESCRIPTION_ERROR}</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="InputFormLeft">
+					&nbsp;
+				</td>
+				<td class="InputFormRight">
+					<input type="submit" name="submitbut" value="{BUTTON}" /> {DELETE_BUTTON} <input type="button" name="submit2" value="{CANCEL_STRING}" onClick="history.go(-1)" /> <input type="hidden" name="action" value="{ACTION}" /> <input type="hidden" name="module_key" value="{MODULE_KEY}" /> <input type="hidden" name="space_key" value="{SPACE_KEY}" /> <input type="hidden" name="event_key" value="{EVENT_KEY}" /> 
+				</td>
+			</tr>
+		</table>
+	</div>		
+</form>
+

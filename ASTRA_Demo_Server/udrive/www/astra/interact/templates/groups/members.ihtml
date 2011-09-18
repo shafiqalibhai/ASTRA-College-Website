@@ -1,0 +1,20 @@
+  <tr>
+
+    
+  	<td valign="top">
+		<a href="../../users/userdetails.php?user_key={USER_KEY}&amp;space_key={SPACE_KEY}">{NAME}</a>
+<span class="small">{NO_ACCOUNT}</span><br />
+	
+</td>
+    <td valign="top">
+		<a class="inlineButton" href="{PATH}/spaces/emailuser.php?space_key={SPACE_KEY}&email_user_key={USER_KEY}&email_user_name={EMAIL_USER_NAME}">{EMAIL}</a>
+	</td>
+   	<td valign="top">
+		<span class="small">{MEMBER_ADMIN}</span>
+	</td> 
+  
+  </tr>
+
+
+
+

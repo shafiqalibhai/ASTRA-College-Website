@@ -1,0 +1,38 @@
+
+<h1>{HEADING}</h1>
+<div class="message" align="center">{MESSAGE}</div>
+<p>{ADD_COMMENT_FOR_STRING} <a href="{URL}">{NAME}</a> - {DESCRIPTION}<br>
+    <span class="small">{ADDED_BY_STRING} {USER_NAME} {DATE_ADDED}</span></p>
+<form name="postmessage" method="post" action="commentinput.php">
+  <div align="center">
+    <input type="hidden" name="shareditem_key" value="{SHAREDITEM_KEY}" />
+    <input type="hidden" name="space_key" value="{SPACE_KEY}" />
+    <input type="hidden" name="module_key" value="{MODULE_KEY}" />
+    <input type="hidden" name="parent_key" value="{PARENT_KEY}" />
+    <input type="hidden" name="comment_key" value="{comment_KEY}" />
+    <input type="hidden" name="action" value="{ACTION}" />
+    <table class="input_form_table_wide">
+      <tr> 
+                <td class="InputFormLeft">{SUBJECT_STRING}:</td>
+        <td class="InputFormRight"> 
+          <input type="text" name="subject" value="{SUBJECT}" size="35" />
+          {SUBJECT_ERROR} </td>
+      </tr>
+      <tr> 
+                <td valign="top" class="InputFormLeft">{COMMENT_STRING}:
+                {EDITOR_BUTTONS_body}</td>
+        <td class="InputFormRight"> 
+
+                                    <textarea accept-charset="{CHARACTER_SET}" name="body" wrap="VIRTUAL" cols="60" rows="20" id="body">{BODY}</textarea>
+          <div class="error">
+          {BODY_ERROR}</div>
+          <div align="center"> 
+                        <input type="submit" name="Submit" value="{SUBMIT_STRING}" />
+                        <input type="submit" name="submit" value="{CANCEL_STRING}" />
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</form>
+

@@ -1,0 +1,16 @@
+
+<h1>Set Default {SPACE_TEXT}s for User Group - {USER_GROUP}</h1>
+<div align="center" class="message">{MESSAGE}</div>
+<form name="form1" method="post" action="defaultspaces.php">
+    <div align="center">{SPACE_TEXT} Code: 
+    <input type="text" name="space_code" />
+	 Permanent: <input name="permanent" type="checkbox" id="permanent" value="1">
+        <a href="javascript:openHelpWin('{DOCS_URL}/User_Groups#Permanent_Default')" class='helplink'>?</a>
+    <input type="hidden" name="user_group_key" value="{USER_GROUP_KEY}" />
+        <input name="action" type="hidden" id="action" value="add" />
+    <input type="submit" name="submit" value="Add" />
+  </div>
+</form>
+
+<p>Default {SPACE_TEXT}s for this User Group</p>
+<p>{DEFAULT_SPACES}</p>

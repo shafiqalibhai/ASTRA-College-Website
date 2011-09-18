@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+
+		<title>Aurora&#39;s Scientific Technological &amp; Research Academy - Hyderabad AP India Tel: (040)24440840</title>
+
+
+
+		<meta http-equiv="Content-Type" content="text/html; charset={CHARACTER_SET}" />
+
+		{META_TAGS}
+
+
+
+<!-- Not ALL the bugs are fixed in IE7!!!  Fix multiple-backgrounds & bouncy link -->
+
+<!--[if gt IE 6]>
+
+<style>
+
+#navigation, #loginDetails {zoom:1}
+
+</style>
+
+<![endif]-->
+
+		<link rel="stylesheet" id="skinLink" href="{PATH}/skins/skin.php?skin_key={SKIN_KEY}&skin_version={SKIN_VERSION}" type="text/css" media="screen, projection, print">
+
+		{MODULE_STYLES}
+
+		<script type="text/javascript" language="javascript">
+
+			document.write('<style> .jsShow{display:block} .jsHide{display:none} </style>');
+
+			messageCount={MESSAGE_COUNT};
+
+			fullUrl = '{FULL_URL}';
+
+			var djConfig = {isDebug: false, debugAtAllCosts: false, parseWidgets: false, searchIds: []};
+
+		</script>		
+
+
+
+		<script type="text/javascript" language="javascript"  src="{PATH}/includes/dojo/dojo.js?v2"></script> 
+
+
+
+		<script type="text/javascript" language="javascript">
+
+			dojo.require('dojo.io.BrowserIO');
+
+		</script>
+
+		<script type="text/javascript" language="javascript"  src="{PATH}/includes/mainjavascript.js?v2.4b"></script> 
+
+		{MESSAGE_INIT}		
+
+		{SCRIPT_INCLUDES}
+
+	</head>
+
+	<body {SCRIPT_BODY} id="pageBody">{SCRIPT_EDITOR}
+
+	<div id="outerBox">
+
+	<!--	<div id="header">
+
+			<div id="logoBlock" class="noRollover">
+
+				<a href="{HEADER_HOME_LINK}"><img id="logo"/></a>
+
+				<span id="serverName"><a id="serverNameLink" href="{HEADER_HOME_LINK}">{SERVER_NAME}</a></span> -->
+
+			</div>
+
+		</div>

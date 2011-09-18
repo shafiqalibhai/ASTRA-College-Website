@@ -1,0 +1,18 @@
+# php flags may not be allowed (if PHP installed as CGI module)
+# so these are commented out
+# they are recommended, but Interact will work regardless
+
+#php_flag register_globals off
+#php_flag magic_quotes_gpc off
+
+# Allow 'direct' rather than 'direct.php' to improve URLs
+<Files direct>
+        ForceType application/x-httpd-php
+</Files>
+
+Options  -Indexes
+
+# If Interact is in installed in a subfolder, add that to the path below
+# for 404 redirects (and to make the word 'direct/' optional in short URLs)
+ErrorDocument 404 /direct.php
+ErrorDocument 403 /direct.php

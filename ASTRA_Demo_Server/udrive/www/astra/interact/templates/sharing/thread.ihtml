@@ -1,0 +1,5 @@
+<p align="center"><a href=sharing.php?space_key={SPACE_KEY}&amp;module_key={MODULE_KEY} class="small">{MODULE_NAME} {HOME_STRING}</a></p>
+<p>{COMMENTS_FOR_STRING} <a href="{URL}">{NAME}</a> - {DESCRIPTION}<br />
+    <span class="small">{ADDED_BY_STRING} {USER_NAME} {DATE_ADDED}</span></p>
+<p align="center"><a href="commentinput.php?space_key={SPACE_KEY}&amp;module_key={MODULE_KEY}&amp;shareditem_key={SHAREDITEM_KEY}" class="small">{ADD_NEW_COMMENT_STRING}</a></p>
+{FULL_POSTS}

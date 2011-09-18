@@ -1,0 +1,78 @@
+
+<h1>{HEADING}</h1>
+
+
+ <div align="center">
+<form name="postmessage" method="post" action="commentinput.php">
+ 
+    <input type="hidden" name="shareditem_key" value="{SHAREDITEM_KEY}" />
+    <input type="hidden" name="space_key" value="{SPACE_KEY}" />
+    <input type="hidden" name="module_key" value="{MODULE_KEY}" />
+    <input type="hidden" name="parent_key" value="{PARENT_KEY}" />
+    <input type="hidden" name="comment_key" value="{COMMENT_KEY}" />
+    <input type="hidden" name="action" value="{ACTION}" />
+
+  <table class="input_form_table_wide">
+    <tr> 
+                <td class="InputFormLeft">{SUBJECT_STRING}:</td>
+      <td class="InputFormRight"> 
+        <input type="text" name="subject" value="{SUBJECT}" size="40" />
+        {SUBJECT_ERROR} </td>
+    </tr>
+    <tr> 
+                <td valign="top" class="InputFormLeft">{COMMENT_STRING}:
+                {EDITOR_BUTTONS_body}</td>
+      <td class="InputFormRight"> 
+
+                                    <textarea accept-charset="{CHARACTER_SET}" name="body" wrap="VIRTUAL" cols="60" rows="20" id="body">{BODY}</textarea>
+
+        <div class="error">{BODY_ERROR}</div>
+        <div align="center"> 
+                        <input type="submit" name="Submit" value="{SUBMIT_STRING}" />
+                        <input type="submit" name="submit" value="{CANCEL_STRING}" />
+        </div>
+      </td>
+    </tr>
+  </table>
+
+ </form>
+
+  <form action="editcomment.php" method="post">
+
+  
+  <table class="input_form_table">
+    <tr class="small"> 
+                <td class="InputFormLeft">{COMMENT_NO_STRING}</td>
+      <td  class="InputFormRight"><b>{COMMENT_KEY}</b> </td>
+      <td  class="InputFormRight"> 
+        <input type="submit" name="action" value="{DELETE_STRING}" onClick="return confirmDelete('Are you sure? This will also delete and replies to this message!')" />
+      </td>
+    </tr>
+    <tr class="small"> 
+                <td class="InputFormLeft">{PARENT_NO_STRING}:</td>
+      <td  class="InputFormRight"> 
+        <input type="text" name="parent_key" size="4" value="{PARENT_KEY}" />
+      </td>
+      <td  class="InputFormRight"> 
+        <input type="submit" name="action" value="{CHANGE_PARENT_STRING}" onClick="return confirmDelete('Are you sure?')" />
+      </td>
+    </tr>
+    <tr class="small" > 
+                <td  class="InputFormLeft">{SHARED_ITEM_NO_STRING}:</td>
+      <td  class="InputFormRight"> 
+        <input type="text" name="shareditem_key" size="4" value="{SHAREDITEM_KEY}" />
+      </td>
+      <td  class="InputFormRight"> 
+        <input type="submit" name="action" value="{CHANGE_ITEM_STRING}" onClick="return confirmDelete('Are you sure? This will also move any replies to this posting')" />
+      </td>
+    </tr>
+  </table>
+  <div align="left">
+    <input type="hidden" name="comment_key" value="{COMMENT_KEY}" />
+    <input type="hidden" name="space_key" value="{SPACE_KEY}" />
+    <input type="hidden" name="module_key" value="{MODULE_KEY}" />
+  </div>
+</form>
+
+  </div>
+

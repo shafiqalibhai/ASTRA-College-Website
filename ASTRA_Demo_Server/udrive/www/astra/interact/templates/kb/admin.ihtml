@@ -1,0 +1,8 @@
+<h2>{ADMIN_HEADING}</h2>
+
+<!-- BEGIN KBAdminLinksBlock -->
+
+<p class="adminLinks" >
+<a href="templateinput.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}">{ADD_TEMPLATES_STRING}</a> - <a href="categoryinput.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}">{ADD_CATEGORIES_STRING}</a> </p>
+
+<!-- END KBAdminLinksBlock -->

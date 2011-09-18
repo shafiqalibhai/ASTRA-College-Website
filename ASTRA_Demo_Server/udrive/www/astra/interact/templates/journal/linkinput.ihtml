@@ -1,0 +1,96 @@
+
+<h2>{INPUT_HEADING}</h2>
+
+<div class="message">{MESSAGE}</div>
+<!-- BEGIN AddLinkBlock -->
+<div class="inputFormDiv">
+<form method="post" action="linkinput.php" >
+
+	<fieldset  style="width:70%">
+		
+		<legend>{ADD}</legend>
+		<div class="formRow">
+		<label for="link_name" class="formLabel">{NAME}: </label>
+		<span class="formData"><input type="text" name="link_name" value="{LINK_NAME}" size="40">
+		{NAME_ERROR}</span>
+		</div>
+		<div class="formRow">
+		<label for="link_url" class="formLabel">{URL}: </label>
+		<span class="formData"><input type="text" name="link_url" value="{LINK_URL}" size="40">
+		{URL_ERROR}<br />
+		<input type="submit" name="submit" value="{BUTTON}" class="noLabel"></span>
+		</div>		
+
+		
+		<br />
+        
+        <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+		<input name="journal_user_key" type="hidden" id="journal_user_key" value="{JOURNAL_USER_KEY}">
+        <input type="hidden" name="journal_link_key" value="{JOURNAL_LINK_KEY}">
+		<input type="hidden" name="type_key" value="{TYPE_KEY}">
+		<input type="hidden" name="action" value="{ACTION}">
+        <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+	</fieldset>
+</form>
+</div>
+<!-- END AddLinkBlock -->
+
+<!-- BEGIN ModifyLinkBlock -->
+<div class="inputFormDiv">
+<form method="post" action="linkinput.php">
+	<fieldset class="fieldset" style="width:70%">
+		<legend>{MODIFY}</legend>
+		<div class="formRow">
+		<span class="formLabel">{SELECT_LINK}: </span>
+		<span class="formData">{LINKS_MENU}<br />
+		<input type="submit" name="submit" value="{MODIFY}" class="noLabel">
+		</span>
+		</div>
+
+        
+        <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+		<input name="journal_user_key" type="hidden" id="journal_user_key" value="{JOURNAL_USER_KEY}">
+		<input type="hidden" name="action" value="modify">
+		<input type="hidden" name="type_key" value="{TYPE_KEY}">
+        <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+	</fieldset>
+</form>
+</div>
+<!-- END ModifyLinkBlock -->
+<!-- BEGIN ModifyLinkBlock2 -->
+<a name="modify"></a>
+<div class="inputFormDiv">
+<form method="post" action="linkinput.php">
+	<fieldset class="fieldset" style="width:70%">
+		<legend>{MODIFY}</legend>
+		<div class="formRow">
+		<label for="link_name" class="formLabel">{NAME}:</label>
+		<span class="formData"><input type="text" name="link_name" value="{LINK_NAME}" size="40">
+		{NAME_ERROR}</span>
+		</div>
+		<div class="formRow">
+		<label for="link_url" class="formLabel">{URL}:</label>
+		<span class="formData"><input type="text" name="link_url" value="{LINK_URL}" size="40">
+		{URL_ERROR}<br />
+		<input type="submit" name="submit" value="{MODIFY}" >
+        <input type="submit" name="submit" value="{DELETE}" onClick="return confirmDelete('{WARNING}')" >
+		</span>	
+		</div>	
+        
+		
+     
+        <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+<input name="journal_user_key" type="hidden" id="journal_user_key" value="{JOURNAL_USER_KEY}">
+		<input type="hidden" name="action" value="modify2">
+       <input type="hidden" name="journal_link_key" value="{JOURNAL_LINK_KEY}">
+		<input type="hidden" name="type_key" value="{TYPE_KEY}">
+        <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+
+			
+		
+		
+
+	</fieldset>
+</form>		
+</div>	          
+<!-- END ModifyLinkBlock2 -->

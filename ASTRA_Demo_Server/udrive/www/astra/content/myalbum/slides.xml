@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<flash_parameters>
+    <preferences>
+        <global>
+            <basic_property movieWidth="235" movieHeight="265" html_title="" loadStyle="Pie" startAutoPlay="true" continuum="true" backgroundColor="0xffffff" waitMusicLoad="false" hideAdobeMenu="true" photoDynamicShow="true"/>
+            <title_property showTitle="false" photoTitleColor="" backgroundColor="" alpha="50" autoHide="true"/>
+            <music_property path="" stream="false" loop="true"/>
+            <photo_property topPadding="0" bottomPadding="0" leftPadding="0" rightPadding="0"/>
+        </global>
+        <thumbnail>
+            <basic_property showPrview="true" buttonColor="" borderColor="" currentBorderColor=""/>
+        </thumbnail>
+    </preferences>
+    <album>
+        <slide jpegURL="thumbs/t_0001.jpg" d_URL="slides/p_0001.jpg" comm="" transition="29" panzoom="1" phototime="10" url="" title="SD530358"/>
+        <slide jpegURL="thumbs/t_0002.jpg" d_URL="slides/p_0002.jpg" comm="" transition="29" panzoom="1" phototime="10" url="" title="IMAGE_168"/>
+        <slide jpegURL="thumbs/t_0003.jpg" d_URL="slides/p_0003.jpg" comm="" transition="29" panzoom="1" phototime="10" url="" title="IMAGE_174"/>
+        <slide jpegURL="thumbs/t_0004.jpg" d_URL="slides/p_0004.jpg" comm="" transition="29" panzoom="1" phototime="10" url="" title="Image(47)"/>
+        <slide jpegURL="thumbs/t_0005.jpg" d_URL="slides/p_0005.jpg" comm="" transition="29" panzoom="1" phototime="10" url="" title="Image(49)"/>
+        <slide jpegURL="thumbs/t_0006.jpg" d_URL="slides/p_0006.jpg" comm="" transition="29" panzoom="1" phototime="10" url="" title="IMAGE_166"/>
+        <slide jpegURL="thumbs/t_0007.jpg" d_URL="slides/p_0007.jpg" comm="" transition="29" panzoom="1" phototime="10" url="" title="1"/>
+        <slide jpegURL="thumbs/t_0008.jpg" d_URL="slides/p_0008.jpg" comm="" transition="29" panzoom="1" phototime="10" url="" title="2"/>
+        <slide jpegURL="thumbs/t_0009.jpg" d_URL="slides/p_0009.jpg" comm="" transition="29" panzoom="1" phototime="10" url="" title="3"/>
+        <slide jpegURL="thumbs/t_0010.jpg" d_URL="slides/p_0010.jpg" comm="" transition="29" panzoom="1" phototime="10" url="" title="dsc00353"/>
+        <slide jpegURL="thumbs/t_0011.jpg" d_URL="slides/p_0011.jpg" comm="" transition="29" panzoom="1" phototime="10" url="" title="temple"/>
+        <slide jpegURL="thumbs/t_0012.jpg" d_URL="slides/p_0012.jpg" comm="" transition="29" panzoom="1" phototime="10" url="" title="04720036"/>
+        <slide jpegURL="thumbs/t_0013.jpg" d_URL="slides/p_0013.jpg" comm="" transition="29" panzoom="1" phototime="10" url="" title="04690002"/>
+        <slide jpegURL="thumbs/t_0014.jpg" d_URL="slides/p_0014.jpg" comm="" transition="29" panzoom="1" phototime="10" url="" title="04690003"/>
+        <slide jpegURL="thumbs/t_0015.jpg" d_URL="slides/p_0015.jpg" comm="" transition="29" panzoom="1" phototime="10" url="" title="04700026"/>
+        <slide jpegURL="thumbs/t_0016.jpg" d_URL="slides/p_0016.jpg" comm="" transition="29" panzoom="1" phototime="10" url="" title="04710033"/>
+        <slide jpegURL="thumbs/t_0017.jpg" d_URL="slides/p_0017.jpg" comm="" transition="29" panzoom="1" phototime="10" url="" title="04710034"/>
+    </album>
+</flash_parameters>

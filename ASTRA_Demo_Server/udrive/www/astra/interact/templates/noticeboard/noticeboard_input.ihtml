@@ -1,0 +1,48 @@
+ 
+<h2>{INPUT_HEADING}</h2>
+<div class="input_form_div" align="center">
+  <form name="folder" method="post" action="noticeboard_input.php" >
+<!-- BEGIN ModuleInputBlock -->
+        <table class="input_form_table">
+
+            <tr> 
+                <td valign="top" class="InputFormLeft">{NAME_STRING}:</td>
+                <td valign="top" class="InputFormRight"> <input type="text" name="name" value="{NAME}" size="35"> 
+                    <br>
+                    {NAME_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">{DESCRIPTION_STRING}:</td>
+                <td valign="top" class="InputFormRight"> <textarea accept-charset="{CHARACTER_SET}" name="description" cols="30" rows="4" wrap="VIRTUAL">{DESCRIPTION}</textarea> 
+                    <br>
+                    {DESCRIPTION_ERROR} </td>
+            </tr>
+            <tr>
+                <td valign="top" class="InputFormLeft">{TYPE_STRING}:</td>
+                <td valign="top" class="InputFormRight"><select name="type_key" id="type_key">
+                        <option value="1" {OPEN_SELECTED}>{OPEN_STRING}</option>
+                        <option value="2" {CLOSED_SELECTED}>{CLOSED_STRING}</option>
+                    </select>
+                    <a href="javascript:openHelpWin('{DOCS_URL}/Noticeboard_Admin')" class='helplink'>?</a></td>
+            </tr>
+            <tr>
+                <td valign="top" class="InputFormLeft">{DAYS_TO_KEEP_STRING}:<br>
+<span class="small">{DAYS_TO_KEEP_STRING2}</span></td>
+                <td valign="top" class="InputFormRight"><input name="days_to_keep" type="text" id="days_to_keep" value="{DAYS_TO_KEEP}" size="2" maxlength="2">
+                    {DAYS_TO_KEEP_ERROR}</td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">&nbsp;</td>
+                <td valign="top" class="InputFormRight"> <input type="submit" name="submit" value="{BUTTON}">
+                    {DELETE_BUTTON} 
+                    <input type="button" name="submit2" value="{CANCEL_STRING}" onClick="history.go(-1)"> 
+                </td>
+            </tr>
+
+        </table>
+<!-- END ModuleInputBlock -->		
+{GENERAL_SETTINGS}
+</form>
+    
+  {MOVE}
+</div>

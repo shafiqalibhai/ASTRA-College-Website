@@ -1,0 +1,146 @@
+{USELESS_TAG}
+<table id="contentTable">
+	<tr>
+		<td valign="top" id="mainPanel">
+{SHIFTED_BREADCRUMBS}
+			<div id="contentPanel">
+				<h1 id="spaceHomeHeading">
+					{FULL_SPACE_NAME}{SPACE_ADMIN_TOOL}{EDIT_HEADER}
+				</h1>
+				{HEADER} 
+<!-- BEGIN NewsHeadingBlock -->
+				<h2>
+					{NEWS_STRING}{ADD_NEWS_LINK}
+				</h2>
+<!-- END NewsHeadingBlock -->
+<!-- BEGIN NewsBlock -->
+				<div class="userContentBox">
+					<div class="postHeader">
+						<div class="newsPhoto">
+							{PHOTO_TAG}
+						</div>
+						<div class="postPostedBy">
+							{ADDED_BY} {DATE_ADDED} 
+							<a href="{PATH}/spaces/space.php?space_key={NEWS_SPACE_KEY}" class="small">
+								{SPACE_HEADING}</a>
+						</div>
+						<span class="postTitle">
+							{HEADING}
+						</span>
+						{ADMIN_IMAGE} 
+					</div>
+					<div class="postBody">
+						{BODY} 
+						<span style="clear:right" />
+					</div>
+				</div>
+<!-- END NewsBlock -->
+<!-- BEGIN MoreNewsBlock -->
+				<p align="right">
+					<a href="news.php?space_key={SPACE_KEY}">
+						<strong>
+							{MORE_NEWS_STRING}</strong></a>
+				</p>
+<!-- END MoreNewsBlock -->
+<!-- BEGIN BlockOneBlock -->
+				<div id="blockOne">
+					
+				{BLOCK_ONE_COMPONENTS} 
+						
+					<span>{ADD_BLOCK_ONE_LINK}</span>
+				</div>
+<!-- END BlockOneBlock -->
+			</div>
+		</td>
+
+		<td valign="top" id="sidePanel">
+<!-- BEGIN UpdatesBlock -->
+			<div class="controlBox">
+				<div class="disPaneHeading{WHOONLINE_DEFAULT_STYLE}" id="whoOnline" onclick="show_it('whoOnlineContent',this,'disPaneHeading')">
+					<span class="controlBoxTitle">
+						{WHOS_ONLINE}</span>
+				</div>
+				<div class="disPaneContent" id="whoOnlineContent" {UPDATEDITEMS_CONTENT_DEFAULTS}>
+					<span>
+						{USERS_ONLINE}</span>
+				</div>
+			</div>
+			<div class="controlBox">
+				<div class="disPaneHeading{WHATSNEW_DEFAULT_STYLE}" onclick="show_it('whatsNewContent',this,'disPaneHeading')" id="whatsNew">
+					<span class="controlBoxTitle">
+						{WHATS_NEW}</span>
+				</div>
+				<div id="whatsNewContent" class="disPaneContent" {WHATSNEW_CONTENT_DEFAULTS}>
+					<div align="right">
+						<form name="form1" method="post" action="space.php?space_key={SPACE_KEY}">
+							{SHOW_NEW_MENU}
+						</form>
+					</div>
+<!-- BEGIN EventTableBlock -->
+					<div id="eventsTable" class="disPaneHeading{EVENTSTABLE_DEFAULT_STYLE}" onclick="show_it('eventsTableContent',this,'disPaneHeading')">
+						<span>
+							{IMPORTANT_DATES_STRING}&nbsp;&nbsp;&nbsp;</span>
+					</div>
+					<div class="disPaneContent" id="eventsTableContent" {EVENTSTABLE_CONTENT_DEFAULTS}>
+						<ul>
+							{EVENTS}
+					</ul>
+					</div>
+<!-- END EventTableBlock -->
+<!-- BEGIN NewPostsBlock -->
+					<div class="disPaneHeading{LATESTPOSTINGS_DEFAULT_STYLE}" id="latestPostings" onclick="show_it('latestPostingsContent',this,'disPaneHeading')">
+						<span>
+							{LATEST_POSTINGS}</span>
+					</div>
+					<div class="disPaneContent" id="latestPostingsContent" {LATESTPOSTINGS_CONTENT_DEFAULTS}>
+						<ul class="newPostsList">
+<!-- BEGIN NewPostBlock -->
+							<li class="newPostsListItem">
+								<a href="{PATH}/modules/{POST_URL}?space_key={FORUM_SPACE_KEY}&amp;module_key={MODULE_KEY}&amp;thread_key={THREAD_KEY}&amp;post_key={POST_KEY}&amp;entry_key={ENTRY_KEY}#{POST_KEY}">
+									{SUBJECT}</a>
+							</li>
+<!-- END NewPostBlock -->
+						</ul>
+						{MORE_POSTS_LINK} 
+					</div>
+<!-- END NewPostsBlock -->
+<!-- BEGIN NewItemsBlock -->
+					<div id="latestItems" class="disPaneHeading{LATESTITEMS_DEFAULT_STYLE}" onclick="show_it('latestItemsContent',this,'disPaneHeading')">
+						<span>
+							{NEW_ITEMS}</span>
+					</div>
+					<div class="disPaneContent" id="latestItemsContent" {LATESTITEMS_CONTENT_DEFAULTS}>
+						<ul class="newPostsList">
+<!-- BEGIN NewItemBlock -->
+							<li class="newPostsListItem">
+								<a href="{PATH}/modules/{CODE}/{CODE}.php?space_key={ITEM_SPACE_KEY}&amp;module_key={MODULE_KEY}">
+									{NAME}</a>
+							</li>
+<!-- END NewItemBlock -->
+						</ul>
+						{MORE_ITEMS_LINK} 
+					</div>
+<!-- END NewItemsBlock -->
+<!-- BEGIN UpdatedItemsBlock -->
+					<div id="updatedItems" class="disPaneHeading{UPDATEDITEMS_DEFAULT_STYLE}" onclick="show_it('updatedItemsContent',this,'disPaneHeading')">
+						<span>
+							{UPDATED_ITEMS}</span>
+					</div>
+					<div class="disPaneContent" id="updatedItemsContent" {UPDATEDITEMS_CONTENT_DEFAULTS}>
+						{UPDATED_ITEMS_LIST} 
+					</div>
+<!-- END UpdatedItemsBlock -->
+				</div>
+			</div>
+
+<!-- BEGIN BlockTwoBlock -->
+<div id="blockTwo">					
+{BLOCK_TWO_COMPONENTS} 
+</div>						
+<!-- END BlockTwoBlock -->
+<!-- END UpdatesBlock -->
+{ADD_BLOCK_TWO_LINK}
+		</td>
+
+	</tr>
+</table>

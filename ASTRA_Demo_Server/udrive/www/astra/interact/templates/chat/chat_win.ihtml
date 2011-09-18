@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>{SERVER_NAME} - {PAGE_TITLE}</title>
+
+<script type="text/javascript" language="javascript"  src="{PATH}/includes/dojo/dojo.js?v2">
+</script> 
+
+		
+<SCRIPT TYPE="text/javascript">
+<!--
+var sendExit=true;
+function closeup() {
+	if(sendExit) {
+		sendExit=false;
+		dojo.io.bind({
+			url: 'poll.php',
+			mimetype: 'text/xml',
+			handle: function(type, data, evt){
+				window.close();
+			},
+			method: 'POST',
+			content: {data:'<events module_key="{MODULE_KEY}" space_key="{SPACE_KEY}" group_key="{GROUP_KEY}"><exit /></events>'}
+		});
+	}
+}
+
+
+//-->
+</SCRIPT>
+
+</head>
+<style>
+body{ 
+	padding: 0px;margin:0px;background-color:#DDDDDD
+}
+</style>
+<body onUnload="closeup()" onBeforeUnload="closeup()">
+
+<div align="center" id="chatswf">
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,65,0" width="598" height="490" id="chat" align="middle">
+<param name="allowScriptAccess" value="sameDomain" />
+<param name="movie" value="chat.swf?y" /><param name="quality" value="high" /><param name="bgcolor" value="#DDDDDD" />
+<param name="FlashVars" value="title={MODULE_NAME}&module_key={MODULE_KEY}&space_key={SPACE_KEY}&group_key={GROUP_KEY}&user_key={USER_KEY}" />
+<embed src="chat.swf?y" quality="high" bgcolor="#DDDDDD" width="598" height="490" name="chat" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" FlashVars="title={MODULE_NAME}&module_key={MODULE_KEY}&space_key={SPACE_KEY}&group_key={GROUP_KEY}&user_key={USER_KEY}" />
+</object></div>
+</body>
+</html>

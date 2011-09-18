@@ -1,0 +1,65 @@
+	<div id="innerBox">
+
+		<div id="personalBox">
+			{CURRENT_USER_PHOTO}
+			<div id="loginDetails" class="{LOGGED_IN_CLASS}">
+				{LOGIN_DETAILS}<br />
+<!-- BEGIN OnlineStatusBlock -->
+				<span class="inlineButton">{ONLINE_STATUS_LINK}</span>
+<!-- END OnlineStatusBlock -->
+				<span class="inlineButton">{LOGIN_LINK}</span></div><div id="yourLinksMenu">{YOUR_LINKS_MENU}</div><div id="messageAlert" {MESSAGE_ALERT_STYLE}>{MESSAGES}</div></div>
+
+
+	<div id="navigationBox">
+
+		<div id="navigation" class="controlBox">
+		<div id="navigationTop">
+
+				<span id="spaceName" class="controlBoxTitle">{SERVER_ADMIN}</span>
+		</div>
+			
+
+			<div id="navList">
+				<ul class="navlevel">
+					<li><a href="{PATH}/admin/settings.php" class="navlinks" style="background-image: url(../images/spanner.png)">{SERVER_SETTINGS}</a></li>
+					<li><a href="{PATH}/admin/language/index.php" class="navlinks">{LANGUAGES}</a></li>
+					
+					<li class="navHeadingLI"><span class="navHeading">{SPACE_TEXT}</span></li>
+					<li><a href="{PATH}/admin/spaces/spacemodify.php" class="navlinks">{MODIFY}/{DELETE}</a></li>
+
+					<li class="navHeadingLI"><span class="navHeading">{USER_GROUPS}</span></li>
+					<li><a href="{PATH}/admin/users/usergroupadd.php" class="navlinks">{ADD}</a> </li>
+					<li><a href="{PATH}/admin/users/usergroupmodify.php" class="navlinks">{MODIFY}/{DELETE}</a></li>
+					<li><a href="{PATH}/admin/users/defaultspaces.php" class="navlinks">Set default {SPACE_TEXT}s</a></li>
+
+					<li class="navHeadingLI"><span class="navHeading">Users</span></li>
+					<li><a href="{PATH}/admin/users/userinput.php" class="navlinks">{ADD}</a></li>
+					<li><a href="{PATH}/admin/users/bulkupload.php" class="navlinks">{BULK_UPLOAD}</a></li>
+					<li><a href="{PATH}/admin/users/spaceadminset.php" class="navlinks">Assign Membership</a></li>
+					<li><a href="{PATH}/admin/users/userlookup.php" class="navlinks">Lookup User</a></li>
+					<li><a href="{PATH}/admin/users/memberlookup.php" class="navlinks">{SPACE_TEXT} Memberships</a></li>
+
+					<li class="navHeadingLI"><span class="navHeading">{MODULE_TEXT}</span></li>
+					<li><a href="{PATH}/admin/scaleinput.php" class="navlinks"></a></li>
+					<li><a href="{PATH}/modules/kb/templateinput.php?referer=admin" class="navlinks">KnowledgeBase Templates</a></li>
+
+					<li class="navHeadingLI"><span class="navHeading">Icons</span></li>
+					<li><a href="{PATH}/admin/iconinput.php" class="navlinks">{ADD}</a></li>
+					<li><a href="{PATH}/admin/iconinput.php?action=modify" class="navlinks">{MODIFY}/{DELETE}</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="contentBox">
+<!-- 		<div id="breadcrumbsBox"> -->
+			<div id="pageTags">
+				<div class="contextHelp"></div>
+			</div>
+<!-- 
+			<div id="spaceBreadcrumbs">{SPACE_BREADCRUMBS}</div>
+			<div id="moduleBreadcrumbs">{MODULE_BREADCRUMBS}</div>
+		</div>
+ -->
+
+	<div id="content" style="clear:none">
+			<h1 style="margin-top:0"></h1>

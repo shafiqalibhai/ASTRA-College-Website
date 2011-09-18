@@ -1,0 +1,82 @@
+
+<h2>{INPUT_HEADING}</h2>
+
+<form name="forum" method="post" action="journal_input.php">
+  <div class="input_form_div" align="center">
+ 
+<!-- BEGIN ModuleInputBlock -->
+        
+    <table class="input_form_table">
+            
+        <tr> 
+                
+            <td class="InputFormLeft">{NAME_STRING}:</td>
+            <td class="InputFormRight"> <input type="text" name="name" value="{NAME}" size="35" /> 
+                    <br>
+                    {NAME_ERROR} </td>
+        </tr>
+            
+        <tr> 
+                
+            <td valign="top" class="InputFormLeft">{DESCRIPTION_STRING}:
+            {EDITOR_BUTTONS_description}</td>
+            <td valign="top" class="InputFormRight"> <textarea accept-charset="{CHARACTER_SET}" name="description" id="description" cols="60" rows="5" wrap="VIRTUAL">{DESCRIPTION}</textarea> 
+                    <div class="error">{DESCRIPTION_ERROR}</div> </td>
+        </tr>
+            
+        <tr>
+          <td valign="top" class="InputFormLeft">{JOURNALS_FOR_STRING}:</td>
+          <td valign="top" class="InputFormRight"> {JOURNALS_FOR_MENU}
+          <div class="{SELECTED_USERS_CLASS}" id="users_menu_tr">{SELECTED_USERS_STRING}:<br />{USERS_MENU}</div>
+          </td>
+        </tr>
+
+         <tr>
+          <td valign="top" class="InputFormLeft">{DEFAULT_DISPLAY}:</td>
+          <td valign="top" class="InputFormRight"> {DEFAULT_DISPLAY_MENU} </td>
+        </tr>
+
+        <tr> 
+            <td valign="top" class="InputFormLeft">{ACCESS_STRING}:</td>
+            <td valign="top" class="InputFormRight"> {ACCESS_MENU} </td>
+        </tr>
+        <tr>
+          <td valign="top" class="InputFormLeft">{EDIT_RIGHTS}:</td>
+          <td valign="top" class="InputFormRight">{EDIT_RIGHTS_MENU} </td>
+        </tr>  
+
+        <tr>
+          <td valign="top" class="InputFormLeft">{ENTRIES_TO_SHOW}:</td>
+          <td valign="top" class="InputFormRight"> <input type="text" name="entries_to_show" value="{ENTRIES_TO_SHOW_VALUE}" size="3" />  </td>
+        </tr>        
+        <tr>
+          <td valign="top" class="InputFormLeft">{SHOW_COMMENTS_DEFAULT}:</td>
+          <td valign="top" class="InputFormRight"> {COMMENTS_MENU} </td>
+        </tr>
+
+         <tr>
+          <td valign="top" class="InputFormLeft">{ENABLE_RSS}:</td>
+          <td valign="top" class="InputFormRight">{ENABLE_RSS_MENU} </td>
+        </tr>         
+         <tr>
+          <td valign="top" class="InputFormLeft">{ALLOW_COMMENTS}:</td>
+          <td valign="top" class="InputFormRight">{ALLOW_COMMENTS_MENU} </td>
+        </tr>         
+        <tr> 
+                
+            <td valign="top" class="InputFormLeft">&nbsp;</td>
+            <td valign="top" class="InputFormRight"> <input type="submit" name="submit" value="{BUTTON}" />
+                    {DELETE_BUTTON} 
+                    
+                <input type="button" name="submit2" value="{CANCEL_STRING}" onClick="history.go(-1)" /> 
+                </td>
+        </tr>
+
+        
+    </table>
+<!-- END ModuleInputBlock -->	
+      
+{GENERAL_SETTINGS}
+ 
+  </div>
+

@@ -1,0 +1,3 @@
+<?php   //Do NOT modify this file - it is auto-generated
+
+$page_strings=array('add_page'=>'Sayfa içinde Ekle/Deðiþtir','upload'=>'Sayfa Yükle','html_instruction'=>'HTML olmalý','enter_page'=>'Veya Sayfa Gir.','page_history'=>'Page history','old_version_warning'=>'You are viewing an old version of this page. If you save any changes to this page you will overwrite the %s','current_version'=>'current version','diff_heading'=>'Compare page versions','compare_versions'=>'Compare selected versions');?>

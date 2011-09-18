@@ -1,0 +1,4 @@
+add_page=ページを追加／削除
+upload=ページをアップロード
+html_instruction=HTMLでなければなりません
+enter_page=またはページを入力

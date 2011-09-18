@@ -1,0 +1,18 @@
+
+{UPLOAD_FORM}
+<div align="center">{SUMMARY_LINK}</div>
+<p><b>{FILES_HEADING}</b></p>
+<form name="form1" method="post" action="dropbox.php">
+
+<table width="100%" border="1" cellpadding="5">
+  
+  {DROPBOX_ITEMS} 
+</table>
+  <input type="hidden" name="action" value="action_marked" />
+ 
+  <span align="left"><a href="javascript:SetChecked(1,'files_selected[]')" class="small">{SELECT_ALL_STRING}</a> - <a href="javascript:SetChecked(0,'files_selected[]')" class="small">{CLEAR_ALL_STRING}</a></span>
+  <br /><br />
+  {DELETE_BUTTON} {ZIP_BUTTON}
+<input type="hidden" name="module_key" value="{MODULE_KEY}" />
+<input type="hidden" name="space_key" value="{SPACE_KEY}" />
+</form>

@@ -1,0 +1,26 @@
+ 
+<h2>{URL_HEADING}  </h2>
+
+    <div align="left">
+        
+    <p align="center"><a href="{BACK_URL}">{BACK_STRING}</a></p>
+    <p>{URL_STRING1}</p>
+        
+    <p class="small">{PATH}{INT_MODULE_URL}</p>
+        
+    <p>{URL_STRING2}</p>
+		
+    <p class="small">{FULL_URL}{EXT_MODULE_URL}</p>
+    </div>
+<h2>{OTHER_OPTIONS_STRING}</h2>
+
+<!-- BEGIN ShortURLBlock -->
+<p><strong>{EMAIL_LINK_STRING}</strong><br />{EMAIL_LINK_TEXT_STRING}</p>
+<p>{FULL_URL}{DIRECT_TYPE}{EMAIL_URL}</p>
+<!-- END ShortURLBlock -->
+
+<!-- BEGIN AdvancedLinkingBlock -->
+<p>{POPUP_STRING}</p>
+<p>&lt;span class=&quot;vlink&quot; onClick="window.open ('{PATH}/modules/general/popup.php?module_key={MODULE_KEY}&amp;type_key={TYPE_KEY}', '{MODULE_KEY}', 'toolbar=no, scrollbars=yes, width=400, height=400, menubar=no, location=no, resizable=yes')"&gt;Click Here&lt;/span&gt;</p>
+
+<!-- END AdvancedLinkingBlock -->

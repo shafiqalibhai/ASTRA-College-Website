@@ -1,0 +1,18 @@
+<div class="userContentBox">
+
+<div align="center"><a href="calendar.php?space_key={SPACE_KEY}&amp;module_key={MODULE_KEY}">{RETURN}</a><br/><br/><br/></div>
+
+	<table width="99%">
+		<tr class="calendar{ALL_DAY}Event" style="{ESTYLE}">
+			<td align="center" width="99%">
+				<span style="font-size:normal;">{NAME}</span>
+				{EVENT_EDIT}
+			</td>
+			<td width="1%" style="white-space:nowrap;font-size:x-small">&nbsp;{TYPE_NAME}</td>
+		</tr>
+	</table>
+
+<div align="center">{EVENT_DATE}<p>{DESCRIPTION}</p><p>{STARNOTE}</p></div>
+
+</dvi>
+

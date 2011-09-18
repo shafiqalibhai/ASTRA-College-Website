@@ -1,0 +1,22 @@
+
+<h2>Set Default {SPACE_TEXT}s for a User Group<a href="javascript:openHelpWin('{DOCS_URL}/User_Groups#Default_User_Groups')" class='helplink'>?</a></h2>
+<div align="center" class="message">{MESSAGE}</div>
+<form name="form1" method="post" action="defaultspaces.php">
+  <div class="input_form_div" align="center">
+    <table class="input_form_table">
+      <tr>
+        <td class="InputFormLeft" valign="top">Select a User Group:</td>
+        <td class="InputFormRight">{USER_GROUP_MENU}</td>
+      </tr>
+      <tr>
+        <td class="InputFormLeft">&nbsp;</td>
+        <td class="InputFormRight">
+          <input type="submit" name="submit" value="Submit" />
+                    <input name="action" type="hidden" id="action" value="display">
+        </td>
+      </tr>
+    </table>
+    
+  </div>
+</form>
+

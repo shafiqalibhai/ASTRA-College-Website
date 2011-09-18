@@ -1,0 +1,4 @@
+<h1>{HEADING_STRING}</h1>
+<table width="100%" border="1" cellspacing="0" cellpadding="5">
+ {ALL_URLS}
+</table>

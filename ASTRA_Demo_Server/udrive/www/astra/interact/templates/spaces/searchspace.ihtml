@@ -1,0 +1,41 @@
+ <h2>{SEARCH_HEADING}</h2>
+<form name="form1" method="get" action="searchspace.php">
+    <div align="center">
+        <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+        <input name="search_terms" type="text" id="search_terms" value="{SEARCH_TERMS}" size="25">
+        <label> 
+        <select name="rule" id="rule">
+            <option value="all" selected>{ALL_WORDS_STRING}</option>
+            <option value="any">{ANY_WORDS_STRING}</option>
+            <option value="exact">{EXACT_PHRASE_STRING}</option>
+        </select>
+        <input type="submit" name="submit" value="{SEARCH_STRING}">
+        </label>
+    </div>
+</form>
+
+<!-- BEGIN ResultsBlock -->
+<table width="100%"  border="1" cellpadding="5">
+   
+    <tr> 
+        <td width="50%">
+		
+<div align="center"><strong>{SITE_CONTENT_STRING}</strong></div></td>
+        <td><div align="center"><strong>{FORUM_POSTINGS_STRING}</strong></div></td>
+    </tr>
+    <tr> 
+        <td valign="top" > 
+            <!-- BEGIN ContentBlock -->
+            <p class="small"><strong>{NUMBER}.</strong> <a href="{PATH}/modules/{CODE}/{CODE}.php?space_key={SPACE_KEY}&amp;module_key={MODULE_KEY}&amp;link_key={LINK_KEY}&amp;group_key={GROUP_KEY}" class="small">{MODULE_NAME}</a> {DESCRIPTION}</p>
+            <!-- END ContentBlock -->
+        </td>
+        <td valign="top"> 
+            <!-- BEGIN ForumBlock -->
+            <p class="small"><strong>{NUMBER}.</strong> <a href="{PATH}/modules/forum/thread.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&thread_key={THREAD_KEY}&post_key={POST_KEY}#{POST_KEY}">{SUBJECT}</a><br />
+			{ADDED_BY} {DATE_ADDED}
+<!-- END ForumBlock -->	
+		</td>
+    </tr>
+</table>
+
+<!-- END ResultsBlock -->

@@ -1,0 +1,61 @@
+<h2>{MARK_HEADING}</h2>
+<div align="center" class="small"><a href="dropbox.php?space_key={SPACE_KEY}&amp;module_key={MODULE_KEY}">{BACK_LINK_STRING}</a></div>
+<form name="delete" method="post" enctype="multipart/form-data" action="mark.php">
+  <div align="center">
+        <table class="input_form_table_wide">
+            <tr> 
+                <td colspan="2">{FILE} 
+                    <input name="item_key" type="hidden" id="item_key" value="{ITEM_KEY}" />
+                    {UPLOADED_BY_STRING}  {USER_NAME} 
+        {DATE_ADDED} </td>
+            </tr>
+            <tr> 
+                <td class="InputFormLeft">{STATUS_STRING}:</td>
+                <td class="InputFormRight">{STATUS_MENU}</td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">{COMMENTS_STRING}:
+                {EDITOR_BUTTONS_comments}</td>
+                <td class="InputFormRight"> 
+       
+	    <textarea accept-charset="{CHARACTER_SET}" name="comments" cols="60" rows="20" id="comments">{COMMENTS}</textarea>
+                    
+      </td>
+            </tr>
+            <!-- BEGIN GradebookBlock -->
+			<tr>
+                <td class="InputFormLeft" valign="top">{GRADE_BOOK_STRING}:</td>
+                <td class="InputFormRight">{ITEM_MENU}{GET_GRADES_BUTTON}{GRADE_MENU}</td>
+            </tr>
+			<!-- END GradebookBlock -->
+            <!-- BEGIN AmendBlock -->
+            <tr> 
+                <td class="InputFormLeft" valign="top">{AMMENDED_STRING}:<br />
+        ({OPTIONAL_STRING}) </td>
+                <td class="InputFormRight"> 
+        <input type="file" name="file" size="35" />
+        <br />
+        {FILE_ERROR} </td>
+            </tr>
+            <!-- END AmendBlock -->
+              
+            <tr> 
+                <td class="InputFormLeft">&nbsp;</td>
+                <td class="InputFormRight"> <br>
+        <input type="submit" name="Submit" value="{SUBMIT_STRING}" />
+        <input type="hidden" name="module_key" value="{MODULE_KEY}" />
+        <input type="hidden" name="space_key" value="{SPACE_KEY}" />
+        <input type="hidden" name="action" value="{ACTION}" />
+        <input type="hidden" name="file_key" value="{FILE_KEY}" />
+        <input type="hidden" name="file_name" value="{FILE_NAME}" />
+        <input type="hidden" name="description" value="{ORIGINAL_DESCRIPTION}" />
+                    <input name="user_key" type="hidden" id="user_key" value="{USER_KEY}" />
+                                              </td>
+            </tr>
+        </table>
+    </div>
+</form>
+
+
+
+

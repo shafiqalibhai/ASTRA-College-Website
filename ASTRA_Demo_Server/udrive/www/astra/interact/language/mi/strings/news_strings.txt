@@ -1,0 +1,9 @@
+not_allowed=K&#257;re e taea e koe te t&#257;piri k&#257;rere ki t&#275;nei kainga
+add_success=Kua t&#257;pirihia t&#257;u karere
+delete_success=Kua whakakorengia t&#257;u karere
+modify_success=Kua whakarerek&#275;hia t&#257;u karere
+news_heading=T&#257;piri/Whakarerek&#275; he k&#257;rere
+heading=Pane
+body=Tinana
+no_body=K&#257;re koe i tuhi i t&#275;tahi k&#333;rero
+no_heading=K&#257;re koe i tuhi i t&#275;tahi pane

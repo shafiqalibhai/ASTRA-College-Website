@@ -1,0 +1,34 @@
+ 
+<h2>{INPUT_HEADING}</h2>
+<div class="input_form_div" align="center">
+  <form name="folder" method="post" action="chat_input.php" >
+<!-- BEGIN ModuleInputBlock -->
+        <table class="input_form_table">
+
+            <tr> 
+                <td valign="top" class="InputFormLeft">Name:</td>
+                <td valign="top" class="InputFormRight"> <input type="text" name="name" value="{NAME}" size="35"> 
+                    <br>
+                    {NAME_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">Description:</td>
+                <td valign="top" class="InputFormRight"> <textarea name="description" cols="30" rows="4" wrap="VIRTUAL">{DESCRIPTION}</textarea> 
+                    <br>
+                    {DESCRIPTION_ERROR} </td>
+            </tr>
+           <tr> 
+                <td valign="top" class="InputFormLeft">&nbsp;</td>
+                <td valign="top" class="InputFormRight"> <input type="submit" name="submit" value="{BUTTON}">
+                    {DELETE_BUTTON} 
+                    <input type="button" name="submit2" value="Cancel" onClick="history.go(-1)"> 
+                </td>
+            </tr>
+
+        </table>
+<!-- END ModuleInputBlock -->		
+{GENERAL_SETTINGS}
+</form>
+    
+  {MOVE}
+</div>

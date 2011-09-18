@@ -1,0 +1,61 @@
+<div id="{POST_KEY}Comments">
+
+<!-- BEGIN CommentBlock -->
+<div class="userContentSubBox" style="margin-left:{MARGIN_LEFT}px">
+	
+	<div class="postPostedBy">{POSTED_BY} {POSTED_BY_DETAILS}, {POSTED_TIME}</div>
+	<div class="commentTitle">
+		{COMMENT_SUBJECT_VALUE}
+	</div>
+	
+	<div class="commentBody">
+	{COMMENT_BODY_VALUE}
+	</div>
+	
+	<div class="commentFooter">
+		{EDIT_LINK}
+		<!-- BEGIN ReplyBlock -->
+		<a class="inlineButton" href="{PATH}/modules/general/commentinput.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&parent_key={POST_KEY}&thread_key={THREAD_KEY}&user_key={USER_KEY}&action=Reply&referer={REFERER}" >{REPLY}</a> 
+		<!-- END ReplyBlock --> 
+	</div>
+
+</div>
+<!-- END CommentBlock -->
+<a name="add_comment"></a>
+<!-- BEGIN CommentInputBlock -->
+	<div class="CommentInput">
+		<h2>{ADD_COMMENT}</h2>
+		<form action="{PATH}/modules/general/commentinput.php" method="post">
+
+<!-- BEGIN CommentNotLoggedInBlock -->
+		{LOGIN_INFO}
+		<table style="border:1px solid;margin:2px;">
+	<tr><td><label for="unauth_name">{NAME}:</label></td><td><input type="text" name="unauth_name" value=""></td></tr>
+	 <tr><td><label for="unauth_email">{EMAIL}:</label></td><td><input type="text" name="unauth_email" size="36" value=""> <span style="white-space:nowrap">({OPTIONAL})</span></td></tr>
+	 <tr><td><label for="unauth_url">{URL}:</label></td><td><input type="text" name="unauth_url" size="36" value=""> ({OPTIONAL})</td></tr></table>
+<!-- END CommentNotLoggedInBlock -->
+
+ <label for="subject">{SUBJECT}</label> <br />         
+<input type="text" name="subject" value="{SUBJECT_VALUE}">
+       
+          <label for="body"><br />
+          {BODY}</label>
+          {EDITOR_BUTTONS_body}<br />
+          <textarea accept-charset="{CHARACTER_SET}" name="body" cols="60" rows="15" id="body">{BODY_VALUE}</textarea>
+          <br />
+          <input type="submit" name="submit" value="{SUBMIT_BUTTON}" />
+ 	<!-- BEGIN DeleteBlock -->
+<input type="submit" name="submit" value="{DELETE}" onClick="return confirmDelete('{DELETE_WARNING}')" />
+ <!-- END DeleteBlock -->     
+		<input type="hidden" name="KABLOOEY" value="{KABLOOEY}" />
+		<input type="hidden" name="space_key" value="{SPACE_KEY}" />
+    	<input type="hidden" name="module_key" value="{MODULE_KEY}" />
+    	<input type="hidden" name="parent_key" value="{PARENT_KEY}" />
+    	<input type="hidden" name="thread_key" value="{THREAD_KEY}" />
+    	<input type="hidden" name="post_key" value="{POST_KEY_VALUE}" />
+    	<input type="hidden" name="user_key" value="{USER_KEY}" />
+		<input type="hidden" name="referer" value="{REFERER}" />
+    	</form>
+	</div>
+<!-- END CommentInputBlock -->
+</div>

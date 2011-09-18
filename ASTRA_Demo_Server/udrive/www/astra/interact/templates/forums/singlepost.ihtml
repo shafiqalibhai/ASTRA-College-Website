@@ -1,0 +1,36 @@
+{NEW_THREAD}
+{SPACE}
+<a name="{POST_KEY}"></a>
+<div style="margin-left:{INDENT}">
+	<div class="fullPost" > 
+    	<input name="post_keys[]" type="hidden"  value="{POST_KEY}">
+	
+		<div class="postHeader">
+			<span style="float:right">{TYPE}<br />Post # {POST_KEY}</span>
+			{STATUS_IMAGE}
+    		<strong>{POSTED_BY_STRING}: </strong><a href="{PATH}/modules/forum/byname.php?space_key={SPACE_KEY}&amp;module_key={MODULE_KEY}&amp;user_key={USER_KEY}" class="{POST_CLASS}">{FULL_NAME}</a> {ON_STRING} <i>{DATE_ADDED}</i> {AT_STRING} {TIME_ADDED} {CONTEXT} <br />
+			<strong>{SUBJECT_STRING}:</strong> {SUBJECT}
+		</div>
+		<div class="postBody">
+      		<div class="postPhoto">{PHOTO}</div>
+      		{BODY}
+	   		<div class="postAttachmentLink">
+	   			{VIEW_ATTACHMENT}
+			</div>
+		<div>
+		<br />
+	
+		
+		
+		<div class="postReplyLink">
+			<a href="{PATH}/modules/forum/postinput.php?action=reply&amp;space_key={SPACE_KEY}&amp;module_key={MODULE_KEY}&amp;thread_key={THREAD_KEY}&amp;parent_key={POST_KEY}&entry_key={ENTRY_KEY}&referer={REFERER}&subject={SUBJECT_URL}#reply" >{REPLY_STRING}</a> 
+			<!-- BEGIN EditPostBlock -->				
+			 - <a href="{PATH}/modules/forum/editpost.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&thread_key={THREAD_KEY}&parent_key={PARENT_KEY}&post_key={POST_KEY}&entry_key={ENTRY_KEY}&referer={REFERER}&action=Edit" >{EDIT_POST_STRING}</a>
+			<!-- END EditPostBlock -->	
+		</div>
+		<br class="postEnd">
+
+	</div></div>
+
+	</div>
+</div>

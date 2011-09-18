@@ -1,0 +1,29 @@
+
+<table border="0" width="100%" cellpadding="5">
+<tr>
+
+{SPACE}
+    <td class="{POST_BACKGROUND}">
+     
+
+
+  
+      <table width="100%" border="0" cellpadding="0">
+                <tr valign="top">
+                    <td><span class="small">{SUBJECT_STRING}: {SUBJECT}<br />
+            {ADDED_BY_STRING}: <a href="byname.php?space_key={SPACE_KEY}&amp;module_key={MODULE_KEY}&amp;user_key={USER_KEY}">{FULL_NAME}</a> 
+            - <a href="mailto:{EMAIL}">{EMAIL}</a> {ON_STRING} <i>{DATE_ADDED}</i> {AT_STRING} {TIME_ADDED} 
+            {CONTEXT} <br />
+      </span> </td>
+                              </tr>
+            </table>
+      
+      <p>{BODY}</p> 
+            <div align="right" class="small">
+<a href="commentinput.php?action=reply&amp;space_key={SPACE_KEY}&amp;module_key={MODULE_KEY}&amp;shareditem_key={SHAREDITEM_KEY}&amp;parent_key={COMMENT_KEY}&amp;subject_url={SUBJECT_URL}">{REPLY_STRING}</a>
+ - <a href="commentinput.php?action=reply_quoted&space_key={SPACE_KEY}&amp;module_key={MODULE_KEY}&amp;shareditem_key={SHAREDITEM_KEY}&amp;parent_key={COMMENT_KEY}&amp;subject_url={SUBJECT_URL}">{REPLY_QUOTED_STRING}</a> {ADMIN_IMAGE}
+<br />
+       <span class="smallgrey">{COMMENT_DETAILS} </span></div>
+ </td>
+ </tr>
+</table> 

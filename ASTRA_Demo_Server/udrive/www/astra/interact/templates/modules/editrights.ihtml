@@ -1,0 +1,109 @@
+ 
+<h2>{HEADING_STRING}</h2>
+
+    <div align="center">
+       
+        <table width="100%" border="1" cellpadding="5">
+            <tr>
+                <td width="50%" valign="top"><strong>{MODULE_RIGHTS_STRING}</strong></td>
+                <td valign="top"><strong>{LINK_RIGHTS_STRING}</strong></td>
+            </tr>
+            <tr>
+                <td>
+<!-- BEGIN ModuleEditBlock -->				
+				<form name="form1" method="post" action="editrights.php">
+				        <table width="100%" border="0" cellpadding="5">
+                            <tr>
+                                <td><div align="right">{ENTER_USERNAME_STRING}:<br>
+                                    <strong>{OR_STRING}</strong>                                </div></td>
+                                <td><input name="username" type="text" id="username" size="12"></td>
+                            </tr>
+                            <tr>
+                                <td><div align="right">{GROUP_NO_STRING}:</div></td>
+                                <td>
+							<input name="group_key" type="text" id="group_key" size="12">
+							</td>
+                            </tr>
+                            <tr>
+                                <td><div align="right">{EDIT_LEVEL_STRING}:</div></td>
+                                <td><select name="edit_level" size="3" class="small" id="edit_level">
+                                        <option value="1">User/Group can Link and Edit</option>
+                                        <option value="2" selected>User/Group can Link Only</option>
+                                        <option value="3">User/Group can Link and Copy</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td><input type="submit" name="Submit" value="{SUBMIT_STRING}">
+                                    <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+                                    <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+                                    <input name="link_key" type="hidden" id="link_key" value="{LINK_KEY}">
+                                    <input name="action" type="hidden" id="action" value="module_rights"></td>
+                            </tr>
+                        </table>
+                    
+                        </form>
+<!-- END ModuleEditBlock -->
+                </td>
+                <td valign="top">
+<form name="form1" method="post" action="editrights.php">
+				        <table width="100%" border="0" cellpadding="5">
+                            <tr>
+                                <td><div align="right">{ENTER_USERNAME_STRING}:<br>
+                                    <strong>{OR_STRING}</strong>                                </div></td>
+                                <td><input name="username" type="text" id="username" size="12"></td>
+                            </tr>
+                            <tr>
+                                <td><div align="right">{GROUP_NO_STRING}:</div></td>
+                                <td>
+							<input name="group_key" type="text" id="group_key" size="12">
+							</td>
+                            </tr>
+                            <tr>
+                                <td><div align="right"></div></td>
+                                <td><input type="submit" name="Submit" value="{SUBMIT_STRING}">
+                                    <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+                                    <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+                                    <input name="link_key" type="hidden" id="link_key" value="{LINK_KEY}">
+                                    <input name="action" type="hidden" id="action" value="link_rights"></td>
+                            </tr>
+                        </table>
+                    </form></td>
+            </tr>
+        </table>
+    </div>
+</div>
+ <!-- BEGIN ExistingRightsBlock --> 
+        
+<h2 align="left">{EXISTING_RIGHTS_STRING}</h2>
+        <form name="form2" method="post" action="editrights.php">
+    <table width="100%" border="1" cellpadding="5">
+        <tr>
+            <td>&nbsp;</td>
+            <td><strong>{USER_GROUP_STRING}</strong></td>
+            <td><strong>{EDIT_RIGHTS_STRING}</strong></td>
+        </tr>
+ <!-- BEGIN RightsListBlock -->
+        <tr>
+            <td><input name="{KEY}" type="checkbox" id="{KEY}" value="{KEY_VALUE}"></td>
+            <td>{NAME}</td>
+            <td>{EDIT_RIGHTS}</td>
+        </tr>
+ <!-- END RightsListBlock -->        	
+    </table>
+
+        
+    <div align="center">
+        <input type="submit" name="Submit" value="{REMOVE_SELECTED_RIGHTS_STRING}">
+                
+        <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+                                    
+        <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+                                    
+        <input name="link_key" type="hidden" id="link_key" value="{LINK_KEY}">
+                                    
+        <input name="action" type="hidden" id="action" value="remove_rights">
+            </div>
+</form>
+        
+<!-- END ExistingRightsBlock -->

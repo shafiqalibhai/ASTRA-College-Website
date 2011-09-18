@@ -1,0 +1,27 @@
+
+<h2>Enter Account Creation Password</h2>
+<p>To create an account on this server you need to enter the account creation password. </p>
+<div align="center" class="message">{MESSAGE}</div>
+<form name="access" method="post" action="secureaccounts.php">
+  <div align="center">
+  <table class="input_form_table">
+    <tr> 
+                <td class="InputFormLeft">Account Creation Password:</td>
+        <td class="InputFormRight"> 
+          <div align="center">
+                        <input name="account_creation_password" type="text" id="account_creation_password" size="10" />
+          </div>
+        </td>
+    </tr>
+    <tr> 
+      <td class="InputFormLeft">&nbsp;</td>
+                <td class="InputFormRight"> 
+          <input type="hidden" name="action" value="check_password" />
+		  <input type="hidden" name="user_group_key" value="{USER_GROUP_KEY}" />
+          <input type="submit" name="submit" value="Submit" />
+          <input type="button" name="submit" value="Cancel" onClick="history.go(-1)" />
+        </td>
+    </tr>
+  </table></div>
+</form>
+

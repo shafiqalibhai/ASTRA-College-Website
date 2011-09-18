@@ -1,0 +1,25 @@
+<form method="post" name="form1" id="form1" action="{PATH}/modules/forum/forumadmin.php">
+{FULL_POSTS} 
+<!-- BEGIN ButtonBlock -->	
+<br />
+<div align="left"><input name="submit" type="submit" class="smallbutton" id="submit"  value="{SUBMIT_CHANGES_STRING}" /></div>
+<!-- END ButtonBlock -->	
+        <input type="hidden" name="module_key" value="{MODULE_KEY}">
+        <input type="hidden" name="space_key" value="{SPACE_KEY}">
+		<input type="hidden" name="entry_key" value="{ENTRY_KEY}">
+		<input type="hidden" name="thread_key" value="{THREAD_KEY}">
+		<input type="hidden" name="referer" value="{REFERER}">
+   
+        <input type="hidden" name="marked_action"  id="marked_action" value="set_flags">
+</form>
+<!-- BEGIN ForumLinksBlock -->
+<!-- BEGIN PreviousLinkBlock -->
+
+	<< <a href="thread.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&thread_key={PREVIOUS_THREAD_KEY}">{PREVIOUS_STRING}</a>  
+	<!-- END PreviousLinkBlock -->
+	<!-- BEGIN NextLinkBlock -->
+	     <a href="thread.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&thread_key={NEXT_THREAD_KEY}">{NEXT_STRING}</a> >>
+	 <!-- END NextLinkBlock -->
+
+<p > <a href="{PATH}/modules/forum/forum.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}">{MODULE_NAME} {HOME_STRING}</a> {PRINT_LINK}</p>
+<!-- END ForumLinksBlock -->

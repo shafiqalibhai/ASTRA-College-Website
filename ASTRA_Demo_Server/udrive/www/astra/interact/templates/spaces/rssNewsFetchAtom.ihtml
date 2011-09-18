@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>ASTRA NEWS</title>
+    <subtitle>Aurora's Scientific, Technological and Research Academy</subtitle>
+    <link rel="alternate" type="text/html" hreflang="en" href="http://www.astra.co.nr"/>
+    <link rel="self" type="application/atom+xml"  hreflang="en" href="http://www.astra.co.nr"/>
+    <id>http://www.astra.co.nr</id>
+    <updated>{DATE_ADDED}</updated>
+    <generator>Shafiq Issani</generator>
+    <entry>
+        <title>{SPACE_HEADING} {HEADING} {NEWS_HEADING} :: posted by {ADDED_BY}</title>
+        <link rel="self" type="application/atom+xml" href="http://www.astra.co.nr"/>
+        <link rel="alternate" type="text/html" href="http://www.astra.co.nr"/>
+        <updated>{DATE_ADDED}</updated>
+        <id> {BODY} {PREVIOUS_LINK} {NEXT_LINK} </id>
+        <author>
+        <name>{ADDED_BY}</name>
+        </author>
+        <summary type="html"> {BODY} {PREVIOUS_LINK} {NEXT_LINK} </summary>
+    </entry>
+
+</feed>

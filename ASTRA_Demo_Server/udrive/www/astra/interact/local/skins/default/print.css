@@ -1,0 +1,18 @@
+#navigationBox {
+	display:none;
+}
+#contentBox {
+	padding-left: 10px;	
+	padding-right: 10px;
+	min-width:300px;
+	margin-left:1em;
+}
+.popup{
+display:none;
+}
+input {
+display:none;
+}
+a {
+	text-decoration:none;
+}

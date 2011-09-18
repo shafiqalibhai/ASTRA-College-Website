@@ -1,0 +1,19 @@
+
+<table width="80%" border="0" cellpadding="5">
+  <tr>
+    <td valign="top" >{SPACE_NAME}</td>
+    <td valign="top"> 
+      <form name="form1" method="post" action="defaultspaces.php">
+        <input type="hidden" name="space_key" value="{SPACE_KEY}" />
+        <input type="hidden" name="user_group_key" value="{USER_GROUP_KEY}" />
+                <input name="action" type="hidden" id="action" value="delete" />
+        <input type="submit" name="submit" value="Delete" onClick="return confirmDelete('Are your sure?')" />
+                <br>
+                <input type="checkbox" name="remove_membership_{SPACE_KEY}" value="1">
+<span class="small">Remove existing space memberships</span>
+</form>
+    </td>
+  </tr>
+</table>
+
+

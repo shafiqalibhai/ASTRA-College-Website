@@ -1,0 +1,39 @@
+<div style="padding:15px">
+<div style="margin-top:10px;margin-bottom:10px;">{KB_TRAIL}{ADD_ENTRY_LINK}</div>
+<div align="left">
+<form name="form1" method="get" action="search.php">
+  
+    <input type="text" name="search_terms" class="formTxtInput">
+    <input type="submit" name="submit" value="{SEARCH}" class="formButton">
+     <input type="hidden" name="space_key" value="{SPACE_KEY}">
+        <input type="hidden" name="module_key" value="{MODULE_KEY}">
+  
+</form>
+</div><br />
+
+
+<!-- BEGIN SubCategoryBlock -->
+<div class="subCategories">
+    <h3>{SUBCATEGORIES_STRING}</h3>
+        <ul>
+		<!-- BEGIN CategoryLinkBlock -->
+        <li><a href="viewentries.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&category_key={CATEGORY_KEY}">{CATEGORY_NAME}</a> <span class="small">({ENTRY_COUNT})</span></li>
+        <!-- END CategoryLinkBlock -->
+		</ul>
+ 
+</div>
+<!-- END SubCategoryBlock -->
+<br />
+<div class="subCategories">
+ <h3>{ENTRIES}</h3>
+<!-- BEGIN TemplateTypeBlock -->
+{TEMPLATE_NAME}
+<ul>
+<!-- BEGIN EntryLinksBlock -->
+<li style="margin-top:10px">{SUMMARY_FIELDS}</li>
+<!-- END EntryLinksBlock -->
+</ul>
+<!-- END TemplateTypeBlock -->
+</div>
+
+</div>

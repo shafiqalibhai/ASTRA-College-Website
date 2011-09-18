@@ -1,0 +1,10 @@
+ 
+
+<div align="center" class="error">
+
+  <h2>{MESSAGE}</h2>
+
+  <p><a href="{BACK}">{BACK}</a></p>
+
+</div>
+

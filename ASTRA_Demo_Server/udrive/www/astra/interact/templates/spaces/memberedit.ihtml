@@ -1,0 +1,74 @@
+<h2>{ADD_MEMBER_HEADING} 
+</h2>
+<form name="form1" method="post" action="memberedit.php">
+    <div class="boxBorder" align="center"><div align="center">
+        <table  border="0" cellpadding="2">
+            <tr>
+                <td><strong>{BY_NAME_NUMBER}</strong></td><td></td>
+            </tr>
+            <tr>
+                <td> 
+        
+                        <select name="action">
+                            <option value="add_by_username" selected>{ADD_BY_USERNAME}</option>
+                            <option value="add_by_number">{ADD_BY_NUMBER}</option>
+                        </select>
+                    <td></td></tr>
+          <tr><td colspan="2">
+          <span class="small"><br />{USERNAME_INSTRUCTIONS}</span></td>
+            </tr>
+            <tr>
+                <td>
+                        <input name="user_list" type="text" id="user_list" size="32"></td><td>
+ {PRIV_MENU}</td></tr>
+            <tr>
+                <td> 
+
+                        <input type="submit" name="add" value="{ADD_STRING}" />
+                        
+                                                
+                        <input type="hidden" name="space_key" value="{SPACE_KEY}" />
+                        
+</td><td></td>
+            </tr>
+        </table></div>
+    </div>
+</form>
+<div align="center">{OR_STRING}</div>
+<form name="form1" method="post" enctype="multipart/form-data" action="memberedit.php">
+    <div class="boxBorder" align="center">
+        <table  border="0" cellpadding="8">
+            <tr>
+                <td>
+        <div align="center"><strong>{UPLOAD_MEMBERS}</strong></div></td>
+            </tr>
+            <tr>
+                <td> 
+        <div align="center"><b>
+                        <select name="action">
+                            <option value="upload_by_username">{UPLOAD_BY_USERNAME}</option>
+                            <option value="upload_by_number">{UPLOAD_BY_NUMBER}</option>
+                        </select>
+                    <br>
+          </b><span class="small">{UPLOAD_INSTRUCTIONS}<br>
+          </span></div></td>
+            </tr>
+            <tr>
+                <td>
+        <div align="center"> 
+                        <input type="file" name="file" size="10">
+        </div></td>
+            </tr>
+            <tr>
+                <td> 
+        <div align="center">
+                        <input type="submit" name="add" value="{ADD_STRING}" />
+                        
+                        <input type="hidden" name="space_key" value="{SPACE_KEY}" />
+		                
+         
+        </div></td>
+            </tr>
+        </table>
+    </div>
+</form>

@@ -1,0 +1,71 @@
+<h2>{INPUT_HEADING}</h2>
+<div align="center"><a href="admin.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}">{BACK_STRING}</a></div>
+
+<!-- BEGIN AddCategoryBlock -->
+<form method="post" action="categoryinput.php">
+
+	<fieldset class="fieldset" style="width:70%">
+		
+		<legend>{ADD_CATEGORY_STRING}</legend>
+		<br />
+		<label for="category_name">{CATEGORY_NAME_STRING}:</label>
+		<span class="formInput"><input type="text" name="category_name" value="{CATEGORY_NAME}" size="40">{NAME_ERROR}</span>
+		<br />       
+		<label for="parent_key">{CATEGORY_PARENT_STRING}:</label>
+		<span class="formInput">{PARENT_MENU}{CATEGORY_PARENT_ERROR}</span>
+		<br />
+        <input type="submit" name="submit" value="{BUTTON}" class="noLabel">
+        <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+        <input type="hidden" name="category_key" value="{CATEGORY_KEY}">
+		<input type="hidden" name="action" value="{ACTION}">
+        <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+	</fieldset>
+</form>
+<!-- END AddCategoryBlock -->
+
+<!-- BEGIN ModifyCategoryBlock -->
+<form method="post" action="categoryinput.php">
+	<fieldset class="fieldset" style="width:70%">
+		<legend>{MODIFY_CATEGORY_STRING}</legend>
+		<br />
+		<label for="category_key">{CATEGORIES_STRING}:</label>
+		<span class="formInput">{CATEGORY_MENU}{CATEGORY_PARENT_ERROR}</span>
+		<br />
+        <input type="submit" name="submit" value="{MODIFY_STRING}" class="noLabel">
+        <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+		<input type="hidden" name="action" value="modify">
+        <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+	</fieldset>
+</form>
+<!-- END ModifyCategoryBlock -->
+<!-- BEGIN ModifyCategoryBlock2 -->
+<a name="modify"></a>
+<form method="post" action="categoryinput.php">
+	<fieldset class="fieldset" style="width:70%">
+		<legend>{MODIFY_CATEGORY_STRING}</legend>
+		<br />
+		<label for="category_name">{CATEGORY_NAME_STRING}:</label>
+		<span class="formInput"><input type="text" name="category_name" value="{CATEGORY_NAME}" size="40">{NAME_ERROR}</span><br />
+		<label for="parent_key">{CATEGORY_PARENT_STRING}:</label>
+		<span class="formInput">{PARENT_MENU}{CATEGORY_PARENT_ERROR}</span>
+		<br />
+        <input type="submit" name="submit" value="{MODIFY_STRING}" class="noLabel">
+        <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+        <input type="hidden" name="category_key" value="{CATEGORY_KEY}">
+		<input type="hidden" name="action" value="modify2">
+        <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+        <div class="noLabel">
+		<fieldset class="fieldset">
+			<legend>{DELETE_OPTIONS_STRING}</legend>
+			<input name="delete_option" type="radio" value="delete" checked>
+			<span class="small">{DELETE_ITEMS_STRING}</span><br />
+            <input type="radio" name="delete_option" value="move">
+			<span class="small">{MOVE_ITEMS_STRING}</span><br />
+            <span >{MOVE_TO_MENU}{MOVE_TO_ERROR}</span><br />
+			<input type="submit" name="submit" value="{DELETE_STRING}" onClick="return confirmDelete('{WARNING}')">
+		</fieldset>
+		</div>
+
+	</fieldset>
+</form>			          
+<!-- END ModifyCategoryBlock2 -->

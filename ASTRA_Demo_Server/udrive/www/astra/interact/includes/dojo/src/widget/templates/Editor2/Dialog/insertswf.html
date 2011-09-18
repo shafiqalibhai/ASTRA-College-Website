@@ -1,0 +1,91 @@
+<table border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="420" rowspan="2" align=center valign="top">
+			<fieldset style="height:270px; background-color: #F6F6F6; padding: 0px;">
+				<legend>
+					Preview 
+				</legend>
+				<iframe name="swf_ipreview" dojoAttachPoint="swf_ipreview" height="252" frameborder="0" style="border : 2px; width: 100%; height: 252px;" src="about:blank" scrolling="no"> </iframe>
+			</fieldset>
+			<span style="float:right"><button dojoType='Button' dojoAttachEvent="onClick:updateClick">Update</button>
+			</span>
+			<span style="float:right;padding-right:4px;font-size:xx-small;" dojoAttachPoint="premess"> </span>
+			
+			<form action="" method="get" style="clear:both">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td valign="top">
+										URL: <input type="text" dojoAttachPoint="swf_src" dojoAttachEvent="onKeyUp:checkok" style="width: 80%" /> <br />
+
+						</td>
+					</tr>
+				</table>
+			
+			<table><tr>
+			<td valign="top" align="center">
+				<fieldset style="padding-left: 2px; padding-right:2px;">
+					<legend>
+						Size 
+					</legend>
+					<table>
+						<tr>
+							<td nowrap align="right" id="wtit">
+								<span style="font-size:x-small">Width:</span>
+							</td>
+							<td width="10">
+								<input type="text" size="4" dojoAttachPoint="image_width" title="Display Width (does not affect actual swf file)" dojoAttachEvent="onkeyup:widthChanged"> 
+							</td>
+						</tr>
+						<tr>
+							<td nowrap align="right" id="htit">
+								<span style="font-size:x-small">Height:</span>
+							</td>
+							<td>
+								<input type="text" size="4" dojoAttachPoint="image_height" title="Display Height (does not affect actual swf file)" dojoAttachEvent="onkeyup:heightChanged""> 
+							</td>
+						</tr>
+						<tr>
+							<td nowrap colspan="2" valign="top">
+								<INPUT type="checkbox" class="CheckBox" checked id="chkLockRatio" title="When changing size, maintain aspect ratio (don't squish it).  Does not work for % values."> <span style="font-size:x-small">Lock Ratio</span>
+							</td>
+						</tr>
+					</table>
+					<INPUT type="button" value="Reset Size" title="Reset width and height to that of the file" dojoAttachEvent="onClick:resetSize"> 
+				</fieldset>
+			</td>
+			<td valign="top" align="center">
+				<fieldset style="margin-left:10px;padding-left: 2px; padding-right:2px;">
+					<legend>FlashVars</legend>
+					<textarea rows="5" cols="22" dojoAttachPoint="swf_flashvars"></textarea>
+				</fieldset>
+			</td>
+
+								</tr>
+							</table>
+			
+			</form>
+			
+			
+
+		</td>
+		<td width="276" valign="top">
+
+			<fieldset style="background-color: #D2D2D8; padding: 0px; margin-bottom:4px;">
+
+				<legend>
+					Choose File 
+				</legend>
+				<iframe dojoAttachPoint="idir" name="idir" frameborder="0" style="border : 0px; width: 100%; height: 400px;" src="about:blank" scrolling="no"> </iframe>
+			</fieldset>
+	</tr>
+	<tr><td>
+		<table><tr><td style="padding-right:20px">
+			<button dojoType='Button' dojoAttachPoint="swf_ok" dojoAttachEvent='onClick:ok'>OK</button>
+			</td><td>
+			<button dojoType='Button' dojoAttachEvent='onClick:cancel'>Cancel</button>
+		</td></tr></table>
+	</td></tr>
+			</table>
+		</td>
+	</tr>
+</table>

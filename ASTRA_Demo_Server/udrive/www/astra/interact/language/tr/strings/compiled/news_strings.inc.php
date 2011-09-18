@@ -1,0 +1,3 @@
+<?php   //Do NOT modify this file - it is auto-generated
+
+$news_strings=array('not_allowed'=>'Siteye haber eklemeye izniniz yok','add_success'=>'Haber elemanýnýz eklendi','delete_success'=>'Haber elemanýnýz silindi','modify_success'=>'Haber elemanýnýz deðiþtirildi','news_heading'=>'Haber elemaný ekle/deðiþtir','heading'=>'Baþlýk','body'=>'Metin','no_body'=>'Haber girmediniz','no_heading'=>'Baþlýk girmediniz');?>

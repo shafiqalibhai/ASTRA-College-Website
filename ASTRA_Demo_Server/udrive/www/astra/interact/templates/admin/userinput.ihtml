@@ -1,0 +1,130 @@
+
+<h2>Add/Modify a User Account </h2>
+
+    <p align="center" class="message">{MESSAGE} </p>
+<form name="folder" method="post" action="userinput.php" enctype="multipart/form-data" >
+  <div align="center">
+        <table  border="0" cellpadding="8">
+            <tr> 
+                <td valign="top" class="InputFormLeft">*User Name:</td>
+                <td valign="top" class="InputFormRight"> <input name="username" type="text" id="username" value="{USER_NAME}" size="20" tabindex="1"/>
+                    <br>
+          {USER_NAME_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">*Password:</td>
+                <td valign="top" class="InputFormRight"> 
+          <input type="password" name="password" value="{PASSWORD}" size="20" tabindex="2" /> 
+          <br>
+          {PASSWORD_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">*Confirm Password:</td>
+                <td valign="top" class="InputFormRight"> 
+          <input type="password" name="confirm_password" value="{CONFIRM_PASSWORD}" size="20" tabindex="3" />
+          <br />
+          {CONFIRM_PASSWORD_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">*First Name:</td>
+                <td valign="top" class="InputFormRight"> 
+          <input type="text" name="first_name" value="{FIRST_NAME}" size="20" tabindex="4" />
+          <br />
+          {FIRST_NAME_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">*Last Name:</td>
+                <td valign="top" class="InputFormRight"> 
+          <input type="text" name="last_name" value="{LAST_NAME}" size="20" tabindex="5" />
+          <br />
+          {LAST_NAME_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">Phone No.:</td>
+                <td valign="top" class="InputFormRight"> 
+          <input type="text" name="phone_no" value="{PHONE_NO}" size="35" tabindex="6" /> 
+          <br />
+          </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">*Email:</td>
+                <td valign="top" class="InputFormRight"> 
+          <input type="text" name="email" value="{EMAIL}" size="35" tabindex="6" /> 
+		  <br />{EMAIL_ERROR} 
+          </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">*Access Level:<br / >
+          <span class="small"> </span></td>
+                <td valign="top" class="InputFormRight">{ACCESS_LEVEL_MENU}<br />
+          {ACCESS_LEVEL_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">*Group:<br / >
+          <span class="small"></span></td>
+                <td valign="top" class="InputFormRight">{GROUP_MENU}<br />
+          {USER_GROUP_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">*Branch:<br / >
+          <span class="small"></span></td>
+                <td valign="top" class="InputFormRight"><input name="branch" type="text" id="branch" value="{BRANCH}" size="20" tabindex="7" /></td>
+            </tr>
+            <tr>
+                <td valign="top" class="InputFormLeft">*ID Number:</td>
+                <td valign="top" class="InputFormRight"><input name="user_id_number" type="text" id="user_id_number" value="{USER_ID_NUMBER}" size="20" tabindex="7" /></td>
+            </tr>
+			
+			        <tr>
+            <td class="InputFormLeft">Attendance:</td>
+            <td class="InputFormRight"><input name="attendance" type="text" id="attendance" value="{ATTENDANCE}" size="20"></td>
+        </tr>
+        <tr>
+            <td class="InputFormLeft">Backlogs:</td>
+            <td class="InputFormRight"><input name="backlogs" type="text" id="backlogs" value="{BACKLOGS}" size="20"></td>
+        </tr>
+
+			
+			
+			            <tr> 
+                <td valign="top" class="InputFormLeft">Address:<br />
+          <span class="small"></span></td>
+                <td valign="top" class="InputFormRight"> 
+          <textarea accept-charset="{CHARACTER_SET}" name="address" cols="30" rows="10" wrap="VIRTUAL" tabindex="8" value="{ADDRESS}">{ADDRESS}</textarea>
+          <br />
+           </td>
+            </tr>
+
+            <tr> 
+                <td valign="top" class="InputFormLeft">About Me:<br />
+          <span class="small">Tell us a bit about yourself - <br />
+          work, hobbies, etc.</span></td>
+                <td valign="top" class="InputFormRight"> 
+          <textarea accept-charset="{CHARACTER_SET}" name="details" cols="30" rows="10" wrap="VIRTUAL" tabindex="8" >{DETAILS}</textarea>
+          <br />
+          </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">Photo:<br>
+          (optional) </td>
+                <td valign="top" class="InputFormRight"> 
+          <input type="file" name="photo" size="30" />
+          <input type="hidden" name="current_photo" value="{CURRENT_PHOTO}" />
+          <br />
+          {PHOTO_ERROR}{PHOTO}</td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">&nbsp;</td>
+                <td valign="top" class="InputFormRight"> 
+				<input type="checkbox" name="email_user" value="1" />Email details to user <br />
+          <input type="submit" name="submit" value="{BUTTON}" tabindex="9" />
+          {DELETE_BUTTON} 
+                    <input type="button" name="submit2" value="Cancel" onClick="history.go(-1)" />
+          <input type="hidden" name="user_key" value="{USER_KEY}" />
+          <input type="hidden" name="action" value="{ACTION}" />
+          <input type="hidden" name="request_uri" value="{REQUEST_URI}" />
+        </td>
+            </tr>
+        </table>
+  </div>
+</form>

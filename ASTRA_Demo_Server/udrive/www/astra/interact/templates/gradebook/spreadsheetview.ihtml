@@ -1,0 +1,14 @@
+
+
+ 
+<div align="center" >
+    <h1>{HEADING_STRING}</h1>
+    <a href="gradebook.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&link_key={LINK_KEY}&group_key={GROUP_KEY}">{RETURN_TO_STRING} {MODULE_NAME}</a>
+<br>
+
+
+ <p><a href="spreadsheetview.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&comments={COMMENTS}">{COMMENTS_STRING}</a></p> 
+     <p>{EXPORT STRING}: <a href="export.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&type=excel&comments={EXPORT_COMMENTS}">{EXCEL_STRING}</a> - <a href="export.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&type=tab&comments={EXPORT_COMMENTS}">{TAB_DELIMITED_STRING}</a></p>
+        {SPREADSHEET}
+		
+</div>

@@ -1,0 +1,66 @@
+ 
+
+<h1>{HEADING_STRING}</h1>
+<div align="center"><a href="gradebook.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&link_key={LINK_KEY}&group_key={GROUP_KEY}">{RETURN_TO_STRING} {MODULE_NAME}</a></div>
+
+
+ <form name="{FORM_ID}" method="post" action="{ACTION_FILE}">
+ <!-- BEGIN MarkItemBlock -->
+
+
+ <div align="center"> <a name="{ANCHOR}"></a><span class="message">{GRADE_MESSAGE}</span>
+     <table  border="0" cellspacing="1" cellpadding="5">
+                <tr>
+                    <td valign="top" class="InputFormLeft">{NAME_STRING}:</td>
+                    <td valign="top" class="InputFormRight">{USER_ITEM_NAME}</td>
+                </tr>
+                <tr>
+                    <td valign="top" class="InputFormLeft">{GRADE_STRING}:</td>
+                    <td valign="top" class="InputFormRight">
+    
+{GRADE_MENU}                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="InputFormLeft">{COMMENTS_STRING}:
+                    {EDITOR_BUTTONS_{FIELD_ID}}</td>
+                    <td valign="top" class="InputFormRight">
+   
+                                        
+                                    <textarea accept-charset="{CHARACTER_SET}" name="{FIELD_ID}" wrap="VIRTUAL" cols="60" rows="15" id="{FIELD_ID}">{BODY}</textarea>
+                          
+                        <div class="error">{BODY_ERROR}</div> </td>
+                </tr>
+           <tr><td class="InputFormLeft">&nbsp;</td>
+                    <td class="InputFormRight">
+				    <!-- BEGIN MarkMultipleBlock -->
+     <div align="left" class="small">
+                            <input type="radio" name="update_single" id="update_single" value="{MODIFY_SINGLE_KEY}" onClick="document.getElementById('update_all').checked=false;" >
+                            {MODIFY_SINGLE_STRING}<br />
+						    <input type="radio" name="update_all" id="update_all" value="1" onClick="document.getElementById('update_single').checked=false;">
+                        {MODIFY_ALL_STRING}</div>
+					    <!-- END MarkMultipleBlock -->
+            <div align="center">
+                            <input type="submit" name="submit" value="{BUTTON}" />
+                        {DELETE_BUTTON} 
+                        
+                
+                            <input name="item_keys[]" type="hidden" id="item_keys[]" value="{ITEM_KEY}">
+    
+                        <input name="user_keys[]" type="hidden" id="user_keys[]" value="{USER_KEY}">
+                        </div>
+					       
+                    <p align="left">{GRADED_BY_STRING}{ADDED_BY} {DATE_ADDED}<br>
+    {MODIFIED_BY_STRING}{MODIFIED_BY} {DATE_MODIFIED}</p>
+         </td></tr></table>
+     </div><br />
+	
+
+<!-- END MarkItemBlock -->
+<input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+<input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+<input name="group_key" type="hidden" id="group_key" value="{GROUP_KEY}">
+<input name="link_key" type="hidden" id="link_key" value="{LINK_KEY}">
+<input name="action" type="hidden" id="action" value="{ACTION}">
+    <input name="item_key" type="hidden" id="item_key" value="{ITEM_KEY}">
+    <input name="user_key" type="hidden" id="user_key" value="{USER_KEY}">
+</form>

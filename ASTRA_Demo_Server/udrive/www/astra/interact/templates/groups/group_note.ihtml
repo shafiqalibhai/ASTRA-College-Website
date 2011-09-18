@@ -1,0 +1,15 @@
+ 
+ <table cellspacing="0" cellpadding="5">
+
+  <tr valign="top">
+
+    <td>{ADMIN_INFO}</td>
+{IMAGE}
+  <td>  <b>{NAME}</b><br>{NOTE}</td>
+
+     
+
+ </tr>
+
+</table>
+

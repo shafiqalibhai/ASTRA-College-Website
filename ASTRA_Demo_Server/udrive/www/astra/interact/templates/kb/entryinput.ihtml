@@ -1,0 +1,76 @@
+
+
+<div style="margin-top:10px;margin-bottom:10px;">
+	{KB_TRAIL}
+</div>
+<div align="center" id="message" class="message">{MESSAGE}</div>
+
+<h2>{INPUT_HEADING}</h2>
+
+<!-- BEGIN ChooseTemplatesBlock -->
+
+	<div id="rightContent">	
+		<fieldset class="fieldset" style="width:95%">
+			<legend>{AVAILABLE_TEMPLATES_STRING}</legend>
+			<form name="form1" method="post" action="entryinput.php" >
+    		<!-- BEGIN TemplateListBlock -->
+			<input name="template_key" type="radio" value="{TEMPLATE_KEY}"><strong>{TEMPLATE_NAME}</strong> - {TEMPLATE_DESCRIPTION}<br />
+			<!-- END TemplateListBlock -->
+			<br />
+  			<input type="submit" name="submit" value="{SELECT_STRING}">
+			<input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+			<input name="category_key" type="hidden" id="category_key" value="{CATEGORY_KEY}">
+    		<input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+    		</form>
+		</fieldset>
+	</div>
+
+<!-- END ChooseTemplatesBlock -->
+
+<!-- BEGIN TemplateFormBlock -->
+	<div style="float:left" class="inputFormDiv">
+	<fieldset >
+		<legend>{NEW_ENTRY_INPUT_STRING}</legend>
+		<form name="inputform" method="post" action="entryinput.php" enctype="multipart/form-data" >
+			<!-- BEGIN TemplateFieldBlock -->
+				<div class="formRow">
+				<label for="{FIELD_KEY}" class="formLabel"><span onClick="createNew('{FIELD_DESCRIPTION}')" class="helplink">?</span>{FIELD_NAME}:
+						<!-- BEGIN HtmlEditorBlock -->
+                    
+    		
+                    {EDITOR_BUTTONS_{FIELD_KEY}}
+                    
+    				<!-- END HtmlEditorBlock -->		
+				</label>
+    			<span class="formData">
+									
+				{FIELD_INPUT}</span>
+				
+				</div>
+			<!-- END TemplateFieldBlock -->
+			<div class="formRow">
+			<label for="category_keys" class="formLabel">{CATEGORY_STRING}:</label>
+			<span class="formData">{CATEGORY_MENU}</span><br /> <span class="small">{SELECT_MULTIPLE}</span>
+			</div>
+			<div class="formRow">
+			<label for="status_key" class="formLabel">{STATUS_STRING}:</label>
+			<span class="formData">{STATUS_MENU}</span>		
+			</div>			
+			<div class="noLabel"><input type="submit" name="submit" value="{SUBMIT_BUTTON}" >{DELETE_BUTTON}</div>
+			<input type="hidden" name="space_key" value="{SPACE_KEY}" >
+			<input type="hidden" name="module_key" value="{MODULE_KEY}" >
+			<input type="hidden" name="entry_key" value="{ENTRY_KEY}" >
+			<input type="hidden" name="category_key" value="{CATEGORY_KEY}" >
+			<input type="hidden" name="template_key" value="{TEMPLATE_KEY}" >
+			<input type="hidden" name="action" value="{ACTION}" >
+
+		</form>
+	</fieldset>	
+	</div>
+<!-- END TemplateFormBlock -->
+<!-- BEGIN PopupUrlBlock -->
+<br style="clear:both" />
+{POPUP_STRING}<br />
+{POPUP_URL}
+<!-- END PopupUrlBlock -->
+

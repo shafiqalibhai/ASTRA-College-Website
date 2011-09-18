@@ -1,0 +1,2 @@
+add_heading=Agrega un encabezado
+spacer_instructions=Para crear un espacio sólo deja el campo nombre vacío.

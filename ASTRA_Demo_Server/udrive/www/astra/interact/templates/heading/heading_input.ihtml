@@ -1,0 +1,46 @@
+ 
+<h2>{INPUT_HEADER}</h2>
+
+<div align="center" class="message">{MESSAGE_VALUE}</div>
+
+<form name="folder" method="post" action="heading_input.php" >
+  <div class="input_form_div" align="center">
+ <!-- BEGIN ModuleInputBlock --> 
+    <table class="input_form_table">
+      <tr> 
+                <td valign="top" class="InputFormLeft">{NAME_STRING}:</td>
+        <td valign="top" class="InputFormRight"> 
+          <input type="text" name="name" value="{NAME}" size="35" />
+          <br />
+          {SPACER_INSTRUCTIONS}</td>
+      </tr>
+      <tr> 
+                <td class="InputFormLeft">{HEADING_LEVEL}:</td>
+        <td valign="top" class="InputFormRight"> 
+        <table cellpadding="0" cellspacing="0"><tr><td>
+        <select name="level" size="1" >
+        <option value="1" label="{HEADING} 1" {SELECTED_H1_VALUE} >{HEADING} 1</option>
+        <option value="2" label="{HEADING} 2" {SELECTED_H2_VALUE} >{HEADING} 2</option>
+        <option value="3" label="{HEADING} 3" {SELECTED_H3_VALUE} >{HEADING} 3</option>
+</select></td><td style="padding-left:14px">
+ <input type="radio" name="initial_state" {CHECKED_STATE0_VALUE} value="0"><span class="small">{OPEN}</span> 
+<br />
+ <input type="radio" name="initial_state" {CHECKED_STATE1_VALUE} value="1"><span class="small">{CLOSED}</span> 
+</td></tr></table>
+       </td>
+  
+      </tr>
+      <tr> 
+        <td valign="top" class="InputFormLeft">&nbsp;</td>
+        <td valign="top" class="InputFormRight"> 
+          <input type="submit" name="submit" value="{BUTTON}" />
+          {DELETE_BUTTON} 
+          <input type="button" name="submit3" value="Cancel" onClick="history.go(-1)" />
+        </td>
+      </tr>
+ 
+    </table>
+ <!-- END ModuleInputBlock --> 	
+ {GENERAL_SETTINGS}
+  </div>
+</form>

@@ -1,0 +1,16 @@
+<h1>{HEADING_STRING}</h1>
+<div align="center"><a href="{BACK_LINK}?space_key={SPACE_KEY}&module_key={MODULE_KEY}&group_key={GROUP_KEY}">{BACK_STRING}</a></div> 
+<!-- BEGIN MembersBlock --> 
+<h2>{FULL_NAME}</h2>
+<p><a href="{PATH}/spaces/emailuser.php?space_key={SPACE_KEY}&email_user_key={USER_KEY}&email_user_name={EMAIL_USER_NAME}">{EMAIL}</a></p>
+
+
+
+<table width="100%"  border="0">
+    <tr>
+        <td>{DETAILS}</td>
+        <td width="180">{PHOTO}</td>
+    </tr>
+</table>
+<hr>
+<!-- END MembersBlock --> 

@@ -1,0 +1,167 @@
+080222 12:49:13 [Note] \usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.0.41-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+080222 12:49:56 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Normal shutdown
+
+080222 12:49:56 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Shutdown complete
+
+Error in my_thread_global_end(): 1 threads didn't exit
+080222 12:50:15 [Note] \usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.0.41-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+080222 12:53:31 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Normal shutdown
+
+080222 12:53:31 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Shutdown complete
+
+Error in my_thread_global_end(): 1 threads didn't exit
+080222 12:56:47 [Note] \usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.0.41-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+080222 13:00:46 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Normal shutdown
+
+080222 13:00:46 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Shutdown complete
+
+080222 13:00:49 [Note] \usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.0.41-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+Error in my_thread_global_end(): 1 threads didn't exit
+080222 13:01:08 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Normal shutdown
+
+080222 13:01:10 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Shutdown complete
+
+Error in my_thread_global_end(): 1 threads didn't exit
+080222 13:02:05 [Note] \usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.0.41-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+080222 13:02:12 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Normal shutdown
+
+080222 13:02:12 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Shutdown complete
+
+Error in my_thread_global_end(): 1 threads didn't exit
+080222 13:02:29 [Note] \usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.0.41-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+080222 13:03:04 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Normal shutdown
+
+080222 13:03:04 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Shutdown complete
+
+080222 13:03:05 [Note] \usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.0.41-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+Error in my_thread_global_end(): 1 threads didn't exit
+080222 13:07:12 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Normal shutdown
+
+080222 13:07:12 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Shutdown complete
+
+080222 13:07:13 [Note] \usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.0.41-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+Error in my_thread_global_end(): 1 threads didn't exit
+080222 13:12:19 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Normal shutdown
+
+080222 13:12:19 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Shutdown complete
+
+080222 13:12:21 [Note] \usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.0.41-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+Error in my_thread_global_end(): 1 threads didn't exit
+080222 13:13:13 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Normal shutdown
+
+080222 13:13:13 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Shutdown complete
+
+080222 13:13:16 [Note] \usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.0.41-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+Error in my_thread_global_end(): 1 threads didn't exit
+080222 13:14:05 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Normal shutdown
+
+080222 13:14:05 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Shutdown complete
+
+080222 13:14:07 [Note] \usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.0.41-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+Error in my_thread_global_end(): 1 threads didn't exit
+080222 13:14:16 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Normal shutdown
+
+080222 13:14:16 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Shutdown complete
+
+Error in my_thread_global_end(): 1 threads didn't exit
+080222 13:14:45 [Note] \usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.0.41-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+080222 13:14:53 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Normal shutdown
+
+080222 13:14:53 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Shutdown complete
+
+Error in my_thread_global_end(): 1 threads didn't exit
+080222 13:35:26 [Note] \usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.0.41-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+080222 13:35:49 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Normal shutdown
+
+080222 13:35:49 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Shutdown complete
+
+Error in my_thread_global_end(): 1 threads didn't exit
+080222 13:36:44 [Note] \usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.0.41-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+080222 13:38:47 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Normal shutdown
+
+080222 13:38:49 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Shutdown complete
+
+080222 13:40:09 [Note] \usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.0.41-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+080222 13:41:26 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Normal shutdown
+
+080222 13:41:27 [Note] \usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.0.41-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+080222 13:41:28 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Shutdown complete
+
+Error in my_thread_global_end(): 1 threads didn't exit
+080222 13:42:53 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Normal shutdown
+
+080222 13:42:55 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Shutdown complete
+
+Error in my_thread_global_end(): 1 threads didn't exit
+080222 13:43:02 [Note] \usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.0.41-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+080222 13:43:08 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Normal shutdown
+
+080222 13:43:10 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Shutdown complete
+
+Error in my_thread_global_end(): 1 threads didn't exit
+080222 16:19:19 [Note] \usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.0.41-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+080222 16:19:27 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Normal shutdown
+
+080222 16:19:27 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Shutdown complete
+
+Error in my_thread_global_end(): 1 threads didn't exit
+080222 16:19:42 [Note] \usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.0.41-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+080222 16:20:31 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Normal shutdown
+
+080222 16:20:33 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Shutdown complete
+
+Error in my_thread_global_end(): 1 threads didn't exit
+080222 16:20:44 [Note] \usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.0.41-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+080222 16:20:54 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Normal shutdown
+
+080222 16:20:56 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Shutdown complete
+
+Error in my_thread_global_end(): 1 threads didn't exit
+080222 16:21:23 [Note] \usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.0.41-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+080222 16:21:36 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Normal shutdown
+
+080222 16:21:38 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Shutdown complete
+
+Error in my_thread_global_end(): 1 threads didn't exit
+080222 16:23:37 [Note] \usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.0.41-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+080222 16:23:50 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Normal shutdown
+
+080222 16:23:52 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Shutdown complete
+
+Error in my_thread_global_end(): 1 threads didn't exit
+080222 16:25:16 [Note] \usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.0.41-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+080222 18:05:06 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Normal shutdown
+
+080222 18:05:06 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Shutdown complete
+
+080222 18:05:10 [Note] \usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.0.41-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+Error in my_thread_global_end(): 1 threads didn't exit
+080222 18:05:33 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Normal shutdown
+
+080222 18:05:33 [Note] \usr\local\mysql\bin\mysqld-opt.exe: Shutdown complete
+
+Error in my_thread_global_end(): 1 threads didn't exit

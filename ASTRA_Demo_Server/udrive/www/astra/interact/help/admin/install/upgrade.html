@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Interact Database Setup</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../../../local/skins/default/interactstyle.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+body {
+	margin: 10px;
+}
+-->
+</style>
+</head>
+<body>
+<div align="center">
+    <p><img src="../../../images/logo.gif" width="118" height="23"></p>
+    <h1 align="left"> Upgrade an existing installation of Interact</h1>
+</div>
+
+<ol>
+    <li><strong>BACKUP YOUR EXISTING INSTALLATION!!!!!</strong></li><br />
+    <li><strong>If upgrading from a Interact 1.x</strong><ol type="a">
+    <li>Take note of the $CONFIG['SECRET_HASH'] setting from your old config file - you will need to re-enter it later, on the server settings page if you want user's permanent cookie logins to keep working. </li>
+    <br>
+    <li>Remove your old /includes/config.inc.php file.<br />The config.inc.php file is now stored in /local/ instead of /includes<br />This is because all folders other than /local/ are now static unless you choose to make modifications to the code.</li><br />
+<li>Rename <strong>/local/config_default.inc.php</strong> to <strong>/local/config.inc.php</strong></li><br /><li>Edit the new config.inc.php file, making sure to read the comments.
+     </li><br />
+    </li>
+    </ol>
+    <li><strong>If upgrading from 2.1 or earlier</strong><ul type="a">
+    <li>404 (not found) errors should redirect to the /direct.php file.  On IIS, set this up with the administration tools.  If using Apache and Interact is installed in a subfolder, you will need to change the 404 line in the root .htaccess file.</li><br />
+
+    </li>
+    </ul>
+   
+	<li>Copy all the files and directories from this new Interact version directory, into your existing interact directory, <strong>***BUT*** be very careful with the /local/ folder</strong>.  Make sure you keep your existing /local/ directory in your live interact directory as this folder (by default) contains all of your uploaded files and user files.  Only copy new items such as the 'skins' folder and 'config_default.inc.php' into your /local/ folder.
+    </li> <br />
+        
+    <li>Go to <a href="../../../admin/setup/index.php">http://[your interact install]/interact/admin/setup/index.php</a><br />This page checks your setup for you.<br />Check that everything is OK and then click '<strong>Upgrade Database Tables Now</strong>'.<br />You will then be taken to the server admin page to complete a few remaining details.
+        </li>
+</ol>
+Note: the config.inc.php file - as of Interact release 2.2 - can handle multiple Interact installtions using a single code-base.
+</body>
+</html>

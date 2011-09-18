@@ -1,0 +1,38 @@
+<div style="margin-left: 15px;margin-top: 5px;">
+
+ <h2 class="moduleHeading">{NEWS_HEADING} 
+
+ 
+
+</h2>
+
+
+
+ <!-- BEGIN NewsBlock -->
+
+					<div class="userContentBox">
+					<div class="postHeader">
+						<div class="newsPhoto">
+							{PHOTO_TAG}
+						</div>
+						<div class="postPostedBy">
+							{ADDED_BY} {DATE_ADDED} 
+							<a href="{PATH}/spaces/space.php?space_key={NEWS_SPACE_KEY}" class="small">
+								{SPACE_HEADING}</a>
+						</div>
+						<span class="postTitle">
+							{HEADING}
+						</span>
+						{ADMIN_IMAGE} 
+					</div>
+					<div class="postBody">
+						{BODY} 
+						<span style="clear:right" />
+					</div>
+				</div>
+<!-- END NewsBlock -->
+
+</div>
+
+<div align="center">{PREVIOUS_LINK} {NEXT_LINK} </div>
+

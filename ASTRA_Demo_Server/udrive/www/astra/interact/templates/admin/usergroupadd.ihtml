@@ -1,0 +1,33 @@
+
+
+<form method="post" action="{ACTION}">
+
+<div align="center">  
+
+    {MESSAGE}
+
+	    <table border="0" cellspacing="2" cellpadding="5">
+            <tr> 
+                <td class="InputFormLeft">Usergroup Name:</td>
+                <td class="InputFormRight"> 
+          <input name="user_group_name" type="text" id="user_group_name" value="{USER_GROUP_NAME}" size="40">
+          {USER_GROUP_ERROR} </td>
+            </tr>
+            <tr>
+            	<td class="InputFormLeft">Account creation password:</td>
+            	<td class="InputFormRight"><input name="account_creation_password" type="text" id="account_creation_password" value="{ACCOUNT_CREATION_PASSWORD}" size="40"></td>
+           	</tr>
+            <tr> 
+                <td >&nbsp;</td>
+                <td > 
+          <input type="submit" name="submit" value="{BUTTON}">
+          {DELETE_BUTTON} </td>
+            </tr>
+        </table>
+
+        <input name="user_group_key" type="hidden" id="user_group_key" value="{USER_GROUP_KEY}">
+
+  </div>
+
+</form>
+

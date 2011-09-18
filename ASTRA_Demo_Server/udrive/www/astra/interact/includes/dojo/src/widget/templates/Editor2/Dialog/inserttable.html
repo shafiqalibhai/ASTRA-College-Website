@@ -1,0 +1,148 @@
+<div>
+	<fieldset dojoAttachPoint="TO_table_desc" style="background-color: #D2D2D8; padding: 4px;">
+		<legend>Description</legend>
+
+		<table cellspacing="0" cellpadding="0" width="100%" border="0">
+			<tr>
+				<td nowrap style="text-align:right"><span>Caption:</span>&nbsp;</td>
+				<td width="100%" nowrap>
+					<input dojoAttachPoint="TO_caption" type="text" style="WIDTH: 90%"></td>
+			</tr>
+			<tr>
+				<td nowrap style="text-align:right"><span>Summary:</span>&nbsp;</td>
+				<td width="100%" nowrap>
+					<input dojoAttachPoint="TO_summary" type="text" style="WIDTH: 90%"></td>
+			</tr>
+		</table>
+	</fieldset>
+	<span style="font-size:xx-small"><br /></span>
+	<fieldset style="background-color: #D2D2D8; padding: 4px;">
+			<legend>Size & Layout</legend>
+
+		<table cellspacing="1" cellpadding="2">
+			<tr>
+				<td style="text-align:right"><span dojoAttachPoint="TO_cols_label">Columns:</span></td>
+				<td><input dojoAttachPoint="TO_cols" type="text" maxLength="2" size="2" value="2"></td>
+				<td style="text-align:right">&nbsp;&nbsp;&nbsp;<span dojoAttachPoint="TO_width_label">Width:</span></td>
+				<td><input dojoAttachPoint="TO_width" type="text" maxLength="4" size="3"></td>
+				<td><select dojoAttachPoint="TO_widthtype">
+						<option value="percent" selected>percent</option>
+						<option value="pixels">pixels</option>
+					</select></td>
+				<td style="text-align:right"><span>Text Align:</span></td>
+				<td><select dojoAttachPoint="TO_textAlign" dojoAttachEvent="onChange:resetSample">
+						<option value="" selected>&lt;Not set&gt;</option>
+						<option value="left">Left</option>
+						<option value="center">Center</option>
+						<option value="right">Right</option>
+						<option value="justify">Justify</option>
+					</select>
+					<input id="TO_whiteSpace" dojoAttachPoint="TO_whiteSpace" type="checkbox"><label for="TO_whiteSpace">no-wrap</label>
+					</td>
+	
+			</tr>
+			<tr style="text-align:right">
+				<td style="border-top:1px solid #888"><span dojoAttachPoint="TO_rows_label">Rows:</span></td>
+				<td style="border-top:1px solid #888"><input dojoAttachPoint="TO_rows" type="text" maxLength="3" size="2" value="3"></td>
+				<td style="border-top:1px solid #888;text-align:right">&nbsp;&nbsp;&nbsp;<span>Height:</span></td>
+				<td style="border-top:1px solid #888"><INPUT dojoAttachPoint="TO_height" dojoAttachEvent="onChange:resetSample" type="text" maxLength="4" size="3"></td>
+				<td style="border-top:1px solid #888" nowrap colspan="2" align="left"><span>pixels</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span dojoAttachPoint="TO_verticalAlign_label">Vertical Text Align:</span>&nbsp;</td>
+				<td style="border-top:1px solid #888" align="left"><select dojoAttachPoint="TO_verticalAlign" dojoAttachEvent="onChange:resetSample">
+						<option value="" selected>&lt;Not set&gt;</option>
+						<option value="top">Top</option>
+						<option value="middle">Middle</option>
+						<option value="bottom">Bottom</option>
+						<option value="baseline">Baseline</option>
+					</select></td>
+			</tr>
+		</table>
+		
+		<table cellspacing="1" celpadding="2" border="0" dojoAttachPoint="TO_tablealignment">
+			<tr>
+				<td nowrap>
+	Table Alignment:&nbsp;<select dojoAttachPoint="TO_align">
+					<option value="" selected>&lt;Not set&gt;</option>
+					<option value="left">Left</option>
+					<option value="center">Center</option>
+					<option value="right">Right</option></select>
+					&nbsp; &nbsp;Clear:&nbsp;<select dojoAttachPoint="TO_clear">
+						<option value="" selected>&lt;Not set&gt;</option>
+						<option value="both">Both</option>
+						<option value="left">Left</option>
+						<option value="right">Right</option>
+					</select>
+					</td></tr>
+			</table>
+					
+	</fieldset>
+	<span style="font-size:xx-small"><br /></span>
+	<table cellspacing="0" celpadding="0" border="0" style="background-color:#C4C2C7;border:1px solid #889;float:right;margin-left:7px">
+	<tr><td style="text-align:center;font-size:x-small" colspan="3">Preview:</td></tr>
+	<tr><td></td><td align="center"><input title="toggle top border" dojoAttachEvent="onClick:resetSample" dojoAttachPoint="TO_borderTop" type="checkbox" checked></td><td></td></tr>
+	
+	<tr>
+	<td align="center"><input title="toggle left border" dojoAttachEvent="onClick:resetSample" dojoAttachPoint="TO_borderLeft" type="checkbox" checked></td>
+	<td dojoAttachPoint="TO_sampleholder">
+	</td>
+	<td align="center"><input title="toggle right border" dojoAttachEvent="onClick:resetSample" dojoAttachPoint="TO_borderRight" type="checkbox" checked></td>
+	</tr>
+	
+	<tr><td></td><td align="center"><input title="toggle bottom border" dojoAttachEvent="onClick:resetSample" dojoAttachPoint="TO_borderBottom" type="checkbox" checked></td><td></td></tr>
+	</table>
+
+	<fieldset style="background-color: #D2D2D8; padding: 4px;">
+		<legend>Properties</legend>
+		<table cellspacing="0" celpadding="0" border="0" valign="top">
+			<tr style="height:1.7em">
+				<td align="right">Text</td>
+				<td width="24"><span class="iconContainer dojoEditorToolbarItem"><span class="dojoE2TBIcon dojoE2TBIcon_TextColor" dojoAttachPoint="textcolorpicker">&nbsp;</span></span></td>
+				<td nowrap><INPUT dojoAttachEvent="onChange:changeTextColorInput"  dojoAttachPoint="TO_color" type="text" size="6" maxLength="7" value=""><span dojoAttachPoint="textcolorpickerx"  dojoAttachEvent="onClick:set_color" style="cursor: pointer;color:#F00;font-size:small;visibility:hidden">&times;</span></td>
+				<td></td><td></td>
+			</tr><tr style="height:2em">
+				<td align="right">&nbsp;Background</td>
+				<td><span class="iconContainer dojoEditorToolbarItem"><span class="dojoE2TBIcon dojoE2TBIcon_BackgroundColor" dojoAttachPoint="bgcolorpicker">&nbsp;</span></span></td>
+				<td nowrap><INPUT dojoAttachEvent="onChange:changeBGColorInput"  dojoAttachPoint="TO_backgroundColor" type="text" size="6" maxLength="7" value=""><span dojoAttachPoint="bgcolorpickerx"  dojoAttachEvent="onClick:set_backgroundColor" style="cursor: pointer;color:#F00;font-size:small;visibility:hidden">&times;</span></td><td nowrap align="right">Image URL:</td><td nowrap><INPUT dojoAttachEvent="onChange:resetSample"  dojoAttachPoint="TO_backgroundImage" type="text" size="11" value="">
+				</td>
+				
+			</tr><tr style="height:2em" dojoAttachPoint="TO_borderprops">		
+				<td align="right" valign="top">Border</td>
+				<td valign="top"><span class="iconContainer dojoEditorToolbarItem"><span class="dojoE2TBIcon dojoE2TBIcon_BorderColor" dojoAttachPoint="bordercolorpicker">&nbsp;</span></span></td>
+				<td valign="top" nowrap><INPUT dojoAttachEvent="onChange:changeBorderColorInput"  dojoAttachPoint="TO_borderColor" type="text" size="6" maxLength="7" value=""><span dojoAttachPoint="bordercolorpickerx" dojoAttachEvent="onClick:set_borderColor" style="cursor: pointer;color:#F00;font-size:small;visibility:hidden">&times;</span></td><td valign="top" nowrap><INPUT dojoAttachPoint="TO_border" dojoAttachEvent="onChange:changeBorderInput" type="text" maxLength="2" size="2" value="1"> pixels</td><td valign="top" nowrap>
+				
+				<select dojoAttachEvent="onChange:updateBorderStyle" dojoAttachPoint="TO_borderStyle">
+					<option value="" selected>&lt;Not set&gt;</option>
+					<option value="solid">solid</option>
+					<option value="none">none</option>
+					<option value="dotted">dotted</option>
+					<option value="dashed">dashed</option>
+					<option value="double">double</option>
+					<option value="groove">groove</option>
+					<option value="ridge">ridge</option>
+					<option value="inset">inset</option>
+					<option value="outset">outset</option>
+				</select>
+				</td>
+			</tr>
+		</table>
+		<table cellspacing="0" celpadding="3" border="0" dojoAttachPoint="TO_tableprops">
+			<tr style="background-color:#C4C2C7">
+				<td valign="top" nowrap>Rules:&nbsp;<select dojoAttachEvent="onChange:set_rules" dojoAttachPoint="TO_rules">
+					<option value="" selected>&lt;Not set&gt;</option>
+					<option value="none">none</option>
+					<option value="rows">rows</option>
+					<option value="cols">columns</option>
+					<option value="all">both</option>
+				</select></td><td>
+				<input id="TO_borderCollapse" dojoAttachEvent="onClick:set_borderCollapse" dojoAttachPoint="TO_borderCollapse" type="checkbox"><label for="TO_borderCollapse">Collapse cell borders</label></td>
+			</tr><tr>				
+				<td valign="top" nowrap style="background-color:#C4C2C7"><span>Cell spacing</span>:&nbsp;<input dojoAttachEvent="onChange:resetSample" dojoAttachPoint="TO_cellspacing" type="text" maxLength="2" size="2" value="1">&nbsp;</td>
+
+				<td valign="top" nowrap>&nbsp;<span>Cell padding</span>:&nbsp;<input dojoAttachEvent="onChange:resetSample"  dojoAttachPoint="TO_cellpadding" type="text" maxLength="2" size="2" value="1"></td>
+			</tr>
+		</table>		
+	</fieldset>
+<table><tr>
+<td><button dojoType='Button' dojoAttachEvent='onClick:ok'>Ok</button></td>
+<td><button dojoType='Button' dojoAttachEvent='onClick:cancel'>Cancel</button></td>
+</tr></table>
+</div>

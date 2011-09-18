@@ -1,0 +1,17 @@
+sort_order=R&#257;rangi raupapa aunoa
+add_noticeboard=T&#257;piri he Papap&#257;nui i roto i
+add_notice=T&#257;piri he p&#257;nui
+edit_notice=Whakarerek&#275; he p&#257;nui
+delete_after=Tango a muri atu
+notice_added=Kua t&#257;pirihia t&#257;u p&#257;nui
+notice_modifed=Kua whakangohea t&#257;u p&#257;nui
+notice_deleted=Kua tangohia t&#257;u p&#257;nui
+no_heading=K&#257;re koe i tuhi i t&#275;tahi Upoko
+no_body=K&#257;re koe i tuhi i t&#275;tahi p&#257;nui
+body=Tinana
+heading=Upoko
+edit_link=Whakarerek&#275;/Tango
+days_to_keep=Ng&#257; r&#257; pupuri aunoa i &#275;nei p&#257;nui
+days_to_keep2=Tuhia te 0 ki te pupuri i &#275;nei m&#333; ake tonu
+days_to_keep3=Ka tangohia aunoatia ng&#257; karere i muri i ng&#257; r&#257; e %s
+days_to_keep_error=Me noho t&#275;nei &#257;hua i waenganui i ng&#257; tau 1 ki te 99

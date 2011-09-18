@@ -1,0 +1,19 @@
+ 
+
+  <tr class="{CLASS}"> 
+   <td valign="top">
+    <input type="checkbox" name="files_selected[]" value="{FILE_KEY}" /><br />
+<span class="red">{NEW}</span>
+</td>
+  <td> <a href="{URL}">{DESCRIPTION2}</a> 
+    {MARK_LINK} 
+    <table width="100%" border="0" cellpadding="0">
+      <tr>
+                <td>{UPLOADED_BY_STRING} {USER_NAME} {DATE_ADDED} <strong>{TIME_TAKEN_STRING}</strong> {TIME_TAKEN}</td>
+                <td align="right"><b>{STATUS_STRING}: <span class="{STATUS_CLASS}">{STATUS}</span></b></td>
+      </tr>
+    </table>
+      
+        <b>{COMMENTS_STRING}:</b> {COMMENTS} 
+</td> 
+</tr>

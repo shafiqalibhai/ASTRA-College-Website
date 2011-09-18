@@ -1,0 +1,100 @@
+  <div id="forumStats">
+<table border="0">
+  <tr>
+    <td class="forumStatsLabel">{NUMBER_OF_POSTS}:</td>
+    <td>{TOTAL_POSTS_VALUE}</td>
+  </tr>
+  <tr>
+    <td class="forumStatsLabel">{PEOPLE_POSTING}:</td>
+    <td>{TOTAL_USERS_VALUE}</td>
+  </tr>
+  <tr>
+    <td class="forumStatsLabel">{LAST_POST}:</td>
+    <td> {LAST_POST_VALUE}</td>
+  </tr>
+</table>
+ 
+ </div>
+<div id="forumTools">
+<span class="inlineButton"><a href="{PATH}/modules/forum/postinput.php?space_key={SPACE_KEY}&amp;module_key={MODULE_KEY}">{POST_MESSAGE_STRING}</a></span> - <span class="inlineButton">{SUBSCRIBE_LINK}</span>
+ 
+ </div>
+ 
+<div id="forumPostTable">
+<div id="forumSearchBox" >
+<form method="get" action="{PATH}/modules/forum/search.php">
+{PREVIOUS_LINK}&nbsp; &nbsp;&nbsp;{THREAD_NUMBERS_STRING}&nbsp; &nbsp;&nbsp;{NEXT_LINK}
+
+ 
+<input name="submit" type="image" align="absbottom" src="{PATH}/images/search.gif" alt="{SUBMIT} {SEARCH}" height="16" width="16" title="{SUBMIT} {SEARCH}"/>
+
+	<input name="search_terms" type="text" id="forum_search_terms" size="20" value="{SEARCH}" onClick="document.getElementById('forum_search_terms').value='';"> 
+	<input type="hidden" name="module_key" value="{MODULE_KEY}" /> 
+	<input type="hidden" name="space_key" value="{SPACE_KEY}" /> 
+	
+</form>
+</div>
+
+<form name="form1" method="post" action="{PATH}/modules/forum/forumadmin.php">
+    <a href="forum.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&offset={OFFSET}&expand_all={EXPAND_ALL}" class="small">{EXPAND_ALL_STRING}
+</a>
+<table border="0" cellpadding="0" width="95%" cellspacing="0">
+
+  <tr> 
+<td>&nbsp;</td>
+            <td><img src="{PATH}/images/l_downarrow.gif" width="7" height="14" alt="down arrow" />{SUBJECT_STRING}</td>
+
+            <td>{AUTHOR_STRING}</td>
+
+  </tr>
+
+  {LIST_POSTS} 
+
+</table>
+ <span align="left"><a href="javascript:SetChecked(1,'selected_post_keys[]')" class="small">{SELECT_ALL_STRING}</a> - <a href="javascript:SetChecked(0,'selected_post_keys[]')" class="small">{CLEAR_ALL_STRING}</a></span>
+ </div>
+{PREVIOUS_LINK}&nbsp; &nbsp;&nbsp;{THREAD_NUMBERS_STRING}&nbsp; &nbsp;&nbsp;{NEXT_LINK}
+	<br />
+        <strong class="small">{ACTION_SELECTED_STRING}</strong><br />
+              
+        <select name="marked_action" id="marked_action">
+              <option value="read">{READ_STRING}</option>
+            <option value="not_read">{NOT_READ_STRING}</option>
+			<option value="follow_up">{FOLLOW_UP_STRING}</option>
+            <option value="followed_up">{FINISHED_STRING}</option>
+			<option value="remove_flags">{REMOVE_FLAGS_STRING}</option>
+			<option value="Print/Save">{PRINT_SAVE_STRING}</option>
+			<option value="monitor">{MONITOR_POST_STRING}</option>
+		<option value="remove_monitor">{REMOVE_MONITOR_POST_STRING}</option>
+ 
+        </select>
+    
+        <input name="button" type="submit" class="smallbutton" id="button" onClick="return confirmDelete('Are you sure?')" value="{SUBMIT_STRING}" />
+
+     
+        <input type="hidden" name="module_key" value="{MODULE_KEY}" />
+    <input type="hidden" name="space_key" value="{SPACE_KEY}" />
+  </div>
+</form>
+<div id="forumViewAll">
+	<form method="post" style="margin:0;padding:0" action="{PATH}/modules/forum/selectedposts.php">
+		<br />
+                {DISPLAY_STRING}
+        <select name="number">
+          <option value="all" selected>{ALL_STRING}</option>
+          <option value="1">1 {DAYS_STRING}</option>
+          <option value="3 ">3 {DAYS_STRING}</option>
+          <option value="7">7 {DAYS_STRING}</option>
+          <option value="14">14 {DAYS_STRING}</option>
+      </select>
+        {POSTS_STRING} 
+<select name="sort_by" >
+    <option value="ThreadKey" selected>{BY_THREAD_STRING}</option>
+          <option value="Name">{BY_NAME_STRING}</option>
+      </select>
+        <input type="hidden" name="module_key" value="{MODULE_KEY}" />
+        <input type="hidden" name="space_key" value="{SPACE_KEY}" />
+  
+     <input type="submit" name="submit" value="{GO_STRING}" />
+    </form>
+</div>

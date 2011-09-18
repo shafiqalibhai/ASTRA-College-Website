@@ -1,0 +1,72 @@
+
+
+<h2>{INPUT_HEADING}</h2>
+
+<div align="center">
+<form name="inputform" method="post" enctype="multipart/form-data" action="page_input.php">
+<!-- BEGIN ModuleInputBlock -->
+  <table class="input_form_table_wide">
+    <tr> 
+                <td class="InputFormLeft" valign="top">{NAME_STRING}:</td>
+      <td class="InputFormRight"> 
+        <input type="text" name="name" value="{NAME}" size="35" />
+        <br />
+        {NAME_ERROR} </td>
+    </tr>
+    <tr> 
+                <td class="InputFormLeft" valign="top">{DESCRIPTION_STRING}:</td>
+      <td class="InputFormRight" valign="top"> 
+        <textarea accept-charset="{CHARACTER_SET}" name="description" wrap="VIRTUAL" cols="35" rows="4">{DESCRIPTION}</textarea>
+      </td>
+    </tr>
+   <tr> 
+       <td class="InputFormLeft" valign="top">{VERSION_COUNT}:</td>
+      <td class="InputFormRight" valign="top"> 
+        {VERSION_COUNT_MENU}
+      </td>
+    </tr>  
+       <tr> 
+       <td class="InputFormLeft" valign="top">{EDIT_RIGHTS}:</td>
+      <td class="InputFormRight" valign="top"> 
+      {PAGE_EDIT_MENU}
+      </td>
+    </tr>      
+    <tr>
+                <td class="InputFormLeft" valign="top">{UPLOAD_STRING}:<br />
+        {HTML_STRING}</td>
+      <td class="InputFormRight">
+        <input type="file" name="file" size="35" />
+        <br />
+        {FILE_ERROR} 
+        <input type="submit" name="submit" value="{BUTTON}" />
+          {DELETE_BUTTON} 
+                    <input type="button" name="submit2" value="{CANCEL_STRING}" onClick="history.go(-1)" />
+        </td>
+    </tr>
+	<tr> 
+		<td class="InputFormLeft" valign="top">
+			{ENTER_PAGE_STRING}:
+		</td>
+      <td class="InputFormRight">
+			{EDITOR_BUTTONS_body}
+		</td>
+	</tr>
+</table>
+  
+<div>  <textarea accept-charset="{CHARACTER_SET}" name="body" wrap="VIRTUAL" cols="60" rows="20" id="body" style="{EDITOR_STYLE_body}">{BODY}</textarea>
+</div>
+{BODY_ERROR} 
+
+<div>
+ 
+        <input type="submit" name="submit" value="{BUTTON}" />
+          {DELETE_BUTTON} 
+                    <input type="button" name="submit3" value="{CANCEL_STRING}" onClick="history.go(-1)" />
+       </div>
+
+ 
+  <!-- END ModuleInputBlock -->
+{GENERAL_SETTINGS}
+</form>
+
+</div>

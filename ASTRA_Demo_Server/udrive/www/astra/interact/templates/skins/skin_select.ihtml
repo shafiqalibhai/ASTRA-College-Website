@@ -1,0 +1,19 @@
+<h1>{SELECT_HEADING}</h1>
+
+<!-- BEGIN ModifyFormBlock -->
+<p>{SELECT_MODIFY_STRING}</p>
+
+<form name="form1" method="post" action="skin_input.php">
+ 	
+		{SKINS_MENU}
+		<input type="submit" name="Submit" value="{MODIFY_STRING}">
+		<input type="hidden" name="action" value="modify">
+		<input type="hidden" name="referer" value="{REFERER}">
+		<input type="hidden" name="space_key" value="{SPACE_KEY}">
+		
+	
+</form>
+
+<p>{OR_STRING}</p>
+<!-- END ModifyFormBlock -->
+<a href="skin_input.php?space_key={SPACE_KEY}&referer={REFERER}">{ADD_NEW_STRING}</a>

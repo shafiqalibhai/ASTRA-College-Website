@@ -1,0 +1,323 @@
+
+
+#outerBox {
+	background-color:transparent;width:100%;padding:0px;margin:0px;
+}
+
+#header {
+	margin: 0 auto;font-size:x-small;
+	height:87px;
+	padding: 0px;
+	border:none;border-bottom:1px solid #EEF0F0;
+	background-color:#888684;
+	background-image: url({SKIN_PATH}/images/shadowUp.gif);
+	background-repeat: repeat-x;
+	background-position: bottom
+}
+
+#logo {position:absolute;left:0px;top:0px;z-index:5;
+	background-image: url({SKIN_PATH}/images/interact-mid-grey.gif);
+	width:151px;
+	height:61px;
+	text-decoration:none;
+	background-repeat: no-repeat;
+}
+#logoSpacer {
+	width:151px;
+	height:61px;
+}
+
+#searchbox {
+	position: absolute;
+	top: 3px;
+	right: 17em;
+}
+
+#serverName {
+ 	position: absolute;z-index:6;
+	top: 2px;
+	left: 152px;text-align:left;
+	font-size:normal;
+	color:white;
+}
+
+#innerBox {	margin: 0px;padding:0px;
+background-color:white;
+	background-image: none;width:100%;
+}
+
+/* hide from MacIE \*/
+* html #innerBox {
+	height: 1px;
+	margin-left: 0px;
+}
+/* end hide */
+
+#navigationBox {
+}
+
+#navigation {margin:0px;
+ position:absolute;top:0px; left:0px;width:100%;right:15px;margin-right:-15px;
+
+padding:0px;	width:100%;
+background-color:transparent;
+	height:87px;
+ border:none; 
+ 	font-size:x-small;
+}
+
+/* hide from MacIE \*/
+* html #navigation {
+	margin-left: 0em;
+	position: absolute;
+}
+/* end hide */
+
+#navList {
+font-size:x-small;width:73%;display:inline;
+position:absolute;right:11%;top:63px;z-index:9;text-align:center;
+}
+
+
+#navList ul{display:inline;white-space:nowrap;
+	list-style-type: none;
+	margin:0px;
+	padding:0px;margin-right:2px;display:inline;
+} 
+
+	
+#navList li
+{
+ margin: 0px;
+ font-size:x-small;
+	line-height: 24px;
+	display: inline;float:left;
+	list-style-type: none;
+	white-space: nowrap;
+}
+
+
+.navlevel .navlinks { 
+padding-bottom: 4px;
+padding-right: .5em;
+display:inline;
+padding-left: 2.4em;margin-right:1px;
+padding-top: 0.4em;
+text-decoration: none;
+background-repeat: no-repeat;
+background-position:5px 60%;
+margin:0;
+background-color: #E1DFDD;
+border: 1px solid;border-left:none;
+border-color: #E8E7E5 #B7B4AE #AAA #E8E7E5;
+	-moz-border-radius-topright:8px;
+	-moz-border-radius-topleft: 3px;
+}
+
+.navlevel {display:inline;}
+
+#activeLink { 
+background-color:white;padding-bottom:7px;padding-top:0.7em;
+background-position:5px 50%;
+
+border-right: 2px solid;border-bottom:none;
+border-color: #E8E7E5 #D8D7D5 #003296 #C8C9D9   ;
+}
+
+.nav_ul_EndSpacer {
+display: inline; width:0em;
+}
+
+#navList a:hover,.addmeButton:hover,#memberButton:hover, .myLinks:hover
+{
+background-color: #DAE2ED;
+color: #CC0000;
+}
+
+
+.navHeading { float:left;
+font-size:x-small;display:inline;text-align:left;
+width:auto;
+padding: 0px;
+font-size:xx-small;z-index:8;
+margin:0px;margin-left:8px;
+display: inline;
+text-decoration: none;
+background-color: #000;
+color: #FFF;
+border: none;border-right:1px solid #FFF;
+
+	padding-left: 1px;
+	padding-right:1.4em;
+	background-position:right 70%;
+	-moz-border-radius-topright:4px;
+	-moz-border-radius-topleft: 8px;
+
+}
+
+.navlevel .navlevel .navlevel li {padding-left:0em;}
+/* set widths for indents*/
+.navlevel .navlevel .navHeading {
+margin-left:0px;margin-right:0px;
+width:auto;
+font-weight:bold;
+background-color:#898887;border-color: #B9B8B7 #898887 #000 #898887;}
+
+.navlevel .navlevel .navlevel .navHeading {
+width:auto;margin-left:0px;
+font-weight:normal;
+background-color:#ADABAA;border-color: #DDDBDA #ADABAA #000 #ADABAA;}
+
+.navlevel .navlevel {/*border:1px solid #000;border-bottom:none;*/
+background-color:#000;border:none;
+margin:0px;display:inline;padding:0px;
+}
+
+
+.navSpacer {
+padding-bottom: 2px;
+padding-top: 2px;
+display: inline; 
+background-color: transparent;
+width: 3em;
+height: 1em;
+text-decoration: none;
+}
+
+#admin_tool_button{float:right;}
+
+#personalBox {width:15.3em;font-size:x-small;height:79px;
+ position:absolute;right:15px;margin-right:-15px;top:0px;z-index:1;
+ border: none; border-left: 1px solid #727B92;border-bottom: 1px solid #AAAAAA;
+ padding:3px;
+ background-color: #C0C7C4;text-align:left;
+
+}
+
+#spaceName {position:absolute;white-space:nowrap;left:0em;top:84px;width:12em;
+	font-size:small;
+	padding: 0.4em;
+	font-weight:bold;
+}
+#spaceName img {position:absolute;left:6px;top:-15px;z-index:90;}
+
+#membersSpacing {font-size:x-small;position:absolute;right:5em;top:89px;width:11em;
+	display:block;	
+}
+
+
+.addmeButton, #memberButton, #activeMemberButton , .myLinks{
+padding-bottom: .2em;
+padding-right: 0.2em;
+padding-left: 0.2em;
+padding-top: 0.4em;
+text-decoration: none;
+background-color: #F1EFED;
+border: 1px solid;
+border-color: #FFFFFF #DAD7D0 #C7C4BE #DAD7D0;
+}
+
+#memberButton, #activeMemberButton {
+padding-left: 2.4em;display:block;
+background-repeat: no-repeat;
+background-position:5px 70%;
+background-image: url(../images/members.gif);-moz-border-radius-bottomright:8px;
+	-moz-border-radius: 8px;
+}
+
+
+#spaceMapButton, #activeSpaceMapButton {padding-left:1em;font-size:x-small;position:absolute;top:2px;right:33em;width:5em;
+	display:block;	-moz-border-radius-bottomright:8px;
+	-moz-border-radius: 8px;
+}
+
+
+
+#breadcrumbsBox{position:absolute;left:0px;top:20px;margin-left: 0px;margin-right:-15px;width:100%;
+}
+
+
+#topBreadcrumbsBox{
+	margin-left: 0px;
+	padding:0px;
+
+}
+#topBreadcrumbs{padding-left:170px;
+  float: left;
+  text-align: left;
+}
+
+#topBreadcrumbs a{ 
+	color: #C8C6C4; 
+	font-size: x-small; 
+	text-decoration:none;
+}
+#pageTags{position:absolute;top:69px;right:17px;margin-right:-15px;
+  float: none;
+  text-align: right;
+  width:40px;
+}
+#moduleBreadcrumbs{
+	padding-top:0px;
+	padding-left:183px;
+	
+}
+
+
+#content {
+
+}
+
+#contentBox {	margin-left: 0em;margin-top:20px;
+padding-left: 10px;
+padding-right: 1px;
+min-width:300px;
+}
+
+
+#endContent {
+	clear:both;
+}
+
+#contentPanel {
+
+}
+
+#sidePanel{
+}
+
+#content table{width:100%;}
+
+#footer {
+	margin-top:5px;border:none;
+	text-align:right;
+	padding: 0.5em;
+	clear:both;
+float:right;
+}
+
+
+
+#currentModuleKey {
+	font-size:x-small;text-align:left;position:fixed;left:2px;bottom:0px;color:blue;
+}
+
+
+.message {
+	font-weight: bold; 
+ 	color: #CC3300;
+}
+
+
+
+
+.popup { 
+margin-left:-114px;margin-top:-21px;
+}
+
+
+#messageAlert{
+	position: absolute;width:12em;
+	top: 62px;padding:1px;
+	right: 0em;
+}

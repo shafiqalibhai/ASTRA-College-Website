@@ -1,0 +1,26 @@
+ 
+
+  <tr class="{CLASS}"> 
+   <td valign="top">
+    <input type="checkbox" name="files_selected[]" value="{FILE_KEY}" /><br />
+<span class="red">{NEW}</span>
+</td>
+  <td> {DESCRIPTION2}<br />
+  	<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="66" height="33" id="av" align="middle">
+						<param name="allowScriptAccess" value="sameDomain" />
+						<param name="movie" value="{PATH}/includes/players/AVPLAYER.swf" />
+						<param name="FlashVars" value="sndname={URL}" />
+						<param name="quality" value="high" />
+						<embed src="{PATH}/includes/players/AVPLAYER.swf" flashvars="sndname={URL}" quality="high" width="66" height="33" name="av" align="middle" allowscriptaccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+					</object>
+    {MARK_LINK} 
+    <table width="100%" border="0" cellpadding="0">
+      <tr>
+                <td>{UPLOADED_BY_STRING} {USER_NAME} {DATE_ADDED} <strong>{TIME_TAKEN_STRING}</strong> {TIME_TAKEN}</td>
+                <td align="right"><b>{STATUS_STRING}: <span class="{STATUS_CLASS}">{STATUS}</span></b></td>
+      </tr>
+    </table>
+      
+        <b>{COMMENTS_STRING}:</b> {COMMENTS} 
+</td> 
+</tr>

@@ -1,0 +1,39 @@
+ 
+<h2>{INPUT_HEADING}</h2>
+
+<div align="center">
+<form name="inputform" method="post" action="note_input.php">
+ <!-- BEGIN ModuleInputBlock -->
+  <table class="input_form_table_wide">
+    <tr> 
+                <td class="InputFormLeft" valign="top">{TITLE_STRING}:</td>
+      <td class="InputFormRight"> 
+        <input type="text" name="name" value="{NAME}" size="35" />
+        <br />
+        {NAME_ERROR} </td>
+    </tr>
+ 	<tr> 
+		<td class="InputFormLeft" valign="top">
+			{NOTE_STRING}:
+		</td>
+	    <td class="InputFormRight">
+			{EDITOR_BUTTONS_body}
+		</td>
+	</tr>
+  
+  </table>
+  
+<div>  <textarea accept-charset="{CHARACTER_SET}" name="body" wrap="VIRTUAL" cols="60" rows="20" id="body" style="{EDITOR_STYLE_body}">{BODY}</textarea>
+</div>
+{BODY_ERROR} 
+
+<div>
+
+        <input type="submit" name="submit" value="{BUTTON}" />
+          <input type="button" name="submit2" value="{CANCEL_STRING}" onClick="history.go(-1)" />
+          {DELETE_BUTTON} 
+   <!-- END ModuleInputBlock -->
+{GENERAL_SETTINGS}
+</form>
+
+</div>

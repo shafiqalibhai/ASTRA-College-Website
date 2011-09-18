@@ -1,0 +1,3 @@
+<?php   //Do NOT modify this file - it is auto-generated
+
+$skin_strings=array('input_heading'=>'スキンの追加／削除','template'=>'テンプレート','general'=>'General','text_colour'=>'Text colour','background'=>'背景色','border'=>'境界色','font'=>'フォント','header'=>'見出し','logo'=>'ロゴ','outer_box'=>'外部ボックス','inner_box'=>'内部ボックス','navigation'=>'ナビゲーション','main_content'=>'主コンテンツ','make_available'=>'誰でも使えるようにする','add_new'=>'新たなスキンを追加','select_modify'=>'修正するスキンを選択','server_name_colour'=>'名前色','css_string'=>'Extra CSS','css_warning'=>'Only use this box if you are familiar with CSS layout','height'=>'Height','inline_personal_box'=>'Inline Personal Box','nav_buttons'=>'Buttons in Navigation','body'=>'本文');?>

@@ -1,0 +1,18 @@
+
+<h2>{HEADER_INPUT_STRING}</h2>
+
+
+<form name="inputform" method="post" action="spaceheader.php">
+
+  <table width="95%" border="0" cellpadding="5">
+    <tr >
+      <td valign="top" class="InputFormLeft">{HEADER_STRING}:
+ {EDITOR_BUTTONS_body}</td>
+      <td valign="top" class="InputFormRight">
+         	<textarea accept-charset="{CHARACTER_SET}" name="body" wrap="VIRTUAL" cols="60" rows="12" id="body">{HEADER}</textarea>
+</td></tr>
+<tr><td> </td><td><input type="submit" name="submit" value="{SUBMIT_STRING}" />
+        <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}"></td></tr>
+</table>
+</form>
+

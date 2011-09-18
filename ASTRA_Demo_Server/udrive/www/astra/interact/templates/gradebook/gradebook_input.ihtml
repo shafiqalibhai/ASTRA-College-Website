@@ -1,0 +1,35 @@
+ 
+<h2>{INPUT_HEADING}</h2>
+
+<form name="folder" method="post" action="gradebook_input.php" >
+  <div class="input_form_div" align="center">
+ <!-- BEGIN ModuleInputBlock --> 
+        <table class="input_form_table">
+            <tr> 
+                <td valign="top" class="InputFormLeft">{NAME_STRING}:</td>
+                <td valign="top" class="InputFormRight"> 
+          <input type="text" name="name" value="{NAME}" size="35" />
+          <br />
+          {SPACER_INSTRUCTIONS}</td>
+            </tr>
+            <tr> 
+                
+                <td valign="top" class="InputFormLeft">{DESCRIPTION_STRING}:</td>
+                <td valign="top" class="InputFormRight"> <textarea accept-charset="{CHARACTER_SET}" name="description" cols="30" rows="4" wrap="VIRTUAL">{DESCRIPTION}</textarea> 
+                    <br>
+                    {DESCRIPTION_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">&nbsp;</td>
+                <td valign="top" class="InputFormRight"> 
+          <input type="submit" name="submit" value="{BUTTON}" />
+          {DELETE_BUTTON} 
+                    <input type="button" name="submit3" value="Cancel" onClick="history.go(-1)" />
+        </td>
+            </tr>
+ 
+        </table>
+ <!-- END ModuleInputBlock --> 	
+ {GENERAL_SETTINGS}
+  </div>
+</form>

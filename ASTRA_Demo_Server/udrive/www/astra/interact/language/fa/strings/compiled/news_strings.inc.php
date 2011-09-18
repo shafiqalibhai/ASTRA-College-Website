@@ -1,0 +1,3 @@
+<?php   //Do NOT modify this file - it is auto-generated
+
+$news_strings=array('not_allowed'=>'شما مجاز به اضافه کردن خبر در این سایت نمی باشید.','add_success'=>'خبر شما اضافه گردید.','delete_success'=>'خبر شما حذف گردید','modify_success'=>'خبر شما اصلاح گردید.','news_heading'=>'اضافه/تصحيح خبر','heading'=>'سرتيتر','body'=>'متن','no_body'=>'شما خبری را وارد نکردید.','no_heading'=>'شما سرتيتری را انتخاب نکرديد.');?>

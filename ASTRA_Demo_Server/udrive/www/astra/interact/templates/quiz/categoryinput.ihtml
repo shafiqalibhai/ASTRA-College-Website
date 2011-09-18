@@ -1,0 +1,46 @@
+
+<h2>{INPUT_HEADING}</h2>
+<div align="center"><a href="additems.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&category_key={CATEGORY_KEY}">{BACK_STRING}</a></div>
+<form method="post" action="categoryinput.php">
+
+<div align="center">  
+
+    
+
+	    <table border="0" cellspacing="2" cellpadding="5">
+            <tr> 
+                <td class="InputFormLeft">{CATEGORY_NAME_STRING}:</td>
+                <td class="InputFormRight"> 
+          <input type="text" name="category_name" value="{CATEGORY_NAME}" size="40">
+          {NAME_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">{CATEGORY_PARENT_STRING}:</td>
+                <td class="InputFormRight">{PARENT_MENU}{CATEGORY_PARENT_ERROR}</td>
+            </tr>
+			            <!-- BEGIN DeleteOptionsBlock -->
+						<tr> 
+                <td valign="top" class="InputFormLeft">{DELETE_OPTIONS_STRING}:</td>
+                <td class="InputFormRight"><input name="delete_option" type="radio" value="delete" checked>
+<span class="small">{DELETE_ITEMS_STRING}</span><br>
+                                        <input type="radio" name="delete_option" value="move">
+<span class="small">{MOVE_ITEMS_STRING}</span><br>
+                    {MOVE_TO_CATEGORY}{MOVE_TO_ERROR}</td>
+            </tr>
+			<!-- END DeleteOptionsBlock -->
+            <tr> 
+                <td >&nbsp;</td>
+                <td > 
+          <input type="submit" name="submit" value="{BUTTON}">
+          {DELETE_BUTTON} </td>
+            </tr>
+        </table>
+
+        <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+        <input type="hidden" name="category_key" value="{CATEGORY_KEY}">
+	<input type="hidden" name="action" value="{ACTION}">
+        <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+  </div>
+
+</form>
+

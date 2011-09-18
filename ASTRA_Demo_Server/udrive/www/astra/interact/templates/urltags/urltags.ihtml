@@ -1,0 +1,18 @@
+
+            <h1>{TAGS_HEADING}</h1>
+            <div align="center">
+            <table width="90%" border="0" cellspacing="0" cellpadding="5">
+                <tr>
+                    <td><strong>{ADDED_BY_YOU_STRING}</strong></td>
+                    <td><strong>{ADDED_FOR_YOU_STRING}</strong></td>
+                </tr>
+                <tr>
+                    <td valign="top">
+             
+                    	<p>{BY_YOU_TAGS}</p></td>
+                    <td valign="top">{FOR_YOU_TAGS}</td>
+                </tr>
+            </table>
+          </div>
+
+

@@ -1,0 +1,70 @@
+<div class="headingBox">
+<h2 align="left">{EMAIL_MEMBERS_STRING}</h2>
+	
+</div>
+
+<div class="userContentBox">
+
+<form name="form1" method="post" enctype="multipart/form-data"  action="emailmembers.php">
+  <div align="center">
+        <table class="input_form_table">
+            <tr> 
+                <td class="InputFormLeft">{SUBJECT_STRING}:</td>
+                <td class="InputFormRight"> <input type="text" name="subject" size="35" value="{SUBJECT}" /> 
+                    <br />
+                    {SUBJECT_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">{MESSAGE_STRING}:</td>
+                <td class="InputFormRight"> <textarea accept-charset="{CHARACTER_SET}" name="body" rows="6" wrap="VIRTUAL" cols="30">{BODY}</textarea> 
+                    <br />
+                    {BODY_ERROR} 
+                    <input type="checkbox" name="copyself" value="true" />
+                     <span class="small">{COPY_SELF_STRING}</span></td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">{CC_STRING}:<br />
+                     <span class="small">{CC_INSTRUCTIONS}</span></td>
+                <td class="InputFormRight" valign="top"> <input type="text" name="carbon_copy" size="35"> 
+                </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">{ATTACHMENT_STRING}:</td>
+                <td class="InputFormRight" valign="top"><input type="file" name="file" size="35" />
+                    {FILE_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">{GROUP_MEMBERS_STRING}:</td>
+                <td class="InputFormRight" valign="top"> <div align="left">{INSTRUCTIONS_STRING}<br>
+{EMAIL_WHO_ERROR}<br />
+                    </div>
+                    <table  border="0" cellpadding="0">
+                        <tr> 
+                            <td valign="top"> 
+                              <p>
+                                    <select name="email_who" size="2" id="email_who">
+                                        <option value="all">{ALL_MEMBERS_STRING}</option>
+                                        <option value="selected">{SELECTED_MEMBERS_STRING}</option>
+                                    </select>
+                                </p></td>
+                            <td valign="top"> {MEMBERS_MENU} </td>
+                        </tr>
+                    </table></td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">&nbsp;</td>
+                <td class="InputFormRight"> <div align="center"> 
+                        <input type="submit" name="Submit" value="{SEND_STRING}" />
+                        <input type="hidden" name="space_key" value="{SPACE_KEY}" />
+                        <input type="hidden" name="action" value="email" />
+                        <input type="hidden" name="group_key" value="{GROUP_KEY}" />
+                        <input type="hidden" name="module_key" value="{MODULE_KEY}" />
+						<input type="hidden" name="link_key" value="{LINK_KEY}" />
+                    </div></td>
+            </tr>
+        </table>
+    </div>  
+  </form>
+</div>
+
+

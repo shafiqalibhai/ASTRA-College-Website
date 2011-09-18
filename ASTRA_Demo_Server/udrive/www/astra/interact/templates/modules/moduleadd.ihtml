@@ -1,0 +1,247 @@
+<h2>{ADD_MODULE_STRING}</h2>
+ 
+{INSTRUCTIONS_STRING}
+<p>Do not try to experiment</p>
+  <form name="moduleadd" method="post" action="moduleadd.php">
+<!-- BEGIN FullOptionsBlock -->
+        <table width="90%" border="0" cellpadding="8">
+            <tr>
+                <td width="50%" valign="top"><h3>{INTERACTION_STRING}</h3>
+                    <table cellspacing="0" cellpadding="5">
+            
+            
+            
+                        <tr> 
+                            <td valign="top" > 
+                                <input type="radio" name="module_type" value="forum" /> 
+                </td>
+                            <td ><img src="{PATH}/images/forum.gif" width="16" height="16" alt="icon" border="0" /></td>
+                            <td >{FORUM_STRING}</td>
+                        </tr>
+                        <tr> 
+                            <td > <input type="radio" name="module_type" value="group" /> 
+                </td>
+                            <td ><img src="{PATH}/images/group.gif" width="16" height="16" alt="icon" border="0" /></td>
+                            <td >{GROUP_STRING}</td>
+                        </tr>
+                        <tr> 
+                            <td > <input type="radio" name="module_type" value="dropbox" /> 
+                </td>
+                            <td ><img src="{PATH}/images/dropbox.gif" width="16" height="16" alt="icon" border="0" /></td>
+                            <td >{DROPBOX_STRING}</td>
+                        </tr>
+                        <tr> 
+                            <td > <input type="radio" name="module_type" value="sharing" /> 
+                </td>
+                            <td ><img src="{PATH}/images/sharing.gif" width="16" height="16" alt="icon" border="0" /></td>
+                            <td >{SHARING_STRING}</td>
+                        </tr>
+                        <tr>
+                            <td ><input type="radio" name="module_type" value="chat" /></td>
+                            <td ><img src="{PATH}/images/chat.gif" width="16" height="16" alt="icon" border="0" /></td>
+                            <td >{CHAT_STRING}</td>
+                        </tr>
+                        <tr>
+                            <td ><input type="radio" name="module_type" value="journal" /></td>
+                            <td ><img src="{PATH}/images/journal.gif" width="16" height="16" alt="journal icon" border="0" /></td>
+                            <td >{JOURNAL_STRING}</td>
+                        </tr>
+                      <!--  <tr>
+                            <td ><input type="radio" name="module_type" value="gradebook" /></td>
+                            <td ><a href="javascript:openHelpWin('{DOCS_URL}/Gradebook_Admin')" class='helplink'><img src="{PATH}/images/gradebook.gif" width="16" height="16" alt="journal icon" border="0" /></a> </td>
+                            <td >{GRADEBOOK_STRING}</td>
+                        </tr>-->
+                        <tr>
+                            <td ><input type="radio" name="module_type" value="quiz" /></td>
+                            <td ><img src="{PATH}/images/quiz.gif" width="16" height="16" alt="journal icon" border="0" /></td>
+                            <td >{QUIZ_STRING}</td>
+                        </tr>
+
+
+            
+            
+
+                    </table>  
+
+                   
+					
+					 
+				    <h3>
+
+                     
+                      <br>
+                        {USE_EXISTING_STRING}</h3>
+                    <table cellspacing="0" cellpadding="5">
+                        <tr> 
+                            <td ><input type="radio" name="module_type" value="link" /> </td>
+                            <td ><img src="{PATH}/images/complink.gif" width="16" height="16" border="0" /></td>
+                            <td >{LINK_TO_STRING}</td>
+                        </tr>
+                        <tr>
+                            <td valign="top" >
+<input type="radio" name="module_type" value="copy" /></td>
+                            <td ><img src="{PATH}/images/copy.gif" width="16" height="16" border="0"/></td>
+                            <td >{COPY_STRING}</td>
+                        </tr>
+            
+        </table></td>
+                <td valign="top"><h3>{CONTENT_STRING}</h3>
+                    <table cellspacing="0" cellpadding="5">
+                        <tr> 
+                            <td > <input type="radio" name="module_type" value="folder" /> 
+                </td>
+                            <td ><img src="{PATH}/images/folder.gif" width="16" height="16" alt="icon" border="0" /></td>
+                            <td >{FOLDER_STRING}</td>
+                        </tr>
+                        <tr> 
+                            <td > <input type="radio" name="module_type" value="file" /> </td>
+                            <td ><img src="{PATH}/images/file.gif" width="16" height="16"alt="icon" border="0" /></td>
+                            <td >{FILE_STRING}</td>
+                        </tr>
+                        <tr> 
+                            <td > <input type="radio" name="module_type" value="weblink" /> </td>
+                            <td ><img src="{PATH}/images/link.gif" width="16" height="16" alt="icon" border="0" /></td>
+                            <td >{WEBLINK_STRING}</td>
+                        </tr>
+                                               <tr> 
+                            <td > <input type="radio" name="module_type" value="feedreader" /> </td>
+                            <td ><img src="{PATH}/images/feedreader.gif" width="16" height="16" alt="icon" border="0" /></td>
+                            <td >Feedreader</td>
+                        </tr>
+                         <tr> 
+                        
+                            <td > <input type="radio" name="module_type" value="note" /> </td>
+                            <td ><img src="{PATH}/images/note.gif" width="16" height="16" alt="icon" border="0" /></td>
+                            <td >{NOTE_STRING}</td>
+                        </tr>
+                        <tr>
+                            <td >
+<input type="radio" name="module_type" value="page" /></td>
+                            <td ><img src="{PATH}/images/page.gif" width="16" height="16" alt="icon" border="0" /></td>
+                            <td >{PAGE_STRING}</td>
+                        </tr>
+                        <tr> 
+                            <td > <input type="radio" name="module_type" value="calendar" /> 
+                </td>
+                            <td ><img src="{PATH}/images/calendar.gif" width="16" height="16" alt="icon" border="0" /></td>
+                            <td >{CALENDAR_STRING}</td>
+                        </tr>
+                       <!-- <tr>
+                            <td ><input type="radio" name="module_type" value="kb" /></td>
+                            <td ><img src="{PATH}/images/kb.gif" width="16" height="16" alt="icon" border="0" /></td>
+                            <td >{KB_STRING}</td>
+                        </tr>-->
+                        <tr>
+                            <td ><input type="radio" name="module_type" value="noticeboard" /></td>
+                            <td ><img src="{PATH}/images/noticeboard.gif" width="16" height="16" border="0" /></td>
+                            <td >{NOTICEBOARD_STRING}</td>
+                        </tr>
+<!--                        <tr>
+                            <td ><input type="radio" name="module_type" value="scorm" /></td>
+                            <td ><img src="{PATH}/images/scorm.gif" width="16" height="16" border="0" /></td>
+                            <td >{SCORM_STRING}</td>
+                        </tr>
+-->                        <tr> 
+                            <td > <input type="radio" name="module_type" value="heading" /> 
+                </td>
+                            <td >&para;</td>
+                            <td >{HEADING_STRING}</td>
+                        </tr>
+                                    <!-- BEGIN NewSpaceBlock -->
+                        <tr>
+                          <td ><input type="radio" name="module_type" value="space" /></td>
+                          <td ><img src="{PATH}/images/space.gif" width="16" height="16" alt="space icon" /></td>
+                          <td >{NEW_SPACE_STRING} {{cannot be deleted}}</td>
+                        </tr>
+              			<!-- END NewSpaceBlock -->
+                          <!-- BEGIN PortfolioBlock -->
+              			<tr>
+                          <td ><input type="radio" name="module_type" value="portfolio" /></td>
+                          <td ><img src="{PATH}/images/space.gif" width="16" height="16" alt="space icon" /></td>
+                          <td >{PORTFOLIO_SPACE_STRING}</td>
+                        </tr>
+                         <!-- END PortfolioBlock -->
+                    </table>
+                    <br>
+                    <input type="submit" name="Submit" value="{SUBMIT_STRING}" />
+                        
+            <input type="button" name="submit" value="{CANCEL_STRING}" onClick="history.go(-1)" />
+</td>
+            </tr>
+        </table>
+<!-- END FullOptionsBlock -->
+<!-- BEGIN LimitedOptionsBlock -->
+        <table width="90%" border="0" cellpadding="8">
+            <tr>
+                <td width="50%" valign="top"><h3> Add New Component </h3>
+                    <table cellspacing="0" cellpadding="5">
+                      <tr>
+                        <td ><input type="radio" name="module_type" value="heading" />
+                        </td>
+                        <td >&para;</td>
+                        <td >{HEADING_STRING}</td>
+                      </tr>
+                      <tr>
+                        <td ><input type="radio" name="module_type" value="folder" />
+                        </td>
+                        <td ><img src="{PATH}/images/folder.gif" width="16" height="16" alt="icon" /></td>
+                        <td >{FOLDER_STRING}</td>
+                      </tr>
+                      <tr>
+                        <td ><input type="radio" name="module_type" value="page" /></td>
+                        <td ><img src="{PATH}/images/page.gif" width="16" height="16" alt="icon" /></td>
+                        <td >{PAGE_STRING}</td>
+                      </tr>
+                      <tr>
+                        <td ><input type="radio" name="module_type" value="file" />
+                        </td>
+                        <td ><img src="{PATH}/images/file.gif" width="16" height="16"alt="icon" /></td>
+                        <td >{FILE_STRING}</td>
+                      </tr>
+                      <tr>
+                        <td ><input type="radio" name="module_type" value="weblink" />
+                        </td>
+                        <td ><img src="{PATH}/images/link.gif" width="16" height="16" alt="icon" /></td>
+                        <td >{WEBLINK_STRING}</td>
+                      </tr>
+                    </table>
+                
+              </td>
+              <td valign="top"><h3>  {USE_EXISTING_STRING}</h3>
+                <table cellspacing="0" cellpadding="5">
+                  <tr>
+                    <td ><input type="radio" name="module_type" value="link" />
+                    </td>
+                    <td ><img src="{PATH}/images/complink.gif" width="16" height="16"></td>
+                    <td >{LINK_TO_STRING}</td>
+                  </tr>
+                  <tr>
+                    <td valign="top" ><input type="radio" name="module_type" value="copy" /></td>
+                    <td ><img src="{PATH}/images/copy.gif" width="16" height="16"></td>
+                    <td >{COPY_STRING}</td>
+                  </tr>
+                </table>
+                <h3><br>
+                    <input type="submit" name="Submit" value="{SUBMIT_STRING}" />
+                          
+                  <input type="button" name="submit" value="{CANCEL_STRING}" onClick="history.go(-1)" />
+                </h3></td>
+            </tr>
+        </table>
+<!-- END LimitedOptionsBlock -->
+
+        <p>
+            <input type="hidden" name="space_key" value="{SPACE_KEY}" />
+                        
+            <input type="hidden" name="module_key" value="{MODULE_KEY}" />
+                        
+            <input type="hidden" name="parent_key" value="{PARENT_KEY}" />
+                        
+            <input type="hidden" name="group_key" value="{GROUP_KEY}" />
+                        
+            <input name="link_key" type="hidden" id="link_key" value="{LINK_KEY}" />
+            <input name="block_key" type="hidden" id="block_key" value="{BLOCK_KEY}" />
+                        
+            </p>
+  </form>
+

@@ -1,0 +1,58 @@
+{NEW_THREAD}
+{SPACE}
+<a name="{POST_KEY}"></a>
+<div style="margin-left:{INDENT}">
+	<div class="fullPost" > 
+    	<input name="post_keys[]" type="hidden"  value="{POST_KEY}">
+	
+		<div class="postHeader">
+			<span style="float:right">{TYPE}<br />Post # {POST_KEY}</span>
+			{STATUS_IMAGE}
+    		<strong>{POSTED_BY_STRING}: </strong><a href="{PATH}/modules/forum/byname.php?space_key={SPACE_KEY}&amp;module_key={MODULE_KEY}&amp;user_key={USER_KEY}" class="{POST_CLASS}">{FULL_NAME}</a> {ON_STRING} <i>{DATE_ADDED}</i> {AT_STRING} {TIME_ADDED} {CONTEXT} <br />
+			<strong>{SUBJECT_STRING}:</strong> {SUBJECT}
+		</div>
+		<div class="postBody">
+      		<div class="postPhoto">{PHOTO}</div>
+      		{BODY}
+	   		<div class="postAttachmentLink">
+	   			{VIEW_ATTACHMENT}
+			</div>
+		<div>
+		<br class="postEnd">
+		<div class="postReplyLink">
+			<a href="{PATH}/modules/forum/postinput.php?action=reply&amp;space_key={SPACE_KEY}&amp;module_key={MODULE_KEY}&amp;thread_key={THREAD_KEY}&amp;parent_key={POST_KEY}&entry_key={ENTRY_KEY}&referer={REFERER}&subject={SUBJECT_URL}#reply" >{REPLY_STRING}</a> 
+			<!-- BEGIN EditPostBlock -->				
+			 - <a href="{PATH}/modules/forum/editpost.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&thread_key={THREAD_KEY}&parent_key={PARENT_KEY}&post_key={POST_KEY}&entry_key={ENTRY_KEY}&referer={REFERER}&action=Edit" >{EDIT_POST_STRING}</a>
+			<!-- END EditPostBlock -->	
+		</div>
+		<span class="small" id="showAdmin{POST_KEY}" style="display:none; cursor: pointer" onClick="document.getElementById('postAdmin{POST_KEY}').style.display='block';document.getElementById('hideAdmin{POST_KEY}').style.display='';this.style.display='none';">{STATUS_STRING}:<img src="{PATH}/images/disclosure_closed.gif" /></span><span class="small" id="hideAdmin{POST_KEY}"  style="display:none; cursor: pointer" onClick="document.getElementById('postAdmin{POST_KEY}').style.display='none';document.getElementById('showAdmin{POST_KEY}').style.display='';this.style.display='none';">{STATUS_STRING}:<img src="{PATH}/images/disclosure_open.gif" /></span><span class="small" id="noscriptStat{POST_KEY}">{STATUS_STRING}:</span>
+
+	</div></div>
+		<div class="postAdmin" id="postAdmin{POST_KEY}">
+
+<span class="postDetails">{POST_DETAILS}</span>
+		<div class="postFlags">
+			
+<input name="{POST_KEY}_read" type="checkbox" id="{POST_KEY}_read" value="1" {READ_CHECKED}>
+			{READ_STRING}
+			<input name="{POST_KEY}_flagged" type="checkbox" id="{POST_KEY}_flagged" value="1" {FLAG_CHECKED}>
+			{FOLLOW_UP_STRING}
+			<!-- BEGIN FinishedBlock -->
+			<input name="{POST_KEY}_flagged" type="checkbox" id="{POST_KEY}_flagged" value="2" {FINISHED_CHECKED}>
+			{FINISHED_STRING}
+			<!-- END FinishedBlock -->
+			<input name="{POST_KEY}_monitor_post" type="checkbox" id="{POST_KEY}_monitor_post" value="1" {MONITOR_CHECKED}>
+			{MONITOR_POST_STRING}
+			<input name="print_save_keys[]" type="checkbox" id="print_save_keys[]" value="{POST_KEY}" >{PRINT_SAVE_STRING}
+			</div>
+
+		</div>
+		
+<script "text/javascript">		 
+	document.getElementById('postAdmin{POST_KEY}').style.display='none';
+	document.getElementById('noscriptStat{POST_KEY}').style.display='none';
+	document.getElementById('showAdmin{POST_KEY}').style.display='';
+</script>
+
+	</div>
+</div>

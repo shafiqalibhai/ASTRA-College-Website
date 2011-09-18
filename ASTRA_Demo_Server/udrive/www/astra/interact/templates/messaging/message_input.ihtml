@@ -1,0 +1,14 @@
+
+<h1>{MESSAGE_INPUT_HEADING}</h1>
+<form name="form1" method="post" action="">
+  {MESSAGE_STRING} <span class="small">({MAXIMUM_CHAR_STRING})</span><br>
+  <textarea accept-charset="{CHARACTER_SET}" name="user_message" cols="40" rows="3" 
+onBlur="document.form1.count_display.value=document.form1.user_message.value.length;"  onKeyUp="document.form1.count_display.value=document.form1.user_message.value.length;">{USER_MESSAGE}</textarea>
+  <br>
+  <input type="text" name="count_display" value="0" size="3" readonly>
+  {CHARACTERS_STRING}<br>
+<input type="hidden" name="user_key" value="{USER_KEY}"  >
+<input type="hidden" name="space_key" value="{SPACE_KEY}"  >
+<input type="hidden" name="referer" value="{REFERER}"  >
+<input type="submit" name="submit" value="{SEND_STRING}">
+</form>

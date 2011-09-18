@@ -1,0 +1,27 @@
+.hline {
+    color:#2164B6;
+}
+.notify {
+	font-style:italic;
+	color:#2164B6;
+}
+.handle {
+	font-weight:bold;
+}
+
+a:link {
+	color:#0000FF;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+.quotation {
+	margin-left:18px;
+	color:#000080;
+}
+
+.qbtn {
+	color:#FF8000;
+	font-size:9px;
+}

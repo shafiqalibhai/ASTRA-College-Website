@@ -1,0 +1,40 @@
+<div style="padding:10px">
+<h2>{HEADING_STRING}</h2>
+<div>{DESCRIPTION}</div>
+
+<!-- BEGIN AccessCodeBlock -->
+<p>{INSTRUCTION_STRING}</p>
+<p>{INSTRUCTION_STRING2}</p>
+
+<div align="center" class="message">{MESSAGE}</div>
+
+<form name="access" method="post" action="access.php">
+  <div align="center">
+  <table class="input_form_table">
+    <tr> 
+                <td class="InputFormLeft">{ACCESS_CODE_STRING}:</td>
+        <td class="InputFormRight"> 
+          <div align="center">
+            <input type="text" name="access_code" size="10" value="{ACCESS_CODE}" />
+          </div>
+        </td>
+    </tr>
+    <tr> 
+      <td class="InputFormLeft">&nbsp;</td>
+        <td class="InputFormRight"> 
+          <input type="hidden" name="space_key" value="{SPACE_KEY}" />
+          <input type="hidden" name="action" value="add" />
+          <input type="submit" name="Submit" value="{SUBMIT_STRING}" />
+          <input type="button" name="submit" value="{CANCEL_STRING}" onClick="history.go(-1)" />
+        </td>
+    </tr>
+  </table></div>
+</form>
+
+
+</div>
+<!-- END AccessCodeBlock -->
+<h2>{SPACE_ADMINS_STRING}</h2>
+<ul>
+    {SITE_ADMINS}
+</ul>

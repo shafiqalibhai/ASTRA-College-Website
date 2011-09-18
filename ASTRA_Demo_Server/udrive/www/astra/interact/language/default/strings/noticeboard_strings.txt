@@ -1,0 +1,17 @@
+sort_order=Default sort order
+add_noticeboard=Add a Noticeboard in
+add_notice=Add a Notice
+edit_notice=Edit a Notice
+delete_after=Delete after
+notice_added=Your notice has been added
+notice_modifed=Your notice has been modified
+notice_deleted=Your notice has been deleted
+no_heading=You did not enter a heading
+no_body=You did not enter a notice
+body=Body
+heading=Heading
+edit_link=Edit/Delete
+days_to_keep=Default number of days to keep notices
+days_to_keep2=Enter 0 to keep indefinately
+days_to_keep3=Messages will be automatically deleted after %s days
+days_to_keep_error=This setting must be a number between 1 and 99

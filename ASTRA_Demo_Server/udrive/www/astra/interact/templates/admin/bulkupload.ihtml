@@ -1,0 +1,116 @@
+
+
+    <h1 align="left">Bulk Account Upload</h1>
+	<p>{MESSAGE}</p>
+<p align="left">You can use this page to do a bulk upload of user accounts. The file must be a tab delimited text file with the fields in the following order. *=required field</p>
+<table  border="1" cellspacing="0" cellpadding="5">
+        
+    <tr valign="top" >
+            
+        <td class="small"><strong>*First name</strong></td>
+        <td class="small"><strong>*Last name</strong></td>
+        <td class="small"><strong>ID Number</strong></td>
+        <td class="small"><strong>*Username</strong></td>
+        <td class="small"><strong>Password</strong></td>
+        <td class="small"><strong>*Email</strong></td>
+        <td class="small"><strong>*AccountStatus</strong></td>
+        <td class="small"><strong>Usergroup Key</strong></td>
+        <td class="small"><strong>*Access Level Key</strong></td>
+        <td class="small"><strong>Details</strong></td>
+    </tr>
+    <tr valign="top">
+        <td class="small">&nbsp;</td>
+        <td class="small">&nbsp;</td>
+        <td class="small">Optional institutional ID number</td>
+        <td class="small">&nbsp;</td>
+        <td class="small">&nbsp;</td>
+        <td class="small">&nbsp;</td>
+        <td class="small">1 = active<br>
+2 = disabled <br>
+3 = to be deleted</td>
+        <td class="small">{USER_GROUP_LIST}</td>
+        <td class="small">1=Superadmin<br />
+          2=Admin<br />
+          3=User<br />
+          4=Guest <br />
+          5=Permanent Guest </td>
+        <td class="small">&nbsp;</td>
+    </tr>
+</table>
+<p>&nbsp;</p><div align="center">
+    <table width="75%" border="0" cellpadding="5">
+        <tr> 
+            <td><form name="form1" method="post" action="bulkupload.php" enctype="multipart/form-data">
+                    <div align="center">
+                        <p align="left">File:
+                            <input type="file" name="user_file" size="35" />
+                        <br>
+                            <br>
+                        </p>
+                        <table  border="0" cellspacing="1" cellpadding="5">
+                            <tr>
+                                <td valign="top" class="InputFormLeft">Generate email address based on username</td>
+                                <td valign="top" class="InputFormRight">
+<input name="auto_email" type="checkbox" id="auto_email" value="1">
+                                    <br>
+username@
+                                    <input name="email_domain" type="text" id="email_domain" size="15">
+                              </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" class="InputFormLeft">Generate passsword 
+                            </td>
+                                <td valign="top" class="InputFormRight">
+<input name="auto_password" type="checkbox" id="auto_password" value="1"></td>
+                            </tr>
+                            <tr>
+                                <td valign="top" class="InputFormLeft">Email account details to user</td>
+                                <td valign="top" class="InputFormRight">
+<input name="email_user" type="checkbox" id="email_user" value="1"></td>
+                            </tr>
+                            <tr>
+                                <td valign="top" class="InputFormLeft">Email note:<br>
+(Optional note to include in email to user)</td>
+                                <td valign="top" class="InputFormRight"><textarea accept-charset="{CHARACTER_SET}" name="email_note" cols="40" rows="5" id="email_note"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td valign="top" class="InputFormLeft">&nbsp;</td>
+                                <td valign="top" class="InputFormRight">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td valign="top" class="InputFormLeft">Also add users to the following groups</td>
+                                <td valign="top" class="InputFormRight">{USER_GROUP_MENU}</td>
+                            </tr>
+                            <tr>
+                                <td valign="top" class="InputFormLeft">Also add users to the following spaces</td>
+                                <td valign="top" class="InputFormRight">{SPACE_MENU}</td>
+                            </tr>
+                            <tr>
+                                <td valign="top" class="InputFormLeft">Default language </td>
+                                <td valign="top" class="InputFormRight">{LANGUAGE_MENU}</td>
+                            </tr>
+ 							<tr>
+                                <td valign="top" class="InputFormLeft">If username exists which fields will be updated</td>
+                                <td valign="top" class="InputFormRight">
+								<input name="update_name" type="checkbox" id="update_name" value="1">Name<br />
+								<input name="update_id" type="checkbox" id="update_id" value="1">ID number<br />
+								<input name="update_email" type="checkbox" id="update_email" value="1">Email<br />
+								<input name="update_password" type="checkbox" id="update_password" value="1">Password<br />
+								</td>
+                            </tr>
+                        </table>
+                      
+                            <input type="submit" name="Submit" value="Upload">
+                    
+                        <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+                    </div>
+                </form></td>
+        </tr>
+    </table>
+   
+</div>
+ 
+
+
+
+</div>

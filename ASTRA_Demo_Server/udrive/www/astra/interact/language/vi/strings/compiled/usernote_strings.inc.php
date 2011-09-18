@@ -1,0 +1,3 @@
+<?php   //Do NOT modify this file - it is auto-generated
+
+$usernote_strings=array('note'=>'Note','added_for'=>'Add tag for','site_admins'=>'Space admins','self'=>'Yourself','select_below'=>'Select from list below','add_note'=>'Add a tag','add_success'=>'Your tag has been added','all_members'=>'All %s/group members','selected_user'=>'Selected member','modify_note'=>'Modify a tag','delete_success'=>'The tag has been deleted','modify_success'=>'The tag has been modified','added_by_you'=>'Tags added by you','added_for_you'=>'Tags added for you','view_notes'=>'View your tags','no_notes'=>'There are none at present','no_note'=>'You did not enter a note','no_selected_user'=>'You did not select a user');?>

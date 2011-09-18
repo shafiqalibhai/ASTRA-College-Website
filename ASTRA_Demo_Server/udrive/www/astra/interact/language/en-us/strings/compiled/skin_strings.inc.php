@@ -1,0 +1,3 @@
+<?php   //Do NOT modify this file - it is auto-generated
+
+$skin_strings=array('input_heading'=>'Add/Modify a Skin','template'=>'Template','general'=>'General','text_colour'=>'Text color','background'=>'Background color','border'=>'Border color','font'=>'Font','header'=>'Header','logo'=>'Logo','outer_box'=>'Outer box','inner_box'=>'Inner box','navigation'=>'Navigation','main_content'=>'Main content','make_available'=>'Make available to everyone','add_new'=>'Add a new skin','select_modify'=>'Select a skin to modify','server_name_colour'=>'Name color','css_string'=>'Extra CSS','css_warning'=>'Only use this box if you are familiar with CSS layout','height'=>'Height','inline_personal_box'=>'Inline Personal Box','nav_buttons'=>'Buttons in Navigation');?>

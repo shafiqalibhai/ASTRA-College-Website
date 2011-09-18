@@ -1,0 +1,12 @@
+
+<h2 >{HEADING}</h2><div align="left" class="message">{MESSAGE}</div>
+{LANG_TO_USE_DEFAULT}
+<form action="index.php?lang={LANG}&file={FILE}" method="post" accept-charset="{CHARACTER_SET}">
+<table cellpadding=0 cellspacing=0>
+{LANG_LIST}
+<!-- BEGIN SubmitChangesBlock -->
+<tr><td></td><td><input name="__SUBMIT_CHANGES" type="submit" value="Submit Changes"></td></tr>
+<!-- END SubmitChangesBlock -->
+
+</table>
+</form>

@@ -1,0 +1,73 @@
+
+<h1>{HEADING_STRING}</h1>
+<div align="center"></div>
+
+<!-- BEGIN MarkItemBlock -->
+<form name="noteinput" method="post" action="noteinput.php">
+
+    <div align="center">
+        <table class="input_form_table">
+            <tr>
+                <td valign="top" class="InputFormLeft">{ADDED_FOR_STRING}:</td>
+                <td valign="top" class="InputFormRight"><p>
+                        <input name="added_for" type="radio" value="1" {SELF_CHECKED}>
+                    {SELF_STRING} <a href="javascript:openHelpWin('{PATH}/help/help.php?module=notes&file=note.php')" class='helplink'>?</a><br>
+                        <input type="radio" name="added_for" value="0" {ADMINS_CHECKED}>
+{SITE_ADMIN_STRING}<br>
+                        <input type="radio" name="added_for" value="2" {ALL_CHECKED}>
+                                                
+{MEMBERS_STRING}                    <br>
+                        <input type="radio" name="added_for" value="3" {SELECTED_CHECKED}>
+{SELECTED_USER_STRING} <span class="small">({SELECT_BELOW_STRING}) </span>                   <br>
+                        {USERS_MENU}
+{SELECTED_USER_ERROR}</p></td>
+            </tr>
+            <tr>
+            	<td valign="top" class="InputFormLeft">{CATEGORY_STRING}</td>
+            	<td valign="top" class="InputFormRight">{CATEGORY_MENU}</td>
+           	</tr>
+            <tr>
+            	<td valign="top" class="InputFormLeft">{NOTE_HEADING_STRING}</td>
+            	<td valign="top" class="InputFormRight"><input name="heading" type="text" id="heading" value="{HEADING}"></td>
+           	</tr>
+            <tr>
+                <td valign="top" class="InputFormLeft">{NOTE_STRING}:
+                 {EDITOR_BUTTONS_body}</td>
+                <td valign="top" class="InputFormRight">
+                                    
+                                    <textarea accept-charset="{CHARACTER_SET}" name="body" wrap="VIRTUAL" cols="60" rows="15" id="body">{BODY}</textarea>
+                    <div class="error">{BODY_ERROR}</div></td>
+            </tr>
+            <tr>
+                <td class="InputFormLeft">&nbsp;</td>
+                <td class="InputFormRight">
+ 
+        <p align="center">
+                        <input type="submit" name="submit" value="{BUTTON}" />
+                        <input type="button" name="submit2" value="{CANCEL_STRING}" onClick="history.go(-1)" />
+                        {DELETE_BUTTON} 
+                    
+                
+            
+                        <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+                        <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+                        
+                        
+                        
+                        <input name="action" type="hidden" id="action" value="{ACTION}">
+                        <input name="user_note_key" type="hidden" id="user_note_key" value="{USER_NOTE_KEY}">
+                        <input name="note_url" type="hidden" id="note_url" value="{NOTE_URL}">
+                        <input name="added_by_key" type="hidden" id="added_by_key" value="{ADDED_BY_KEY}">
+                        <input name="added_for_key" type="hidden" id="added_for_key" value="{ADDED_FOR_KEY}">
+                                                                                            </p>
+                    <p align="left">{ADDED_BY_STRING}{ADDED_BY} {DATE_ADDED}<br>
+{MODIFIED_BY_STRING}{MODIFIED_BY} {DATE_MODIFIED}</p></td>
+            </tr>
+        </table>
+    </div>
+</form>
+<!-- END MarkItemBlock -->
+
+
+</body>
+</html>

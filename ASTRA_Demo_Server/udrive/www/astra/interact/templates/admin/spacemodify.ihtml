@@ -1,0 +1,9 @@
+<h2>Modify/Delete a {SPACE_TEXT}</h2>
+<div align="center" class="message">{MESSAGE}</div>
+<div style="margin-bottom:10px"><a href="spacemodify.php?sort=by_name&personal={PERSONAL}">Sort By Name</a> - <a href="spacemodify.php?personal={PERSONAL}">Sort by hierarchy</a>  - <a href="spacemodify.php?sort={SORT}&personal=1">Show personal sites also</a></div> 
+<form name="form1" method="post" action="{PATH}/modules/space/space_input.php">
+   {SPACE_MENU}
+     <input name="action" type="hidden" id="action" value="modify">
+     <br /><input type="submit" name="submit" value="Modify/Delete">
+</form>
+ 

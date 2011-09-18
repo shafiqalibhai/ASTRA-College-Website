@@ -1,0 +1,51 @@
+<div align="right" class="small">
+<form name="form1" method="post" action="journal.php">
+{SHOW_NEW_ENTRIES}  
+{SHOW_NEW_MENU}
+<input type="hidden" name="module_key" value="{MODULE_KEY}">
+<input type="hidden" name="space_key" value="{SPACE_KEY}">
+</form>
+
+</div>
+<div class="10pxleftmargin">
+
+<!-- BEGIN UserListHeading -->
+    <p><strong>{INSTRUCTIONS_STRING}</strong></p>
+<!-- END UserListHeading -->
+    <div class="20pxleftmargin">  
+        <!-- BEGIN UserTableHeaderBlock -->
+                
+        <table  border="0" cellspacing="1" cellpadding="5">
+            <tr>
+                <td><table cellspacing="0" cellpadding="5">
+                        <tr>
+                            <th><div align="left">{NAME_STRING}</div></th>
+                            <th><div align="left">{ENTRIES_STRING}</div></th>
+                            <th><div align="left">{COMMENTS}</div></th>
+                        </tr>
+                        <!-- END UserTableHeaderBlock -->
+                        <!-- BEGIN UserListBlock -->
+
+                        <tr>
+                            <td><div align="left"><a href="journalview.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&group_key={GROUP_KEY}&link_key={LINK_KEY}&journal_user_key={JOURNAL_USER_KEY}">{NAME}</a></div></td>
+                            <td>{ENTRY_COUNT} <span class="smallred">{NEW_ENTRIES}</span></td>
+                            <td><div align="left">{COMMENT_COUNT} <span class="smallred">{NEW_COMMENTS}</span></div></td>
+                        </tr>
+
+                        <!-- END UserListBlock -->
+
+                        <!-- BEGIN UserTableFooterBlock -->
+        </table></td>
+                <td valign="top">
+				  <!-- BEGIN MultiAddBlock -->
+				<a href="entryinput.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&group_key={GROUP_KEY}&link_key={LINK_KEY}&entry_type=multiple&action=Add"><br>
+                    {ADD_MULTIPLE_STRING}</a> 
+<a href="javascript:openHelpWin('{DOCS_URL}/Journal_Admin')" class='helplink'>?</a>					
+					 
+                    <!-- END MultiAddBlock -->
+					</td>
+            </tr>
+        </table>
+        <!-- END UserTableFooterBlock -->
+</div>
+</div>

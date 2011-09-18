@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rdf:RDF
+    xmlns="http://purl.org/rss/1.0/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel rdf:about="http://astra.co.nr">
+        <title>ASTRA NEWS</title>
+        <description>Aurora's Scientific, Technological and Research Academy</description>
+        <link>http://astra.co.nr</link>
+        <image rdf:resource="http://localhost/astra/images/favicon.ico" />
+       <dc:date>{DATE_ADDED}</dc:date>
+
+        <items>
+            <rdf:Seq>
+                <rdf:li rdf:resource="http://www.astra.co.nr"/>
+            </rdf:Seq>
+        </items>
+
+    </channel>
+    <image rdf:about="http://localhost/astra/images/favicon.ico">
+        <title>ASTRA NEWS</title>
+        <link>http://astra.co.nr</link>
+        <url>http://localhost/astra/images/favicon.ico</url>
+    </image>
+    <item rdf:about="http://astra.co.nr">
+
+        <dc:format>text/html</dc:format>
+        <dc:source>http://astra.co.nr</dc:source>
+        <dc:creator>{ADDED_BY}</dc:creator>
+        <title>{SPACE_HEADING} {HEADING} {NEWS_HEADING} :: posted by {ADDED_BY}</title>
+        <link>http://astra.co.nr</link>
+
+        <description>{BODY} {PREVIOUS_LINK} {NEXT_LINK}</description>
+    </item>
+</rdf:RDF>

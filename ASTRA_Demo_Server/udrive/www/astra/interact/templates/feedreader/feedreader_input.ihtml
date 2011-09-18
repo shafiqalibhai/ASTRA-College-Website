@@ -1,0 +1,44 @@
+ 
+<h2>{INPUT_HEADING} {MODULE_PARENT}</h2>
+<div class="input_form_div" align="center">
+<form name="link" method="post" action="feedreader_input.php">
+<!-- BEGIN ModuleInputBlock -->
+        <table class="input_form_table">
+            <tr> 
+                <td class="InputFormLeft" valign="top">{NAME_STRING}:</td>
+                <td class="InputFormRight"> <input type="text" name="name" value="{NAME}" size="35" /> 
+                    <br />
+                    {NAME_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">{DESCRIPTION_STRING}:</td>
+                <td valign="top" class="InputFormRight"> <textarea name="description" cols="30" rows="4" wrap="VIRTUAL">{DESCRIPTION}</textarea> 
+                    <br>
+                    {DESCRIPTION_ERROR} </td>
+            </tr>
+            <tr> 
+                <td class="InputFormLeft" valign="top">{URL}:</td>
+                <td class="InputFormRight"> <input type="text" name="feed_url" value="{FEED_URL}" size="35" /> 
+                    <br />
+                    {URL_ERROR} </td>
+            </tr>
+          <tr> 
+                <td class="InputFormLeft" valign="top">{ITEM_COUNT}:</td>
+                <td class="InputFormRight"> <input type="text" name="item_count" value="{ITEM_COUNT_VALUE}" size="2" /> 
+                    
+                    </td>
+            </tr>
+  
+            <tr> 
+                <td valign="top" class="InputFormLeft">&nbsp;</td>
+                <td valign="top" class="InputFormRight"> <input type="submit" name="submit" value="{BUTTON}" />
+                    {DELETE_BUTTON} 
+                    <input type="button" name="submit2" value="{CANCEL_STRING}" onClick="history.go(-1)" /> 
+                </td>
+            </tr>
+        </table>
+<!-- END ModuleInputBlock -->		
+{GENERAL_SETTINGS}
+</form>
+
+</div>

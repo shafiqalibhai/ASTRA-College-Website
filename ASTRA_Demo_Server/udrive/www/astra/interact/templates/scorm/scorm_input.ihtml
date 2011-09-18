@@ -1,0 +1,64 @@
+
+<h2>{INPUT_HEADING}</h2> 
+<div align="center" class="message">{MESSAGE_VALUE}</div>
+<div class="input_form_div" align="center">
+<form name="link" method="post" enctype="multipart/form-data" action="scorm_input.php">
+ <!-- BEGIN ModuleInputBlock -->
+        <table class="input_form_table">
+            <tr> 
+                <td class="InputFormLeft" valign="top">{NAME_STRING}:</td>
+                <td class="InputFormRight"> 
+        <input type="text" name="name" value="{NAME}" size="35" />
+        <br />
+        {NAME_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">{DESCRIPTION_STRING}:</td>
+                <td valign="top" class="InputFormRight"> 
+        <textarea accept-charset="{CHARACTER_SET}" name="description" cols="30" rows="4" wrap="VIRTUAL">{DESCRIPTION}</textarea>
+        <br />
+        {DESCRIPTION_ERROR} </td>
+            </tr>
+            <tr> 
+                <td class="InputFormLeft" valign="top">{FILE}:</td>
+                <td class="InputFormRight"> 
+	    <input type="hidden" name="MAX_FILE_SIZE" value="{MAX_FILE_UPLOAD_SIZE}">
+        <input name="user_file" type="file" id="user_file" size="35" />
+
+        {FILE_ERROR} </td>
+            </tr>
+           <tr> 
+                <td class="InputFormLeft" valign="top">{MINSIZE}:</td>
+                <td class="InputFormRight"> 
+        <input type="text" name="width" value="{WIDTH_VALUE}" size="4" maxlength="4"/> x <input type="text" name="height" value="{HEIGHT_VALUE}" size="4" maxlength="4"/>
+        <br />
+        {MINSIZE_ERROR}</td>
+            </tr>
+            <tr> 
+                <td class="InputFormLeft" valign="top">{ENABLEBROWSE}:</td>
+                <td class="InputFormRight"> <input type="checkbox" name="browsemode" value="1" {BROWSEMODE_CHECKED}> </td>
+            </tr>
+       
+<!--         <tr><td class="InputFormLeft" valign="top">{EMBED}</td><td class="InputFormRight"> -->
+<!--                     <input name="embedded" type="checkbox" id="embedded" value="1" {EMBEDDED_CHECKED}>{EMBED_EXPLANATION} -->
+<!--                     </td> -->
+<!-- 		</tr> -->
+ 
+
+            <tr> 
+                <td valign="top" class="InputFormLeft">&nbsp;</td>
+                <td valign="top" class="InputFormRight"> 
+        <input type="submit" name="submit" value="{BUTTON}" />
+          {DELETE_BUTTON} 
+                    <input type="button" name="submit2" value="{CANCEL_STRING}" onClick="history.go(-1)" />
+        </td>
+            </tr>
+ 
+        </table>
+<!--         <a href="managefiles.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}">{ASSOCIATED}</a>, {ASSOCIATED_EXAMPLE}<br> 
+        <br>-->
+        <!-- END ModuleInputBlock -->
+  {GENERAL_SETTINGS}
+</form>
+
+</div>

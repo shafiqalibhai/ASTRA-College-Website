@@ -1,0 +1,117 @@
+<style type="text/css">
+
+    #leftContent {
+		float:left;
+		width:50%;
+		margin-right:15px;
+		padding-bottom:20px;
+		}
+
+	#rightContent {
+
+		}
+</style>
+
+<h2>{INPUT_HEADING}</h2>
+
+<div align="center">
+	<a href="templateinput.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&referer={REFERER}">{BACK_STRING}</a>
+</div>	
+
+<div >
+	<fieldset class="masterFieldset">
+		<legend class="topLegend">{TEMPLATE_DETAILS_STRING}</legend>
+		<form method="post" action="templatemodify.php">
+		{NAME_STRING}:
+		<br /><input name="name" type="text" id="name" value="{NAME}" size="30">
+		{NAME_ERROR} 
+		<br />
+		{DESCRIPTION_STRING}:<br /><textarea accept-charset="{CHARACTER_SET}" name="description" cols="30" rows="3" id="description">{DESCRIPTION}</textarea>
+    <br>
+    {SUMMARY_FIELDS_STRING}:<br>
+    <input name="summary_fields" type="text" id="summary_fields" value="{SUMMARY_FIELDS}" size="2" maxlength="2">
+    <br />         
+		<input type="submit" name="submit" value="{MODIFY_STRING}"><input type="submit" name="submit" value="{DELETE_STRING}" onClick="return confirmDelete('{WARNING}')"><br />
+		<span class="small">{DELETE_TEMPLATE_WARNING}</span>
+		<input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+		<input name="template_key" type="hidden" id="template_key" value="{TEMPLATE_KEY}">
+		<input type="hidden" name="action" value="modify_template">
+		<input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+		<input name="referer" type="hidden" id="referer" value="{REFERER}">
+		</form> 
+	</fieldset> 
+</div>
+
+<br />
+<fieldset class="masterFieldset">
+	<legend class="topLegend">{TEMPLATE_FIELDS_STRING}</legend>
+	<div id="leftContent">
+		<fieldset class="fieldset">
+			<legend>{CURRENT_FIELDS_STRING}</legend>
+			<form method="post" action="templatemodify.php">
+			<!-- BEGIN CurrentFieldsBlock -->
+			{NAME_STRING}:<br /> 
+			<input name="{FIELD_KEY}_name" type="text" size="20" value="{FIELD_NAME}">
+			<br />
+			{DESCRIPTION_STRING}:<br />
+			<textarea accept-charset="{CHARACTER_SET}" name="{FIELD_KEY}_description" cols="30" rows="3" id="{FIELD_KEY}_description" >{FIELD_DESCRIPTION}</textarea>
+            <br />
+            {DISPLAY_ORDER_STRING}:			
+            <input name="{FIELD_KEY}_display_order" type="text" id="{FIELD_KEY}_display_order" size="2" value="{DISPLAY_ORDER}">
+            <br />
+			{LINES_STRING}:	<input name="{FIELD_KEY}_lines" type="text" id="{FIELD_KEY}_lines" size="2" maxlength="2" value="{LINES}"><br />
+			{TYPE_STRING}: {TYPE}
+<div align="right"><input name="{FIELD_KEY}_remove" type="checkbox" id="{FIELD_KEY}_remove"  value="1">{DELETE_STRING}</div>
+			<input name="field_keys[]" type="hidden" id="field_keys[]" value="{FIELD_KEY}">
+			<hr />
+			<!-- END CurrentFieldsBlock -->						
+			<span class="small">{REMOVE_FIELD_WARNING}</span>
+			<div align="center">
+		    	<input name="submit" type="submit" id="submit" value="{MODIFY_STRING}">
+			</div>
+		    <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+   		    <input name="template_key" type="hidden" id="template_key" value="{TEMPLATE_KEY}">
+   		    <input type="hidden" name="action" value="modify_fields">
+   		    <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">	
+			<input name="referer" type="hidden" id="referer" value="{REFERER}">
+			</form> 
+		</fieldset> 
+	</div>
+	<div id="rightContent">	
+		<fieldset class="fieldset">
+			<legend>{ADD_FIELD_STRING}</legend>
+			<form name="form1" method="post" action="templatemodify.php">
+    <p>{NAME_STRING}:<br>
+      <input name="name" type="text" size="20">
+      <br>
+      {DESCRIPTION_STRING}:<br />
+      <textarea accept-charset="{CHARACTER_SET}" name="description" cols="30" rows="3" id="description"></textarea>
+      <br>
+      {DISPLAY_ORDER_STRING}: 
+      <input name="display_order" type="text" id="display_order" size="2">
+      <br>
+      {TYPE_STRING}:      <br>
+      <input name="type_key" type="radio" value="1">
+      {TEXT_FIELD_STRING} - {LINES_STRING} 
+      <input name="lines" type="text" id="lines" size="2" maxlength="2">
+      <br>
+      <input name="type_key" type="radio" value="2">
+      {URL_FIELD_STRING}<br>
+      <input name="type_key" type="radio" value="3">
+      {FILE_FIELD_STRING} </p>
+    <div align="center">
+		    	<input name="submit" type="submit" id="submit" value="{ADD_STRING}">
+			</div>
+		    <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+   		    <input name="template_key" type="hidden" id="template_key" value="{TEMPLATE_KEY}">
+   		    <input type="hidden" name="action" value="add_field">
+   		    <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+			<input name="referer" type="hidden" id="referer" value="{REFERER}">
+	        </form>
+		</fieldset>
+	</div>
+</fieldset>
+
+
+
+

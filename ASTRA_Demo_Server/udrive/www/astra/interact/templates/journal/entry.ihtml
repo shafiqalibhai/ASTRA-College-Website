@@ -1,0 +1,95 @@
+<table id="contentTable">
+	<tr>
+		<td valign="top" id="mainPanel">
+{SHIFTED_BREADCRUMBS}
+			<div id="moduleHeadingBlock">
+				<h2 id="moduleHeading">{HEADING_STRING}</h2>
+			</div>
+
+		<!-- BEGIN EntryBlock -->
+			<div class="userContentBox">	
+			<a name={ENTRY_ANCHOR}></a>
+
+			<div class="postHeader">
+
+				<div class="journalDate">
+					<div class="journalDateMonth">{POSTED_MONTH}</div>
+					<div class="journalDateDayOfMonth">{POSTED_DAYOFMONTH}
+						<div class="journalDateYear">{POSTED_YEAR}</div>
+					</div>
+				</div>
+				
+				<span class="postEdit">
+				{EDIT_LINK}
+				</span>
+
+				<span class="journalEntryTagList"><!-- {POST_TAGS} -->{TAG_LIST}</span>
+				<span class="postPostedBy">
+					{POSTED_BY} 
+					<a href="{PATH}/users/userdetails.php?user_key={ADDED_BY_KEY}" target="{JOURNAL_USER_KEY}">{USER_FIRST_NAME}</a><span class="postPostedFullDate">, {POSTED_TIME}</span></span>
+				<div class="postTitle">
+					{POST_SUBJECT}
+				</div> 
+
+				
+				<span class="draft">{DRAFT} {STATUS}</span>
+			</div>
+		
+			<div class="{JOURNAL_BODY_CLASS}">	
+			
+				{POST_BODY}	
+				<p>{EXTENDED_BODY}</p>
+			</div>
+			<a name="comments"></a>
+			<div class="commentHeader">{COMMENTS}</div>
+			{SHOW_COMMENTS}
+		</div>
+		<!-- END EntryBlock -->
+	
+</td>
+		<td valign="top" id="sidePanel">
+ {RSS_LINK}
+<!-- BEGIN RecentEntriesBlock -->		
+
+			 <div class="controlBox">
+				  <div class="controlBoxTitle">
+  {TAGS}
+ </div>
+
+ <ul>
+<!-- BEGIN JournalTagsBlock -->
+			<li ><a href="{PATH}/modules/journal/journalview.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&tag_key={TAG_KEY}&journal_user_key={JOURNAL_USER_KEY}" class="small">{TAG_NAME}</a> 
+			
+			</li>
+
+<!-- END JournalTagsBlock -->
+ </ul>
+ </div>
+ 
+			 <div class="controlBox">
+				   <div class="controlBoxTitle">
+   {LINKS} {ADD_LINK}
+ </div>
+ <ul>
+<!-- BEGIN JournalLinksBlock -->
+<li ><a href="{LINK_URL}" class="small">{LINK_NAME}</a></li>
+<!-- END JournalLinksBlock -->
+ </ul>
+ </div>
+ <!-- BEGIN JournalArchivesBlock -->
+
+			 <div class="controlBox">
+				    <div class="controlBoxTitle">
+   {ARCHIVES}
+ </div>
+ <ul>
+<!-- BEGIN ArchiveLinksBlock -->
+<li ><a href="journalview.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&journal_user_key={JOURNAL_USER_KEY}&date_limit={DATE_LIMIT}" class="small">{ARCHIVE_NAME} ({ARCHIVE_COUNT})</a></li>
+<!-- END ArchiveLinksBlock -->
+ </ul>
+<!-- END JournalArchivesBlock -->
+
+
+		</td>
+</tr>
+</table>

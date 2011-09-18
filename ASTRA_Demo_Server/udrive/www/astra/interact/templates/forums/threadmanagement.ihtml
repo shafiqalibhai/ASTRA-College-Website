@@ -1,0 +1,95 @@
+<h1>{HEADING}</h1>
+
+    
+<h2 align="left">{AUTO_PROMPTING_STRING}</h2>
+<p align="left">{AUTO_PROMPT_DESCRIPTION}</p>
+    <p align="left">{IS_ENABLED}</p>
+
+
+
+		
+<form name="inputform" method="post" action="threadmanagement.php">
+    <div align="center">
+    
+
+    <input type="hidden" name="space_key" value="{SPACE_KEY}" />
+    <input type="hidden" name="module_key" value="{MODULE_KEY}" />
+    
+    <input type="hidden" name="post_key" value="{POST_KEY}" />
+        <input name="parent_key" type="hidden" id="parent_key" value="{PARENT_KEY}" />
+        <input name="thread_key" type="hidden" id="thread_key" value="{THREAD_KEY}" />
+
+<!-- BEGIN AdminBlock --> 
+        <table class="input_form_table">
+            <tr> 
+                <td class="InputFormLeft">{DAYS_TO_WAIT_STRING}:</td>
+                <td class="InputFormRight"> 
+          <input name="days_to_wait" type="text" id="days_to_wait" value="{DAYS_TO_WAIT}" size="2" maxlength="2" />
+          {DAYS_TO_WAIT_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">{NUMBER_TO_PROMPT_STRING}:</td>
+                <td class="InputFormRight"><input name="number_to_prompt" type="text" id="number_to_prompt" value="{NUMBER_TO_PROMPT}" size="2" maxlength="2" />
+          {NUMBER_TO_PROMPT_ERROR} </td>
+            </tr>
+            <tr>
+                <td valign="top" class="InputFormLeft">{PASSES_ALLOWED_STRING}:</td>
+                <td class="InputFormRight"><input name="passes_allowed" type="text" id="passes_allowed" value="{PASSES_ALLOWED}" size="2" maxlength="2" />
+          {PASSES_ALLOWED_ERROR}</td>
+            </tr>
+            <tr>
+                <td valign="top" class="InputFormLeft">{RESPONSE_TIME_STRING}:</td>
+                <td class="InputFormRight"><input name="response_time" type="text" id="response_time" value="{RESPONSE_TIME}" size="2" maxlength="2" />
+          {RESPONSE_TIME_ERROR}</td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">&nbsp;</td>
+                <td class="InputFormRight"> 
+          <div align="center"> 
+                        {BUTTON}
+                        {DELETE_BUTTON}
+                        <input type="button" name="submit2" value="{CANCEL_STRING}" onClick="history.go(-1)" />
+          </div></td>
+            </tr>
+        </table>
+<!-- END AdminBlock -->
+<!-- BEGIN UserBlock --> 
+<div align="center"> 
+{BUTTON}
+{DELETE_BUTTON}
+            <input type="button" name="submit2" value="{CANCEL_STRING}" onClick="history.go(-1)" />
+            <input name="days_to_wait" type="hidden" id="days_to_wait" value="{DAYS_TO_WAIT}"  />
+            <input name="number_to_prompt" type="hidden" id="number_to_prompt" value="{NUMBER_TO_PROMPT}"  />
+            <input name="passes_allowed" type="hidden" id="passes_allowed" value="{PASSES_ALLOWED}"  />
+            <input name="response_time" type="hidden" id="response_time" value="{RESPONSE_TIME}" />
+      
+
+</div>
+<!-- END UserBlock -->   
+  </div>
+</form>
+<!-- BEGIN PromptStats -->
+<h3>{AUTOPROMPT_STATISTICS_STRING}</h3>
+<table border="1" cellpadding="5">
+    <tr>
+        <td></td>
+        <td><strong>{DATE_PROMPTED_STRING}</strong></td>
+        <td><strong>{DATE_ACTIONED_STRING}</strong></td>
+        <td><strong>{ACTION_TAKEN_STRING}</strong></td>
+    </tr>
+
+<!-- BEGIN PromptStatRows -->
+
+    <tr>
+        <td>{NUMBER}</td>
+		<td>{DATE_PROMPTED}</td>
+		<td>{DATE_ACTIONED}</td>
+        <td>{ACTION_TAKEN}</td>
+    </tr>
+
+<!-- END PromptStatRows -->	
+
+</table>
+
+<!-- END PromptStats -->
+

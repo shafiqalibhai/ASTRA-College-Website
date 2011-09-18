@@ -1,0 +1,130 @@
+<div class="headingBox">
+<h2>{ADD_ENTRY}</h2>
+
+
+</div>
+
+  <div class="userContentBox" align="center">
+ 
+  <form name="inputform" method="post" enctype="multipart/form-data" action="entryinput.php">
+
+    <input type="hidden" name="space_key" value="{SPACE_KEY_VALUE}" />
+    <input type="hidden" name="module_key" value="{MODULE_KEY_VALUE}" />
+    <input type="hidden" name="post_key" value="{POST_KEY_VALUE}" />
+    <input type="hidden" name="journal_user_key" value="{JOURNAL_USER_KEY_VALUE}" />
+    <input type="hidden" name="action" value="{ACTION_VALUE}" />
+ 
+  <table class="input_form_table_wide">
+
+    <tr> 
+
+                <td class="InputFormLeft">{TITLE}:</td>
+
+                <td class="InputFormRight"> 
+
+        <input name="subject" type="text" id="subject" value="{SUBJECT_VALUE}" size="40" />
+
+        {SUBJECT_ERROR} </td>
+
+    </tr>
+    
+    <tr> 
+
+                <td valign="top" class="InputFormLeft">{BODY}:
+                {EDITOR_BUTTONS_body}</td>
+
+      <td class="InputFormRight"> 
+              <textarea accept-charset="{CHARACTER_SET}" name="body" wrap="VIRTUAL" cols="60" rows="20" id="body">{BODY_VALUE}</textarea>
+        <div class="error">{BODY_ERROR}</div>
+
+<div align="left" class="small"><!-- END MonitorPostBlock -->
+
+        </div>      
+
+</td>
+
+    </tr>
+<!-- BEGIN ExtendedBodyBlock -->
+    <tr >
+      <td valign="top" class="InputFormLeft">{EXTENDED_BODY}:
+	  <div id="EDITOR_BUTTONS_extendedBody" style="display:none">{EDITOR_BUTTONS_extended_body}</div></td>
+      <td valign="top" class="InputFormRight">
+<!-- 
+<span onClick="document.getElementById('extendedBody').style['display']='';document.getElementById('EDITOR_BUTTONS_extendedBody').style['display']='';document.getElementById('hideExtended').style['display']='block';this.style['display']='none'" style="cursor: pointer" id="showExtended"><img src="{PATH}/images/disclosure_closed.gif" /></span>
+ -->
+<!-- <span onClick="document.getElementById('extendedBody').style['display']='none';document.getElementById('EDITOR_BUTTONS_extendedBody').style['display']='none';document.getElementById('showExtended').style['display']='block';this.style['display']='none'" style="cursor: pointer;display:none" id="hideExtended"><img src="{PATH}/images/disclosure_open.gif" /></span> -->
+<div id="SHOW_extendedBody" class="InputFormRight">
+<input type="button" name="Button" value="{SHOW}" class="small" onClick="document.getElementById('extendedBody').style['display']='';document.getElementById('EDITOR_BUTTONS_extendedBody').style['display']='';document.getElementById('SHOW_extendedBody').style['display']='none'"></div>
+	  <div style="display:none;" id="extendedBody">
+                <textarea accept-charset="{CHARACTER_SET}" name="extended_body" wrap="VIRTUAL" cols="60" rows="18" id="extended_body">{EXTENDED_BODY_VALUE}</textarea>
+		 </div>
+        </td>
+    </tr>
+<!-- END ExtendedBodyBlock -->
+
+<tr>
+  <td class="InputFormLeft">{TAGS}:</td>
+  <td class="InputFormRight">
+  {TAG_LIST}<br />
+  <input type="text" name="tag_list" size="60" value="{TAGS_VALUE}" id="tag_list"></td>
+</tr>
+<tr>
+  <td class="InputFormLeft">{PUBLISH_DATE}:</td>
+  <td class="InputFormRight">{PUBLISH_DATE_MENU}</td>
+</tr>
+<tr>
+  <td class="InputFormLeft">{STATUS}:</td>
+  <td class="InputFormRight">{STATUS_MENU}</td>
+</tr>
+<tr>
+  <td class="InputFormLeft">{OPTIONS}:</td>
+  <td class="InputFormRight"><span class="small">
+  <!-- BEGIN MonitorPostBlock -->
+  <input name="monitor_post" type="checkbox" id="monitor_post" value="1" {MONITOR_POST_CHECKED}>
+{MONITOR_COMMENTS}</span></td>
+</tr>
+<!-- BEGIN MultiInputBlock -->
+			<tr>
+                <td valign="top" class="InputFormLeft">{SELECT_JOURNALS}:</td>
+                <td valign="top" class="InputFormRight"><p>{SELECT_OPTION}</p>
+                    {SELECTED_MEMBERS_INST}<br />
+{MULTIPLE_ENTRY_ERROR}
+                  
+                    
+                    <table  border="0" cellpadding="0">
+                        <tr> 
+                            <td valign="top"> 
+                             
+                                    <select name="multiple_add" size="2" id="multiple_add">
+                                        <option value="all">{ALL_JOURNALS}</option>
+                                        <option value="selected" {SELECTED_JOURNALS}>{SELECTED_JOURNALS}</option>
+                                    </select>
+                                    <input type="hidden" name="entry_type" value="multiple"/>
+                                	<input type="hidden" name="multi_entry_key" value="{MULTI_ENTRY_KEY}"/>
+                                    </td>
+                            <td valign="top"> {MEMBERS_MENU} </td>
+                        </tr>
+                    </table></td>
+            </tr>
+<!-- END MultiInputBlock -->
+<tr><td></td><td>
+
+<input type="submit" name="submit" value="{ACTION_VALUE}" />
+                        <input type="button" name="submit2" value="{CANCEL}" onClick="history.go(-1)" />
+	<!-- BEGIN DeleteBlock -->
+<input type="submit" name="submit" value="{DELETE}" onClick="return confirmDelete('{DELETE_WARNING}')" />
+ <!-- END DeleteBlock -->
+				
+</td>
+</tr>
+
+                       
+  </table>
+
+ </form>
+
+
+
+</div>
+
+

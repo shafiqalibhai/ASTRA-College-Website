@@ -1,0 +1,33 @@
+	<table width="99%" >
+  <tr valign="top">
+    <td> 
+			<div class="userContentBox">
+	      		<h3>{LEADERS_STRING}</h3>
+        <table>
+		{GROUP_LEADERS} 
+		</table>
+	        	<h3>{MEMBERS_STRING}</h3>
+				{NUMBER_OF_MEMBERS}
+		<table>		
+        {MEMBERS} 
+      </table>
+			  	<span class="small">{ADMIN_NOTE}</span>
+			</div>
+	
+	    </td>
+	
+	    <td valign="top" width="180">
+			{ADD_MEMBERS}
+		</td>
+	  </tr>
+	</table>
+
+
+
+
+
+  
+
+
+
+

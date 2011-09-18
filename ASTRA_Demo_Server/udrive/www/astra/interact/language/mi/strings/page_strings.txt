@@ -1,0 +1,4 @@
+add_page=T&#257;piri/Whakarerek&#275; he wh&#257;rangi i roto i
+upload=Tuku ake he wh&#257;rangi
+html_instruction=Me HTML
+enter_page=Tuhia te wh&#257;rangi r&#257;nei

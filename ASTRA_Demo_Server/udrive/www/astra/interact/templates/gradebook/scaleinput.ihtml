@@ -1,0 +1,100 @@
+
+
+ 
+
+<div align="center">
+    <h1 align="left">{HEADING}</h1>
+    <p align="center"><a href="gradebook.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&link_key={LINK_KEY}&group_key={GROUP_KEY}">{RETURN_TO_STRING} {MODULE_NAME}</a>
+</p>
+    <table width="100%" border="1" cellspacing="0" cellpadding="8">
+        <tr valign="top">
+            <td width="50%"><strong>{EXISTING_SCALES_STRING}</strong></td>
+            <td><strong>{INPUT_SCALE_STRING}</strong><a href="javascript:openHelpWin('{PATH}/help/help.php?module=gradebook&file=newscale.php')" class='helplink'>?</a></td>
+        </tr>
+        <tr valign="top">
+            <td>
+			<!-- BEGIN SelectScaleBlock -->
+<form name="form1" method="post" action="scaleinput.php">
+                    {SCALE_MENU} <br>
+                    <input name="submit" type="submit" id="submit" value="{SELECT_SCALE_STRING}">
+                    <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+                    <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+                    <input name="action" type="hidden" id="action" value="select_scale">
+                                                            
+                                                        </form>
+			    <!-- END SelectScaleBlock -->
+{ADD_SCALE_LINK}									</td>
+            <td>
+                <!-- BEGIN ModifyScaleBlock -->
+                 			
+			<form name="form2" method="post" action="scaleinput.php">
+                    <input name="scale_name" type="text" id="scale_name" value="{SCALE_NAME}" size="15">
+                    <br>
+                    <textarea accept-charset="{CHARACTER_SET}" name="scale_description" cols="40" rows="5" id="scale_description">{SCALE_DESCRIPTION}</textarea>
+                    
+                    <br>
+                    <input name="submit" type="submit" id="submit" value="{SCALE_BUTTON}">
+{DELETE_BUTTON} 
+                    <input name="action" type="hidden" id="action" value="{INPUT_SCALE_ACTION}">
+                    <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+                    <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+                    <input name="scale_key" type="hidden" id="scale_key" value="{SCALE_KEY}">
+                                                                                                   
+                                                        
+                </form>
+                <!-- END ModifyScaleBlock -->
+                									
+            </td>
+        </tr>
+    </table>
+    <h1 align="left"></h1>
+    <!-- BEGIN GradeBlock -->
+    <table width="100%" border="1" cellspacing="0" cellpadding="8">
+        <tr valign="top">
+            <td width="50%"><strong>{EXISTING_GRADES_STRING}</strong></td>
+            <td><strong>{INPUT_GRADE_STRING}</strong></td>
+        </tr>
+        <tr valign="top">
+            <td>
+			    <!-- BEGIN SelectGradeBlock -->
+                <form name="form1" method="post" action="scaleinput.php">
+                    {GRADE_MENU} <br>
+                    <input name="submit" type="submit" id="submit" value="{SELECT_GRADE_STRING}">
+                    <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+                    <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+                    <input name="scale_key" type="hidden" id="scale_key" value="{SCALE_KEY}">
+                    <input name="grade_action" type="hidden" id="grade_action" value="select_grade">
+                    <input name="action" type="hidden" id="action" value="select_scale">
+                                                                                
+                                                        
+                </form>
+                <!-- END SelectGradeBlock -->
+{ADD_GRADE_LINK}            </td>
+            <td>
+                <!-- BEGIN ModifyGradeBlock -->
+                 			
+			<form name="form2" method="post" action="scaleinput.php">
+                    <input name="grade_name" type="text" id="grade_name" value="{GRADE_NAME}" size="15">
+                    <br>
+                    
+                    
+                    <br>
+                    <input name="submit" type="submit" id="submit" value="{GRADE_BUTTON}">
+{GRADE_DELETE_BUTTON}                    
+                                                        
+                    <input name="grade_action" type="hidden" id="grade_action" value="{GRADE_ACTION}">
+                    <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+                    <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+                    <input name="scale_key" type="hidden" id="scale_key" value="{SCALE_KEY}">
+                    <input name="grade_key" type="hidden" id="grade_key" value="{GRADE_KEY}">
+                    <input name="action" type="hidden" id="action" value="select_scale">
+                                                        </form>
+                <!-- END ModifyGradeBlock -->
+                									
+            </td>
+        </tr>
+    </table>
+    <p align="left">
+        <!-- END GradeBlock -->
+    </p>
+</div>

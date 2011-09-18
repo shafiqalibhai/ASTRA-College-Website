@@ -1,0 +1,2 @@
+add_note=Agregar/Modificar una nota en
+note=Nota

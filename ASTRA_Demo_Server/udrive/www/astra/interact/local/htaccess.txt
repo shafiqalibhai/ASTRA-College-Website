@@ -1,0 +1,4 @@
+# This file is just a copy of the ".htaccess" file which may be invisible.
+
+order allow,deny
+deny from all

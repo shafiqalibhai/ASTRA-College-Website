@@ -1,0 +1,95 @@
+
+
+
+ 
+<h1>{HEADING_STRING}</h1>
+
+
+<!-- BEGIN ExternalLinkBlock -->
+<div align="right" class="small">
+<a href="urltaginput.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&external_tag=1&tag_url={TAG_URL}" target="new">{TAG_EXTERNAL}</a></div>
+<!-- END ExternalLinkBlock -->
+<!-- BEGIN MarkItemBlock -->
+<form name="taginput" method="post" action="urltaginput.php">
+
+    <div align="center">
+        <table  border="0" cellspacing="1" cellpadding="5">
+            <tr>
+            	<td valign="top" class="InputFormLeft">{HEADING}:</td>
+            	<td valign="top" class="InputFormRight"><input name="heading" type="text" id="heading" value="{HEADING_VALUE}" size="50" maxlength="50"></td>
+           	</tr>
+<!-- BEGIN ExternalTagBlock -->
+			<tr>
+            	<td valign="top" class="InputFormLeft">{URL}:</td>
+            	<td valign="top" class="InputFormRight"><input name="external_url" type="text" id="external_url" value="{EXTERNAL_URL}" size="30"></td>
+           	</tr>
+<!-- END ExternalTagBlock -->			
+            <tr>
+                <td  valign="top" class="InputFormLeft">{NOTE}:
+                {EDITOR_BUTTONS_body}</td>
+                <td valign="top" class="InputFormRight">
+
+                                    
+                                    <textarea accept-charset="{CHARACTER_SET}" name="body" wrap="VIRTUAL" cols="60" rows="15" id="body">{BODY}</textarea>
+                    <div class="error">{BODY_ERROR}</div> </td>
+            </tr>
+            <tr>
+              <td class="InputFormLeft">{TAGS}:</td>
+              <td class="InputFormRight"> {TAG_LIST}<br />
+                  <input type="text" name="tag_list" size="60" value="{TAGS_VALUE}" id="tag_list"></td>
+            </tr>
+            <tr>
+            	<td colspan="2" valign="top" >
+				    <div align="center">
+                       	<input type="submit" name="submit" value="{BUTTON}" />
+                        	<input type="button" name="submit2" value="{CANCEL}" onClick="history.go(-1)" />
+                        	{DELETE_BUTTON}<br />
+			    	</div>
+				    <div align="center">{OPTIONAL_SETTINGS}</div>
+				
+				</td>
+           	</tr>
+            <tr>
+            	<td valign="top" class="InputFormLeft">{ADDED_FOR}:</td>
+            	<td valign="top" class="InputFormRight"><p>
+            			<input name="added_for" type="radio" value="1" {SELF_CHECKED}>
+			{SELF} <a href="javascript:openHelpWin('{DOCS_URL}/Users#Tags')" class='helplink'>?</a><br>
+			<input type="radio" name="added_for" value="0" {ADMINS_CHECKED}>
+			{SITE_ADMINS}<br>
+			<input type="radio" name="added_for" value="2" {ALL_CHECKED}>
+			{MEMBERS} <br>
+			<input type="radio" name="added_for" value="3" {SELECTED_CHECKED}>
+			{SELECTED_USER} <span class="small">({SELECT_BELOW_}) </span> <br>
+			{USERS_MENU} {SELECTED_USER_ERROR}</p></td>
+           	</tr>
+ </table>
+ 
+        <p align="center">
+                        <input type="submit" name="submit" value="{BUTTON}" />
+                        <input type="button" name="submit2" value="{CANCEL}" onClick="history.go(-1)" />
+                        {DELETE_BUTTON} 
+                    
+                
+            
+                        <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+                        <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+                        
+                        
+                        <input name="external_tag" type="hidden" id="external_tag" value="{EXTERNAL_TAG}">
+                        <input name="action" type="hidden" id="action" value="{ACTION}">
+                        <input name="url_key" type="hidden" id="url_key" value="{URL_KEY}">
+                        <input name="tag_url" type="hidden" id="tag_url" value="{TAG_URL}">
+                        <input name="added_by_key" type="hidden" id="added_by_key" value="{ADDED_BY_KEY}">
+                        <input name="added_for_key" type="hidden" id="added_for_key" value="{ADDED_FOR_KEY}">
+                        <input name="referer" type="hidden" id="referer" value="{REFERER}">
+      </p>
+                    <p align="left">{ADDED_BY_STRING}{ADDED_BY_VALUE} {DATE_ADDED_VALUE}<br>
+{MODIFIED_BY_STRING}{MODIFIED_BY_VALUE} {DATE_MODIFIED_VALUE}</p></td>
+            
+    </div>
+</form>
+<!-- END MarkItemBlock -->
+
+
+</body>
+</html>

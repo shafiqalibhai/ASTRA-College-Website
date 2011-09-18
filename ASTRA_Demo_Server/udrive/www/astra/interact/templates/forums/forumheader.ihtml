@@ -1,0 +1,3 @@
+
+<p align="center"> <a href="{PATH}/modules/forum/forum.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}">{MODULE_NAME} {HOME_STRING}</a> {PRINT_LINK}</p>
+<h3>{SUB_HEADING}</h3>

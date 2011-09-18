@@ -1,0 +1,25 @@
+
+<div class="pagemodOptions">
+<!-- BEGIN PageHistoryBlock -->
+<a href="page_history.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}">{PAGE_HISTORY}</a> - 
+<!-- END PageHistoryBlock -->
+<a href="printpage.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}">{PRINT_DISPLAY}</a>
+</div>
+
+<!-- BEGIN PageEditBlock -->
+<span {ADMIN_TOOL_CLASS}>
+<input type="button" class="small jsShow" onclick="javascript:load_inline_edit('pageContent','/modules/page/get_body.php')" id="pageContentEditLink" value="{EDIT}"></span>
+<!-- END PageEditBlock -->
+
+<div id="pageContent" class="userContentBox">
+{BODY}
+</div>
+<!-- BEGIN PageSaveBlock -->
+<div id="pageContentSave" style="display:none"><input type="button" onClick="javascript:save_inline_edit('pageContent','/modules/page/save_page.php')"  value="{SAVE}" class="small"> <input type="button" onClick="javascript:cancel_inline_edit('pageContent');" value="{CANCEL}" class="small">
+</div>
+<form id="pageContentSaveForm">
+<input type="hidden" name="module_key" value="{MODULE_KEY}">
+<input type="hidden" name="space_key" value="{SPACE_KEY}">
+<input type="hidden" name="page_body" id="pageContentSaveNode" value="">
+</form>
+<!-- END PageSaveBlock -->

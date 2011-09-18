@@ -1,0 +1,59 @@
+------------
+Read Me File
+------------
+
+The Uniform Server is a free product and do not contain commercial software!
+You can use it for free. 
+
+ - No installation required!
+
+
+-------------------
+System Requirements
+-------------------
+
+ - Windows 95 or 98 or ME or NT or 2000 or XP.
+ - TCP/IP protocol support.
+
+
+-----------------------
+To enable Apache server
+-----------------------
+
+ - Switch on TCP/IP network protocol (if you have no network card just install something).
+
+
+-------------------
+Starting the server
+-------------------
+
+ - Run Server Start.vbs or Start.bat (and you will have by default W:\ disk that is server).
+ - It should automatically open up a browser that will connect to http://localhost/apanel/ or by IP address http://127.0.0.1/apanel/.
+ - To start as service on NT run plugins\Services\Run.bat (!!! be sure you know what you are doing).
+
+
+------------------------
+Shutting down the server
+------------------------
+
+ - To correctly shutdown run Stop.bat. 
+ - Admin Panel link also works.
+
+
+--------------------------
+Troubleshooting the server
+--------------------------
+
+ - If Disk W already exists, use Disk Start.vbs
+ - Make sure you are online to get the news feed if using Admin Panel Pro.
+ - If Port 80 is already opened, disable the program or whatever it is that is using it.
+ - If others, go to http://forum.uniformserver.com
+
+
+-----------------------------------------------------------
+Copyright 2002-2007 The Uniform Server Development Team
+All rights reserved.
+
+The authors were trying to make the best product so they 
+cannot be held responsible for any type of damage or 
+problems caused by using this or another software.

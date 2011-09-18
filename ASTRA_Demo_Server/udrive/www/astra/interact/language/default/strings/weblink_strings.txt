@@ -1,0 +1,2 @@
+add_weblink=Add/Modify a WebLink in
+no_url=You did not enter a URL for the weblink

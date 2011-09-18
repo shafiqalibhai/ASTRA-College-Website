@@ -1,0 +1,124 @@
+
+<h2>{QUIZ_HEADING}</h2>
+
+<div align="center"><strong>{SCORE}</strong></div>
+<form method="post" action="runquiz.php">
+<!-- BEGIN ItemBlock -->
+    <div class="quizQuestion"><strong>{ITEM_NUMBER}. {ITEM_MATTEXT}</strong></div>
+    <input name="item_keys[]" type="hidden" id="item_keys[]" value="{ITEM_KEY}">
+
+ 
+ 
+    
+	  <table  border="0" cellspacing="0" cellpadding="5" >
+	<!-- BEGIN ResponseBlock --> 
+	   <tr> 
+	    <td valign="top"><div class="quizResponse">
+                    
+                    <input type="{BUTTON_TYPE}" name="responses_{ITEM_KEY}[]" value="{RESPONSE_IDENT}"></div></td>
+		<td valign="top">{RESPONSE_MATTEXT}</td>
+		
+	   </tr>
+	<!-- END ResponseBlock -->
+	<!-- BEGIN FeedbackBlock --> 
+	   <tr> 
+	    <td valign="top"><div class="quizResponse">
+        <p><em>{YOUR_ANSWER_STRING} </em> <span class="correctQuizResponse">{CORRECT_STRING}</span><br>
+		{YOUR_ANSWER}</p>
+		
+		
+		<p><em>{CORRECT_ANSWER_STRING}</em><br>
+		{CORRECT_ANSWER}</p>
+
+		<p class="{FEEDBACK_CLASS}">{FEEDBACK}</p>
+
+          </div>          
+   </td>
+		
+	   </tr>
+	<!-- END FeedbackBlock -->
+     </table>
+    <br>
+        <br>
+        
+        <!-- END ItemBlock -->
+	
+	
+	<div align="center"><a href="quiz.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}">{FINISHED_STRING}</a></div>
+
+	
+	<!-- BEGIN SubmitBlock --> 
+	{TOTAL_SCORE_STRING}
+	<div align="center">
+        <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+        <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+		 <input name="attempt_key" type="hidden" id="attempt_key" value="{ATTEMPT_KEY}">
+        	
+        <input name="submit" type="submit" id="submit" value="Submit" onClick="return confirmDelete('Are you sure?!!')">
+    </div>
+	<!-- END SubmitBlock -->	
+</form>
+
+<script language="javascript">
+<!--
+/// This Javascript clock provides a little countdown in the title bar
+
+var timerID = null;
+var timerRunning = false;
+var secondsleft = '{SECONDS_LEFT}';
+var titleafter  = '{QUIZ_NAME}';
+var titlebefore = '{TIME_LEFT_STRING}:';
+var alertmessage  = '{TIME_UP_STRING}';
+var alertmessage10  = '{10_MINUTES_LEFT_STRING}';
+
+function stopclock() {
+    if (timerRunning) {
+        clearTimeout(timerID);
+        timerRunning = false;
+    }
+}
+
+function startclock() {
+    stopclock();
+    showtime();
+}
+
+function showtime() {
+
+    secondsleft = secondsleft - 1;
+
+    if (secondsleft == 600) {
+        alert(alertmessage10);
+    }
+
+    if (secondsleft == 0) {
+        stopclock();
+        document.title = titleafter;
+        return alert(alertmessage);
+
+    } else {
+        current = secondsleft;
+
+        var hours = Math.floor( current / 3600 );
+        current = current - (hours*3600);
+    
+        var minutes =   Math.floor( current / 60 );
+        current = current - (minutes*60);
+    
+        var seconds = current;
+    
+        var timeValue = "" + hours;
+        timeValue  += ((minutes < 10) ? ":0" : ":") + minutes;
+        timeValue  += ((seconds < 10) ? ":0" : ":") + seconds;
+    
+        document.title = titlebefore+timeValue+' '+titleafter;
+        timerID = setTimeout("showtime()",1000);
+        timerRunning = true;
+    }
+}
+
+{RUN_TIMER}
+
+
+// -- End of JavaScript code -------------- -->
+</script>

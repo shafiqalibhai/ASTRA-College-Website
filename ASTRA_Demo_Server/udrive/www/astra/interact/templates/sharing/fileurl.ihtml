@@ -1,0 +1,5 @@
+<p align="center"><a href=sharing.php?space_key={SPACE_KEY}&module_key={MODULE_KEY} class="small">{MODULE_NAME} {HOME_STRING}</a></p>
+<p>{URL_FOR_STRING} <a href="{URL}">{NAME}</a> - {DESCRIPTION}<br />
+    <span class="small">{ADDED_BY_STRING} {USER_NAME} {DATE_ADDED}</span></p>
+<p><b>{FILE_URL_HEADING_STRING}:</b></p>
+<p align="center" class="small">{URL}</p>

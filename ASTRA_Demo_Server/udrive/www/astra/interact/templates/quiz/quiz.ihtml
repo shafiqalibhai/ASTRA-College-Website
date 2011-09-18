@@ -1,0 +1,55 @@
+
+
+
+<!-- BEGIN AddQuestionBlock -->
+<p align="center">   <a href="additems.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}">{ADD_QUESTION_STRING}</a> <a href="javascript:openHelpWin('{DOCS_URL}/Quiz_Admin')" class='helplink'>?</a></p>
+<!-- END AddQuestionBlock -->
+
+<!-- BEGIN DatesBlock -->
+<p>{DATES_AVAILABLE_STRING}</p>
+
+<!-- END DatesBlock -->
+<p><strong>{ATTEMPTS_ALLOWED_STRING}:</strong> {ATTEMPTS_ALLOWED}</p>
+<!-- BEGIN TimeLimitBlock -->
+<p ><strong>{TIME_ALLOWED_STRING}:</strong> {TIME}<br />
+<span class="small">{TIMER_STRING}</span></p>
+
+<!-- END TimeLimitBlock -->
+<!-- BEGIN StartBlock -->
+<p align="center"><a href="runquiz.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}">{START_QUIZ_STRING}</a></p>
+<!-- END StartBlock -->
+<!-- BEGIN ViewAnswersBlock -->
+<p align="center"><a href="viewanswers.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}">{VIEW_ANSWERS_STRING}</a></p>
+<!-- END ViewAnswersBlock -->
+<div align="center"><strong>{SCORE}</strong></div>
+
+<!-- BEGIN ResultsBlock -->
+<h2>{RESULTS_STRING}</h2>
+<div align="center">
+    <form name="form1" method="post" action="editattempts.php">
+    <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+    <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+<table border="0" cellspacing="0" cellpadding="0" class="borderedTable">
+ 	<tr>
+        <th valign="top">{NAME_STRING}</th>
+        <th valign="top">{SCORE_STRING}/{TIME_TAKEN_STRING}</th>
+  	</tr>
+	
+    <!-- BEGIN ResultsRowBlock -->
+
+	<tr>
+        <td valign="top">{USER_NAME}</td>
+        <td valign="top">
+                {USER_RESULTS}</td>
+				
+    </tr>
+	<!-- END ResultsRowBlock -->
+</table>
+	<!-- BEGIN SubmitButtonBlock -->
+        <input type="submit" name="submit" value="{DELETE_ATTEMPTS_STRING}" onclick="return confirmDelete('{CHECK_STRING}')">
+		<a  href="viewattemptdata.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}"><br>
+        {VIEW_ATTEMPT_DATA_STRING}</a>
+		<!-- END SubmitButtonBlock -->
+        <!-- END ResultsBlock -->
+</form>
+</div>

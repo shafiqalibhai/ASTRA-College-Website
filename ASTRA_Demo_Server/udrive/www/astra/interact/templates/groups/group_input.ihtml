@@ -1,0 +1,105 @@
+  
+<h2>{INPUT_HEADING}</h2>
+<div class="input_form_div" align="center">
+<form name="folder" method="post" action="group_input.php" >
+<!-- BEGIN ModuleInputBlock -->
+        <table class="input_form_table_wide">
+            <tr> 
+                <td valign="top" class="InputFormLeft">{NAME_STRING}:</td>
+                <td valign="top" class="InputFormRight"> 
+        <input type="text" name="name" value="{NAME}" size="35" />
+        <br />
+        {NAME_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">{DESCRIPTION_STRING}:
+                {EDITOR_BUTTONS_description}</td>
+                <td valign="top" class="InputFormRight"> 
+                    <textarea accept-charset="{CHARACTER_SET}" name="description" id="description" cols="60" rows="10" wrap="VIRTUAL">{DESCRIPTION}</textarea>
+            <div class="error">{DESCRIPTION_ERROR} </div></td>
+            </tr>
+<!-- BEGIN GroupManagementBlock -->
+            <tr>
+                <td valign="top" class="InputFormLeft">{ACCESS_STRING}:</td>
+                <td valign="top" class="InputFormRight"><table border="0" cellpadding="2">
+                    <tr>
+                        <td valign="middle"><input name="access_key" type="radio" value="1" {1_CHECKED}></td>
+                        <td colspan="3" valign="middle">{ADMIN_REGISTRATION_STRING}</td>
+                        </tr>
+                    <tr>
+                        <td valign="middle"><input name="access_key" type="radio" value="2" {2_CHECKED}></td>
+                        <td colspan="3" valign="middle">{SELF_REGISTRATION_STRING}</td>
+                        </tr>
+                    <tr>
+                        <td valign="middle"><input name="access_key" type="radio" value="3" {3_CHECKED}></td>
+                        <td valign="middle">{RESTRICTED_REGISTRATION_STRING}</td>
+                        <td valign="middle"><div align="right"> - {ACCESS_CODE_STRING}: </div></td>
+                        <td valign="middle"><input name="access_code" type="text" id="access_code" value="{ACCESS_CODE}" size="10" maxlength="10"></td>
+                    </tr>
+                </table></td>
+            </tr>
+            <tr>
+                <td valign="top" class="InputFormLeft">{VISIBILITY_STRING}</td>
+                <td valign="top" class="InputFormRight"><table  border="0" cellpadding="2">
+                    <tr>
+                        <td><input name="visibility_key" type="radio" value="1" {1_VISIBILITY_CHECKED}></td>
+                        <td>{VISIBLE_TO_ALL_STRING}</td>
+                    </tr>
+                    <tr>
+                        <td><input name="visibility_key" type="radio" value="2" {2_VISIBILITY_CHECKED}></td>
+                        <td>{VISIBLE_TO_MEMBERS_STRING}</td>
+                    </tr>
+                </table></td>
+            </tr>
+            <tr>
+              <td valign="top" class="InputFormLeft">{SORT_ORDER_STRING}:</td>
+              <td valign="top" class="InputFormRight">{SORT_ORDER_MENU}</td>
+            </tr>
+<!-- END GroupManagementBlock -->			
+            <tr> 
+                <td valign="top" class="InputFormLeft">&nbsp;</td>
+                <td valign="top" class="InputFormRight">
+        <input type="submit" name="submit" value="{BUTTON}" />
+          {DELETE_BUTTON} 
+                    <input type="button" name="submit2" value="{CANCEL_STRING}" onClick="history.go(-1)" />
+        </td>
+            </tr>
+            <tr>
+              <td colspan="2" valign="top" class="InputFormLeft"><div align="center">{ADVANCED_SETTINGS_STRING}</div></td>
+            </tr>
+            <tr>
+              <td valign="top" class="InputFormLeft">{MAXIMUM_USERS_STRING}:<br>
+    ({NO_LIMIT_STRING})</td>
+              <td valign="top" class="InputFormRight"><input name="maximum_users" type="text" id="maximum_users" value="{MAXIMUM_USERS}" size="3"></td>
+            </tr>
+            <tr>
+              <td valign="top" class="InputFormLeft">{MINIMUM_USERS_STRING}:<br>
+    ({NO_MINIMUM_STRING})</td>
+              <td valign="top" class="InputFormRight"><input name="minimum_users" type="text" id="minimum_users" value="{MINIMUM_USERS}" size="3">
+              </td>
+            </tr>
+            <tr>
+              <td valign="top" class="InputFormLeft">{START_DATE_STRING}:<br>    </td>
+              <td valign="top" class="InputFormRight">{START_DATE_MENU}</td>
+            </tr>
+            <tr>
+              <td valign="top" class="InputFormLeft">{FINISH_DATE_STRING}:</td>
+              <td valign="top" class="InputFormRight">{FINISH_DATE_MENU}</td>
+            </tr>
+            <tr>
+              <td valign="top" class="InputFormLeft">{GROUP_MANAGMENT_STRING}:</td>
+              <td valign="top" class="InputFormRight">{GROUP_MANAGEMENT_MENU}</td>
+            </tr>
+            <tr>
+              <td valign="top" class="InputFormLeft">&nbsp;</td>
+              <td valign="top" class="InputFormRight"><input type="submit" name="submit" value="{BUTTON}" />
+{DELETE_BUTTON}
+  <input type="button" name="submit2" value="{CANCEL_STRING}" onClick="history.go(-1)" /></td>
+            </tr>
+ 
+        </table>
+<!-- END ModuleInputBlock -->
+{GENERAL_SETTINGS}
+</form>
+
+</div>

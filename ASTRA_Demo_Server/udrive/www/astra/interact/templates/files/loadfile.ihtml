@@ -1,0 +1,7 @@
+<!-- BEGIN RefreshBlock -->
+<div align="center"> <br />
+    <h2>{WAIT_STRING}</h2>
+        <br>
+        {NO_LOAD_STRING} <a href="{FULL_URL}{FILE_PATH}">{CLICK_HERE_STRING}</a> 
+</div>
+<!-- END RefreshBlock -->

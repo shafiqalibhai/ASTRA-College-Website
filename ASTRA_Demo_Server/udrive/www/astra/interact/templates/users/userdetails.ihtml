@@ -1,0 +1,14 @@
+<div id=userDetails style="{USER_DETAILS_STYLE}">
+<span align="right" style="float:right">{PHOTO}</span>
+<h2>{FULL_NAME}</h2>
+<p><a href="{PATH}/spaces/emailuser.php?space_key={SPACE_KEY}&email_user_key={USER_KEY}">{EMAIL}</a> </p>
+<p>{DETAILS}</p>
+<div id="userGroupList" style="float:right">
+<strong>{USER_GROUP_STRING}</strong>{USER_GROUPS}
+</div>
+<div id="memberHistory">
+<strong>{MEMBER_SINCE_STRING}</strong>:{MEMBER_SINCE_DATE}<br>
+<strong>{LAST_LOGIN_STRING}</strong>:{LAST_LOGIN_DATE}<br>
+<strong>{POST_COUNT_STRING}</strong>:{POST_COUNT}<br>
+</div>
+</div>

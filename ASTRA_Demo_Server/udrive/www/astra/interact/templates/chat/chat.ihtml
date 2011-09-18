@@ -1,0 +1,3 @@
+
+<div align="center"><a onClick="popupChat('{CHAT_URL}','{WINDOW_NAME}');return false;" href="{CHAT_URL}" >Start Chat</a></div>
+

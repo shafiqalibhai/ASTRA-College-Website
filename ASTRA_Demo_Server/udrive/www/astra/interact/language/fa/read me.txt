@@ -1,0 +1,18 @@
+This file was updated to Interact 2.2+ format by Bruce Webster, b@cce.ac.nz
+Requires Interact version 2.2 or higher.
+
+---
+
+To install this interact language pack, copy this directory into your interact/language directory and then go to Languages on The Server Admin web page and click 'compile' next to this language.
+
+Persian char code is in UTF-8.
+Samples Persian Interact site is here..>coming soon
+You can try a Fa version of Interact login as..> guest / password
+...................
+
+We are the translators for Interact and we will help as far as we know ...>mailto: barbii_naaz@yahoo.com, shabtab20002001@yahoo.com, bestmary20@yahoo.com, royabest_70@yahoo.com
+
+Headmaster of the team : Mir Mahmood Abolhasani mil to :abolhasani@gmail.com
+Elnaz Aznavzadeh, Bahareh Izadidoost, Mahnaz Mohammadi, Seyede Fariba Nazy,  Maryam Rezapour, Roya Riyahi, Bahareh Saghazadeh
+Mohammad Javad Abedini, Reza Arbabi 
+may. 17th, 2006

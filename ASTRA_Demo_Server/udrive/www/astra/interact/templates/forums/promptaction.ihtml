@@ -1,0 +1,23 @@
+<h2>{RESPONSE_HEADER_STRING}</h2>
+
+    
+<p align="left">{INTRODUCTION_STRING}</p>
+<p align="left"><strong>1.</strong> <a href="promptaction.php?action=reply&space_key={SPACE_KEY}&module_key={MODULE_KEY}&post_key={POST_KEY}&thread_key={THREAD_KEY}&subject={SUBJECT}">{REPLY_STRING}</a> {OR_STRING} <a href="promptaction.php?action=reply&space_key={SPACE_KEY}&module_key={MODULE_KEY}&post_key={POST_KEY}&quoted=true&thread_key={THREAD_KEY}&subject={SUBJECT}">{REPLY_QUOTED_STRING}</a></p>
+    
+<p align="left"><strong>2.</strong> <a href="promptaction.php?action=pass&space_key={SPACE_KEY}&module_key={MODULE_KEY}&post_key={POST_KEY}">{PASS_STRING}</a></p>
+    
+<p align="left"><strong>3.</strong> {PASS_ON_STRING}</p>
+<div align="center">
+<!-- BEGIN PassOnBlock -->
+    <form name="form1" method="post" action="">
+        {USER_MENU}
+        <br>
+        <input name="action" type="hidden" id="action" value="pass_on">
+        <input name="post_key" type="hidden" id="post_key" value="{POST_KEY}">
+        <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+        <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+        <input name="submit" type="submit" id="submit" value="{SUBMIT_STRING}">
+    </form>
+<!-- END PassOnBlock -->
+</div>
+{POST_AND_REPLIES}

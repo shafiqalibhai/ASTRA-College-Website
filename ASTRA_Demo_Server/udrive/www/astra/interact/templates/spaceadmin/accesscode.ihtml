@@ -1,0 +1,18 @@
+<h2>{ACCESS_CODE_HEADING}</h2>
+
+<form name="form1" method="post" action="accesscode.php">
+  <div align="center">{ACCESS_CODE_ERROR}<br>
+    <table class="input_form_table">
+    <tr>
+                <td class="InputFormLeft">{ACCESS_CODE_STRING}:</td>
+        <td class="InputFormRight"> 
+          <input type="hidden" name="space_key" value="{SPACE_KEY}" />
+          <input type="text" name="access_code" size="15" value="{ACCESS_CODE}" />
+      </td>
+    </tr>
+  </table>
+
+        <input type="submit" name="submit" value="{SUBMIT_STRING}" />
+  </div>
+</form>
+

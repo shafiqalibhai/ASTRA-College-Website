@@ -1,0 +1,109 @@
+
+<h2>Add a User Account </h2>
+
+  
+
+
+    
+<p align="center"><a href="bulkupload.php?space_key={SPACE_KEY}">Bulk Account Creation</a></p>
+<p align="left">* indicates a compulsory field</p>
+
+<form name="folder" method="post" action="userinput.php" enctype="multipart/form-data" >
+  <div align="center">
+        <table  border="0" cellpadding="8">
+            <tr> 
+                <td valign="top" class="InputFormLeft">*User Name:</td>
+                <td valign="top" class="InputFormRight"> <input name="new_username" type="text" id="new_username" value="{NEW_USER_NAME}" size="20" />
+                    <br>
+          {USER_NAME_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">*Password:</td>
+                <td valign="top" class="InputFormRight"> 
+          <input type="password" name="password" value="{PASSWORD}" size="20" />
+          <br>
+          {PASSWORD_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">*Confirm Password:</td>
+                <td valign="top" class="InputFormRight"> 
+          <input type="password" name="confirm_password" value="{CONFIRM_PASSWORD}" size="20" />
+          <br />
+          {CONFIRM_PASSWORD_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">*First Name:</td>
+                <td valign="top" class="InputFormRight"> 
+          <input type="text" name="first_name" value="{FIRST_NAME}" size="20" />
+          <br />
+          {FIRST_NAME_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">*Last Name:</td>
+                <td valign="top" class="InputFormRight"> 
+          <input type="text" name="last_name" value="{LAST_NAME}" size="20" />
+          <br />
+          {LAST_NAME_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">*Email:</td>
+                <td valign="top" class="InputFormRight"> 
+          <input type="text" name="email" value="{EMAIL}" size="35" />
+          <br />
+          {EMAIL_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">*Group:<br / >
+          <span class="small"> To select more than one <br>
+                    hold down the Ctrl key 
+          <br>
+                    (Cmd key on a Mac)</span></td>
+                <td valign="top" class="InputFormRight">{GROUP_MENU}<br />
+          {USER_GROUP_ERROR} </td>
+            </tr>
+            <tr>
+                <td valign="top" class="InputFormLeft">ID Number:</td>
+                <td valign="top" class="InputFormRight"><input name="user_id_number" type="text" id="user_id_number" value="{USER_ID_NUMBER}" size="20" /></td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">Details:<br />
+          <span class="small">Tell us a bit about yourself - <br />
+          work, hobbies, etc.</span></td>
+                <td valign="top" class="InputFormRight"> 
+          <textarea accept-charset="{CHARACTER_SET}" name="details" cols="30" rows="10" wrap="VIRTUAL">{DETAILS}</textarea>
+          <br />
+          {DESCRIPTION_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">Photo:<br>
+          (optional) </td>
+                <td valign="top" class="InputFormRight"> 
+          <input type="file" name="photo" size="30" />
+          <input type="hidden" name="current_photo" value="{CURRENT_PHOTO}" />
+          <br />
+          {PHOTO_ERROR}{PHOTO}</td>
+            </tr>
+            <tr>
+                <td valign="top" class="InputFormLeft">Email account details to user:</td>
+                <td valign="top" class="InputFormRight"><input name="email_user" type="checkbox" id="email_user" value="1"></td>
+            </tr>
+            <tr>
+                <td valign="top" class="InputFormLeft">Email note:<br>
+(Optional note to include in email to user)</td>
+                <td valign="top" class="InputFormRight"><textarea accept-charset="{CHARACTER_SET}" name="email_note" cols="40" rows="5" id="email_note"></textarea></td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">&nbsp;</td>
+                <td valign="top" class="InputFormRight"> 
+          <input type="submit" name="submit" value="{BUTTON}" />
+          {DELETE_BUTTON} 
+                    <input type="button" name="submit2" value="Cancel" onClick="history.go(-1)" />
+          <input type="hidden" name="user_key" value="{USER_KEY}" />
+                    <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}" />
+          <input type="hidden" name="action" value="{ACTION}" />
+          <input type="hidden" name="request_uri" value="{REQUEST_URI}" />
+        </td>
+            </tr>
+        </table>
+  </div>
+</form>

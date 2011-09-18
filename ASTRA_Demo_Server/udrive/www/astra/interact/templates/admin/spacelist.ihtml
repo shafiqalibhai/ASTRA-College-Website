@@ -1,0 +1,30 @@
+ 
+
+
+<tr valign="top">
+    
+  <td><a href="../../spaces/space.php?space_key={SPACE_KEY}">{NAME}</a><br /><span class="small">Date  last modified <em>{DATE_MODIFIED}</em></span></td>
+  <td>
+<form name="spacemodify" method="post" action="{PATH}/spaceadmin/spaceinput.php">
+<input type="submit" name="submit" value="Modify">
+<input type="hidden" name="action" value="modify">
+<input type="hidden" name="space_key" value="{SPACE_KEY}">
+
+<!-- BEGIN ShowSubsBlock -->
+<br />
+<a href="spacemodify.php?parent_key={SPACE_KEY}" class="small">Show sub-spaces</a>
+<!-- END ShowSubsBlock -->
+</form>
+
+</td>
+    <td>
+<form name="spacemodify" method="post" action="spaceinput.php">
+<input type="submit" name="submit" value="Delete" onClick="return confirmDelete('Are your sure? This will also delete everything contained in this space!!')">
+<input type="hidden" name="action" value="delete">
+<input type="hidden" name="space_key" value="{SPACE_KEY}">
+</form>  
+</td>
+</tr>
+
+
+

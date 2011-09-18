@@ -1,0 +1,33 @@
+
+<div id="forumStats">
+{NUMBER_OF_POSTS}: {TOTAL_POSTS_VALUE}<br />
+{PEOPLE_POSTING}: {TOTAL_USERS_VALUE}<br />
+{LAST_POST}: {LAST_POST_VALUE}
+</div> <br style="clear:right" />
+
+<!-- BEGIN ThreadBlock -->
+<div class="{THREAD_STYLE}" 
+	dojoType="ForumThread" 
+	dojo:space_key="{SPACE_KEY}" 
+	dojo:module_key="{MODULE_KEY}" 
+	dojo:thread_key="{THREAD_KEY}" 
+	dojo:post_key="{POST_KEY}"
+	dojo:thread_key="{THREAD_KEY}"
+	dojo:subject="{SUBJECT_VALUE}" 
+	dojo:added_by_value="{ADDED_BY_VALUE}" 
+	dojo:replies_value="{REPLIES_VALUE}" 
+	dojo:added_by="{ADDED_BY}" 
+	dojo:added_by_key="{ADDED_BY_KEY}"
+	dojo:replies={REPLIES}
+>
+	<a href="thread.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&thread_key={THREAD_KEY}&post_key={POST_KEY}#{POST_KEY}"  class="disclosureClosed" id="forumPostLink{POST_KEY}" title="{POST_KEY}" >{SUBJECT_VALUE}</a> {ADDED_BY} - {ADDED_BY_VALUE} - {REPLIES}: {REPLIES_VALUE}
+	</div>
+<div width="100%" style="border:1px solid #000000;margin-bottom:5px" id="threadOuter{POST_KEY}">
+	<div id="messageBody{POST_KEY}" style="display:none" ></div>
+
+	<div style="display:none;" id="threadDiv{THREAD_KEY}">
+		{REPLY_DIVS}
+	</div>
+</div>
+<!-- END ThreadBlock -->
+

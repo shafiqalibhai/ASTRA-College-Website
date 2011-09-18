@@ -1,0 +1,51 @@
+body {
+background-color: {COLOR1*192};
+}
+
+#header {
+border-bottom: {COLOR1*160} 1px solid;
+position: relative;
+margin: 5px;
+height:65px;
+}
+
+#navigationBox {
+margin:0;
+padding:0;
+clear:left;
+width:16.5em;
+background-image:none;
+}
+#navigation {
+float: left;
+padding:0 1em;
+margin:0;
+border:none;
+border-right: {COLOR1*160} 1px solid; 
+border-bottom: {COLOR1*160} 1px solid; 
+width:14.5em;
+}
+
+#personalBox {
+border-right: {COLOR1*160} 1px solid; 
+position: relative;
+top:0px; right:0px;
+float:left;
+padding:.3em 0 0 .4em;
+margin:0;
+width:16.1em;
+min-height:0;
+}
+
+.controlBox li {
+margin:0
+}
+
+#messageAlert {
+position:static;
+margin-right:.5em;
+margin-top:2px;
+width:auto;
+}
+
+

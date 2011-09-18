@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>{PAGE_TITLE}</title>
+<link rel="stylesheet" href="/lattestyle.css" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<div align="center"><a href="http://www.cce.ac.nz/"> </a> 
+</div>
+<div align="right" class="small"> 
+    <p><a href="{BACK_URL}">{BACK_STRING}</a></p>
+</div>
+<p class="small">{FROM_STRING} {SPACE_TITLE} ({DATE})</p>
+<h3>{TITLE}</h3>
+<p>{BODY}</p>
+<hr>
+<div align="center" class="small"> </div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+ {MODULE_DESCRIPTION}<br />
+{ADMIN_LINKS} 
+<table cellpadding="5">
+{ITEMS}
+</table>

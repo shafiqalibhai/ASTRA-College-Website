@@ -1,0 +1,26 @@
+
+<div id="footer">
+<div align="center" class="small"></div>
+<a name="tag"></a>
+<!-- BEGIN TagBlock -->
+<div align="right">
+    <table  border="0" cellspacing="0" cellpadding="0" width="179">
+        <tr>
+            <td width="95%" class="tag">{EDIT_TOOL}&nbsp;</td>
+            <td width="26">
+<div align="right"><img src="{PATH}/images/usernote.gif" width="26" height="31"></div></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="tag">
+			
+			<p class="small"><strong>{TAG_HEADING}</strong><br />{TAG_NOTE}</p>
+                <p class="small" align="right">{TAG_ADDED_BY}<br />
+                    {DATE_TAG_ADDED}</p></td>
+        </tr>
+    </table>
+    
+</div><br />
+<!-- END TagBlock -->
+</div>
+</body>
+</html>

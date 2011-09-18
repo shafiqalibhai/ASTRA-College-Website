@@ -1,0 +1,146 @@
+ <script language="javascript">
+<!--
+/// This Javascript clock provides a little countdown in the title bar
+
+var timerID = null;
+var timerRunning = false;
+var secondsleft = '{SECONDS_LEFT}';
+var titleafter  = '{DROPBOX_NAME}';
+var titlebefore = '{TIME_LEFT_STRING}:';
+var alertmessage  = '{TIME_UP_STRING}';
+var alertmessage10  = '{10_MINUTES_LEFT_STRING}';
+
+function stopclock() {
+    if (timerRunning) {
+        clearTimeout(timerID);
+        timerRunning = false;
+    }
+}
+
+function startclock() {
+    stopclock();
+    showtime();
+}
+
+function showtime() {
+
+    secondsleft = secondsleft - 1;
+
+    if (secondsleft == 600) {
+        alert(alertmessage10);
+    }
+
+    if (secondsleft == 0) {
+        stopclock();
+        document.title = titleafter;
+        return alert(alertmessage);
+
+    } else {
+        current = secondsleft;
+
+        var hours = Math.floor( current / 3600 );
+        current = current - (hours*3600);
+    
+        var minutes =   Math.floor( current / 60 );
+        current = current - (minutes*60);
+    
+        var seconds = current;
+    
+        var timeValue = "" + hours;
+        timeValue  += ((minutes < 10) ? ":0" : ":") + minutes;
+        timeValue  += ((seconds < 10) ? ":0" : ":") + seconds;
+    
+        document.title = titlebefore+timeValue+' '+titleafter;
+        timerID = setTimeout("showtime()",1000);
+        timerRunning = true;
+    }
+}
+
+
+-->
+</script>
+<div align="center">
+    
+			    <!-- BEGIN TimedBlock --><div class="subCategories">
+		            <p class="red">
+		{TIMED_DROPBOX_STRING} </p>
+                    <p align="center" ><a href="timeddownload.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&link_key={LINK_KEY}" onClick="startclock();">{DOWNLOAD_FILE_STRING}</a>
+		</p></div>
+<!-- END TimedBlock -->
+<p><b>{NEW_FILE_STRING}</b></p>
+  <form name="link" method="post" enctype="multipart/form-data" action="dropbox.php">
+    <table class="input_form_table">
+      <tr> 
+                <td class="InputFormLeft" valign="top">{DESCRIPTION_STRING}:<br />
+          <span class="small">{EXAMPLE_STRING}</span></td>
+        <td class="InputFormRight"> 
+          <input type="text" name="description" value="{FILE_DESCRIPTION}" size="30" maxlength="35" />
+          <br />
+          {DESCRIPTION_ERROR} </td>
+      </tr>
+      
+<!-- BEGIN TYPE3 -->
+<!-- Record Audio (FLASHCOM) -->
+      <tr> 
+                <td class="InputFormLeft" valign="top">Record Audio:</td>
+        <td class="InputFormRight">
+{RECORDER_OBJECT} <input type="hidden" name="link_url" id="f_url" value="{URL}" size="35">
+          <br>
+          {FILE_ERROR}</td>
+      </tr>
+<!-- END TYPE3 -->
+
+<!-- BEGIN TYPE1 -->
+      <tr> 
+                <td class="InputFormLeft" valign="top">{FILE_STRING}:</td>
+        <td class="InputFormRight">
+	<input type="hidden" name="MAX_FILE_SIZE" value="{MAX_FILE_UPLOAD_SIZE}">
+        <input name="user_file" type="file" id="user_file" size="35" />
+          <br>
+          {FILE_ERROR} </td>
+      </tr>
+      <tr> 
+                <td valign="top" class="InputFormLeft">{FILE_TYPE_STRING}:<br>
+        </td>
+        <td valign="top" class="InputFormRight"> 
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td valign="top" width="10%"> 
+                <select name="file_extension" size="4">
+                  <option value="doc">Word</option>
+                  <option value="ppt">PowerPoint</option>
+                  <option value="xls">Excel</option>
+                  <option value="html">HTML</option>
+                  <option value="rtf">RTF</option>
+                  <option value="gif">Gif Image</option>
+                  <option value="jpg">Jpg Image</option>
+                  <option value="other">Other</option>
+                </select>
+              </td>
+                            <td valign="top" width="90%" class="small">{FILE_TYPE_TEXT}</td>
+            </tr>
+          </table>
+          <br />
+          {FILE_TYPE_ERROR} </td>
+      </tr>
+<!-- END TYPE1 -->
+      
+      <tr> 
+        <td valign="top" class="InputFormLeft">&nbsp;</td>
+        <td valign="top" class="InputFormRight">
+
+                    <p class="small">{DECLARATION_TEXT}</p>
+          <div align="center">
+                        <input type="submit" name="submit" value="{SUBMIT_STRING}" {SUBMIT_ONCLICK} />
+            <input type="hidden" name="action" value="{ACTION}" />
+            <input type="hidden" name="module_key" value="{MODULE_KEY}" />
+            <input type="hidden" name="space_key" value="{SPACE_KEY}" />
+
+          </div>
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
+
+

@@ -1,0 +1,80 @@
+<div align="center" class="message">{MESSAGE}</div>
+<form name="form1" method="post" action="spaceinput.php">
+    <table class="input_form_table">
+        <tr> 
+            <td class="InputFormLeft">Code:</td>
+            <td class="InputFormRight"> 
+        <input type="text" name="code" value="{CODE}">
+        <a href="javascript:openHelpWin('{PATH}/help/help.php?module=admin&file=spacecode.php')" class='helplink'>?</a><br>
+        {CODE_ERROR} </td>
+        </tr>
+        <tr> 
+            <td class="InputFormLeft">Name:</td>
+            <td class="InputFormRight"> 
+        <input type="text" name="name" value="{NAME}">
+        <br>
+        {NAME_ERROR} </td>
+        </tr>
+        <tr> 
+            <td valign="top" class="InputFormLeft">Description</td>
+            <td valign="top" class="InputFormRight"> 
+        <textarea accept-charset="{CHARACTER_SET}" name="description" cols="30" rows="5" wrap="VIRTUAL">{DESCRIPTION}</textarea>
+        <br>
+        {DESCRIPTION_ERROR} </td>
+        </tr>
+        <tr> 
+            <td class="InputFormLeft">Status:</td>
+            <td class="InputFormRight">{STATUS_MENU}<a href="javascript:openHelpWin('{PATH}/help/help.php?module=admin&file=spacestatus.php')" class='helplink'>?</a><br>
+        {STATUS_ERROR} </td>
+        </tr>
+        <tr> 
+            <td class="InputFormLeft">Type:</td>
+            <td class="InputFormRight">{TYPE_MENU}<a href="javascript:openHelpWin('{PATH}/help/help.php?module=admin&file=spacetype.php')" class='helplink'>?</a><br>
+        {TYPE_ERROR} </td>
+        </tr>
+        <tr>
+            <td valign="top" class="InputFormLeft">Copy another {SPACE_TEXT}:</td>
+            <td class="InputFormRight"><input name="copy" type="checkbox" id="copy" value="true">
+                <a href="javascript:openHelpWin('{PATH}/help/help.php?module=admin&file=spacecopy.php')" class='helplink'>?</a><br>
+                Code of {SPACE_TEXT} to copy<br>
+                <input name="copy_space_code" type="text" id="copy_space_code" value="{COPY_SPACE_CODE}" size="10">
+                {COPY_ERROR}
+                </td>
+        </tr>
+        <tr> 
+            <td class="InputFormLeft">Category:</td>
+            <td class="InputFormRight">{CATEGORY_MENU}<a href="javascript:openHelpWin('{PATH}/help/help.php?module=admin&file=spacecategory.php')" class='helplink'>?</a><br>
+        {CATEGORY_ERROR} </td>
+        </tr>
+        <tr> 
+            <td class="InputFormLeft">Access Code:<br>
+        <span class="small">(for restricted {SPACE_TEST}s)</span></td>
+            <td class="InputFormRight"> 
+        <input type="text" name="access_code" size="10" value="{ACCESS_CODE}">
+                <a href="javascript:openHelpWin('{PATH}/help/help.php?module=admin&file=accesscode.php')" class='helplink'>?</a>
+      </td>
+        </tr>
+        <tr>
+                
+            <td class="InputFormLeft">Sort Order:</td>
+            <td class="InputFormRight"><input name="sort_order" type="text" id="sort_order" value="{SORT_ORDER}" size="2"> <a href="javascript:openHelpWin('{PATH}/help/help.php?module=admin&file=sortorder.php')" class='helplink'>?</a></td>
+        </tr>
+        <tr>
+            <td class="InputFormLeft">Short Date Format:</td>
+            <td class="InputFormRight">{SHORT_DATE_MENU}</td>
+        </tr>
+        <tr>
+            <td class="InputFormLeft">Long Date Format:</td>
+            <td class="InputFormRight">{LONG_DATE_MENU}</td>
+        </tr>
+        <tr> 
+            <td class="InputFormLeft"> 
+        <input type="hidden" name="action" value="{ACTION}">
+      </td>
+            <td class="InputFormRight"> 
+        <input type="hidden" name="space_key" value="{SPACE_KEY}">
+        <input type="submit" name="Submit" value="{BUTTON}">
+      </td>
+        </tr>
+    </table>
+  </form>

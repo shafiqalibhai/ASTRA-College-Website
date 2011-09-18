@@ -1,0 +1,130 @@
+
+<h2>{USER_INPUT_HEADING}</h2>
+
+    <p align="center" class="message">{MESSAGE} </p>
+    
+    
+<p align="left">* {COMPULSORY_FIELD_STRING}</p>
+
+<form name="inputform" method="post" action="userinput.php" enctype="multipart/form-data" >
+  <div align="center">
+        <table  class="input_form_table">
+        	<tr>
+            	<td valign="top" class="InputFormLeft">*{FIRST_NAME_STRING}:</td>
+            	<td valign="top" class="InputFormRight">{FIRST_NAME_TEXT}            	
+            	<input type="{NAME_INPUT_TYPE}" name="first_name" value="{FIRST_NAME}" size="20" readonly/>
+                        			<br />
+		{FIRST_NAME_ERROR} </td>
+       		</tr>
+        	<tr>
+            	<td valign="top" class="InputFormLeft">*{LAST_NAME_STRING}:</td>
+            	<td valign="top" class="InputFormRight">{LAST_NAME_TEXT}
+            
+            	<input type="{NAME_INPUT_TYPE}" name="last_name" value="{LAST_NAME}" size="20" readonly/>
+            
+            			<br />
+		{LAST_NAME_ERROR} </td>
+       		</tr>
+        	<tr>
+            	<td valign="top" class="InputFormLeft">*{EMAIL_STRING}:</td>
+            	<td valign="top" class="InputFormRight"><input type="text" name="email" value="{EMAIL}" size="35" />
+                		<br />
+		{EMAIL_ERROR} </td>
+       		</tr>
+<tr>
+            	<td valign="top" class="InputFormLeft">*{CONFIRM_EMAIL_STRING}:</td>
+            	<td valign="top" class="InputFormRight"><input type="text" name="confirm_email" value="{CONFIRM_EMAIL}" size="35" />
+                		<br />
+		{CONFIRM_EMAIL_ERROR} </td>
+       		</tr>
+       		<tr> 
+                <td valign="top" class="InputFormLeft">*{USERNAME_STRING}:</td>
+                <td valign="top" class="InputFormRight"> {USERNAME}
+				{USERNAME_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">*{PASSWORD_STRING}:</td>
+                <td valign="top" class="InputFormRight"> 
+          <input type="password" name="password" value="{PASSWORD}" size="20" /> <span onClick="createNew('{PASSWORD_HELP}')" class="helplink">?</span>
+		  
+          {PASSWORD_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">*{CONFIRM_PASSWORD_STRING}:</td>
+                <td valign="top" class="InputFormRight"> 
+          <input type="password" name="confirm_password" value="{CONFIRM_PASSWORD}" size="20" />
+          <br />
+          {CONFIRM_PASSWORD_ERROR} </td>
+            </tr>
+			<tr>
+                <td valign="top" class="InputFormLeft">{ID_NUMBER_STRING}:</td>
+                <td valign="top" class="InputFormRight"><input name="user_id_number" type="text" id="user_id_number" value="{USER_ID_NUMBER}" size="20" readonly/></td>
+            </tr>
+			<tr>
+                <td valign="top" class="InputFormLeft">Phone Number:</td>
+                <td valign="top" class="InputFormRight"><input name="phone_no" type="text" id="phone_no" value="{PHONE_NO}" size="20" readonly/></td>
+            </tr>
+			<tr>
+                <td valign="top" class="InputFormLeft">Branch:</td>
+                <td valign="top" class="InputFormRight"><input name="branch" type="text" id="branch" value="{BRANCH}" size="20" readonly/></td>
+            </tr>
+			<tr>
+                <td valign="top" class="InputFormLeft">Attendance:</td>
+                <td valign="top" class="InputFormRight"><input name="attendance" type="text" id="attendance" value="{ATTENDANCE}" size="20" readonly/></td>
+            </tr>
+			<tr>
+                <td valign="top" class="InputFormLeft">Backlogs:</td>
+                <td valign="top" class="InputFormRight"><input name="backlogs" type="text" id="backlogs" value="{BACKLOGS}" size="20" readonly/></td>
+            </tr>
+			        	<tr>
+            	<td valign="top" class="InputFormLeft">*Address:</td>
+            	<td valign="top" class="InputFormRight">            	
+				<textarea accept-charset="{CHARACTER_SET}" name="address" cols="70" rows="5" wrap="VIRTUAL" id="address" readonly>{ADDRESS}</textarea>
+                <br />
+				</td>
+       		</tr>
+
+			<tr> 
+                <td valign="top" class="InputFormLeft">{DETAILS_STRING}:<br />
+          <span class="small">{DETAILS_STRING_2}</span>
+          {EDITOR_BUTTONS_details}
+          	</td>
+                <td valign="top" class="InputFormRight">
+                    <textarea accept-charset="{CHARACTER_SET}" name="details" cols="60" rows="20" wrap="VIRTUAL" id="details">{DETAILS}</textarea>
+                <div class="error">{DESCRIPTION_ERROR}</div></td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">{PHOTO_STRING}:<br>
+          ({OPTIONAL_STRING}) </td>
+                <td valign="top" class="InputFormRight"> 
+          <input type="file" name="photo" size="30" />
+          <input type="hidden" name="current_photo" value="{CURRENT_PHOTO}" />
+          <br />
+          {PHOTO_ERROR}<br />{PHOTO}</td>
+            </tr>
+			            <tr>
+                <td valign="top" class="InputFormLeft">{AUTO_EDITOR_STRING}</td>
+                <td valign="top" class="InputFormRight">{AUTO_EDITOR_MENU}</td>
+            </tr>
+
+			<tr>
+                <td valign="top" class="InputFormLeft">{DISPLAYED_POSTS_STRING}</td>
+                <td valign="top" class="InputFormRight">{DISPLAYED_POSTS_MENU}</td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">&nbsp;</td>
+                <td valign="top" class="InputFormRight"> 
+                <div class="small"><input name="auto_login" type="checkbox" id="auto_login" value="1">{AUTO_LOGIN_STRING}</div><br />
+          <input type="submit" name="submit" value="{BUTTON}" />
+          {DELETE_BUTTON} 
+                    <input type="button" name="submit2" value="Back" onClick="history.go(-1)" />
+          <input type="hidden" name="user_key" value="{USER_KEY}" />
+          <input type="hidden" name="action" value="{ACTION}" />
+          <input type="hidden" name="request_uri" value="{REQUEST_URI}" />
+		
+		  {USER_GROUP_KEYS}
+        </td>
+            </tr>
+        </table>
+  </div>
+</form>

@@ -1,0 +1,12 @@
+<h2>{PAGE_HISTORY}</h2>
+<form action="page_diff.php" method="get">
+<table class="tableBorder">
+<!-- BEGIN PageHistoryBlock -->
+<tr><td> <input name="diff1" type="radio" value="{PAGE_KEY}" /></td><td> <input name="diff2" type="radio" value="{PAGE_KEY}" /></td><td><a href="page.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&version={PAGE_KEY}">{DATE_ADDED}</a></td><td> {ADDED_BY}</td></tr>
+<!-- END PageHistoryBlock -->
+</table>
+ <input type="submit" name="Submit" value="{COMPARE_VERSIONS}" />
+  <input type="hidden" name="module_key" value="{MODULE_KEY}" />
+    <input type="hidden" name="space_key" value="{SPACE_KEY}" />
+</form>
+

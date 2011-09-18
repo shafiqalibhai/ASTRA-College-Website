@@ -1,0 +1,124 @@
+<h2>{INPUT_HEADING}</h2>
+
+<div class="input_form_div" align="center">
+<form name="form1" method="post" action="space_input.php">
+        <table class="input_form_table_wide">
+            <tr>
+                <td class="InputFormLeft">{SPACE_NAME_STRING}:</td>
+                <td class="InputFormRight">
+                <input type="text" name="name" value="{NAME}">
+                <br>
+        {NAME_ERROR} </td>
+            </tr>
+            <tr>
+              <td valign="top" class="InputFormLeft">{DESCRIPTION_STRING}:<br>
+                  <span class="small">({DESCRIPTION_EXPLAIN})</span><br />{EDITOR_BUTTONS_description}</td>
+              <td valign="top" class="InputFormRight">
+              
+              <textarea accept-charset="{CHARACTER_SET}" name="description" id="description" cols="60" rows="10" wrap="VIRTUAL">{DESCRIPTION}</textarea>
+                  
+    <div class="error">{DESCRIPTION_ERROR}</div> </td>
+            </tr>
+                          <td valign="top" class="InputFormLeft">{WELCOME_MESSAGE}:<br>
+                           <span class="small">({WELCOME_MESSAGE_DESC})</span><br /> {EDITOR_BUTTONS_welcome_message}
+                  </td>
+              <td valign="top" class="InputFormRight">
+              
+              <textarea accept-charset="{CHARACTER_SET}" name="welcome_message" id="welcome_message" cols="60" rows="10" wrap="VIRTUAL">{WELCOME_MESSAGE_DATA}</textarea>
+    </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">{ACCESS_STRING}:</td>
+                <td class="InputFormRight">
+                    <input name="access_level_key" type="radio" value="1" {ACCESS_LEVEL_1_CHECKED}>
+                    <span class="small">{OPEN_STRING}</span> 
+                    
+               
+                    <br>
+                    <input name="access_level_key" type="radio" value="3" {ACCESS_LEVEL_3_CHECKED}>
+                    <span class="small">{OPEN_PUBLIC_STRING}</span> 
+                   
+                    <br>
+                    <input name="access_level_key" type="radio" value="2" {ACCESS_LEVEL_2_CHECKED}>
+                   <span class="small">{RESTRICTED_STRING}</span><span class="small">:</span>
+                        <input type="text" name="access_code" size="6" value="{ACCESS_CODE}" class="small">
+                        <a href="javascript:openHelpWin('{DOCS_URL}/Space_Settings#Access')" class='helplink'>?</a>
+            </td>
+            </tr>
+
+            <!-- BEGIN PortfolioTemplateBlock -->
+            <tr>
+                <td class="InputFormLeft">                {PORTFOLIO_TEMPLATE_STRING}:<br>
+                ({OPTIONAL_STRING})</td>
+                <td class="InputFormRight">
+                <input name="copy" type="checkbox" id="copy" value="true">
+                {COPY_TEMPLATE}<br /> 
+              {PORTFOLIO_TEMPLATE_MENU}        </td>
+            </tr>
+  <!-- END PortfolioTemplateBlock -->
+ <!-- BEGIN FullSettingsBlock -->
+            <tr> 
+                <td class="InputFormLeft">{SHORT_NAME_STRING} :<br>
+                ({EXPLAIN_SHORT_NAME_STRING}) </td>
+                <td class="InputFormRight"> 
+        <input name="short_name" type="text" id="short_name" value="{SHORT_NAME}">        <br>        </td>
+            </tr>
+            <tr>
+                <td colspan="2" valign="top" class="InputFormLeft"><div align="center">{OPTIONAL_STRING}</div></td>
+            </tr>
+            <!-- BEGIN SkinBlock -->
+			<tr>
+              <td valign="top" class="InputFormLeft"><a name="skin"></a>{SKIN_STRING}:</td>
+              <td valign="top" class="InputFormRight">{SKIN_MENU}{ADD_LINK}</td>
+            </tr>
+			<!-- END SkinBlock -->
+            <tr>
+                <td valign="top" class="InputFormLeft">{CODE_STRING}:</td>
+              <td valign="top" class="InputFormRight"><input name="code" type="text" id="code" value="{CODE}" size="10">
+                  <a href="javascript:openHelpWin('{DOCS_URL}/Space_Settings#Code')" class='helplink'>?</a>{CODE_ERROR}</td>
+            </tr>
+            <tr>
+                <td valign="top" class="InputFormLeft">{COPY_STRING}:</td>
+                <td class="InputFormRight"><input name="copy" type="checkbox" id="copy" value="true">
+                    <a href="javascript:openHelpWin('{DOCS_URL}/Space_Settings#Copy_another_space')" class='helplink'>?</a><br>
+        {COPY_CODE_STRING}<br>
+        <input name="copy_space_code" type="text" id="copy_space_code" value="{COPY_SPACE_KEY}" size="10">
+        {COPY_ERROR} </td>
+            </tr>
+            <tr>
+                <td valign="top" class="InputFormLeft">{COMBINE_NAMES_STRING}</td>
+                <td valign="top" class="InputFormRight">{COMBINE_NAMES_MENU}</td>
+            </tr>
+            <tr>
+              <td class="InputFormLeft">{EMAIL_ADMINS_STRING}:</td>
+              <td class="InputFormRight">{EMAIL_ADMINS_MENU} </td>
+            </tr>
+            <tr>
+                <td class="InputFormLeft">{SHOW_MEMBERS_STRING}:</td>
+                <td class="InputFormRight">{SHOW_MEMBERS_MENU}</td>
+            </tr>
+            <tr>
+                <td class="InputFormLeft">{SHOW_SPACEMAP_STRING}:</td>
+                <td class="InputFormRight">{SHOW_SPACEMAP_MENU}</td>
+            </tr>
+            <tr>
+              <td class="InputFormLeft">{ALT_HOME_STRING}:</td>
+              <td class="InputFormRight"><input name="alt_home" type="text" id="alt_home" value="{ALT_HOME}"></td>
+            </tr>
+            <!-- END FullSettingsBlock -->            
+			 </table>
+                <div align="center">
+                        <input type="hidden" name="space_key" value="{SPACE_KEY}">
+						 <input type="hidden" name="type_key" value="{TYPE_KEY}">
+					    <input type="hidden" name="referer" value="{REFERER}">
+                        <input type="submit" name="submit" value="{BUTTON}">
+                        {DELETE_BUTTON}
+                        <!-- BEGIN DeleteOptionsBlock -->
+                        <input type="button" name="submit2" value="{CANCEL_STRING}" onClick="history.go(-1)">
+                        <input type="hidden" name="action" value="{ACTION}">
+    </div>
+			{GENERAL_SETTINGS}
+       
+</form>
+{MOVE}
+</div>

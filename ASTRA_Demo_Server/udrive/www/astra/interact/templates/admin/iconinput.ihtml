@@ -1,0 +1,42 @@
+<h1>System Icon Input</h1>
+<div align="center" class="message">{MESSAGE}</div>
+<form action="iconinput.php" method="post" enctype="multipart/form-data" name="form1">
+
+    <table width="100%" border="0" cellspacing="1" cellpadding="5">
+        <tr>
+            <td valign="top" class="InputFormLeft">Name:</td>
+            <td valign="top" class="InputFormRight">
+<input name="name" type="text" value="{NAME}" size="30" maxlength="30">
+                {NAME_ERROR}</td>
+        </tr>
+        <tr>
+            <td valign="top" class="InputFormLeft">Description:</td>
+            <td valign="top" class="InputFormRight">
+<textarea accept-charset="{CHARACTER_SET}" name="description" cols="30" rows="3" id="description">{DESCRIPTION}</textarea></td>
+        </tr>
+        <tr>
+            <td valign="top" class="InputFormLeft">Small icon:</td>
+            <td valign="top" class="InputFormRight">
+<input name="small_icon" type="file" id="small_icon">
+                {SMALL_ICON_ERROR}
+                {SMALL_ICON}</td>
+        </tr>
+        <tr>
+            <td valign="top" class="InputFormLeft">Large icon:<br>
+(optional)</td>
+            <td valign="top" class="InputFormRight">
+<input name="large_icon" type="file" id="large_icon">
+                {LARGE_ICON}</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><input name="action" type="hidden" id="action" value="{ACTION}">
+                <input name="icon_key" type="hidden" id="icon_key" value="{ICON_KEY}">
+                <input name="submit" type="submit" id="submit" value="{BUTTON}">
+                <!-- BEGIN DeleteBlock --> 
+				<input name="submit" type="submit" id="submit" value="Delete">
+                <!-- END DeleteBlock --> 
+				</td>
+        </tr>
+    </table>
+</form>

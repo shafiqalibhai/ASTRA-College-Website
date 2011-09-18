@@ -1,0 +1,44 @@
+ 
+
+<h2>{ADD_LINK_HEADING}</h2>
+<div class="input_form_div" align="center">
+<form name="link" method="post" action="audioinput.php">
+  <table class="input_form_table">
+    <tr> 
+                <td class="InputFormLeft" valign="top">{NAME_STRING}:</td>
+      <td class="InputFormRight"> 
+        <input type="text" name="link_name" value="{LINK_NAME}" size="35">
+        <br>
+        {NAME_ERROR} </td>
+    </tr>
+    <tr> 
+                <td valign="top" class="InputFormLeft">{DESCRIPTION_STRING}:<br>
+                            ({OPTIONAL_STRING}) </td>
+      <td valign="top" class="InputFormRight"> 
+        <textarea accept-charset="{CHARACTER_SET}" name="link_description" cols="30" rows="4" wrap="VIRTUAL">{LINK_DESCRIPTION}</textarea>
+        <br>
+      </td>
+    </tr>
+
+    <tr> 
+      <td class="InputFormLeft" valign="top">Recording:</td>
+      <td class="InputFormRight"> 
+        {RECORDER_OBJECT} <input type="hidden" name="link_url" id="f_url" value="{LINK_URL}" size="35">
+        {URL_ERROR}</td>
+    </tr>
+
+    <tr> 
+      <td valign="top" class="InputFormLeft">&nbsp;</td>
+      <td valign="top" class="InputFormRight"> 
+        <input type="submit" name="submit" value="{BUTTON}">
+        {DELETE_BUTTON} 
+                    <input type="button" name="submit3" value="{CANCEL_STRING}" onClick="history.go(-1)">
+        <input type="hidden" name="action" value="{ACTION}">
+        <input type="hidden" name="module_key" value="{MODULE_KEY}">
+        <input type="hidden" name="space_key" value="{SPACE_KEY}">
+        <input type="hidden" name="shareditem_key" value="{SHAREDITEM_KEY}">
+      </td>
+    </tr>
+  </table>
+</form></div>
+

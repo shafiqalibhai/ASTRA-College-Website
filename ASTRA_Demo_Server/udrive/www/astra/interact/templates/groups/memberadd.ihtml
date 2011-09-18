@@ -1,0 +1,56 @@
+<div class="controlBox">
+	<h4 class="controlBoxTitle">{ADD_MEMBERS_STRING}</h4> 
+
+	<form name="form1" method="post" action="memberedit.php">
+		{SELECT_MEMBERS}
+		<br />
+		{MEMBERS_MENU} 
+		<input type="submit" name="add" value="{ADD_STRING}" />
+		<input type="hidden" name="group_key" value="{GROUP_KEY}" />
+		<input type="hidden" name="space_key" value="{SPACE_KEY}" />
+		<input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}" />
+		<input name="link_key" type="hidden" id="link_key" value="{LINK_KEY}" />
+		<br />
+                        <input type="hidden" name="action" value="add" />
+	</form>
+</div>
+
+<div class="controlBox">
+	<h4 class="controlBoxTitle">{BY_NAME_NUMBER}</h4> 
+	<form name="form1" method="post" action="memberedit.php">
+
+                    <select name="action">
+                        <option value="add_by_username" selected>{ADD_BY_USERNAME}</option>
+                        <option value="add_by_number">{ADD_BY_NUMBER}</option>
+                    </select>
+                    <br>
+			<span class="small">{USERNAME_INSTRUCTIONS}</span>
+                    <input name="user_list" type="text" id="user_list" size="20">
+			<input type="submit" name="add" value="{ADD_STRING}" />
+			<input type="hidden" name="group_key" value="{GROUP_KEY}" />
+			<input type="hidden" name="space_key" value="{SPACE_KEY}" />
+			<input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}" />
+			<input name="link_key" type="hidden" id="link_key" value="{LINK_KEY}" />
+
+	</form>
+</div>
+
+<div class="controlBox">
+	<h4 class="controlBoxTitle">{UPLOAD_MEMBERS}</h4> 
+<form name="form1" method="post" enctype="multipart/form-data" action="memberedit.php">
+                    <select name="action">
+                        <option value="upload_by_username">{UPLOAD_BY_USERNAME}</option>
+                        <option value="upload_by_number">{UPLOAD_BY_NUMBER}</option>
+                    </select>
+		<br />
+		<span class="small">{UPLOAD_INSTRUCTIONS}</span>
+		<br />
+          <input type="file" name="file" size="10">
+                    <input type="submit" name="add" value="{ADD_STRING}" />
+          <input type="hidden" name="group_key" value="{GROUP_KEY}" />
+          <input type="hidden" name="space_key" value="{SPACE_KEY}" />
+		            <input type="hidden" name="link_key" value="{LINK_KEY}" />
+	</form>
+</div>
+
+

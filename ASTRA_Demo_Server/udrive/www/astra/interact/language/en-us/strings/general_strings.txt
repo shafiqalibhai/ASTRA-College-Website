@@ -1,0 +1,2 @@
+language_description=English (US)
+colour=color

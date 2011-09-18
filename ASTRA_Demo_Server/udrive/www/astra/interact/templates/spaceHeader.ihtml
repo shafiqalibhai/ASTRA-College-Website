@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+
+		<title>Aurora&#39;s Scientific Technological &amp; Research Academy - Hyderabad AP India Tel: (040)24440840</title>
+
+<meta name="description" content="Aurora&#39;s Scientific Technological And Research Academy -- Keshavagiri Post, Bandlaguda, Near Chandrayana Gutta, Hyderabad, Andhra Pradesh, India -- 500 005 -- Tel (040) 2444 0840" >
+<meta name="country" content="India" >
+<meta name="coverage" content="Worldwide" >
+<meta name="authors" content="Shafiq Issani, Subhash" >
+<meta name="owner" content="Aurora&#39;s Scientific Technological &amp; Research Academy" >
+<meta http-equiv="Content-Language" content="en-us" >
+<link rel="shortcut icon" href="../../images/favicon.ico" type='image/xicon'>
+<link rel='icon' href='../../images/favicon.ico' type='image/x-icon'>
+<noscript>
+<h3>###!!!###   If you can read this then either scripting is disabled or your browser 
+  needs to be updated.   ###!!!###</h3>
+</noscript>
+<link href="../../styles/astra_styles.css" rel="stylesheet" type="text/css" media="screen" >
+<link rel="alternate" lang="en" title="ASTRA RSS FEEDS" type="application/rss+xml" href="../../interact/spaces/rssFetchNews.php" >
+<link rel="alternate" lang="en" title="ASTRA ATOM FEED" type="application/rss+xml" href="../../interact/spaces/AtomFetchNews.php" >
+{META_TAGS}
+		<meta http-equiv="Content-Type" content="text/html; charset={CHARACTER_SET}" />
+
+
+
+<!-- Not ALL the bugs are fixed in IE7!!!  Fix multiple-backgrounds & bouncy link -->
+
+<!--[if gt IE 6]>
+
+<style>
+
+#navigation, #loginDetails {zoom:1}
+
+</style>
+
+<![endif]-->
+
+		<link rel="stylesheet" id="skinLink" href="{PATH}/skins/skin.php?skin_key={SKIN_KEY}&skin_version={SKIN_VERSION}" type="text/css" media="screen, projection, print">
+
+		{MODULE_STYLES}
+
+		<script type="text/javascript" language="javascript">
+
+			document.write('<style> .jsShow{display:block} .jsHide{display:none} </style>');
+
+			messageCount={MESSAGE_COUNT};
+
+			fullUrl = '{FULL_URL}';
+
+			var djConfig = {isDebug: false, debugAtAllCosts: false, parseWidgets: false, searchIds: []};
+
+		</script>		
+
+
+
+		<script type="text/javascript" language="javascript"  src="{PATH}/includes/dojo/dojo.js?v2"></script> 
+
+
+
+		<script type="text/javascript" language="javascript">
+
+			dojo.require('dojo.io.BrowserIO');
+
+		</script>
+
+		<script type="text/javascript" language="javascript"  src="{PATH}/includes/mainjavascript.js?v2.4b"></script> 
+
+		{MESSAGE_INIT}		
+
+		{SCRIPT_INCLUDES}
+
+	</head>
+
+	<body {SCRIPT_BODY} id="pageBody">{SCRIPT_EDITOR}
+
+	<div id="outerBox">
+
+		<div >
+
+			<div id="logoBlock">
+
+<table width="100%" height="55px" class="header">
+  <tbody>
+  <img alt="Aurora Group Logo" src="../../images/33.jpg" border="0" align="left" style="position: absolute; left: 10px; top: 2px;">
+  <td>Aurora's Scientific, Technological And Research Academy</td>
+    </tbody>
+</table>
+
+
+
+<table cellpadding="0" cellspacing="0" width="100%">
+  <tbody>
+    <tr valign="top">
+      <td width="121"><img alt="" src="../../images/navi1_left.jpg" border="0" height="20" width="121"></td>
+      <td width="619"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tbody>
+            <tr>
+              <td background="../../images/navi1_bg.jpg" width="100%"><img alt="" src="../../images/1x1.gif" border="0" height="20" width="14"></td>
+            </tr>
+          </tbody>
+        </table></td>
+      <td background="../../images/navi1_bg.jpg" width="100%" style="color: #ffffff;"><img alt="" src="../../images/1x1.gif" border="0" height="1" width="10"></td>
+    </tr>
+  </tbody>
+</table>
+<table bgcolor="#92b9d5" border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody>
+    <tr valign="top">
+      <td width="121"><img alt="" src="../../images/navi2_left.gif" border="0" height="9" width="120"></td>
+      <td width="619"><table border="0" cellpadding="0" cellspacing="0" width="619">
+          <tbody>
+            <tr>
+              <td width="100%"><img alt="" src="../../images/1x1.gif" border="0" height="9" width="11"></td>
+              <td nowrap="nowrap"></td>
+            </tr>
+          </tbody>
+        </table></td>
+      <td width="100%"><img alt="" src="../../images/1x1.gif" border="0" height="1" width="10"></td>
+    </tr>
+  </tbody>
+</table>
+
+			</div>
+
+		</div>

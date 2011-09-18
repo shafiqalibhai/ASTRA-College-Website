@@ -1,0 +1,17 @@
+ 
+
+  <tr valign="top">
+    <td width="16">{ADMIN_IMAGE}</td>
+    <td width="16"><img src="{PATH}/images/{IMAGE}.gif" width="16" height="16" align="middle" alt="icon" /></td>    
+  <td><a href="{URL}">{NAME}</a> - {DESCRIPTION} 
+    <table border="0" width="100%"><tr>
+                <td> <span class="small">{ADDED_BY_STRING} {USER_NAME} {DATE_ADDED} <span style="text-decoration:none">{SHOW_URL}</span></span> 
+        </td>
+                <td align="right">
+<span class="small">
+ {COMMENTS}<a href="commentinput.php?space_key={SPACE_KEY}&amp;module_key={MODULE_KEY}&amp;shareditem_key={SHAREDITEM_KEY}" class="small">{ADD_COMMENT_STRING}</a></span> 
+</td>
+            </tr></table>
+</td>
+     
+ </tr>

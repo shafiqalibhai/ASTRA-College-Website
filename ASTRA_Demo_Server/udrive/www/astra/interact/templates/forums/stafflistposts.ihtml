@@ -1,0 +1,27 @@
+
+
+  <tr class="{CLASS}" valign="top">
+
+    
+<td align="right">
+    <a name="{POST_KEY}"></a>
+	<input type="checkbox" name="selected_post_keys[]" value="{POST_KEY}" />
+    <input type="hidden" name="marked_thread_key[]" value="{THREAD_KEY}" /><input type="hidden" name="marked_parent_key[]" value="{PARENT_KEY}" /></td>
+  <td nowrap><{READ_TAG}>
+    
+    {SPACE}<img src="{PATH}/images/{IMAGE}" width="20" height="20" vspace="0" hspace="0" align="top" alt="icon" />{EXPAND_LINK}
+    <a href="{PATH}/modules/forum/thread.php?space_key={SPACE_KEY}&amp;module_key={MODULE_KEY}&amp;thread_key={THREAD_KEY}&amp;subject_url={SUBJECT_URL}&amp;post_key={POST_KEY}#{POST_KEY}" class="small">{SUBJECT}</a> 
+    <span class="small"> ({TYPE}, {DATE_ADDED} ) {AUTO_PROMPTING}</span></{READ_TAG}>{STATUS_IMAGE}</td>
+
+    
+<td><a href="{PATH}/modules/forum/byname.php?space_key={SPACE_KEY}&amp;module_key={MODULE_KEY}&amp;user_key={USER_KEY}" class="small">{FULL_NAME}</a></td>
+<td align="center"><input type="radio" name="move_post" value="{POST_KEY}" /></td>
+    <td align="center"><input type="radio" name="move_to_post" value="{POST_KEY}" />
+  </td>
+
+ 
+
+  </tr>
+
+
+

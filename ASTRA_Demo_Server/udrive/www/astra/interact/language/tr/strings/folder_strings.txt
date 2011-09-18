@@ -1,0 +1,3 @@
+sort_order=Varsayýlan Sýralama
+add_module=Ekle %s yi %s
+add_folder=Dizin Ekle

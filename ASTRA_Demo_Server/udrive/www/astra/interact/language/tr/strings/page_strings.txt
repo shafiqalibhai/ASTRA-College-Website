@@ -1,0 +1,4 @@
+add_page=Sayfa içinde Ekle/Deðiþtir
+upload=Sayfa Yükle
+html_instruction=HTML olmalý
+enter_page=Veya Sayfa Gir.

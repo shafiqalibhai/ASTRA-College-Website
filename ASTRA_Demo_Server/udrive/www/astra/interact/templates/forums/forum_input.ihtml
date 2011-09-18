@@ -1,0 +1,102 @@
+ 
+<h2>{INPUT_HEADING}</h2>
+
+<form name="forum" method="post" action="forum_input.php">
+ 
+  
+
+<!-- BEGIN ModuleInputBlock -->
+<div align="center">        
+    <table class="input_form_table_wide">
+            
+        <tr> 
+                
+            <td class="InputFormLeft">{NAME_STRING}:</td>
+            <td class="InputFormRight"> <input type="text" name="name" value="{NAME}" size="35" /> 
+                    <br>
+                    {NAME_ERROR} </td>
+        </tr>
+            
+        <tr> 
+                
+            <td valign="top" class="InputFormLeft">{DESCRIPTION_STRING}:  
+            {EDITOR_BUTTONS_description}</td>
+            <td valign="top" class="InputFormRight">
+                 <textarea accept-charset="{CHARACTER_SET}" name="description" id="description" cols="60" rows="15" wrap="VIRTUAL">{DESCRIPTION}</textarea>
+                     
+                 <div class="error">{DESCRIPTION_ERROR}</div> </td>
+        </tr>
+            
+        <tr> 
+                
+            <td valign="top" class="InputFormLeft">{TYPE_STRING}:</td>
+            <td valign="top" class="InputFormRight"> <select name="forum_type">
+                    <option value="separate">{SEPARATE_STRING}</option>
+                    <option value="embedded">{EMBEDDED_STRING}</option>
+                </select> </td>
+        </tr>
+			  
+        <tr> 
+                
+            <td valign="top" class="InputFormLeft">{POST_EDITING_STRING}:</td>
+            <td valign="top" class="InputFormRight"> <select name="forum_edit_level">
+                        
+                    <option value="1" {1_SELECTED}>{30_MINUTE_EDIT_STRING}</option>
+                        
+                    <option value="2" {2_SELECTED}>{ANY_TIME_EDIT_STRING}</option>
+                    </select> </td>
+        </tr>
+            
+        <tr>
+            <td valign="top" class="InputFormLeft">{AUTO_PROMPTING_STRING}:<br>
+            </td>
+            <td valign="top" class="InputFormRight">
+                <table width="100%" border="0" cellspacing="0" cellpadding="2">
+                    <tr>
+                        <td><select name="auto_prompting" id="auto_prompting">
+                                <option value="0" {AUTO_PROMPT_OFF}>{OFF_STRING}</option>
+                                <option value="1" {AUTO_PROMPT_ON}>{ON_STRING}</option>
+								<option value="2" {AUTO_PROMPT_USER}>{USER_ACTIVATED_STRING}</option>
+                </select></td>
+                        <td valign="top" class="small"><div align="right">{DAYS_TO_WAIT_STRING}:</div></td>
+                        <td valign="top">
+<input name="days_to_wait" type="text" id="days_to_wait" value="{DAYS_TO_WAIT}" size="2" maxlength="2" class="small" /></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td valign="top" class="small"><div align="right">{NUMBER_TO_PROMPT_STRING}:</div></td>
+                        <td valign="top">
+<input name="number_to_prompt" type="text" id="number_to_prompt" value="{NUMBER_TO_PROMPT}" size="2" maxlength="2" class="small" /></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td valign="top" class="small"><div align="right">{PASSES_ALLOWED_STRING}:</div></td>
+                        <td valign="top">
+<input name="passes_allowed" type="text" id="passes_allowed" value="{PASSES_ALLOWED}" size="2" maxlength="2" class="small" /></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td valign="top" class="small"><div align="right">{RESPONSE_TIME_STRING}:</div></td>
+                        <td valign="top">
+<input name="response_time" type="text" id="response_time" value="{RESPONSE_TIME}" size="2" maxlength="2" class="small" /></td>
+                    </tr>
+                </table></td>
+        </tr>
+        <tr> 
+                
+            <td valign="top" class="InputFormLeft">&nbsp;</td>
+            <td valign="top" class="InputFormRight"> <input type="submit" name="submit" value="{BUTTON}" />
+                    {DELETE_BUTTON} 
+                    
+                <input type="button" name="submit2" value="{CANCEL_STRING}" onClick="history.go(-1)" /> 
+                </td>
+        </tr>
+
+        
+    </table>
+<!-- END ModuleInputBlock -->	
+      
+{GENERAL_SETTINGS}
+ </div>
+
+

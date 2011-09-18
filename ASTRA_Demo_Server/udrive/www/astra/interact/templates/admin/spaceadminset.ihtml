@@ -1,0 +1,34 @@
+<h1>Assign Membership</h1>
+<div align="center" class="message">{MESSAGE}</div>
+<form name="form1" method="post" action="">
+  <div class="input_form_div" align="center">
+        <table class="input_form_table">
+            <tr> 
+                <td class="InputFormLeft">UserName:</td>
+                <td class="InputFormRight"> <input name="users_name" type="text" id="users_name" size="20"> 
+                </td>
+            </tr>
+            <tr>
+                <td class="InputFormLeft">Select {SPACE_TEXT}s to assign<br>
+                    membership to  </td>
+                <td class="InputFormRight">{SPACE_MENU}</td>
+            </tr>
+            <tr> 
+                <td class="InputFormLeft">Member Type:</td>
+                <td class="InputFormRight"> <select name="level_key" size="4">
+                        <option value="1" selected>Lecturer</option>
+                        <option value="3">Invisible Admin</option>
+                        <option value="2">Member</option>
+                        <option value="4">Invisible Guest</option>
+                    </select> </td>
+            </tr>
+            <tr> 
+                <td class="InputFormLeft">&nbsp;</td>
+                <td class="InputFormRight"> <input type="submit" name="submit" value="Submit"> 
+                </td>
+            </tr>
+        </table>
+  </div>
+  
+</form>
+

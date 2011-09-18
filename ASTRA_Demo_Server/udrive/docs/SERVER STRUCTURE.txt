@@ -1,0 +1,123 @@
+--------------------
+The Server Structure
+--------------------
+
+w:\www
+  Document root (/).
+	By default:
+	ReadmeName README.html
+	HeaderName HEADER.html
+	server-parsed .shtml .shtm .sht
+	DirectoryIndex index.html index.shtml index.html.var 
+                       index.htm index.php3 index.php index.pl 
+                       index.cgi
+w:\www\images
+  Images directory
+
+
+w:\cgi-bin
+  Script root (/cgi-bin/).
+	By default:
+	cgi-script .bat .exe .pl .cgi
+
+
+w:\home
+  Users home page.
+
+w:\home\admin
+  Administration page.
+w:\home\admin\Www
+  Server administration pages root (/apanel/);
+w:\home\admin\www/cgi-bin
+  Server administration script root (/apanel/cgi-bin/);
+w:\home\admin\program
+  Server administration programs;
+w:\home\admin\Www\phpMyAdmin
+  MySQL administrator (/apanel/phpMyAdmin/)
+w:\home\admin\Www\plugins
+  Admin Plugins directory.
+w:\home\admin\www\icons
+  Admin Panel Icons
+w:\home\admin\www\images
+  Admin Panel Images
+w:\home\admin\www\rss
+  RSS Parser
+
+W:\usr
+  User Program directory
+
+w:\usr\bin
+  PERL folder.
+w:\usr\lib
+  Selected PERL libraries. To have all libraries download "perl_modules"
+
+w:\usr\local
+  Program folder.
+
+w:\usr\local\apache2
+  Apache2 folder.
+w:\usr\local\apache2\bin
+  Apache2 binaries.
+  A copy of php.ini should be placed here for php module!
+w:\usr\local\apache2\conf
+  Apache2 configuration files. (see httpd.conf)
+w:\usr\local\apache2\icons
+  Apache2 icons.
+w:\usr\local\apache2\logs
+  Apache2 logs.
+w:\usr\local\apache2\modules
+
+
+w:\usr\local\mysql
+  MySQL folder.
+w:\usr\local\mysql\bin
+  MySQL binaries.
+w:\usr\local\mysql\data
+  MySQL databases.
+w:\usr\local\mysql\share
+  MySQL share.
+
+w:\usr\local\php
+  PHP folder. (see php.ini)
+	By default:
+	register_globals = On - But you should do your best to write 
+	your scripts so that they do not require register_globals to be on. 
+	The easy way to use such variables "$step=$HTTP_POST_VARS['Submit'];".
+        Or "import_request_variables("gP", "st");" - see PHP documentation.
+w:\usr\local\php\logs
+  PHP log files
+w:\usr\local\php\extensions
+  PHP Extensions
+ 
+             
+w:\tmp
+  Temporally folder.
+      
+         
+W:\plugins
+  Server Plugins durectory.
+w:\plugins\Services
+  Uniform Server Sercives Script (For NT)         
+
+
+w:\docs
+  Uniform Server Documentation (/docs/)
+
+
+w:\docs\src
+  Uniform Server Source Files
+
+
+w:\htpasspwd
+  Uniform Server HTPASSWD dirctory
+        By default:
+        Contains the dir for the htpasswds of admin and www
+         
+
+-----------------------------------------------------------
+Copyright 2002-2007 The Uniform Server Development Team
+All rights reserved.
+
+The authors were trying to make the best product so they 
+cannot be held responsible for any type of damage or 
+problems caused by using this or another software.

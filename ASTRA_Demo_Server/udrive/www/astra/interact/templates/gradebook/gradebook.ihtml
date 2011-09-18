@@ -1,0 +1,39 @@
+
+
+ 
+
+<!-- BEGIN AddItemBlock -->
+<p align="center">  <a href="javascript:openHelpWin('{DOCS_URL}/Gradebook_Admin')" class='helplink'>?</a> <a href="iteminput.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}">{ADD_ITEM_STRING}</a>{GRADEBOOK_ADMIN_LINKS}</p>
+<!-- END AddItemBlock -->
+<div align="center">
+    <table  border="0" cellspacing="0" cellpadding="8">
+        <tr>
+            <th valign="top">{NAME_STRING}</td>
+            <th valign="top">&nbsp;</td>
+            <th valign="top">{DUE_DATE_STRING}</td>
+            <th valign="top"><div align="right">{GRADE_STRING}</td>
+        </div></tr>
+
+        <!-- BEGIN ItemListBlock -->
+        <tr>
+            <td valign="top">{EDIT_LINK}{HIDDEN}<a href="itemview.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&item_key={ITEM_KEY}">{ITEM_NAME}</a>
+     
+                
+  </td>
+            <td valign="top">{GRADE_LINK}</td>
+            <td valign="top">{DUE_DATE} <span class="small">{DATE_DIFF}</span></td>
+            <td valign="top"><div align="right">{GRADE}<br>
+{COMMENTS_LINK}            </div></td>
+        </tr>
+
+        <!-- END ItemListBlock -->
+		<tr>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top">&nbsp;</td>
+            <td valign="top"><div align="right">{TOTAL_STRING}<br>
+{WEIGHTED_TOTAL}</div></td>
+        </tr>
+
+    </table>
+</div>

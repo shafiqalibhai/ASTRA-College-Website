@@ -1,0 +1,27 @@
+
+	<div>
+		<div> 
+			<a  href="members.php?space_key={SPACE_KEY}&amp;group_key={GROUP_KEY}&link_key={LINK_KEY}&module_key={MODULE_KEY}" class="small">{MEMBERS_STRING} ({TOTAL_MEMBERS})</a> 
+<span class="small">{PLACES_LEFT_STRING} </span>
+
+<!-- BEGIN AddMeBlock --> 
+			<a  href="memberedit.php?space_key={SPACE_KEY}&amp;module_key={MODULE_KEY}&amp;group_key={GROUP_KEY}&link_key={LINK_KEY}&action={MEMBERSHIP_ACTION}" class="small" title="{ADD_ME_STRING}">{ADD_ME_TEXT}</a>
+<!-- END AddMeBlock --> 
+
+<!-- BEGIN EmailMembersBlock --> 
+<a href="emailmembers.php?space_key={SPACE_KEY}&amp;module_key={MODULE_KEY}&amp;group_key={GROUP_KEY}&link_key={LINK_KEY}" class="small" title="EMAIL_STRING">{EMAIL_STRING}</a> {STATISTICS_LINK}
+<!-- END EmailMembersBlock -->
+
+</div>
+
+<!-- BEGIN NewMembersBlock --> 
+		<div align="left">
+			<a href="newmembers.php?space_key={SPACE_KEY}&amp;module_key={MODULE_KEY}&amp;group_key={GROUP_KEY}&link_key={LINK_KEY}" class="message">{NEW_MEMBERS_STRING}</a>
+		</div>
+<!-- END NewMembersBlock -->
+</div>
+	
+<!-- BEGIN NewGroupBlock -->
+	<p ><a class="button" href="group_input.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&link_key={LINK_KEY}&parent_key={LINK_KEY}&group_key={GROUP_KEY}&managed_group=1">{ADD_GROUP_STRING}</a>
+<!-- END NewGroupBlock --> 
+</p>

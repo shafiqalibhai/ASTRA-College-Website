@@ -1,0 +1,11 @@
+
+
+
+<h2>{NEW_ITEMS_HEADING}</h2>
+<div style="margin-left:10px;">
+<ul class="newPostsList">
+<!-- BEGIN NewItemsBlock -->
+<li class="newPostsListItem"><a href="{PATH}/modules/{CODE}/{CODE}.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}" >{NAME}</a></li>
+<!-- END NewItemsBlock -->
+</ul>
+</div>

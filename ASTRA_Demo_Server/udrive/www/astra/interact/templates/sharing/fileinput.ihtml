@@ -1,0 +1,92 @@
+ 
+<h2>{ADD_FILE_HEADING} </h2>
+<form name="link" method="post" enctype="multipart/form-data" action="fileinput.php">
+  <div class="input_form_div" align="center">
+
+        <table class="input_form_table">
+            <tr> 
+                <td class="InputFormLeft" valign="top">{NAME_STRING}:<span class="small"></span></td>
+                <td class="InputFormRight"> 
+        <input name="name" type="text" id="name" value="{NAME}" size="30" maxlength="35" />
+        <br />
+        {NAME_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">{DESCRIPTION_STRING}:<br>
+        ({OPTIONAL_STRING}) </td>
+                <td valign="top" class="InputFormRight"> 
+        <textarea accept-charset="{CHARACTER_SET}" name="description" cols="30" rows="4" wrap="VIRTUAL" id="description">{DESCRIPTION}</textarea>
+      </td>
+            </tr>
+            <tr> 
+                <td class="InputFormLeft" valign="top">{FILE_STRING}:</td>
+                <td class="InputFormRight"> 
+  	    <input type="hidden" name="MAX_FILE_SIZE" value="{MAX_FILE_UPLOAD_SIZE}">
+        <input name="user_file" type="file" id="user_file" size="25" />
+        <br>
+                    {USER_FILE_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">{FILE_TYPE_STRING}:</td>
+                <td valign="top" class="InputFormRight"> 
+        <select name="file_extension" size="4">
+                                    
+                        <option value="doc">Word</option>
+                                    
+                        <option value="pdf">PDF</option>
+                                    
+                        <option value="html">HTML</option>
+                                    
+                        <option value="zip">Zip</option>
+                                    
+                        <option value="ppt">PowerPoint</option>
+                                    
+                        <option value="rtf">RTF</option>
+                                    
+                        <option value="xls">Excel</option>
+                                    
+                        <option value="cwk">Apple/Claris Works</option>
+                                    
+                        <option value="wps">MS Works</option>
+                                    
+                        <option value="gif">Gif Image</option>
+                                    
+                        <option value="jpg">Jpg Image</option>
+                                    
+                        <option value="other">Other</option>
+                    </select>
+		
+        <br />
+        {FILE_TYPE_ERROR} </td>
+            </tr>
+            <tr>
+                <td valign="top" class="InputFormLeft">{ZIP_STRING}:</td>
+                <td valign="top" class="InputFormRight">
+
+                        <input name="unzip" type="checkbox" id="unzip" value="true">
+                                {UNZIP_STRING}<br>
+{START_FILE_STRING}                    <br>
+                    <input name="zip_start_file" type="text" id="zip_start_file" size="15">                           </td>
+            </tr>
+            
+            <tr> 
+                <td valign="top" class="InputFormLeft">&nbsp;</td>
+                <td valign="top" class="InputFormRight"> 
+        <input type="submit" name="submit" value="{BUTTON}" onclick="openWin('{PATH}/includes/upload/progressbar.htm')" />
+          {DELETE_BUTTON} 
+                    <input type="button" name="submit3" value="{CANCEL_STRING}" onClick="history.go(-1)" />
+          <input type="hidden" name="action" value="{ACTION}" />
+        <input type="hidden" name="module_key" value="{MODULE_KEY}" />
+        <input type="hidden" name="space_key" value="{SPACE_KEY}" />
+        <input type="hidden" name="shareditem_key" value="{SHAREDITEM_KEY}" />
+        <input type="hidden" name="existing_file_name" value="{EXISTING_FILE_NAME}" />
+      </td>
+            </tr>
+        </table>
+        <!-- BEGIN ManageFilesBlock -->
+     <a href="managefiles.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&shareditem_key={SHAREDITEM_KEY}">{ASSOCIATED_STRING}</a>, {ASSOCIATED_EXAMPLE}<br>
+ <!-- END ManageFilesBlock -->	 
+        <br>		
+    </div>
+</form>
+

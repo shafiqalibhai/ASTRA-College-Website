@@ -1,0 +1,118 @@
+<h1>{ADD_ITEM_HEADING}</h1>
+
+ 
+
+<div align="center" > <a href="javascript:openHelpWin('{DOCS_URL}/Quiz_Admin#Adding_Questions')" class='helplink'>?</a> <a href="additems.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}">{ADD_QUESTION_STRING}</a> - 
+
+	<a href="quiz.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}">{FINISHED_STRING}</a>
+	
+</div>
+<table width="100%" border="1" cellspacing="0" cellpadding="5" class="borderedTable">
+    <tr>
+        <td valign="top">
+		
+		<h2>{CURRENT_ITEMS_STRING}</h2>
+		    <div>{CURRENT_ITEMS_MESSAGE}
+                <form name="form1" method="post" action="additems.php">
+		            
+                    <table  border="0" cellspacing="0" cellpadding="5" class="borderlessTable">
+                        <tr valign="top">
+						    <th class="small">{REMOVE_STRING}</th>
+                            <th class="small">{NAME_STRING}</th>
+                            <th class="small">{SORT_ORDER_STRING}</th>
+                            <th class="small">{SCORE_STRING}</th>												
+						</tr>			
+		                <!-- BEGIN CurrentItemsBlock -->
+
+                        <tr valign="top">
+                            <td>
+        <input name="delete_link_keys[]" type="checkbox" id="delete_link_keys[]" value="{LINK_KEY}">
+                                <input name="link_keys[]" type="hidden" id="link_keys[]" value="{LINK_KEY}">
+        </td>
+                            <td><a href="multichoiceinput.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&item_key={ITEM_KEY}&action=modify">{ITEM_NAME}</a>
+                                </td>
+						
+						    <td class="small">
+<input name="{LINK_KEY}_sort_order" type="text" id="{LINK_KEY}_sort_order" value="{SORT_ORDER}" size="2"></td>
+						    <td class="small">
+<input name="{LINK_KEY}_score" type="text" id="{LINK_KEY}_score" value="{SCORE}" size="2"></td>
+														
+                        </tr>
+
+
+		
+		                <!-- END CurrentItemsBlock -->
+                    </table>
+                    <br />
+		            <input type="hidden" name="space_key" value="{SPACE_KEY}">
+		            <input type="hidden" name="module_key" value="{MODULE_KEY}">
+		            <input type="hidden" name="category_key" value="{CATEGORY_KEY}">
+                    <input name="action" type="hidden" id="action" value="modify_items">
+                    <!-- BEGIN ModifyButtonBlock -->
+                    <div align="center">
+                        <input name="submit" type="submit" id="submit" value="{MODIFY_STRING}" class="formButton">
+                        		 				
+</div>
+                    <!-- END ModifyButtonBlock -->
+		        </form>
+            </div>
+		
+		
+		</td>
+        <td valign="top">
+<h2>{SELECT_ITEMS_STRING}</h2>
+		   <div class="small" align="center">
+		   <!-- BEGIN EditCategoryBlock -->
+		   <a href="categoryinput.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&category_key={CATEGORY_KEY}&action=modify">{EDIT_CATEGORY_STRING}</a> - 
+		   <!-- END EditCategoryBlock -->
+		   <a href="categoryinput.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}">{ADD_CATEGORY_STRING}</a></div>
+		<form name="categoryForm" id="categoryForm" method="post" action="additems.php">		
+		    {CATEGORY_MENU}
+<!-- BEGIN SubmitButtonBlock -->
+<noscript>
+	<input name="submit_button" type="submit" id="submit_button" value="{SELECT_STRING}" class="formButton">
+</noscript>
+<!-- END SubmitButtonBlock -->
+			<input type="hidden" name="space_key" value="{SPACE_KEY}">
+		    <input type="hidden" name="module_key" value="{MODULE_KEY}">
+        </form>
+		<form name="form1" method="post" action="additems.php">
+		<!-- BEGIN AddItemsBlock --> 
+		<div>{CREATE_NEW_STRING}</div><ul>
+		 <li><a href="multichoiceinput.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&item_key={ITEM_KEY}&category_key={CATEGORY_KEY}">{MULTICHOICE_STRING}</a></li>
+		 <li><a href="multichoiceinput.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&item_key={ITEM_KEY}&category_key={CATEGORY_KEY}&type=truefalse">{TRUEFALSE_STRING}</a></li>
+		 <li><a href="textanswerinput.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&item_key={ITEM_KEY}&category_key={CATEGORY_KEY}">{TEXT_ANSWER_STRING}</a></li>
+		 </ul>
+		 <!-- END AddItemsBlock --> 
+		 <p>{SELECT_ITEMS_MESSAGE}</p>
+		 
+		<table  border="0" cellspacing="0" cellpadding="0" class="borderlessTable">			
+		<!-- BEGIN ListItemsBlock -->
+
+        <tr>
+        <td valign="top">
+        <input name="item_keys[]" type="checkbox" id="item_keys[]" value="{ITEM_KEY}">
+        </td>
+        <td><a href="{INPUT_SCRIPT}.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&item_key={ITEM_KEY}&category_key={CATEGORY_KEY}&action=modify">{ITEM_NAME}</a>
+                        </td>
+        </tr>
+
+
+		
+		<!-- END ListItemsBlock -->
+        </table><br />
+		 <input type="hidden" name="space_key" value="{SPACE_KEY}">
+		 <input type="hidden" name="module_key" value="{MODULE_KEY}">
+		 <input type="hidden" name="category_key" value="{CATEGORY_KEY}">
+         <input name="action" type="hidden" id="action" value="add_items">
+<!-- BEGIN AddButtonBlock -->
+<div align="center">
+<input name="submit" type="submit" id="submit" value="{ADD_STRING}" class="formButton">		 				
+</div>
+<!-- END AddButtonBlock -->
+		 </form>					
+		</td>
+    </tr>
+</table>
+
+

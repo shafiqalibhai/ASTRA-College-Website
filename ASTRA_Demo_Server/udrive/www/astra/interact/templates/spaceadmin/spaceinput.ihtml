@@ -1,0 +1,113 @@
+<h2>{INPUT_HEADING}</h2>
+
+<div align="center">
+<form name="form1" method="post" action="spaceinput.php">
+        <table class="input_form_table_wide">
+            <tr>
+                <td class="InputFormLeft">{SPACE_NAME_STRING}:</td>
+                <td class="InputFormRight">
+                <input type="text" name="name" value="{NAME}">
+                <br>
+        {NAME_ERROR} </td>
+            </tr>
+            <tr>
+              <td valign="top" class="InputFormLeft">{DESCRIPTION_STRING}:<br>
+                  <span class="small">({EXPLAIN_DESCRIPTION_STRING} )</span> </td>
+              <td valign="top" class="InputFormRight"><textarea accept-charset="{CHARACTER_SET}" name="description" cols="30" rows="5" wrap="VIRTUAL">{DESCRIPTION}</textarea>
+                  <br>
+    {DESCRIPTION_ERROR} </td>
+            </tr>
+            <tr> 
+                <td class="InputFormLeft">{SHORT_NAME_STRING} :<br>
+                ({EXPLAIN_SHORT_NAME_STRING}) </td>
+                <td class="InputFormRight"> 
+        <input name="short_name" type="text" id="short_name" value="{SHORT_NAME}">
+        <a href="javascript:openHelpWin('{PATH}/help/help.php?module=admin&file=spacecode.php')" class='helplink'>?</a><br>        </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">{ACCESS_STRING}:</td>
+                <td class="InputFormRight">
+                    <input name="access_level_key" type="radio" value="1" {ACCESS_LEVEL_1_CHECKED}>
+                    <span class="small">{OPEN_STRING}</span> 
+                    
+               
+                    <br>
+                    <input name="access_level_key" type="radio" value="3" {ACCESS_LEVEL_3_CHECKED}>
+                    <span class="small">{OPEN_PUBLIC_STRING}</span> 
+                   
+                    <br>
+                    <input name="access_level_key" type="radio" value="2" {ACCESS_LEVEL_2_CHECKED}>
+                   <span class="small">{RESTRICTED_STRING}</span><span class="small">:</span>
+                        <input type="text" name="access_code" size="6" value="{ACCESS_CODE}" class="small">
+                        <a href="javascript:openHelpWin('{PATH}/help/help.php?module=admin&file=accesscode.php')" class='helplink'>?</a>
+            </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">{VISIBILITY_STRING}:</td>
+                <td class="InputFormRight"><input name="visibility_key" type="radio" value="1" {VISIBILITY_1_CHECKED}>
+                <span class="small">{VISIBLE_STRING}</span><br>
+                <input name="visibility_key" type="radio" value="2" {VISIBILITY_2_CHECKED}>
+               <span class="small">{HIDDEN_STRING}</span></td>
+            </tr>
+            <tr>
+                <td colspan="2" ><div align="center">
+                        <input name="submit" type="submit" id="submit" value="{BUTTON}">
+                        {DELETE_BUTTON}
+<!-- BEGIN DeleteOptionsBlock -->
+<input name="delete_subs" type="checkbox" value="1"><span class="small">{DELETE_SUB_STRING}</span>
+<!-- END DeleteOptionsBlock -->
+                </div></td>
+            </tr>
+            <tr>
+                <td colspan="2" valign="top" class="InputFormLeft"><div align="center">{OPTIONAL_SETTINGS_STRING}</div></td>
+            </tr>
+            <tr>
+                <td valign="top" class="InputFormLeft">{CODE_STRING}:</td>
+                <td valign="top" class="InputFormRight"><input name="code" type="text" id="code" value="{CODE}" size="10">
+                {CODE_ERROR}</td>
+            </tr>
+            <tr>
+                <td valign="top" class="InputFormLeft">{COPY_STRING}:</td>
+                <td class="InputFormRight"><input name="copy" type="checkbox" id="copy" value="true">
+                    <a href="javascript:openHelpWin('{PATH}/help/help.php?module=admin&file=spacecopy.php')" class='helplink'>?</a><br>
+        {COPY_CODE_STRING}<br>
+        <input name="copy_space_code" type="text" id="copy_space_code" value="{COPY_SPACE_KEY}" size="10">
+        {COPY_ERROR} </td>
+            </tr>
+            <tr>
+                <td valign="top" class="InputFormLeft">{COMBINE_NAMES_STRING}</td>
+                <td valign="top" class="InputFormRight">{COMBINE_NAMES_MENU}</td>
+            </tr>
+            <tr>
+              <td class="InputFormLeft">{EMAIL_ADMINS_STRING}:</td>
+              <td class="InputFormRight">{EMAIL_ADMINS_MENU} </td>
+            </tr>
+            <tr>
+                <td class="InputFormLeft">{SHOW_MEMBERS_STRING}:</td>
+                <td class="InputFormRight">{SHOW_MEMBERS_MENU}</td>
+            </tr>
+            <tr>
+                <td class="InputFormLeft">{SORT_ORDER_STRING}:<br>
+({EXPLAIN_SORT_ORDER_STRING})</td>
+                <td class="InputFormRight"><input name="sort_order" type="text" id="sort_order" value="{SORT_ORDER}" size="2">
+                    <a href="javascript:openHelpWin('{PATH}/help/help.php?module=admin&file=sortorder.php')" class='helplink'>?</a></td>
+            </tr>
+            <tr>
+                
+                <td class="InputFormLeft">{PARENT_SPACE_STRING}:</td>
+                <td class="InputFormRight">{PARENT_SPACE_MENU}</td>
+            </tr>
+            
+			 </table>
+                <div align="center">
+                        <input name="parent_key" type="hidden" id="parent_key" value="{PARENT_KEY}">
+                        <input type="hidden" name="space_key" value="{SPACE_KEY}">
+					    <input type="hidden" name="referer" value="{REFERER}">
+                        <input type="submit" name="submit" value="{BUTTON}">
+                        <input type="hidden" name="action" value="{ACTION}">
+            </div>
+			{GENERAL_SETTINGS}
+       
+</form>
+{MOVE}
+</div>

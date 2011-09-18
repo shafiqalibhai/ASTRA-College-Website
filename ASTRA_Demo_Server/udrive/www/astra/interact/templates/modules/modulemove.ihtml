@@ -1,0 +1,25 @@
+ <form method="post" action="{PATH}/modules/modulemove.php">
+
+  <table class="input_form_table">
+      <tr>
+        <td class="InputFormLeft">Move:<br />
+        <span class="small">Select an item to move to, <br>
+        or leave unselected to move to left hand navigation bar</span> 
+        <input type="hidden" name="module_key" value="{MODULE_KEY}">
+          <input type="hidden" name="space_key" value="{SPACE_KEY}">
+        </td>
+        
+      <td class="InputFormRight"> {MOVE_TO_MENU} 
+        </td>
+      </tr>
+      <tr>
+        <td class="InputFormLeft">Or<br>
+          Enter the code of a space to move the item to </td>
+        <td class="InputFormRight"><input name="space_code" type="text" id="space_code"></td>
+      </tr>
+      <tr>
+        <td class="InputFormLeft">&nbsp;</td>
+        <td class="InputFormRight"><input type="submit" name="submit" value="Move"></td>
+      </tr>
+    </table>
+  </form>

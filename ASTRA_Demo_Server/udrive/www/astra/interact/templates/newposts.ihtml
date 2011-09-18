@@ -1,0 +1,35 @@
+
+
+<table border="0"  width="{WIDTH}" cellpadding="8">
+  <tr valign="top"> 
+    <td width="120"  valign="top" class="navigationbar" > 
+      <p class="small" align="center">{LOGIN_DETAILS}<br />
+        </p>
+            <b>{YOUR_LINKS_STRING}</b><span class="smallred">{EDIT_SWITCH}</span><br />
+      {SPACES} 
+           
+      </td>
+    <td> {NETSCAPE_SPACER}
+
+            <h2>{NEW_POSTS_HEADING}</h2>
+  
+            <div align="right"><a href="newposts.php?show_read_posts={SHOW_READ_POSTS}" class="small">{SHOW_READ_POSTS_STRING}</a></div><br>
+			<div align="right"><a href="newposts.php?show_flagged_posts={SHOW_FLAGGED_POSTS}" class="small">{SHOW_FLAGGED_POSTS_STRING}</a></div>
+<form method="post" name="form1" id="form1" action="{PATH}/modules/forum/forumadmin.php">
+                <div align="center">{FULL_POSTS} 
+				<!-- BEGIN ButtonBlock --> 
+ <div  align="left" style="margin-left:40px"><input name="submit" type="submit" class="smallbutton" id="submit"  value="{SUBMIT_CHANGES_STRING}" /></div>
+ <!-- END ButtonBlock -->              
+		<input type="hidden" name="new_posts" value="y" />
+        <input type="hidden" name="space_key" value="{SPACE_KEY}" />
+        <br />
+           <input type="hidden" name="marked_action"  id="marked_action" value="set_flags" />
+      
+            
+        <br>
+        
+
+    </div>
+</form>
+</td></tr></table>
+

@@ -1,0 +1,32 @@
+<div class="container" 	style="border: 0px">
+
+ <h2 class="moduleHeading">{NEWS_HEADING} 
+
+ 
+
+</h2>
+
+
+
+ <!-- BEGIN NewsBlock -->
+
+					<div class="userContentBox">
+					<div class="postHeader">
+					<dt><span class="postTitle">
+						{HEADING}
+						</span></dt>
+
+						<dd><div class="postPostedBy" align="right">
+							{ADDED_BY} {DATE_ADDED} 
+						</div></dd>
+					</div>
+					<div class="postBody">
+						{BODY} 
+						<span style="clear:right" />
+					</div>
+				</div>
+<!-- END NewsBlock -->
+
+</div>
+
+<div align="center">{PREVIOUS_LINK} {NEXT_LINK} </div>

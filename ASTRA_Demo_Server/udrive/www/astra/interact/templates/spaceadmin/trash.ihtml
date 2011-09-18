@@ -1,0 +1,24 @@
+<h2>{TRASH_STRING}</h2>
+
+    
+<h3 align="left">{DELETED_ITEMS_STRING}</h3>
+
+<!-- BEGIN FormBlock -->
+  <form action="trash.php" method="post">
+    <table  border="1" cellpadding="5">
+<!-- BEGIN DeletedModulesBlock -->
+        <tr>
+            <td valign="top"><input type="radio" name="link_key" value="{LINK_KEY}"></td>
+            <td valign="top">{DELETED_MODULE}</td>
+        </tr>
+<!-- END DeletedModulesBlock -->		
+    </table>
+  
+  
+    <br>
+	<input name="space_key" type="hidden" value="{SPACE_KEY}">
+    <input type="submit" name="submit" value="{RESTORE_SELECTED_STRING}">
+</form>  
+<!-- END FormBlock -->
+<p>&nbsp;</p>
+   

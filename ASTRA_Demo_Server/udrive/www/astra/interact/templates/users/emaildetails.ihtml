@@ -1,0 +1,31 @@
+
+<h1>Get Login Details</h1>
+<p>If you have forgotten your username or password then enter your email address below and they will be sent to you. This needs to be the email address you used when setting up your account.</p>
+<p align="center" class="message">{MESSAGE}</p>
+<form method="post" action="emaildetails.php">
+<div align="center">
+        <table class="input_form_table">
+            <tr>
+
+                <td class="InputFormLeft">Last Name:</td>
+                <td class="InputFormRight">
+          <input name="last_name" type="text" id="last_name" value="{LAST_NAME}" size="30" />
+          
+      </td>
+            </tr>
+            <tr>
+                <td class="InputFormLeft">Email address:</td>
+                <td class="InputFormRight">
+          <input name="email_address" type="text" id="email_address" value="{EMAIL_ADDRESS}" size="30" />
+          
+      </td>
+            </tr>
+            <tr>
+                <td class="InputFormLeft">&nbsp;</td>
+                <td class="InputFormRight">
+          <input type="submit" name="submit" value="Submit">
+      </td>
+            </tr>
+        </table>
+</div>
+</form>

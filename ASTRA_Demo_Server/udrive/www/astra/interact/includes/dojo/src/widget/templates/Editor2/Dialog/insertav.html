@@ -1,0 +1,61 @@
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+		<td width="*" rowspan="2" align=center valign="top">
+			<fieldset style="height:302px; background-color: #F6F6F6; padding: 0px;">
+				<legend>
+					Preview 
+				</legend>
+				<iframe dojoAttachPoint="av_ipreview" id="av_ipreview" height="282" frameborder="0" style="border : 0px; width: 100%; height: 282px;" src="about:blank" scrolling="no"> </iframe>
+			</fieldset>
+			<table width="99%" cellpadding=0 cellspacing=0><tr>
+			<td align="right">
+				<span style="font-size:xx-small;" dojoAttachPoint="premess"> </span></td>
+			<td align="right" width="62">
+<button dojoType='Button' dojoAttachEvent="onClick:updateClick">Update</button>
+</td></tr></table>
+			
+			<form action="" method="get" style="clear:both">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td><INPUT type="checkbox" dojoAttachEvent="onClick:updateClick" class="CheckBox" checked dojoAttachPoint="av_showvolume" title="Show Volume control."> <span style="font-size:x-small">Volume</span></td>
+						<td><INPUT type="checkbox" dojoAttachEvent="onClick:updateClick" class="CheckBox" checked dojoAttachPoint="av_showprogress" title="Show Progress / scrubbing control."> <span style="font-size:x-small">Progress</span></td>
+						<td><span dojoAttachPoint="av_showplay_span"><INPUT type="checkbox" class="CheckBox" checked dojoAttachPoint="av_showplay" dojoAttachEvent="onClick:updateClick" title="Auto-play when page loads."> <span style="font-size:x-small">Play</span></span></td>
+					</tr>
+					<tr>
+						<td valign="top" colspan="3">
+										URL: <input type="text" dojoAttachPoint="av_src" dojoAttachEvent="onKeyUp:checkok" style="width: 85%" /> <br />
+
+						</td>
+					</tr>
+					<tr>
+						<td><INPUT type="checkbox" class="CheckBox" checked dojoAttachPoint="av_autoplay" title="Auto-play when page loads."> <span style="font-size:x-small">Autoplay</span></td>						<td colspan="2">
+							Download: <input type="text" dojoAttachEvent="onChange:updateClick" dojoAttachPoint="av_DL" style="width: 69%" /> <br />
+
+						</td>
+					</tr>
+				</table>
+			</form>
+	<br />			
+	<span><strong>Note:</strong> An mp3 file needs to have a sample rate of 8, 11, 22 or 44kHz.</span>
+	<br />
+		</td>
+		<td width="276" valign="top">
+
+			<fieldset style="background-color: #D2D2D8; padding: 0px; margin-bottom:4px;">
+
+				<legend>
+					Choose File 
+				</legend>
+				<iframe dojoAttachPoint="idir" name="idir" frameborder="0" style="border : 0px; width: 100%; height: 400px;" src="about:blank" scrolling="no"> </iframe>
+			</fieldset>
+		</td>
+	</tr>
+	<tr><td>
+		<table><tr><td style="padding-right:20px">
+				<button dojoType='Button' dojoAttachPoint="av_ok" dojoAttachEvent='onClick:ok'>OK</button>
+				</td><td>
+				<button dojoType='Button' dojoAttachEvent='onClick:cancel'>Cancel</button>
+			</td></tr></table>
+		</td>
+	</tr>
+</table>

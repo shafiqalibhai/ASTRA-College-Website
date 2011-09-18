@@ -1,0 +1,52 @@
+
+<h2>{INPUT_HEADING} </h2>
+<div align="center"><a href="javascript:openHelpWin('{PATH}/help/help.php?module=quiz&file=multichoice.php')" class='helplink'>?</a> - <a href="additems.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&category_key={CATEGORY_KEY}">{BACK_STRING}</a></div>
+<form name="form1" method="post" action="textanswerinput.php" >
+    <div align="center">
+  
+        <table class="input_form_table_wide">
+            <tr> 
+                <td  valign="top" class="InputFormLeft">{NAME_STRING}:</td>
+                <td  valign="top" class="InputFormRight"> 
+          <input type="text" name="name" value="{NAME}" size="35" />
+          <a href="javascript:openHelpWin('{PATH}/help/help.php?module=quiz&file=multichoice.php#name')" class='helplink'>?</a><br />
+                    {NAME_ERROR}</td>
+            </tr>
+            <tr>
+                <td valign="top" class="InputFormLeft">{CATEGORY_STRING}:</td>
+                <td valign="top" class="InputFormRight">{CATEGORY_MENU}{CATEGORY_ERROR}<a href="javascript:openHelpWin('{PATH}/help/help.php?module=quiz&file=multichoice.php#category')" class='helplink'>?</a></td>
+            </tr>
+            
+            <tr>
+                <td colspan="2" valign="top" >&nbsp;</td>
+            </tr>
+            <tr> 
+                
+                <td valign="top" class="InputFormLeft">{QUESTION_STRING}:
+                {EDITOR_BUTTONS_question}</td>
+                <td valign="top" class="InputFormRight"><div align="center">
+
+                        <textarea accept-charset="{CHARACTER_SET}" name="question" cols="60" rows="1" wrap="VIRTUAL" id="question">{QUESTION}</textarea><div id="questionStretch" class="stretchDown" onClick="stretchTextArea('question','questionStretch',10,1,'stretch')" style="float:right">&nbsp;</div>
+                     
+                    
+                    <div class="error">{QUESTION_ERROR}</div> </div></td>
+            </tr>
+            <tr> 
+                <td valign="top" >&nbsp;</td>
+                <td valign="top" >
+                <span class="small"><input name="add_to_current" type="checkbox" id="add_to_current" value="1" align="middle">{ADD_TO_CURRENT_STRING}</span><br /> 
+                    <input name="action" type="hidden" id="action" value="{ACTION}">
+                    <input name="type" type="hidden" id="type" value="{TYPE}">
+                    <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}">
+                    <input name="space_key" type="hidden" id="space_key" value="{SPACE_KEY}">
+                    <input name="item_key" type="hidden" id="item_key" value="{ITEM_KEY}">
+                    <input name="category_key" type="hidden" id="category_key" value="{CATEGORY_KEY}">
+                    <input type="submit" name="submit" value="{BUTTON}" />
+          {DELETE_BUTTON} 
+                    <input type="button" name="submit3" value="Cancel" onClick="history.go(-1)" />
+        </td>
+            </tr>
+ 
+        </table> 	
+ </div>
+</form>

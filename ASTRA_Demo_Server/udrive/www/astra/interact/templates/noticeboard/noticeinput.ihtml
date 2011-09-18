@@ -1,0 +1,58 @@
+
+<h2>{INPUT_HEADING}</h2>
+<div  align="center">
+{DAYS_TO_KEEP}
+</div>
+
+<form name="inputform" method="post" action="noticeinput.php">
+  <div align="center">
+  <table class="input_form_table_wide">
+    <tr> 
+                <td class="InputFormLeft" valign="top">{HEADING_STRING}:</td>
+      <td class="InputFormRight"> 
+        <input type="text" name="heading" value="{HEADING}" size="35" />
+        <br />
+        {HEADING_ERROR} </td>
+    </tr>
+    <tr> 
+                <td class="InputFormLeft" valign="top">{BODY_STRING}:
+                {EDITOR_BUTTONS_body}</td>
+      <td class="InputFormRight"> 
+      
+                <textarea accept-charset="{CHARACTER_SET}" name="body" wrap="VIRTUAL" cols="60" rows="15" id="body">{BODY}</textarea>
+
+        <div class="error">{BODY_ERROR}</div> </td>
+    </tr>
+    <tr> 
+      <td valign="top" class="InputFormLeft">&nbsp;</td>
+      <td valign="top" class="InputFormRight"> 
+        <input type="submit" name="submit" value="{BUTTON}" />
+        {DELETE_BUTTON} 
+                    <input type="button" name="submit2" value="{CANCEL_STRING}" onClick="history.go(-1)" />
+      </td>
+    </tr>
+    <tr> 
+      <td valign="top"  colspan="2"> 
+        <div align="center"> {OPTIONAL_SETTINGS_STRING}</div>
+      </td>
+    </tr>
+    <tr> 
+                <td valign="top" class="InputFormLeft">{DELETE_AFTER_STRING}:</td>
+      <td valign="top" class="InputFormRight"> 
+        <div align="left">{DATE_SELECT} <br />
+        </div>
+      </td>
+    </tr>
+    <tr> 
+      <td class="InputFormLeft">&nbsp;</td>
+      <td class="InputFormRight"> 
+        <input type="submit" name="submit" value="{BUTTON}" />
+        {DELETE_BUTTON}
+                    <input type="button" name="submit3" value="{CANCEL_STRING}" onClick="history.go(-1)" />
+        <input type="hidden" name="action" value="{ACTION}" />
+        <input type="hidden" name="space_key" value="{SPACE_KEY}" />
+        <input name="notice_key" type="hidden" id="notice_key" value="{NOTICE_KEY}" />
+                    <input name="module_key" type="hidden" id="module_key" value="{MODULE_KEY}" />      </td>
+    </tr>
+  </table></div>
+</form>

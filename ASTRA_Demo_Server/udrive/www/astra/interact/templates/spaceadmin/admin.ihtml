@@ -1,0 +1,92 @@
+<div class="message">{MESSAGE}</div>
+<h2>{ADMIN_HEADER}</h2>
+
+<!-- BEGIN FullOptionsBlock -->
+<p align="center"><a href="../modules/space/space_input.php?space_key={PARENT_SPACE_KEY}&module_key={MODULE_KEY}&link_key={LINK_KEY}&action=modify">{PREFERENCES_STRING}</a> 
+  - <a href="showallurls.php?space_key={SPACE_KEY}">{SHOW_ALL_URLS_STRING}</a> - <a href="accesscode.php?space_key={SPACE_KEY}"> {ACCESS_CODE_STRING}</a> - <a href="statistics.php?space_key={SPACE_KEY}"> 
+  {STATISTICS_STRING}</a> - <a href="removemembers.php?space_key={SPACE_KEY}" onClick="return confirmDelete('{CHECK_STRING}')">{REMOVE_MEMBERS_STRING}</a> - <a href="trash.php?space_key={SPACE_KEY}">{TRASH_STRING}</a> - <a href="spaceheader.php?space_key={SPACE_KEY}">{EDIT_HEADER_STRING}</a> - <a href="{PATH}/spaces/members.php?space_key={SPACE_KEY}">{MEMBERS_STRING}</a> - {ACCOUNT_CREATION}  - <a href="removenews.php?space_key={SPACE_KEY}" onClick="return confirmDelete('Are you sure? This will delete all news items from your {SPACE_TEXT}!')">{REMOVE_NEWS_STRING}</a> </p>
+<h3 align="left">{EMAIL_MEMBERS_STRING}</h3>
+<form name="form1" method="post" enctype="multipart/form-data"  action="admin.php">
+  <div class="input_form_div" align="center">
+        <table class="input_form_table">
+            <tr> 
+                <td class="InputFormLeft">{SUBJECT_STRING}:</td>
+                <td class="InputFormRight"> <input type="text" name="subject" size="35" value="{SUBJECT}" /> 
+                    <br />
+                    {SUBJECT_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">{MESSAGE_STRING}:</td>
+                <td class="InputFormRight"> <textarea accept-charset="{CHARACTER_SET}" name="body" rows="6" wrap="VIRTUAL" cols="30">{BODY}</textarea> 
+                    <br />
+                    {BODY_ERROR} 
+                    <input type="checkbox" name="copyself" value="true" />
+                     <span class="small">{COPY_SELF_STRING}</span></td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">{CC_STRING}:<br />
+                     <span class="small">{CC_INSTRUCTIONS}</span></td>
+                <td class="InputFormRight" valign="top"> <input type="text" name="carbon_copy" size="35"> 
+                </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">{ATTACHMENT_STRING}:</td>
+                <td class="InputFormRight" valign="top"><input type="file" name="file" size="35" />
+                    {FILE_ERROR} </td>
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">{MEMBERS_STRING}:</td>
+                <td class="InputFormRight" valign="top"> <div align="left">{INSTRUCTIONS_STRING}<br>
+{EMAIL_WHO_ERROR}<br />
+                    </div>
+                    <table  border="0" cellpadding="0">
+                        <tr> 
+                            <td valign="top"> 
+                              <p>
+                                    <select name="email_who" size="2" id="email_who">
+                                        <option value="all">{ALL_MEMBERS_STRING}</option>
+                                        <option value="selected">{SELECTED_MEMBERS_STRING}</option>
+                                    </select>
+                              </p></td>
+                            <td valign="top"> {MEMBERS_MENU} </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <input name="save_as_news" type="checkbox" id="save_as_news" value="1">
+Save email as News item                    <!--  <br>
+                    <input name="save_as_news" type="checkbox" id="save_as_news" value="1">
+                    {SAVE_AS_NEWS_STRING}</td>
+					-->
+            </tr>
+            <tr> 
+                <td valign="top" class="InputFormLeft">&nbsp;</td>
+                <td class="InputFormRight"> <div align="center"> 
+                        <input type="submit" name="Submit" value="{SEND_STRING}" />
+                        <input type="hidden" name="space_key" value="{SPACE_KEY}" />
+                        <input type="hidden" name="action" value="email" />
+                        
+                        
+						
+                    </div></td>
+            </tr>
+        </table>
+  </div>  
+</form>
+<!-- END FullOptionsBlock -->
+<!-- BEGIN LimitedOptionsBlock -->
+<p align="center"><a href="../modules/space/space_input.php?space_key={SPACE_KEY}&module_key={MODULE_KEY}&link_key={LINK_KEY}&action=modify">{PREFERENCES_STRING}</a>  - <a href="{PATH}/spaces/members.php?space_key={SPACE_KEY}">{MEMBERS_STRING}</a></p>
+<form name="form1" method="post" action="admin.php">
+<fieldset> 	
+		<legend>{SKIN_STRING}</legend>
+		{SKINS_MENU}
+		<input type="submit" name="Submit" value="{SELECT_STRING}">
+		<input type="hidden" name="action" value="select_skin">
+		<input type="hidden" name="referer" value="{REFERER}">
+		<input type="hidden" name="space_key" value="{SPACE_KEY}">
+<p><a href="{PATH}/skins/skin_select.php?space_key={SPACE_KEY}&referer={PATH}/spaceadmin/admin.php?space_key={SPACE_KEY}">{MODIFY_SKINS_STRING}</a></p>
+</fieldset>		
+	
+</form>
+
+
+<!-- END LimitedOptionsBlock -->

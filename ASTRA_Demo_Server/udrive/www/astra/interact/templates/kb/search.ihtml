@@ -1,0 +1,26 @@
+<h2 style="margin-bottom: 5px;">{KB_HEADING}</h2>
+
+
+
+
+<form name="form1" method="get" action="search.php">
+  
+    <input type="text" name="search_terms" class="formTxtInput">
+    <input type="submit" name="submit" value="{SEARCH}" class="formButton">
+     <input type="hidden" name="space_key" value="{SPACE_KEY}">
+        <input type="hidden" name="module_key" value="{MODULE_KEY}">
+ 
+</form><br />
+<div class="subCategories">
+<h3>{SEARCH_RESULTS}</h3>
+<!-- BEGIN TemplateTypeBlock -->
+{TEMPLATE_NAME}
+<ul>
+<!-- BEGIN EntryLinksBlock -->
+<li style="margin-top:10px">
+	{SUMMARY_FIELDS}
+</li>
+<!-- END EntryLinksBlock -->
+</ul>
+<!-- END TemplateTypeBlock -->
+</div>

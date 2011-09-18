@@ -1,0 +1,121 @@
+	<div id="innerBox">
+
+		<div id="personalBox">
+
+			{CURRENT_USER_PHOTO}			
+
+			<div id="loginDetails" class="{LOGGED_IN_CLASS}">
+				{LOGIN_DETAILS}<br />
+<!-- BEGIN OnlineStatusBlock -->
+				<span class="inlineButton">{ONLINE_STATUS_LINK}</span>
+<!-- END OnlineStatusBlock -->
+				<span class="inlineButton">{LOGIN_LINK}</span></div><!--<div id="yourLinksMenu">{YOUR_LINKS_MENU}</div>--><div id="messageAlert" {MESSAGE_ALERT_STYLE}>{MESSAGES}</div></div>
+
+
+	<div id="navigationBox">
+
+		<div id="navigation" class="controlBox">
+
+			
+
+			<div id="navigationTop">
+
+				<span id="spaceName" class="controlBoxTitle">{SPACE_NAME}</span>
+
+
+				<ul id="spaceNav" class="navlevel">
+
+					<!-- BEGIN MembersBlock -->
+					{MEMBERS_LINK}
+					<!-- END MembersBlock -->
+
+					{SPACEMAP}
+				
+				</ul>
+				<div id="searchbox">
+
+					<form action="{PATH}/search.php" method="get">
+
+						{STAFFNET_LINK}
+
+						<!-- BEGIN SearchBoxBlock -->
+
+						<input name="submit" type="image" align="absbottom" src="{PATH}/images/search.gif" alt="{SUBMIT} {SEARCH}" height="16" width="16" title="{SUBMIT} {SEARCH}"/>
+
+						<input name="search_terms" type="text" value="{SEARCH}" size=""  onClick="document.getElementById('search_terms').value='';" id="search_terms" class="formTxtInput" />	<!-- END SearchBoxBlock -->
+
+						<input name="rule" type="hidden" value="all" />
+
+					</form>
+				</div>
+
+			</div>
+
+
+
+			<div id="navList">
+
+				{SPECIAL_NAV}			
+
+				{NAV_LINK} 
+
+			</div>
+
+			{COMMON_COURSELINKS}
+
+	
+
+			<div id="navigationBottom">
+
+				{ADMIN_LINKS}
+
+				{CURRENT_MODULE_KEY}
+
+				{ADMIN_TOOL_BUTTON}
+
+			</div>
+
+	
+
+		</div>
+
+	</div>
+
+	
+
+	<div id="contentBox">
+		<!-- BEGIN BreadcrumbsBox -->   
+		<div id="breadcrumbsBox">
+			<div id="pageTags">
+				<span>{VIEW_TAGS}</span>
+				<span>{ADD_TAG}</span>
+				<div class="contextHelp"></div>
+			</div>
+			<div id="spaceBreadcrumbs">{SPACE_BREADCRUMBS}</div>
+			<div id="moduleBreadcrumbs">{MODULE_BREADCRUMBS}</div>
+			{FOLDER_NAVIGATION}
+		</div>
+		<!-- END BreadcrumbsBox -->   
+
+	<div id="content" class="{CONTENT_CLASS}">
+
+
+		
+
+		<!-- BEGIN ModuleHeadingBlock -->   
+
+		<div id="moduleHeadingBlock" >
+
+			<h2 id="moduleHeading">{ICON_TAG} {MODULE_NAME} {CURRENT_MODULE_ADMIN_IMAGE}{CURRENT_MODULE_ADMIN_LINKS}
+
+			</h2>
+
+			<div id="moduleDescription">{DESCRIPTION}</div>
+
+			<div align="center" id="message" class="message">{MESSAGE}</div>
+
+		</div>
+
+		
+
+		<!-- END ModuleHeadingBlock -->	

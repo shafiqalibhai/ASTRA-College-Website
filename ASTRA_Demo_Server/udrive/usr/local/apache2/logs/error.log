@@ -1,0 +1,163 @@
+[Fri Feb 22 12:49:44 2008] [notice] Apache/2.0.59 (Win32) DAV/2 PHP/5.2.3 configured -- resuming normal operations
+[Fri Feb 22 12:49:44 2008] [notice] Server built: Jul 27 2006 15:55:03
+[Fri Feb 22 12:49:44 2008] [notice] Parent: Created child process 5384
+[Fri Feb 22 12:49:45 2008] [notice] Child 5384: Child process is running
+[Fri Feb 22 12:49:45 2008] [notice] Child 5384: Acquired the start mutex.
+[Fri Feb 22 12:49:45 2008] [notice] Child 5384: Starting 250 worker threads.
+[Fri Feb 22 12:50:15 2008] [notice] Apache/2.0.59 (Win32) DAV/2 PHP/5.2.3 configured -- resuming normal operations
+[Fri Feb 22 12:50:15 2008] [notice] Server built: Jul 27 2006 15:55:03
+[Fri Feb 22 12:50:15 2008] [notice] Parent: Created child process 948
+[Fri Feb 22 12:50:15 2008] [notice] Child 948: Child process is running
+[Fri Feb 22 12:50:15 2008] [notice] Child 948: Acquired the start mutex.
+[Fri Feb 22 12:50:15 2008] [notice] Child 948: Starting 250 worker threads.
+[Fri Feb 22 12:50:31 2008] [error] [client 127.0.0.1] , referer: http://localhost/apanel/navigation.php
+[Fri Feb 22 12:50:39 2008] [error] [client 127.0.0.1] , referer: http://localhost/apanel/navigation.php
+[Fri Feb 22 12:56:46 2008] [notice] Apache/2.0.59 (Win32) DAV/2 configured -- resuming normal operations
+[Fri Feb 22 12:56:46 2008] [notice] Server built: Jul 27 2006 15:55:03
+[Fri Feb 22 12:56:46 2008] [notice] Parent: Created child process 2028
+[Fri Feb 22 12:56:47 2008] [notice] Child 2028: Child process is running
+[Fri Feb 22 12:56:47 2008] [notice] Child 2028: Acquired the start mutex.
+[Fri Feb 22 12:56:47 2008] [notice] Child 2028: Starting 250 worker threads.
+[Fri Feb 22 13:00:49 2008] [notice] Apache/2.0.59 (Win32) DAV/2 configured -- resuming normal operations
+[Fri Feb 22 13:00:49 2008] [notice] Server built: Jul 27 2006 15:55:03
+[Fri Feb 22 13:00:49 2008] [notice] Parent: Created child process 2848
+[Fri Feb 22 13:00:49 2008] [notice] Child 2848: Child process is running
+[Fri Feb 22 13:00:49 2008] [notice] Child 2848: Acquired the start mutex.
+[Fri Feb 22 13:00:49 2008] [notice] Child 2848: Starting 250 worker threads.
+[Fri Feb 22 13:00:59 2008] [error] [client 127.0.0.1] , referer: http://localhost/apanel/navigation.php
+[Fri Feb 22 13:01:01 2008] [error] [client 127.0.0.1] , referer: http://localhost/apanel/cgi-bin/includes/lang/en/dserver.cgi
+[Fri Feb 22 13:02:09 2008] [notice] Apache/2.0.59 (Win32) DAV/2 configured -- resuming normal operations
+[Fri Feb 22 13:02:09 2008] [notice] Server built: Jul 27 2006 15:55:03
+[Fri Feb 22 13:02:09 2008] [notice] Parent: Created child process 5144
+[Fri Feb 22 13:02:09 2008] [notice] Child 5144: Child process is running
+[Fri Feb 22 13:02:09 2008] [notice] Child 5144: Acquired the start mutex.
+[Fri Feb 22 13:02:09 2008] [notice] Child 5144: Starting 250 worker threads.
+[Fri Feb 22 13:02:30 2008] [notice] Apache/2.0.59 (Win32) DAV/2 configured -- resuming normal operations
+[Fri Feb 22 13:02:30 2008] [notice] Server built: Jul 27 2006 15:55:03
+[Fri Feb 22 13:02:30 2008] [notice] Parent: Created child process 5960
+[Fri Feb 22 13:02:30 2008] [notice] Child 5960: Child process is running
+[Fri Feb 22 13:02:30 2008] [notice] Child 5960: Acquired the start mutex.
+[Fri Feb 22 13:02:30 2008] [notice] Child 5960: Starting 250 worker threads.
+[Fri Feb 22 13:03:08 2008] [notice] Apache/2.0.59 (Win32) DAV/2 configured -- resuming normal operations
+[Fri Feb 22 13:03:08 2008] [notice] Server built: Jul 27 2006 15:55:03
+[Fri Feb 22 13:03:08 2008] [notice] Parent: Created child process 2264
+[Fri Feb 22 13:03:09 2008] [notice] Child 2264: Child process is running
+[Fri Feb 22 13:03:09 2008] [notice] Child 2264: Acquired the start mutex.
+[Fri Feb 22 13:03:09 2008] [notice] Child 2264: Starting 250 worker threads.
+[Fri Feb 22 13:07:15 2008] [notice] Apache/2.0.59 (Win32) DAV/2 configured -- resuming normal operations
+[Fri Feb 22 13:07:15 2008] [notice] Server built: Jul 27 2006 15:55:03
+[Fri Feb 22 13:07:15 2008] [notice] Parent: Created child process 1652
+[Fri Feb 22 13:07:15 2008] [notice] Child 1652: Child process is running
+[Fri Feb 22 13:07:15 2008] [notice] Child 1652: Acquired the start mutex.
+[Fri Feb 22 13:07:15 2008] [notice] Child 1652: Starting 250 worker threads.
+[Fri Feb 22 13:07:16 2008] [error] [client 127.0.0.1] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in W:\\www\\astra\\interact\\includes\\adodb\\drivers\\adodb-mysql.inc.php on line 361, referer: http://localhost/astra/
+[Fri Feb 22 13:07:16 2008] [error] [client 127.0.0.1] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in W:\\www\\astra\\interact\\includes\\adodb\\drivers\\adodb-mysql.inc.php on line 361, referer: http://localhost/astra/
+[Fri Feb 22 13:07:56 2008] [error] [client 127.0.0.1] File does not exist: W:/www/astra/interact/includes/dojo/src/widget/templates/images/tab_close.gif, referer: http://localhost/astra/interact/users/userinput.php?action=modify
+[Fri Feb 22 13:07:56 2008] [error] [client 127.0.0.1] script 'W:/www/direct.php' not found or unable to stat, referer: http://localhost/astra/interact/users/userinput.php?action=modify
+[Fri Feb 22 13:07:57 2008] [error] [client 127.0.0.1] File does not exist: W:/www/astra/interact/includes/dojo/src/widget/templates/images/blank.gif, referer: http://localhost/astra/interact/users/userinput.php?action=modify
+[Fri Feb 22 13:07:57 2008] [error] [client 127.0.0.1] script 'W:/www/direct.php' not found or unable to stat, referer: http://localhost/astra/interact/users/userinput.php?action=modify
+[Fri Feb 22 13:08:11 2008] [error] [client 127.0.0.1] File does not exist: W:/www/astra/interact/includes/dojo/src/widget/templates/images/tab_close.gif, referer: http://localhost/astra/interact/users/userinput.php?action=modify
+[Fri Feb 22 13:08:11 2008] [error] [client 127.0.0.1] script 'W:/www/direct.php' not found or unable to stat, referer: http://localhost/astra/interact/users/userinput.php?action=modify
+[Fri Feb 22 13:08:11 2008] [error] [client 127.0.0.1] File does not exist: W:/www/astra/interact/includes/dojo/src/widget/templates/images/blank.gif, referer: http://localhost/astra/interact/users/userinput.php?action=modify
+[Fri Feb 22 13:08:11 2008] [error] [client 127.0.0.1] script 'W:/www/direct.php' not found or unable to stat, referer: http://localhost/astra/interact/users/userinput.php?action=modify
+[Fri Feb 22 13:10:02 2008] [error] [client 127.0.0.1] File does not exist: W:/www/styles, referer: http://localhost/astra/index.php
+[Fri Feb 22 13:10:04 2008] [error] [client 127.0.0.1] File does not exist: W:/www/styles, referer: http://localhost/astra/index.php
+[Fri Feb 22 13:10:06 2008] [error] [client 127.0.0.1] File does not exist: W:/www/styles, referer: http://localhost/astra/index.php
+[Fri Feb 22 13:10:08 2008] [error] [client 127.0.0.1] File does not exist: W:/www/styles, referer: http://localhost/astra/index.php
+[Fri Feb 22 13:12:21 2008] [notice] Apache/2.0.59 (Win32) DAV/2 configured -- resuming normal operations
+[Fri Feb 22 13:12:21 2008] [notice] Server built: Jul 27 2006 15:55:03
+[Fri Feb 22 13:12:21 2008] [notice] Parent: Created child process 5284
+[Fri Feb 22 13:12:21 2008] [notice] Child 5284: Child process is running
+[Fri Feb 22 13:12:21 2008] [notice] Child 5284: Acquired the start mutex.
+[Fri Feb 22 13:12:21 2008] [notice] Child 5284: Starting 250 worker threads.
+[Fri Feb 22 13:13:16 2008] [notice] Apache/2.0.59 (Win32) DAV/2 configured -- resuming normal operations
+[Fri Feb 22 13:13:16 2008] [notice] Server built: Jul 27 2006 15:55:03
+[Fri Feb 22 13:13:16 2008] [notice] Parent: Created child process 4296
+[Fri Feb 22 13:13:16 2008] [notice] Child 4296: Child process is running
+[Fri Feb 22 13:13:16 2008] [notice] Child 4296: Acquired the start mutex.
+[Fri Feb 22 13:13:16 2008] [notice] Child 4296: Starting 250 worker threads.
+[Fri Feb 22 13:14:07 2008] [notice] Apache/2.0.59 (Win32) DAV/2 configured -- resuming normal operations
+[Fri Feb 22 13:14:07 2008] [notice] Server built: Jul 27 2006 15:55:03
+[Fri Feb 22 13:14:07 2008] [notice] Parent: Created child process 3944
+[Fri Feb 22 13:14:07 2008] [notice] Child 3944: Child process is running
+[Fri Feb 22 13:14:07 2008] [notice] Child 3944: Acquired the start mutex.
+[Fri Feb 22 13:14:07 2008] [notice] Child 3944: Starting 250 worker threads.
+[Fri Feb 22 13:14:45 2008] [notice] Apache/2.0.59 (Win32) DAV/2 configured -- resuming normal operations
+[Fri Feb 22 13:14:45 2008] [notice] Server built: Jul 27 2006 15:55:03
+[Fri Feb 22 13:14:45 2008] [notice] Parent: Created child process 5180
+[Fri Feb 22 13:14:45 2008] [notice] Child 5180: Child process is running
+[Fri Feb 22 13:14:45 2008] [notice] Child 5180: Acquired the start mutex.
+[Fri Feb 22 13:14:45 2008] [notice] Child 5180: Starting 250 worker threads.
+[Fri Feb 22 13:35:28 2008] [notice] Apache/2.0.59 (Win32) DAV/2 configured -- resuming normal operations
+[Fri Feb 22 13:35:28 2008] [notice] Server built: Jul 27 2006 15:55:03
+[Fri Feb 22 13:35:28 2008] [notice] Parent: Created child process 2744
+[Fri Feb 22 13:35:28 2008] [notice] Child 2744: Child process is running
+[Fri Feb 22 13:35:28 2008] [notice] Child 2744: Acquired the start mutex.
+[Fri Feb 22 13:35:28 2008] [notice] Child 2744: Starting 250 worker threads.
+[Fri Feb 22 13:36:44 2008] [notice] Apache/2.0.59 (Win32) DAV/2 configured -- resuming normal operations
+[Fri Feb 22 13:36:44 2008] [notice] Server built: Jul 27 2006 15:55:03
+[Fri Feb 22 13:36:44 2008] [notice] Parent: Created child process 5568
+[Fri Feb 22 13:36:44 2008] [notice] Child 5568: Child process is running
+[Fri Feb 22 13:36:44 2008] [notice] Child 5568: Acquired the start mutex.
+[Fri Feb 22 13:36:44 2008] [notice] Child 5568: Starting 250 worker threads.
+[Fri Feb 22 13:40:09 2008] [notice] Apache/2.0.59 (Win32) DAV/2 configured -- resuming normal operations
+[Fri Feb 22 13:40:09 2008] [notice] Server built: Jul 27 2006 15:55:03
+[Fri Feb 22 13:40:09 2008] [notice] Parent: Created child process 5056
+[Fri Feb 22 13:40:09 2008] [notice] Child 5056: Child process is running
+[Fri Feb 22 13:40:09 2008] [notice] Child 5056: Acquired the start mutex.
+[Fri Feb 22 13:40:09 2008] [notice] Child 5056: Starting 250 worker threads.
+[Fri Feb 22 13:41:27 2008] [notice] Apache/2.0.59 (Win32) DAV/2 configured -- resuming normal operations
+[Fri Feb 22 13:41:27 2008] [notice] Server built: Jul 27 2006 15:55:03
+[Fri Feb 22 13:41:27 2008] [notice] Parent: Created child process 1832
+[Fri Feb 22 13:41:27 2008] [notice] Child 1832: Child process is running
+[Fri Feb 22 13:41:27 2008] [notice] Child 1832: Acquired the start mutex.
+[Fri Feb 22 13:41:27 2008] [notice] Child 1832: Starting 250 worker threads.
+[Fri Feb 22 13:43:02 2008] [notice] Apache/2.0.59 (Win32) DAV/2 configured -- resuming normal operations
+[Fri Feb 22 13:43:02 2008] [notice] Server built: Jul 27 2006 15:55:03
+[Fri Feb 22 13:43:02 2008] [notice] Parent: Created child process 5460
+[Fri Feb 22 13:43:02 2008] [notice] Child 5460: Child process is running
+[Fri Feb 22 13:43:02 2008] [notice] Child 5460: Acquired the start mutex.
+[Fri Feb 22 13:43:02 2008] [notice] Child 5460: Starting 250 worker threads.
+[Fri Feb 22 16:19:24 2008] [notice] Apache/2.0.59 (Win32) DAV/2 configured -- resuming normal operations
+[Fri Feb 22 16:19:24 2008] [notice] Server built: Jul 27 2006 15:55:03
+[Fri Feb 22 16:19:24 2008] [notice] Parent: Created child process 2812
+[Fri Feb 22 16:19:24 2008] [notice] Child 2812: Child process is running
+[Fri Feb 22 16:19:24 2008] [notice] Child 2812: Acquired the start mutex.
+[Fri Feb 22 16:19:24 2008] [notice] Child 2812: Starting 250 worker threads.
+[Fri Feb 22 16:19:57 2008] [notice] Apache/2.0.59 (Win32) DAV/2 configured -- resuming normal operations
+[Fri Feb 22 16:19:57 2008] [notice] Server built: Jul 27 2006 15:55:03
+[Fri Feb 22 16:19:57 2008] [notice] Parent: Created child process 2392
+[Fri Feb 22 16:19:57 2008] [notice] Child 2392: Child process is running
+[Fri Feb 22 16:19:57 2008] [notice] Child 2392: Acquired the start mutex.
+[Fri Feb 22 16:19:57 2008] [notice] Child 2392: Starting 250 worker threads.
+[Fri Feb 22 16:20:49 2008] [notice] Apache/2.0.59 (Win32) DAV/2 configured -- resuming normal operations
+[Fri Feb 22 16:20:49 2008] [notice] Server built: Jul 27 2006 15:55:03
+[Fri Feb 22 16:20:49 2008] [notice] Parent: Created child process 1816
+[Fri Feb 22 16:20:49 2008] [notice] Child 1816: Child process is running
+[Fri Feb 22 16:20:49 2008] [notice] Child 1816: Acquired the start mutex.
+[Fri Feb 22 16:20:49 2008] [notice] Child 1816: Starting 250 worker threads.
+[Fri Feb 22 16:21:34 2008] [notice] Apache/2.0.59 (Win32) DAV/2 configured -- resuming normal operations
+[Fri Feb 22 16:21:34 2008] [notice] Server built: Jul 27 2006 15:55:03
+[Fri Feb 22 16:21:34 2008] [notice] Parent: Created child process 3840
+[Fri Feb 22 16:21:35 2008] [notice] Child 3840: Child process is running
+[Fri Feb 22 16:21:35 2008] [notice] Child 3840: Acquired the start mutex.
+[Fri Feb 22 16:21:35 2008] [notice] Child 3840: Starting 250 worker threads.
+[Fri Feb 22 16:23:48 2008] [notice] Apache/2.0.59 (Win32) DAV/2 configured -- resuming normal operations
+[Fri Feb 22 16:23:48 2008] [notice] Server built: Jul 27 2006 15:55:03
+[Fri Feb 22 16:23:48 2008] [notice] Parent: Created child process 3092
+[Fri Feb 22 16:23:49 2008] [notice] Child 3092: Child process is running
+[Fri Feb 22 16:23:49 2008] [notice] Child 3092: Acquired the start mutex.
+[Fri Feb 22 16:23:49 2008] [notice] Child 3092: Starting 250 worker threads.
+[Fri Feb 22 16:25:16 2008] [notice] Apache/2.0.59 (Win32) DAV/2 configured -- resuming normal operations
+[Fri Feb 22 16:25:16 2008] [notice] Server built: Jul 27 2006 15:55:03
+[Fri Feb 22 16:25:16 2008] [notice] Parent: Created child process 2496
+[Fri Feb 22 16:25:16 2008] [notice] Child 2496: Child process is running
+[Fri Feb 22 16:25:16 2008] [notice] Child 2496: Acquired the start mutex.
+[Fri Feb 22 16:25:16 2008] [notice] Child 2496: Starting 250 worker threads.
+[Fri Feb 22 16:47:13 2008] [error] [client 24.99.224.108] client denied by server configuration: W:/www/
+[Fri Feb 22 18:05:19 2008] [notice] Apache/2.0.59 (Win32) DAV/2 configured -- resuming normal operations
+[Fri Feb 22 18:05:19 2008] [notice] Server built: Jul 27 2006 15:55:03
+[Fri Feb 22 18:05:19 2008] [notice] Parent: Created child process 856
+[Fri Feb 22 18:05:19 2008] [notice] Child 856: Child process is running
+[Fri Feb 22 18:05:19 2008] [notice] Child 856: Acquired the start mutex.
+[Fri Feb 22 18:05:19 2008] [notice] Child 856: Starting 250 worker threads.

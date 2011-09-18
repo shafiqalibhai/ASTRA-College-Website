@@ -1,0 +1,1 @@
+<iframe src="interact/spaces/fetchNews.php?space_key=1" width="100%" height="90%" frameborder="1" scrolling="no"></iframe>

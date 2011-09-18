@@ -1,0 +1,64 @@
+ 
+<h2>{STATISTICS_HEADING}</h2>
+
+<form name="form1" method="post" action="statistics.php">
+<table padding="5"><tr>
+<td align="right">{START_DATE}:</td><td>{START_DATE_MENU}</td>
+</tr><tr>
+<td align="right">{END_DATE}:</td><td>{END_DATE_MENU}</td>
+</tr>
+</table>
+<div align="center">
+<input type="submit" name="submit" value="{SPREADSHEET_LINK}">
+  <table width="100%" border="0" cellpadding="0">
+    <tr><td width="50%">
+ <div align="center">
+{BY_COMPONENT_STRING}
+
+
+   <input type="hidden" name="space_key" value="{SPACE_KEY}">
+   <input type="hidden" name="group_key" value="{GROUP_KEY}">   
+      <input type="hidden" name="module_key" value="{MODULE_KEY}">   
+	       <input type="hidden" name="link_key" value="{LINK_KEY}"> 
+          <input type="hidden" name="action" value="by_module">
+                <select name="module_scope">
+                  <option value="summary" selected>{SUMMARY_STRING}</option>
+                  <option value="full">{FULL_DETAILS_STRING}</option>
+                </select>
+                        <input type="submit" name="by_module" value="{VIEW_STRING}">
+       
+</div>
+</td>
+<td> <div align="center">
+ {BY_USER_STRING}
+
+
+ 
+
+               
+                <select name="user_scope">
+                  <option value="summary" selected>{SUMMARY_STRING}</option>
+                  <option value="full">{FULL_DETAILS_STRING}</option>
+                </select>
+                {USER_MENU} 
+                        <input type="submit" name="by_user" value="{VIEW_STRING}">
+        </form></div>
+</td> 
+   </tr>
+ 
+ 
+    </table>
+ 
+   
+  <table width="100%" border="1" cellspacing="0" cellpadding="5">
+    <tr>
+      <td><b>{HEADING_ONE}</b></td>
+      <td><b>{HEADING_TWO}</b></td>
+      <td><b>{HEADING_THREE}</b></td>      
+<td><b>{HEADING_FOUR}</b></td>
+    </tr>
+   {STATS}
+  </table>
+</div>
+  
+
